@@ -19,6 +19,7 @@ data/uploads/
 data/cases/
 data/documents/
 data/exports/
+data/videos/
 data/cases.db
 data/cases.db-wal
 data/cases.db-shm
