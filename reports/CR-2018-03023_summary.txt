@@ -1,0 +1,179 @@
+CASE: State of Maine v. Keith King — CR-2018-03023
+Generated: 2026-04-12 19:13 UTC
+Total violations documented: 91
+
+=== CRITICAL (Severity 10) — LEGALLY ACTIONABLE ===
+  [illegal_stop] Illegal Pretextual Traffic Stop — No PC / No RAS
+    Source: manual_pcr | Timestamp: N/A
+    Officer Evan Haskell stopped Keith King on Davis Road at ~14:10 on Aug 2, 2018 with no stated traffic infraction. Reason
+    Law: 4th Amendment; Delaware v. Prouse (1979); Terry v. Ohio (1968); Maine Const. Art. I §5; 29-A M.R.S.A. §2104
+
+  [miranda_violation] 3-Hour Custodial Interrogation Without Miranda Warnings
+    Source: manual_pcr | Timestamp: N/A
+    Held ~3 hours by multiple officers before Miranda rights read. Told he 'could not ask questions' or would be Mirandized,
+    Law: 5th Amendment; Miranda v. Arizona (1966); 14th Amendment due process
+
+  [illegal_search] Phone Seized in Direct Violation of Warrant Exclusion Clause
+    Source: manual_pcr | Timestamp: N/A
+    Search warrant contained explicit exclusionary clause commanding officers NOT to seize cellular phones or forensic data.
+    Law: 4th Amendment; Groh v. Ramirez (2004); Riley v. California (2014); Maine Const. Art. I §5; 16 M.R.S.A. §645
+
+  [illegal_search] Warrantless 5-Day Detention of Phone (Aug 2-7, 2018)
+    Source: manual_pcr | Timestamp: N/A
+    Phone held in evidence locker Aug 2-7 with no warrant. Original warrant explicitly excluded phones; no new warrant for 5
+    Law: 4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645
+
+  [illegal_search] Aug 7 Forensic Warrant Tainted — Fruit of the Poisonous Tree
+    Source: manual_pcr | Timestamp: N/A
+    Second warrant obtained Aug 7 to search illegally held phone. Initial seizure was expressly forbidden by original warran
+    Law: 4th Amendment; Wong Sun v. United States (1963); Carpenter v. United States (2018); 16 M.R.S.A. §645, §648
+
+  [illegal_search] Amanda Ross Phone — Warrantless Seizure & 45-Day Forensic Extraction
+    Source: manual_pcr | Timestamp: N/A
+    Police seized Amanda Ross's phone on Aug 2, 2018. Third party not named in any warrant. Held 45 days. Full forensic extr
+    Law: 4th Amendment; Riley v. California (2014); 16 M.R.S.A. §645; 14th Amendment due process
+
+  [evidence_tampering] Brady Violation — DA Lied: Amanda Ross Phone Was Never Taken
+    Source: manual_pcr | Timestamp: N/A
+    DA affirmatively represented Amanda Ross's phone was never seized. Forensic extraction records prove this was false — fu
+    Law: Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process; 17-A M.R.S.A. §451 (perjury)
+
+  [evidence_tampering] Brady Violation — Heroin TruNarc Test 'Inconclusive' Withheld
+    Source: manual_pcr | Timestamp: N/A
+    Alleged heroin only tested 'inconclusive' on TruNarc field test. No lab confirmation exists for Class A Trafficking char
+    Law: Brady v. Maryland (1963); Napue v. Illinois (1959); 14th Amendment Due Process
+
+  [prosecutorial_misconduct] Former AAG Admitted Class A Charges Were 'Inadvertent Error'
+    Source: manual_pcr | Timestamp: N/A
+    Dec 17, 2025: Former AAG Janice Stuver formally admitted Aggravated Class A charges were based on 'inadvertent error' re
+    Law: Brady v. Maryland; 14th Amendment Due Process; 18 U.S.C. §242; prosecutorial misconduct
+
+  [evidence_tampering] Officer Perry — Selective Recording Manipulation / False Narrative
+    Source: manual_pcr | Timestamp: N/A
+    Officer Perry's personal body recorder was selectively turned on/off — synchronized with cruiser video — to exclude ille
+    Law: 17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B (body cam policy)
+
+  [coerced_plea] Coerced Plea — Court Order Violated, No Medications, AAG Threatened 4-Year Minimum
+    Source: manual_pcr | Timestamp: N/A
+    Prior court order required medical stabilization before plea. Forced into plea within 20 minutes of status hearing witho
+    Law: 14th Amendment Due Process; Brady v. United States (1970); Godinez v. Moran (1993); 6th Amendment; contempt of court order
+
+  [evidence_tampering] 18-Hour Chain of Custody Gap — Officer Gastia Held Evidence in Unrecorded Location
+    Source: manual_pcr | Timestamp: N/A
+    FOAA records confirm 18-hour overnight gap where evidence held in unrecorded location by Officer Gastia before formal lo
+    Law: Brady v. Maryland (chain of custody issues are exculpatory); Maine Rules of Evidence; 17-A M.R.S.A. §453 (potential tampering)
+
+  [illegal_search] BHA Provided Keys for Warrantless Residential Entry; Keith Asked for Warrant Twice on Video
+    Source: manual_pcr | Timestamp: N/A
+    BHA provided apartment keys to police without proper authorization. Dashcam video shows Keith asking for warrant TWICE a
+    Law: 4th Amendment; Payton v. New York (1980); Maine Const. Art. I §5; 15 M.R.S.A. §1091; Steagald v. United States (1981)
+
+  [impossible_charge] Gabapentin Charge Legally Void — Not Scheduled in Maine Until Oct 15, 2019
+    Source: manual_pcr | Timestamp: N/A
+    Class B Possession charge filed for gabapentin for 2018 conduct. Maine added gabapentin to Schedule W on Oct 15, 2019 (P
+    Law: Ex Post Facto Clause (U.S. Const. Art. I §9; Maine Const. Art. I §11); Due Process; prosecutorial misconduct
+
+  [ineffective_counsel] Ineffective Assistance of Counsel — 10 Documented Failures
+    Source: manual_pcr | Timestamp: N/A
+    Defense counsel failed to: (1) challenge illegal stop, (2) challenge phone seizure violating warrant exclusion, (3) supp
+    Law: 6th Amendment; Strickland v. Washington (1984) — both deficient performance AND prejudice prongs met
+
+  [timeline] Warrant Signed 2 HOURS AFTER Traffic Stop — Entire Stop Was Warrantless
+    Source: manual_pcr | Timestamp: N/A
+    Stop at 10:30 AM on Aug 2, 2018. Search warrant not signed by judge until 12:30 PM — TWO HOURS LATER. Officer Perry fals
+    Law: 4th Amendment; Payton v. New York (1980); Beck v. Ohio (1964); Maine Const. Art. I §5
+
+  [fabricated_evidence] TEMPORAL IMPOSSIBILITY: Seizure Claimed at 12:00 PM — Police Didn't Arrive Until 12:56:39 PM
+    Source: manual_pcr | Timestamp: N/A
+    Forfeiture complaint (Counts 9 & 11) claims Keith's property was seized 'as of 8/2/2018 12:00:00 PM.' CAD Report #293395
+    Law: 4th Amendment; Due Process (14th Amend.); Brady v. Maryland; fabrication of records
+
+  [cover_up] Traffic Stop Never Logged in Dispatch or Radio — Off-Book Coordinated Cover-Up
+    Source: manual_pcr | Timestamp: N/A
+    No CAD entry or radio log event exists for the traffic stop of Keith King prior to the search warrant call. Officers com
+    Law: 17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; due process
+
+  [evidence_tampering] Dashcam Video Tampered — Date/Time/Coordinates/Officer Info Stripped to Hide Pre-Warrant Stop
+    Source: manual_pcr | Timestamp: N/A
+    Police cruiser video provided to Keith in February 2024 had ALL metadata stripped — no date, no time, no coordinates, no
+    Law: 17-A M.R.S.A. §453 (tampering with physical evidence); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B
+
+  [brady_violation] Exculpatory Evidence (Cruiser Video) Withheld for 5.5 Years — Until February 2024
+    Source: manual_pcr | Timestamp: N/A
+    The police cruiser video — which proved no warrant existed at time of stop, showed Keith asking for warrant twice and be
+    Law: Brady v. Maryland (1963); Strickler v. Greene (1999); 14th Amendment Due Process
+
+  [brady_violation] Haskell's Own Police Report (Incident 18-060430, p.9) States 'No Illegal Drugs' in Vehicle
+    Source: manual_pcr | Timestamp: N/A
+    Officer Haskell's own police report (Incident 18-060430, Page 9) explicitly confirms that a search of the vehicle on Aug
+    Law: Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process
+
+  [illegal_search] Four Cell Phones Seized Including Two Non-Activated Phones — 1,000+ Calls, 350+ Private Photos Extracted
+    Source: manual_pcr | Timestamp: N/A
+    Officer Perry seized FOUR cell phones — including two that were NOT EVEN ACTIVATED — all in violation of the warrant's e
+    Law: 4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645; invasion of privacy
+
+  [illegal_search] Amanda Ross Illegally Strip-Searched on Public Road by Male Officers — No Female Officer Present
+    Source: manual_pcr | Timestamp: N/A
+    Amanda Ross was subjected to a strip search on the side of Davis Road — asked to lift her shirt exposing her stomach, tu
+    Law: 4th Amendment; Maine Const. Art. I §5; 42 U.S.C. §1983; strip search requires warrant; gender-based rights violation
+
+  [perjury_false_warrant] Shannon Farrar Named as Witness in Warrant Affidavit But Never Witnessed Anything
+    Source: manual_pcr | Timestamp: N/A
+    Officer Shannon Farrar is named throughout the warrant affidavit and police statements as a witness, yet she never actua
+    Law: 17-A M.R.S.A. §451 (perjury); §452 (false report); 4th Amendment — warrant based on false affidavit; Franks v. Delaware (1978)
+
+  [perjury_grand_jury] Perry Perjured Himself Before Grand Jury — ONLY Officer to Place Firearms at Apartment
+    Source: manual_pcr | Timestamp: N/A
+    Officer Perry testified before the grand jury that the firearms were found at the apartment WITH the illegal substances.
+    Law: 17-A M.R.S.A. §451 (perjury); 18 U.S.C. §1623 (false declarations before grand jury); Due Process; Brady v. Maryland
+
+  [false_official_report] Perry Made False Report to DHHS — Firearms Near Child (Son Was Not Even Home)
+    Source: manual_pcr | Timestamp: N/A
+    Officer Perry reported to DHHS that the firearms were found at the home with illegal substances accessible to Keith's so
+    Law: 17-A M.R.S.A. §452 (false swearing/false report); 42 U.S.C. §1983; malicious prosecution
+
+  [unlawful_detention] 45-Day Detention: No Medications, No Family Contact, No Contact With Diabetic Son
+    Source: manual_pcr | Timestamp: N/A
+    Keith was detained for 45 days without: (1) required psychiatric medications for 7 diagnosed mental health conditions, (
+    Law: 8th Amendment; 14th Amendment Due Process; ADA; 42 U.S.C. §1983; Estelle v. Gamble (1976)
+
+  [iac_conspiracy] Three Court-Appointed Attorneys Concealed, Withheld, and Denied Existence of Evidence
+    Source: manual_pcr | Timestamp: N/A
+    All three of Keith's court-appointed attorneys: observed the exculpatory evidence (the cruiser video), denied its existe
+    Law: 6th Amendment; Strickland v. Washington (1984); potential civil conspiracy (42 U.S.C. §1985); Brady violations by defense counsel
+
+  [civil_rights_privacy] Private Photos/Videos Extracted From Phones Now Appearing on Internet
+    Source: manual_pcr | Timestamp: N/A
+    Over 350 private pictures and videos of Keith and Amanda extracted from illegally seized phones — in violation of the wa
+    Law: 4th Amendment; invasion of privacy; 18 U.S.C. §2257; Maine privacy statutes; potential 18 U.S.C. §2252 (if images are intimate)
+
+  [coerced_statement] Forced Proffer Under Duress — Same Officer Who Fabricated Charges Was Present
+    Source: manual_pcr | Timestamp: N/A
+    Keith was forced into a proffer agreement after 45 days of isolation, no medications, and no family contact. The proffer
+    Law: 5th Amendment; 14th Amendment Due Process; Brady v. United States (1970); IAC
+
+=== HIGH (Severity 9) ===
+  [civil_rights] Denial of Medical Care During 3-Hour Detention in 90-Degree Heat
+    Heard on video repeatedly complaining of injured wrist and extreme pain during 3+ hour detention in 
+
+  [cover_up] Officer Perry Self-Assigned to CAD Call After Nothing Found — Classic Cover-Up Tactic
+    After the vehicle search on Davis Road found NOTHING ILLEGAL, Officer Perry performed a CAD call and
+
+  [illegal_search] Residence Searched Before Vehicle Search Was Completed — Concurrent Illegal Searches
+    Officers began searching the residence at 33 Bald Mountain Drive while Keith was still detained on D
+
+  [illegal_seizure] Wife's Vehicle Illegally Seized — Left Amanda and Diabetic Son Without Transportation
+    Officers illegally seized Amanda Ross's vehicle, leaving her without transportation for their Type 1
+
+  [excessive_bail] $100,000 Bail — Excessive for Disabled Person With No Prior Record, $370 in Pocket
+    $100,000 bail imposed on Keith King despite: no prior drug or violent criminal record, documented me
+
+  [defamation_civil_rights] Perry Slandered Keith King in Media — 'Selling Crack and Heroin From His Home' — Before Conviction
+    Officer Perry made public statements to newspapers and TV news claiming Keith King was selling crack
+
+  [foaa_obstruction] BHA Officials Exchanged Emails to Actively Conceal FOAA Records (Privilege Log Proves It)
+    The BHA 'Privilege Log' shows BHA legal counsel (Joseph Bethany) and staff (Charlotte Perkins) excha
+
+  [retaliation] 72-Hour Eviction Issued 2.5 Months After Arrest — Caused 3+ Years of Homelessness
+    Two and a half months after the August 2, 2018 arrest, Keith's family received a 72-hour notice to v
