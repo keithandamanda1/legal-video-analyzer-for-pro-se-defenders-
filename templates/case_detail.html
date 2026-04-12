@@ -1,0 +1,459 @@
+{% extends "base.html" %}
+{% block title %}{{ case.name }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-4 py-4">
+
+  <!-- Case header -->
+  <div class="d-flex align-items-start gap-3 mb-4 flex-wrap">
+    <a href="/" class="btn btn-sm btn-outline-light mt-1"><i class="bi bi-arrow-left"></i></a>
+    <div class="flex-grow-1">
+      <h2 class="mb-1 text-warning fw-bold">{{ case.name }}</h2>
+      <div class="d-flex flex-wrap gap-2 align-items-center">
+        {% if case.case_number %}<span class="badge bg-secondary">{{ case.case_number }}</span>{% endif %}
+        {% if case.charge %}<span class="badge" style="background:#78350f;color:#fde68a;">{{ case.charge }}</span>{% endif %}
+        {% if case.court %}<span class="text-muted small"><i class="bi bi-building me-1"></i>{{ case.court }}</span>{% endif %}
+        {% if case.incident_date %}<span class="text-muted small"><i class="bi bi-calendar me-1"></i>{{ case.incident_date }}</span>{% endif %}
+      </div>
+    </div>
+    <div class="d-flex gap-2 no-print">
+      <a href="/case/{{ case.id }}/edit" class="btn btn-sm btn-outline-light">
+        <i class="bi bi-pencil me-1"></i>Edit
+      </a>
+    </div>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-xl-8">
+
+      <!-- Summary stats -->
+      <div class="row g-3 mb-4">
+        <div class="col-4">
+          <div class="stat-box">
+            <div class="stat-number text-danger">{{ illegal_count }}</div>
+            <div class="stat-label">Illegal Acts Found</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="stat-box">
+            <div class="stat-number text-warning">{{ violations|length }}</div>
+            <div class="stat-label">Total Violations</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="stat-box">
+            <div class="stat-number text-info">{{ evidence_list|length }}</div>
+            <div class="stat-label">Evidence Files</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evidence upload & management -->
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span><i class="bi bi-camera-video-fill me-2 text-danger"></i>Evidence Files</span>
+          <button class="btn btn-sm btn-warning no-print" data-bs-toggle="collapse" data-bs-target="#uploadCollapse">
+            <i class="bi bi-upload me-1"></i>Upload Video
+          </button>
+        </div>
+
+        <!-- Upload form -->
+        <div class="collapse" id="uploadCollapse">
+          <div class="card-body border-bottom" style="border-color:#334155!important;">
+            {% if not api_configured %}
+            <div class="alert alert-danger small mb-3">
+              <i class="bi bi-exclamation-triangle-fill me-1"></i>
+              <strong>API key not configured.</strong> You can upload video but cannot run AI analysis until you set ANTHROPIC_API_KEY in your .env file.
+            </div>
+            {% endif %}
+            <form method="POST" action="/case/{{ case.id }}/upload" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label class="form-label">Select Video File</label>
+                <input type="file" class="form-control" name="video_file"
+                       accept=".mp4,.avi,.mov,.mkv,.wmv,.flv,.webm,.m4v,.mpg,.mpeg,.3gp,.ts,.mts,.m2ts"
+                       required>
+                <div class="form-text text-muted">
+                  Supported: MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, MPG, 3GP, TS, MTS — Max 4 GB
+                </div>
+              </div>
+              <button type="submit" class="btn btn-warning">
+                <i class="bi bi-cloud-upload me-1"></i>Upload Evidence
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Evidence list -->
+        <div class="card-body p-0">
+          {% if evidence_list %}
+          <div class="table-responsive">
+            <table class="table table-dark table-hover mb-0">
+              <thead>
+                <tr>
+                  <th>File Name</th>
+                  <th>Type</th>
+                  <th>Size</th>
+                  <th>Status</th>
+                  <th class="no-print">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for ev in evidence_list %}
+                <tr>
+                  <td>
+                    <i class="bi bi-camera-video text-danger me-1"></i>
+                    {{ ev.original_name or ev.file_path.split('/')[-1] }}
+                  </td>
+                  <td><span class="badge bg-secondary">{{ ev.file_type or 'video' }}</span></td>
+                  <td class="text-muted small">
+                    {% if ev.file_size %}{{ "%.1f"|format(ev.file_size / 1048576) }} MB{% else %}—{% endif %}
+                  </td>
+                  <td>
+                    {% if ev.analyzed %}
+                    <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Analyzed</span>
+                    {% else %}
+                    <span class="badge bg-warning text-dark"><i class="bi bi-clock me-1"></i>Pending Analysis</span>
+                    {% endif %}
+                  </td>
+                  <td class="no-print">
+                    {% if api_configured %}
+                    <form method="POST" action="/case/{{ case.id }}/analyze/{{ ev.id }}" class="d-inline">
+                      <button type="submit" class="btn btn-sm btn-danger"
+                              onclick="return confirm('This will watch the full video using AI analysis. This may take several minutes and uses your Anthropic API credits. Continue?')">
+                        <i class="bi bi-play-circle me-1"></i>Analyze
+                      </button>
+                    </form>
+                    {% else %}
+                    <span class="text-muted small">API key required</span>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% else %}
+          <div class="text-center py-4 text-muted">
+            <i class="bi bi-camera-video-off display-4 d-block mb-2"></i>
+            No evidence uploaded yet. Upload a video to get started.
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Violations found -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <i class="bi bi-exclamation-triangle-fill me-2 text-danger"></i>Violations &amp; Red Flags Found
+          <span class="badge bg-danger ms-2">{{ violations|length }}</span>
+        </div>
+        <div class="card-body">
+          {% if violations %}
+          <!-- Filter tabs -->
+          <ul class="nav nav-pills mb-3 no-print" id="violationTabs">
+            <li class="nav-item"><a class="nav-link active" href="#" data-filter="all">All ({{ violations|length }})</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="illegal">Illegal ({{ illegal_count }})</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="critical">Critical ({{ critical_violations|length }})</a></li>
+          </ul>
+
+          <div id="violationList">
+            {% for v in violations %}
+            <div class="violation-card {% if v.severity >= 9 %}{% elif v.severity >= 7 %}moderate{% else %}minor{% endif %}"
+                 data-illegal="{{ '1' if v.is_illegal else '0' }}"
+                 data-severity="{{ v.severity or 0 }}">
+              <div class="d-flex justify-content-between align-items-start mb-1">
+                <div class="d-flex gap-2 align-items-center flex-wrap">
+                  <span class="badge severity-{{ v.severity or 0 }} {% if v.severity < 5 %}severity-low{% endif %}">
+                    Severity {{ v.severity or 0 }}/10
+                  </span>
+                  {% if v.is_illegal %}
+                  <span class="badge bg-danger"><i class="bi bi-x-octagon-fill me-1"></i>ILLEGAL</span>
+                  {% elif v.is_red_flag %}
+                  <span class="badge" style="background:#4a1d96;color:#ddd6fe;"><i class="bi bi-flag-fill me-1"></i>Red Flag</span>
+                  {% endif %}
+                  <span class="badge bg-secondary">{{ v.confidence or 'low' }} confidence</span>
+                </div>
+                {% if v.timestamp_label %}
+                <span class="badge bg-dark border font-monospace">{{ v.timestamp_label }}</span>
+                {% endif %}
+              </div>
+              <p class="mb-1 text-light">{{ v.description or 'No description' }}</p>
+              {% if v.law_reference %}
+              <p class="mb-1 small" style="color:#60a5fa;">
+                <i class="bi bi-book me-1"></i><strong>Law:</strong> {{ v.law_reference }}
+                {% if v.law_title %}<em>— {{ v.law_title }}</em>{% endif %}
+              </p>
+              {% endif %}
+              {% if v.recommendation %}
+              <p class="mb-0 small text-success">
+                <i class="bi bi-lightbulb-fill me-1"></i><strong>Action:</strong> {{ v.recommendation }}
+              </p>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="text-center py-4 text-muted">
+            <i class="bi bi-shield-check display-4 d-block mb-2 text-success"></i>
+            No violations recorded yet. Upload and analyze video evidence to detect violations.
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Analyses history -->
+      {% if analyses %}
+      <div class="card mb-4">
+        <div class="card-header"><i class="bi bi-clock-history me-2"></i>Analysis History</div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-dark table-hover mb-0">
+              <thead><tr><th>Date</th><th>Type</th><th>Status</th><th>Win Est.</th><th class="no-print">Details</th></tr></thead>
+              <tbody>
+                {% for a in analyses %}
+                <tr>
+                  <td class="small text-muted">{{ a.created_at[:16] if a.created_at else '—' }}</td>
+                  <td><span class="badge bg-secondary">{{ a.analysis_type or 'full' }}</span></td>
+                  <td>
+                    {% if a.status == 'complete' %}<span class="badge bg-success">Complete</span>
+                    {% elif a.status == 'running' %}<span class="badge bg-warning text-dark">Running</span>
+                    {% elif a.status == 'failed' %}<span class="badge bg-danger">Failed</span>
+                    {% else %}<span class="badge bg-secondary">{{ a.status }}</span>{% endif %}
+                  </td>
+                  <td>
+                    {% if a.win_probability %}
+                    <strong class="text-success">{{ "%.1f"|format(a.win_probability * 100) }}%</strong>
+                    {% else %}—{% endif %}
+                  </td>
+                  <td class="no-print">
+                    <a href="/case/{{ case.id }}/analysis/{{ a.id }}" class="btn btn-sm btn-outline-light">View</a>
+                    {% if a.status == 'running' %}
+                    <button class="btn btn-sm btn-outline-light ms-1" onclick="pollStatus('{{ a.id }}')">
+                      <i class="bi bi-arrow-clockwise"></i>
+                    </button>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-xl-4">
+
+      <!-- Win probability -->
+      {% if latest_analysis and latest_analysis.win_probability %}
+      <div class="win-prob-box mb-4">
+        <div class="win-prob-label text-uppercase letter-spacing-1 mb-1">
+          <i class="bi bi-bar-chart-fill me-1"></i>Estimated Win Probability
+        </div>
+        <div class="win-prob-number">{{ "%.1f"|format(latest_analysis.win_probability * 100) }}%</div>
+        <div class="win-prob-label">Based on {{ violations|length }} documented violations</div>
+        <div class="win-prob-disclaimer mt-2">
+          AI estimate only. NOT legal advice.
+          Actual results depend on judge, jury, and many other factors.
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Legal strategy -->
+      {% if legal_posture.motions_available %}
+      <div class="card mb-4">
+        <div class="card-header" style="color:#86efac;"><i class="bi bi-briefcase-fill me-2"></i>Available Legal Motions</div>
+        <div class="card-body">
+          {% for motion in legal_posture.motions_available %}
+          <div class="mb-3 pb-3" style="border-bottom:1px solid #334155;">
+            <div class="d-flex justify-content-between">
+              <strong class="text-white small">{{ motion.title }}</strong>
+              <span class="badge {% if 'strong' in motion.strength.lower() %}bg-success{% elif 'moderate' in motion.strength.lower() %}bg-warning text-dark{% else %}bg-secondary{% endif %} small">
+                {{ motion.strength }}
+              </span>
+            </div>
+            <p class="text-muted small mt-1 mb-0">{{ motion.description[:200] }}…</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Action items -->
+      {% if legal_posture.action_items %}
+      <div class="card mb-4">
+        <div class="card-header text-warning"><i class="bi bi-lightning-charge-fill me-2"></i>Action Items</div>
+        <div class="card-body">
+          {% for item in legal_posture.action_items %}
+          <div class="d-flex gap-2 mb-2">
+            <span class="badge {% if item.priority == 'URGENT' %}bg-danger{% elif item.priority == 'HIGH' %}bg-warning text-dark{% else %}bg-secondary{% endif %} flex-shrink-0">
+              {{ item.priority }}
+            </span>
+            <p class="mb-0 small text-light">{{ item.action }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Documents section -->
+      <div class="card mb-4" id="documents">
+        <div class="card-header text-info"><i class="bi bi-file-text-fill me-2"></i>Legal Documents</div>
+        <div class="card-body">
+          <!-- Generate form -->
+          <form method="POST" action="/case/{{ case.id }}/documents/generate" class="mb-3 no-print">
+            <label class="form-label small">Generate a Document</label>
+            <select class="form-select form-select-sm mb-2" name="doc_type" required>
+              <option value="">— Select Document Type —</option>
+              {% for dtype, dtitle in document_types.items() %}
+              <option value="{{ dtype }}">{{ dtitle }}</option>
+              {% endfor %}
+            </select>
+            <button type="submit" class="btn btn-sm btn-info w-100">
+              <i class="bi bi-file-earmark-plus me-1"></i>Generate Document
+            </button>
+          </form>
+
+          <!-- Existing documents -->
+          {% if documents %}
+          <div class="list-group">
+            {% for doc in documents %}
+            <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                 style="background:#0f172a;border-color:#334155;color:#cbd5e1;">
+              <div>
+                <small class="text-muted">{{ doc.document_type }}</small>
+                <br>
+                <span class="small">{{ doc.title[:50] }}</span>
+              </div>
+              <a href="/case/{{ case.id }}/documents/{{ doc.id }}/download"
+                 class="btn btn-sm btn-outline-light">
+                <i class="bi bi-download"></i>
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p class="text-muted small">No documents generated yet.</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Case notes -->
+      <div class="card mb-4" id="notes">
+        <div class="card-header"><i class="bi bi-journal-text me-2"></i>Case Notes
+          <small class="text-muted ms-1">(never deleted automatically)</small>
+        </div>
+        <div class="card-body">
+          <form method="POST" action="/case/{{ case.id }}/note" class="mb-3 no-print">
+            <div class="mb-2">
+              <textarea class="form-control form-control-sm" name="note" rows="3"
+                        placeholder="Add a note about this case…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-sm btn-success w-100">
+              <i class="bi bi-save me-1"></i>Save Note
+            </button>
+          </form>
+
+          {% if notes %}
+          <div style="max-height:300px;overflow-y:auto;">
+            {% for note in notes|reverse %}
+            <div class="mb-2 pb-2" style="border-bottom:1px solid #1e293b;">
+              <p class="mb-1 small text-light">{{ note.note }}</p>
+              <span class="text-muted" style="font-size:0.7rem;">{{ note.created_at[:16] if note.created_at else '' }}</span>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p class="text-muted small">No notes yet.</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Danger zone -->
+      <div class="card" style="border-color:#dc2626;">
+        <div class="card-header text-danger"><i class="bi bi-trash3-fill me-2"></i>Danger Zone</div>
+        <div class="card-body">
+          <p class="text-muted small">Permanently delete this case and ALL associated evidence, analyses, and documents. <strong>This cannot be undone.</strong></p>
+          <button class="btn btn-sm btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#deleteModal">
+            <i class="bi bi-trash3 me-1"></i>Delete Case
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Delete modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background:#1e293b;border-color:#dc2626;">
+      <div class="modal-header border-danger">
+        <h5 class="modal-title text-danger"><i class="bi bi-trash3-fill me-2"></i>Delete Case</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <form method="POST" action="/case/{{ case.id }}/delete">
+        <div class="modal-body">
+          <p>This will permanently delete <strong class="text-warning">{{ case.name }}</strong> and all its data.</p>
+          <p class="text-danger">To confirm, type the exact case name below:</p>
+          <input type="text" class="form-control" name="confirm_delete" placeholder="{{ case.name }}" required>
+        </div>
+        <div class="modal-footer border-danger">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-danger">Delete Permanently</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Violation filter tabs
+document.querySelectorAll('[data-filter]').forEach(tab => {
+  tab.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelectorAll('[data-filter]').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+    const filter = this.dataset.filter;
+    document.querySelectorAll('#violationList .violation-card').forEach(card => {
+      if (filter === 'all') {
+        card.style.display = '';
+      } else if (filter === 'illegal') {
+        card.style.display = card.dataset.illegal === '1' ? '' : 'none';
+      } else if (filter === 'critical') {
+        card.style.display = parseInt(card.dataset.severity) >= 9 ? '' : 'none';
+      }
+    });
+  });
+});
+
+// Poll analysis status
+function pollStatus(analysisId) {
+  fetch('/api/analysis/' + analysisId + '/status')
+    .then(r => r.json())
+    .then(data => {
+      if (data.status === 'complete') {
+        location.reload();
+      } else if (data.status === 'failed') {
+        alert('Analysis failed: ' + (data.error_message || 'Unknown error'));
+      } else {
+        alert('Status: ' + data.status + ' (' + data.progress + '% — ' + data.violation_count + ' violations found so far). Refresh in a moment.');
+      }
+    });
+}
+
+// Auto-poll for running analyses
+{% for a in analyses %}
+{% if a.status == 'running' %}
+setInterval(() => pollStatus('{{ a.id }}'), 15000);
+{% endif %}
+{% endfor %}
+</script>
+{% endblock %}

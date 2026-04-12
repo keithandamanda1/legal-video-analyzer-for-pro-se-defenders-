@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Legal Video Analyzer{% endblock %} — Pro Se Defense Tool</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --sidebar-width: 250px;
+      --header-height: 56px;
+      --danger-dark: #7f1d1d;
+      --warning-dark: #78350f;
+    }
+
+    body { background: #0f172a; color: #e2e8f0; font-family: 'Segoe UI', system-ui, sans-serif; }
+
+    /* ── Navbar ── */
+    .navbar { background: #1e293b !important; border-bottom: 2px solid #f59e0b; height: var(--header-height); }
+    .navbar-brand { color: #f59e0b !important; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px; }
+    .navbar-brand span { color: #60a5fa; }
+    .nav-link { color: #94a3b8 !important; }
+    .nav-link:hover { color: #f59e0b !important; }
+
+    /* ── Cards ── */
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; }
+    .card-header { background: #0f172a; border-bottom: 1px solid #334155; font-weight: 700; }
+
+    /* ── Severity badges ── */
+    .severity-10, .severity-9 { background: #7f1d1d; color: #fca5a5; border: 1px solid #ef4444; }
+    .severity-8, .severity-7 { background: #78350f; color: #fcd34d; border: 1px solid #f59e0b; }
+    .severity-6, .severity-5 { background: #1e3a5f; color: #93c5fd; border: 1px solid #3b82f6; }
+    .severity-low { background: #1f2937; color: #9ca3af; border: 1px solid #4b5563; }
+
+    /* ── Violation cards ── */
+    .violation-card { background: #0f172a; border-left: 4px solid #ef4444; margin-bottom: 10px; border-radius: 6px; padding: 12px 16px; }
+    .violation-card.moderate { border-left-color: #f59e0b; }
+    .violation-card.minor { border-left-color: #3b82f6; }
+    .violation-card.flag { border-left-color: #a855f7; }
+
+    /* ── Buttons ── */
+    .btn-primary { background: #2563eb; border-color: #2563eb; }
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-warning { background: #d97706; border-color: #d97706; color: #fff; }
+    .btn-danger { background: #dc2626; border-color: #dc2626; }
+    .btn-success { background: #16a34a; border-color: #16a34a; }
+    .btn-outline-light { border-color: #475569; color: #94a3b8; }
+    .btn-outline-light:hover { background: #334155; color: #f8fafc; }
+
+    /* ── Win probability ── */
+    .win-prob-box { background: linear-gradient(135deg, #0f4c2b 0%, #1a2e12 100%);
+                    border: 1px solid #16a34a; border-radius: 12px; text-align: center; padding: 20px; }
+    .win-prob-number { font-size: 3.5rem; font-weight: 900; color: #4ade80; line-height: 1; }
+    .win-prob-label { color: #86efac; font-size: 0.9rem; margin-top: 4px; }
+    .win-prob-disclaimer { color: #6b7280; font-size: 0.75rem; margin-top: 8px; }
+
+    /* ── Timeline ── */
+    .timeline-item { position: relative; padding-left: 40px; margin-bottom: 16px; }
+    .timeline-item::before { content: ''; position: absolute; left: 14px; top: 0; bottom: -16px;
+                              width: 2px; background: #334155; }
+    .timeline-dot { position: absolute; left: 6px; top: 6px; width: 18px; height: 18px;
+                    border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .timeline-dot.critical { background: #dc2626; }
+    .timeline-dot.serious { background: #d97706; }
+    .timeline-dot.moderate { background: #2563eb; }
+    .timeline-dot.minor { background: #4b5563; }
+
+    /* ── Forms ── */
+    .form-control, .form-select {
+      background: #0f172a; border: 1px solid #334155; color: #e2e8f0;
+    }
+    .form-control:focus, .form-select:focus {
+      background: #0f172a; border-color: #2563eb; color: #e2e8f0;
+      box-shadow: 0 0 0 0.25rem rgba(37,99,235,0.25);
+    }
+    .form-label { color: #94a3b8; font-size: 0.9rem; }
+
+    /* ── Alerts ── */
+    .alert-success { background: #14532d; border-color: #16a34a; color: #bbf7d0; }
+    .alert-danger  { background: #7f1d1d; border-color: #dc2626; color: #fecaca; }
+    .alert-warning { background: #78350f; border-color: #d97706; color: #fde68a; }
+    .alert-info    { background: #1e3a5f; border-color: #3b82f6; color: #bfdbfe; }
+
+    /* ── Stat boxes ── */
+    .stat-box { background: #0f172a; border: 1px solid #334155; border-radius: 8px;
+                padding: 16px; text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: 800; }
+    .stat-label { color: #64748b; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ── Progress ── */
+    .progress { background: #1e293b; height: 10px; border-radius: 6px; }
+    .progress-bar { background: linear-gradient(90deg, #2563eb, #7c3aed); }
+
+    /* ── Meta table ── */
+    .meta-table td { border-color: #334155 !important; color: #cbd5e1; font-size: 0.875rem; padding: 6px 12px; }
+    .meta-table .key { color: #64748b; width: 40%; font-family: monospace; font-size: 0.8rem; }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+    /* ── Print ── */
+    @media print { .no-print { display: none !important; } body { background: white; color: black; } }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg no-print">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <i class="bi bi-camera-video-fill me-1"></i>Legal<span>Video</span>Analyzer
+      <small class="text-muted ms-1" style="font-size:0.65rem">Pro Se Defense Tool</small>
+    </a>
+    <div class="ms-auto d-flex align-items-center gap-2">
+      {% if not api_configured %}
+      <span class="badge bg-danger"><i class="bi bi-exclamation-triangle-fill me-1"></i>API Key Not Set</span>
+      {% else %}
+      <span class="badge bg-success"><i class="bi bi-check-circle-fill me-1"></i>API Ready</span>
+      {% endif %}
+      <a href="/" class="btn btn-sm btn-outline-light"><i class="bi bi-house-fill me-1"></i>Cases</a>
+      <a href="/case/new" class="btn btn-sm btn-warning"><i class="bi bi-plus-lg me-1"></i>New Case</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Flash messages -->
+<div class="container-fluid mt-3 no-print">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ 'danger' if category == 'error' else category }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+</div>
+
+<!-- Main content -->
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<!-- Footer -->
+<footer class="text-center text-muted py-4 mt-5 no-print" style="border-top:1px solid #1e293b;font-size:0.8rem;">
+  <p class="mb-0">
+    <strong>Legal Video Analyzer</strong> — Pro Se Defense Tool for Maine Defendants
+    <br>
+    <span class="text-danger">DISCLAIMER:</span>
+    This tool provides AI-assisted analysis and document templates.
+    It is <strong>NOT</strong> legal advice and does NOT create an attorney-client relationship.
+    For free legal help in Maine: <strong>Pine Tree Legal Assistance 207-774-8211</strong>
+    or Maine Legal Services <strong>1-800-750-5353</strong>.
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

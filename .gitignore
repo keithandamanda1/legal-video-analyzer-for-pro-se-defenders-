@@ -1,0 +1,38 @@
+# Environment and secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Data (case files stay local — never commit evidence to git)
+data/uploads/
+data/cases/
+data/documents/
+data/exports/
+data/cases.db
+data/cases.db-wal
+data/cases.db-shm
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log

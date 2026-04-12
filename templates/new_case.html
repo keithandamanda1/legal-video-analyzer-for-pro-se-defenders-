@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Edit Case' if editing else 'New Case' }}{% endblock %}
+
+{% block content %}
+<div class="container py-4" style="max-width:720px;">
+  <div class="d-flex align-items-center mb-4">
+    <a href="/" class="btn btn-sm btn-outline-light me-3"><i class="bi bi-arrow-left"></i></a>
+    <h3 class="mb-0 text-warning">
+      <i class="bi bi-{{ 'pencil-square' if editing else 'folder-plus' }} me-2"></i>
+      {{ 'Edit Case' if editing else 'Create New Case' }}
+    </h3>
+  </div>
+
+  <div class="card">
+    <div class="card-body p-4">
+      <form method="POST" action="{{ '/case/' + case.id + '/edit' if editing else '/case/create' }}">
+
+        <div class="row g-3">
+          <!-- Case name -->
+          <div class="col-12">
+            <label class="form-label">Case Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="name" required
+                   value="{{ case.name if case else '' }}"
+                   placeholder="e.g., State v. Smith — Traffic Stop 2024">
+            <div class="form-text text-muted">Choose a descriptive name you'll recognize.</div>
+          </div>
+
+          <!-- Case number -->
+          <div class="col-md-6">
+            <label class="form-label">Court Case / Docket Number</label>
+            <input type="text" class="form-control" name="case_number"
+                   value="{{ case.case_number if case else '' }}"
+                   placeholder="e.g., CR-2024-001234">
+          </div>
+
+          <!-- Defendant name -->
+          <div class="col-md-6">
+            <label class="form-label">Defendant Name (Your Name)</label>
+            <input type="text" class="form-control" name="defendant_name"
+                   value="{{ case.defendant_name if case else '' }}"
+                   placeholder="Full legal name">
+          </div>
+
+          <!-- Charge -->
+          <div class="col-12">
+            <label class="form-label">Charge(s)</label>
+            <input type="text" class="form-control" name="charge"
+                   value="{{ case.charge if case else '' }}"
+                   placeholder="e.g., OUI, Possession, Disorderly Conduct">
+          </div>
+
+          <!-- Incident date -->
+          <div class="col-md-6">
+            <label class="form-label">Incident Date</label>
+            <input type="date" class="form-control" name="incident_date"
+                   value="{{ case.incident_date if case else '' }}">
+            <div class="form-text text-muted">Used to determine which version of the law applies.</div>
+          </div>
+
+          <!-- Arrest date -->
+          <div class="col-md-6">
+            <label class="form-label">Arrest Date (if different)</label>
+            <input type="date" class="form-control" name="arrest_date"
+                   value="{{ case.arrest_date if case else '' }}">
+          </div>
+
+          <!-- Court -->
+          <div class="col-md-6">
+            <label class="form-label">Court</label>
+            <input type="text" class="form-control" name="court"
+                   value="{{ case.court if case else '' }}"
+                   placeholder="e.g., Maine District Court — Portland">
+          </div>
+
+          <!-- County -->
+          <div class="col-md-6">
+            <label class="form-label">County</label>
+            <select class="form-select" name="county">
+              <option value="">— Select County —</option>
+              {% for county in ['Androscoggin','Aroostook','Cumberland','Franklin','Hancock',
+                                 'Kennebec','Knox','Lincoln','Oxford','Penobscot','Piscataquis',
+                                 'Sagadahoc','Somerset','Waldo','Washington','York'] %}
+              <option value="{{ county }}" {{ 'selected' if case and case.county == county else '' }}>{{ county }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <!-- Description -->
+          <div class="col-12">
+            <label class="form-label">Case Description / Notes</label>
+            <textarea class="form-control" name="description" rows="4"
+                      placeholder="Describe what happened in your own words. Include location, time, officer names if known, what was said, etc.">{{ case.description if case else '' }}</textarea>
+          </div>
+        </div>
+
+        <div class="d-flex gap-2 mt-4">
+          <button type="submit" class="btn btn-warning">
+            <i class="bi bi-{{ 'check-lg' if editing else 'folder-plus' }} me-1"></i>
+            {{ 'Save Changes' if editing else 'Create Case' }}
+          </button>
+          <a href="{{ '/case/' + case.id if editing else '/' }}" class="btn btn-outline-light">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {% if not editing %}
+  <div class="card mt-3" style="border-color:#334155;">
+    <div class="card-body">
+      <h6 class="text-muted mb-2"><i class="bi bi-lightbulb-fill me-1 text-warning"></i>Tips</h6>
+      <ul class="text-muted small mb-0">
+        <li>The incident date is important — it determines which laws were in effect at the time.</li>
+        <li>You can update case information at any time after creating the case.</li>
+        <li>After creating the case, you'll be able to upload video evidence and run analysis.</li>
+        <li>All data is stored locally and <strong>never automatically deleted</strong>.</li>
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

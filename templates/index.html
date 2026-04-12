@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-4 py-4">
+
+  <!-- Hero banner -->
+  <div class="card mb-4" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-color: #f59e0b;">
+    <div class="card-body py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="fw-bold mb-1" style="color:#f59e0b;">
+            <i class="bi bi-camera-video-fill me-2"></i>Legal Video Analyzer
+          </h1>
+          <p class="text-light mb-2" style="font-size:1.1rem;">
+            <strong>Pro Se Defense Tool for Maine Defendants</strong>
+          </p>
+          <p class="text-muted mb-3">
+            Upload police dashcam or body camera footage and this tool will <strong>literally watch it</strong>,
+            identify rights violations, flag illegal conduct, check Maine and federal laws,
+            estimate your chances of winning, and generate ready-to-file legal documents.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="/case/new" class="btn btn-warning"><i class="bi bi-plus-lg me-1"></i>Start New Case</a>
+            <a href="#how-it-works" class="btn btn-outline-light"><i class="bi bi-info-circle me-1"></i>How It Works</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block text-end">
+          <div class="d-flex flex-column gap-2 align-items-end">
+            <span class="badge fs-6 px-3 py-2" style="background:#134e4a; color:#5eead4;">
+              <i class="bi bi-eye-fill me-1"></i>Watches Actual Video Footage
+            </span>
+            <span class="badge fs-6 px-3 py-2" style="background:#1e3a5f; color:#93c5fd;">
+              <i class="bi bi-book-fill me-1"></i>Maine &amp; Federal Laws
+            </span>
+            <span class="badge fs-6 px-3 py-2" style="background:#4a1d96; color:#ddd6fe;">
+              <i class="bi bi-file-text-fill me-1"></i>Generates Legal Documents
+            </span>
+            <span class="badge fs-6 px-3 py-2" style="background:#14532d; color:#bbf7d0;">
+              <i class="bi bi-database-fill me-1"></i>Persistent Memory
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if not api_configured %}
+  <div class="alert alert-danger mb-4">
+    <h5><i class="bi bi-exclamation-triangle-fill me-2"></i>Anthropic API Key Required</h5>
+    <p class="mb-1">The AI video analysis requires an Anthropic API key. Add it to your <code>.env</code> file:</p>
+    <code>ANTHROPIC_API_KEY=sk-ant-your-key-here</code>
+    <p class="mb-0 mt-2">
+      Get a free API key at <a href="#" class="alert-link">console.anthropic.com</a>.
+      Then restart the application.
+    </p>
+  </div>
+  {% endif %}
+
+  <!-- Cases list -->
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h4 class="mb-0"><i class="bi bi-folder2-open me-2 text-warning"></i>Your Cases
+      <span class="badge bg-secondary ms-2">{{ cases|length }}</span>
+    </h4>
+    <a href="/case/new" class="btn btn-warning btn-sm">
+      <i class="bi bi-plus-lg me-1"></i>New Case
+    </a>
+  </div>
+
+  {% if cases %}
+  <div class="row g-3 mb-5">
+    {% for case in cases %}
+    <div class="col-md-6 col-xl-4">
+      <div class="card h-100" style="border-color: {% if case.violation_count > 0 %}#ef4444{% else %}#334155{% endif %};">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <h5 class="card-title mb-0">
+              <a href="/case/{{ case.id }}" class="text-warning text-decoration-none">{{ case.name }}</a>
+            </h5>
+            <span class="badge {% if case.status == 'active' %}bg-success{% else %}bg-secondary{% endif %}">
+              {{ case.status }}
+            </span>
+          </div>
+
+          {% if case.defendant_name %}
+          <p class="text-muted small mb-1"><i class="bi bi-person-fill me-1"></i>{{ case.defendant_name }}</p>
+          {% endif %}
+          {% if case.charge %}
+          <p class="small mb-1" style="color:#fcd34d;"><i class="bi bi-exclamation-circle-fill me-1"></i>{{ case.charge }}</p>
+          {% endif %}
+          {% if case.court %}
+          <p class="text-muted small mb-2"><i class="bi bi-building me-1"></i>{{ case.court }}</p>
+          {% endif %}
+
+          <div class="row g-2 mb-3">
+            <div class="col-4">
+              <div class="stat-box">
+                <div class="stat-number text-danger">{{ case.violation_count }}</div>
+                <div class="stat-label">Violations</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-box">
+                <div class="stat-number text-info">{{ case.evidence_count }}</div>
+                <div class="stat-label">Evidence</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-box">
+                <div class="stat-number text-success">
+                  {{ case.win_probability_pct or '—' }}
+                </div>
+                <div class="stat-label">Win Est.</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="/case/{{ case.id }}" class="btn btn-outline-light btn-sm w-100">
+            <i class="bi bi-arrow-right-circle me-1"></i>Open Case
+          </a>
+        </div>
+        {% if case.incident_date %}
+        <div class="card-footer text-muted small">
+          <i class="bi bi-calendar-event me-1"></i>Incident: {{ case.incident_date }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% else %}
+  <div class="text-center py-5">
+    <i class="bi bi-folder-x display-1 text-muted"></i>
+    <h4 class="mt-3 text-muted">No cases yet</h4>
+    <p class="text-muted">Create your first case to get started.</p>
+    <a href="/case/new" class="btn btn-warning mt-2">
+      <i class="bi bi-plus-lg me-1"></i>Create First Case
+    </a>
+  </div>
+  {% endif %}
+
+  <!-- How it works -->
+  <div class="card mt-2" id="how-it-works">
+    <div class="card-header"><i class="bi bi-info-circle-fill me-2 text-info"></i>How This Tool Works</div>
+    <div class="card-body">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="text-center">
+            <div style="font-size:2.5rem;color:#f59e0b;">1</div>
+            <h6 class="text-warning">Create a Case</h6>
+            <p class="text-muted small">Enter your case information — case number, charge, incident date, court name.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center">
+            <div style="font-size:2.5rem;color:#f59e0b;">2</div>
+            <h6 class="text-warning">Upload Video Evidence</h6>
+            <p class="text-muted small">Upload dashcam footage, body camera video, or any other recording evidence.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center">
+            <div style="font-size:2.5rem;color:#f59e0b;">3</div>
+            <h6 class="text-warning">AI Analyzes the Footage</h6>
+            <p class="text-muted small">Claude AI watches every frame of the video, checking for rights violations, misconduct, and illegal conduct against Maine and federal law.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center">
+            <div style="font-size:2.5rem;color:#f59e0b;">4</div>
+            <h6 class="text-warning">Get Documents &amp; Strategy</h6>
+            <p class="text-muted small">Generate ready-to-file motions, demands, and complaints. Get a win probability estimate and step-by-step strategy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Free legal resources -->
+  <div class="card mt-3" style="border-color:#16a34a;">
+    <div class="card-header text-success"><i class="bi bi-telephone-fill me-2"></i>Free Legal Help in Maine</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <strong class="text-white">Pine Tree Legal Assistance</strong>
+          <p class="text-success mb-0 fw-bold">207-774-8211</p>
+          <p class="text-muted small">Free civil legal help for low-income Mainers</p>
+        </div>
+        <div class="col-md-4">
+          <strong class="text-white">Maine Legal Services</strong>
+          <p class="text-success mb-0 fw-bold">1-800-750-5353</p>
+          <p class="text-muted small">Legal aid hotline for qualifying individuals</p>
+        </div>
+        <div class="col-md-4">
+          <strong class="text-white">ACLU of Maine</strong>
+          <p class="text-success mb-0 fw-bold">207-774-5444</p>
+          <p class="text-muted small">Civil rights violations, police misconduct cases</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

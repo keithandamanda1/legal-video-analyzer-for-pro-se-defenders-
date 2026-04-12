@@ -1,0 +1,297 @@
+{% extends "base.html" %}
+{% block title %}Analysis — {{ case.name }}{% endblock %}
+
+{% block head %}
+<style>
+.timeline-frame { background: #0f172a; border: 1px solid #334155; border-radius: 8px;
+                  padding: 12px 16px; margin-bottom: 10px; }
+.timeline-frame:hover { border-color: #475569; }
+.ts-badge { background: #1e293b; border: 1px solid #334155; color: #94a3b8;
+            font-family: monospace; font-size: 0.8rem; padding: 2px 8px; border-radius: 4px; }
+.flag-illegal { color: #f87171; }
+.flag-redflag { color: #c084fc; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-4 py-4">
+
+  <!-- Header -->
+  <div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
+    <a href="/case/{{ case.id }}" class="btn btn-sm btn-outline-light"><i class="bi bi-arrow-left"></i></a>
+    <div>
+      <h3 class="mb-0 text-warning">Analysis Results</h3>
+      <small class="text-muted">{{ case.name }}</small>
+    </div>
+    <div class="ms-auto">
+      {% if analysis.status == 'running' %}
+      <span class="badge bg-warning text-dark fs-6 px-3 py-2">
+        <i class="bi bi-hourglass-split me-1"></i>Analysis Running — {{ analysis.progress }}%
+      </span>
+      {% elif analysis.status == 'complete' %}
+      <span class="badge bg-success fs-6 px-3 py-2">
+        <i class="bi bi-check-circle-fill me-1"></i>Analysis Complete
+      </span>
+      {% elif analysis.status == 'failed' %}
+      <span class="badge bg-danger fs-6 px-3 py-2">
+        <i class="bi bi-x-circle-fill me-1"></i>Analysis Failed
+      </span>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if analysis.status == 'running' %}
+  <!-- Progress indicator -->
+  <div class="card mb-4" style="border-color:#f59e0b;">
+    <div class="card-body">
+      <h5 class="text-warning mb-3"><i class="bi bi-eye-fill me-2"></i>AI is watching your video…</h5>
+      <div class="progress mb-2">
+        <div class="progress-bar progress-bar-striped progress-bar-animated"
+             role="progressbar" style="width: {{ analysis.progress }}%"></div>
+      </div>
+      <p class="text-muted small mb-0">
+        Progress: {{ analysis.progress }}% — The AI is extracting frames and analyzing each one for legal violations.
+        This page auto-refreshes. Large videos (1+ hour) may take 10-20 minutes.
+      </p>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if analysis.status == 'failed' %}
+  <div class="alert alert-danger mb-4">
+    <h5><i class="bi bi-x-circle-fill me-2"></i>Analysis Failed</h5>
+    <p class="mb-0">{{ analysis.error_message or 'An unknown error occurred.' }}</p>
+    <hr>
+    <p class="mb-0 small">Common causes: ffmpeg not installed (run setup.sh), invalid API key, video file corrupted.</p>
+  </div>
+  {% endif %}
+
+  <div class="row g-4">
+
+    <!-- LEFT: Results -->
+    <div class="col-xl-8">
+
+      {% if analysis.status == 'complete' and analysis.results %}
+      {% set results = analysis.results %}
+
+      <!-- Summary stats -->
+      <div class="row g-3 mb-4">
+        <div class="col-3">
+          <div class="stat-box">
+            <div class="stat-number text-warning">{{ results.total_frames_analyzed or 0 }}</div>
+            <div class="stat-label">Frames Watched</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="stat-box">
+            <div class="stat-number text-danger">{{ results.illegal_violations or 0 }}</div>
+            <div class="stat-label">Illegal Acts</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="stat-box">
+            <div class="stat-number text-warning">{{ results.red_flags or 0 }}</div>
+            <div class="stat-label">Red Flags</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="stat-box">
+            <div class="stat-number {% if results.camera_issues_detected %}text-danger{% else %}text-success{% endif %}">
+              {{ 'YES' if results.camera_issues_detected else 'NO' }}
+            </div>
+            <div class="stat-label">Camera Issues</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Violations -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <i class="bi bi-exclamation-triangle-fill me-2 text-danger"></i>
+          Violations Found
+          <span class="badge bg-danger ms-2">{{ violations|length }}</span>
+        </div>
+        <div class="card-body">
+          {% if violations %}
+          {% for v in violations %}
+          <div class="violation-card {% if v.severity >= 9 %}{% elif v.severity >= 7 %}moderate{% elif v.severity >= 5 %}minor{% else %}flag{% endif %}">
+            <div class="d-flex justify-content-between flex-wrap gap-1 mb-1">
+              <div class="d-flex gap-2 flex-wrap align-items-center">
+                <span class="badge severity-{{ v.severity or 0 }} {% if (v.severity or 0) < 5 %}severity-low{% endif %}">
+                  {{ v.severity or 0 }}/10
+                </span>
+                {% if v.is_illegal %}<span class="badge bg-danger flag-illegal"><i class="bi bi-x-octagon-fill me-1"></i>ILLEGAL</span>{% endif %}
+                {% if v.is_red_flag and not v.is_illegal %}<span class="badge flag-redflag" style="background:#4a1d96;"><i class="bi bi-flag-fill me-1"></i>RED FLAG</span>{% endif %}
+                <span class="badge bg-secondary small">{{ v.confidence or 'low' }} confidence</span>
+                {% if v.violation_type %}<span class="badge" style="background:#1e293b;color:#64748b;font-size:0.7rem;">{{ v.violation_type }}</span>{% endif %}
+              </div>
+              {% if v.timestamp_label %}
+              <span class="ts-badge">{{ v.timestamp_label }}</span>
+              {% endif %}
+            </div>
+            <p class="mb-1 text-light">{{ v.description or '—' }}</p>
+            {% if v.law_reference %}
+            <p class="mb-1 small" style="color:#60a5fa;">
+              <i class="bi bi-book me-1"></i><strong>Law:</strong> {{ v.law_reference }}
+              {% if v.law_title and v.law_title != v.law_reference %} — <em>{{ v.law_title }}</em>{% endif %}
+            </p>
+            {% endif %}
+            {% if v.recommendation %}
+            <p class="mb-0 small text-success">
+              <i class="bi bi-lightbulb-fill me-1"></i><strong>Action:</strong> {{ v.recommendation }}
+            </p>
+            {% endif %}
+          </div>
+          {% endfor %}
+          {% else %}
+          {% if analysis.status == 'complete' %}
+          <div class="text-center py-4 text-success">
+            <i class="bi bi-shield-check display-4 d-block mb-2"></i>
+            No violations detected in the analyzed footage.
+          </div>
+          {% else %}
+          <p class="text-muted text-center py-3">Analysis in progress…</p>
+          {% endif %}
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Metadata analysis -->
+      {% if metadata_findings %}
+      <div class="card mb-4">
+        <div class="card-header"><i class="bi bi-file-binary me-2 text-info"></i>Metadata Red Flags</div>
+        <div class="card-body">
+          {% for f in metadata_findings if f.severity >= 4 %}
+          <div class="violation-card {% if f.severity >= 8 %}{% elif f.severity >= 6 %}moderate{% else %}minor{% endif %} mb-2">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge severity-{{ f.severity }} {% if f.severity < 5 %}severity-low{% endif %}">{{ f.severity }}/10</span>
+              <span class="text-muted small font-monospace">{{ f.key }}</span>
+            </div>
+            <p class="mb-1 text-light small">{{ f.note or f.value or '—' }}</p>
+            {% if f.law %}<p class="mb-0 small" style="color:#60a5fa;"><i class="bi bi-book me-1"></i>{{ f.law }}</p>{% endif %}
+          </div>
+          {% else %}
+          <p class="text-muted small">No significant metadata issues detected.</p>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Video metadata table -->
+      {% if meta_display %}
+      <div class="card mb-4">
+        <div class="card-header"><i class="bi bi-info-circle me-2"></i>Video Technical Metadata</div>
+        <div class="card-body p-0">
+          <table class="table table-dark meta-table mb-0">
+            <tbody>
+              {% for item in meta_display %}
+              <tr>
+                <td class="key">{{ item.label }}</td>
+                <td>{{ item.value }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
+    <!-- RIGHT: Summary & recommendations -->
+    <div class="col-xl-4">
+
+      <!-- Win probability -->
+      {% if analysis.win_probability %}
+      <div class="win-prob-box mb-4">
+        <div class="win-prob-label text-uppercase mb-1">
+          <i class="bi bi-bar-chart-fill me-1"></i>Estimated Win Probability
+        </div>
+        <div class="win-prob-number">{{ "%.1f"|format(analysis.win_probability * 100) }}%</div>
+        <div class="win-prob-label">Based on this video analysis</div>
+        <div class="win-prob-disclaimer mt-2">
+          AI estimate only. NOT legal advice.
+        </div>
+      </div>
+
+      {% if analysis.results and analysis.results.win_probability_factors %}
+      <div class="card mb-4">
+        <div class="card-header small text-success"><i class="bi bi-plus-circle me-1"></i>Win Probability Factors</div>
+        <div class="card-body">
+          {% for factor in analysis.results.win_probability_factors %}
+          <div class="d-flex justify-content-between mb-1">
+            <span class="small text-light" style="max-width:75%;">{{ factor.factor[:80] }}</span>
+            <span class="badge bg-success small">{{ factor.impact }}</span>
+          </div>
+          {% endfor %}
+          <hr style="border-color:#334155;">
+          <p class="text-muted" style="font-size:0.7rem;">{{ analysis.results.win_probability_disclaimer }}</p>
+        </div>
+      </div>
+      {% endif %}
+      {% endif %}
+
+      <!-- Recommendations -->
+      {% if analysis.results and analysis.results.recommendations %}
+      <div class="card mb-4">
+        <div class="card-header text-warning"><i class="bi bi-lightning-charge-fill me-2"></i>Recommended Actions</div>
+        <div class="card-body">
+          {% for rec in analysis.results.recommendations %}
+          <div class="d-flex gap-2 mb-2">
+            <i class="bi bi-arrow-right-circle-fill text-warning mt-1 flex-shrink-0"></i>
+            <p class="mb-0 small text-light">{{ rec }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Generate documents -->
+      <div class="card mb-4">
+        <div class="card-header text-info"><i class="bi bi-file-text-fill me-2"></i>Generate Legal Documents</div>
+        <div class="card-body">
+          <a href="/case/{{ case.id }}#documents" class="btn btn-info w-100">
+            <i class="bi bi-file-earmark-plus me-1"></i>Go to Documents Section
+          </a>
+        </div>
+      </div>
+
+      <!-- Free legal help -->
+      <div class="card" style="border-color:#16a34a;">
+        <div class="card-header text-success small"><i class="bi bi-telephone-fill me-1"></i>Free Legal Help in Maine</div>
+        <div class="card-body small">
+          <p class="mb-1"><strong class="text-white">Pine Tree Legal</strong><br>
+          <a href="tel:2077748211" class="text-success">207-774-8211</a></p>
+          <p class="mb-1"><strong class="text-white">Maine Legal Services</strong><br>
+          <a href="tel:18007505353" class="text-success">1-800-750-5353</a></p>
+          <p class="mb-0"><strong class="text-white">ACLU of Maine</strong><br>
+          <a href="tel:2077745444" class="text-success">207-774-5444</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+{% if analysis.status == 'running' %}
+// Auto-refresh while analysis is running
+let pollCount = 0;
+const pollInterval = setInterval(() => {
+  fetch('/api/analysis/{{ analysis.id }}/status')
+    .then(r => r.json())
+    .then(data => {
+      if (data.status === 'complete' || data.status === 'failed') {
+        clearInterval(pollInterval);
+        location.reload();
+      }
+      pollCount++;
+      if (pollCount > 120) clearInterval(pollInterval); // Stop after 30 min
+    });
+}, 15000);
+{% endif %}
+</script>
+{% endblock %}
