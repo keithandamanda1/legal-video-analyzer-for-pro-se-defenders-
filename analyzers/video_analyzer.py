@@ -305,10 +305,21 @@ def analyze_video(
 
     progress_callback(step: int, total: int, phase: str) is called frequently.
     """
-    if not config.ANTHROPIC_API_KEY:
-        raise ValueError("ANTHROPIC_API_KEY is not set. Add it to your .env file.")
+    if not config.is_configured:
+        raise ValueError(
+            "No API key configured. Add ANTHROPIC_API_KEY (from console.anthropic.com) "
+            "or OPENROUTER_API_KEY (from openrouter.ai) to your .env file."
+        )
 
-    client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY)
+    # Build Anthropic client — works for both direct Anthropic and OpenRouter
+    client_kwargs = {"api_key": config.active_api_key}
+    if config.api_base_url:
+        client_kwargs["base_url"] = config.api_base_url
+        client_kwargs["default_headers"] = {
+            "HTTP-Referer": "https://github.com/legal-video-analyzer",
+            "X-Title": "Legal Video Analyzer — Pro Se Defense Tool",
+        }
+    client = anthropic.Anthropic(**client_kwargs)
 
     update_analysis(analysis_id, status="running", progress=5)
 

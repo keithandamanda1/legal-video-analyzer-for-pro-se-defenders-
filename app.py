@@ -65,7 +65,8 @@ def inject_globals():
     return {
         "now": datetime.utcnow(),
         "app_version": "1.0.0",
-        "api_configured": bool(config.ANTHROPIC_API_KEY),
+        "api_configured": config.is_configured,
+        "api_provider": config.api_provider,
     }
 
 
@@ -260,9 +261,9 @@ def upload_evidence(case_id):
 
 @app.route("/case/<case_id>/analyze/<evidence_id>", methods=["POST"])
 def start_analysis(case_id, evidence_id):
-    if not config.ANTHROPIC_API_KEY:
+    if not config.is_configured:
         flash(
-            "Anthropic API key not configured. Add ANTHROPIC_API_KEY to your .env file.",
+            "No API key configured. Add ANTHROPIC_API_KEY or OPENROUTER_API_KEY to your .env file.",
             "error"
         )
         return redirect(url_for("case_detail", case_id=case_id))
