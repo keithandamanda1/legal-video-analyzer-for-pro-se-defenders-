@@ -1,8 +1,8 @@
 {
   "case": "State of Maine v. Keith King",
   "case_no": "CR-2018-03023",
-  "generated": "2026-04-13T03:11:29.831663",
-  "total": 124,
+  "generated": "2026-04-13T03:14:04.956338",
+  "total": 126,
   "violations": [
     {
       "id": "400f8854-5834-4fdf-8f2d-d2fa14c3de05",
@@ -813,6 +813,36 @@
       "recommendation": "File Fair Housing Act complaint with HUD and Maine Human Rights Commission. Include timeline of FOAA request vs. revocation date.",
       "analysis_type": "manual_pcr",
       "created_at": "2026-04-13T03:10:51.176802"
+    },
+    {
+      "id": "e9da6554-cf45-4e9c-948a-c590ae511f03",
+      "violation_type": "HUD DC Office Produced 95 Pages While BHA Said 'No Records' -- Proven False Statement",
+      "severity": 9,
+      "description": "BHA General Counsel Bethany responded to Keith's May 2025 FOAA request: 'We have received your request, but have no records responsive to your request in our possession.' However, Keith subsequently filed a FOIA request with HUD's Washington DC office (Tyler M. Wright), which produced 95 pages of records responsive to the same request. These 95 pages include BHA/BrHA internal communications about Keith's case -- records that Bethany claimed did not exist. This proves Bethany's FOAA response was knowingly false. Filing a false FOAA response by a public official violates 1 M.R.S.A. \u00a7 408-A and potentially 17-A M.R.S.A. \u00a7 453 (False Public Records). SOURCE: Keith's letter to HUD, June 2025 (email #4).",
+      "law_reference": "1 M.R.S.A. \u00a7 408-A (FOAA); 5 U.S.C. \u00a7 552 (FOIA); 17-A M.R.S.A. \u00a7 453; 42 U.S.C. \u00a7 1983",
+      "law_title": "Provably False FOAA Response -- BHA Lied About Having No Records",
+      "confidence": "high",
+      "timestamp_label": null,
+      "is_illegal": 1,
+      "is_red_flag": 1,
+      "recommendation": "Include in FHA complaint to HUD OIG. Request internal BrHA emails from DC HUD office. Subpoena Joe Knox and Aaliyah.",
+      "analysis_type": "manual_pcr",
+      "created_at": "2026-04-13T03:13:38.003537"
+    },
+    {
+      "id": "a818fc64-36d1-4e3c-99ae-2a93ae91825c",
+      "violation_type": "Housing Revoked 1 Day Before Scheduled Move-In -- Targeted Retaliation Timing",
+      "severity": 9,
+      "description": "Keith's email to HUD (June 2025) confirms the precise timing: BrHA (Brewer Housing Authority) approved Keith's application, assigned him a specific apartment at Norumbega with a scheduled move-in date, and then REVOKED the approval LITERALLY ONE DAY BEFORE THE MOVE-IN DATE. The revocation came after Keith filed a FOAA request with Joe Knox (BHA) requesting records about the 2018 unauthorized police entry into his apartment. This specific 'day before' timing eliminates any innocent explanation -- it was deliberate retaliation. Combined with internal emails showing 'Revoke Now' instructions and Mrs. Perkins' communications with Rica about ignoring Keith, this constitutes Fair Housing Act retaliation (42 U.S.C. \u00a7 3617). SOURCE: Keith's HUD complaint, June 2025 (email chain, Mr. Bethany emails #4).",
+      "law_reference": "42 U.S.C. \u00a7 3617 (FHA Anti-Retaliation); 42 U.S.C. \u00a7 3604 (FHA); 24 C.F.R. \u00a7 100.400; Maine Human Rights Act",
+      "law_title": "Housing Revoked Day-Before Move-In -- Retaliation for FOAA Request (FHA \u00a7 3617)",
+      "confidence": "high",
+      "timestamp_label": null,
+      "is_illegal": 1,
+      "is_red_flag": 1,
+      "recommendation": "Include in FHA complaint to HUD OIG. Request internal BrHA emails from DC HUD office. Subpoena Joe Knox and Aaliyah.",
+      "analysis_type": "manual_pcr",
+      "created_at": "2026-04-13T03:13:38.005277"
     },
     {
       "id": "38332282-ca61-4654-bf49-22263d8227ac",

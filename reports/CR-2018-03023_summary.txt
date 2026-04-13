@@ -1,16 +1,15 @@
 CASE SUMMARY -- State of Maine v. Keith King (CR-2018-03023)
 Generated: April 13, 2026
-Total Violations: 124
-  Manual PCR: 58
-  AI Video Frame: 66
-Critical (9-10): 54
+Total Violations: 126
+  Manual PCR (documented evidence): 60
+  AI Video Frame Analysis: 66
+Critical (9-10): 56
 Serious (7-8): 4
 Moderate (5-6): 9
 Minor (1-4): 57
-Illegal violations: 58
-Red flags: 117
+Illegal violations: 60
 
-TOP VIOLATIONS (Severity 10):
+SEVERITY 10 VIOLATIONS:
   [10/10] Illegal Pretextual Traffic Stop — No PC / No RAS
   [10/10] 3-Hour Custodial Interrogation Without Miranda Warnings
   [10/10] Phone Seized in Direct Violation of Warrant Exclusion Clause
