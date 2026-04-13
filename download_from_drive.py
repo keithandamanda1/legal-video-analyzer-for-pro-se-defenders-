@@ -27,7 +27,7 @@ def mcp_call(method, params=None, req_id=1):
     if params:
         payload["params"] = params
     resp = requests.post(MCP_URL, headers=HEADERS, json=payload,
-                         stream=True, timeout=600)
+                         stream=True, timeout=3600)
     resp.raise_for_status()
 
     # Accumulate ALL data lines — large files come as one huge data: line

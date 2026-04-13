@@ -1,0 +1,258 @@
+================================================================================
+STATE OF MAINE
+PENOBSCOT, ss.                          UNIFIED CRIMINAL DOCKET
+                                        DOCKET NO. CR-2018-03023
+
+KEITH A. KING,
+    Petitioner,
+
+v.
+
+STATE OF MAINE,
+    Respondent.
+
+PETITION FOR POST-CONVICTION REVIEW
+(15 M.R.S. §§ 2121–2130-A; § 2128-B Newly Discovered Evidence)
+
+Filed: April 2026
+Pro Se Petitioner: Keith A. King, P.O. Box 458, Kenduskeag, ME 04450
+================================================================================
+
+                        INTRODUCTION
+
+Petitioner Keith A. King respectfully petitions this Court for post-conviction
+review of his September 21, 2021 guilty plea and conviction in the above-
+captioned matter. This petition is based on: (1) newly discovered evidence
+unavailable at the time of plea; (2) ineffective assistance of counsel;
+(3) Brady/Giglio violations; (4) an involuntary plea; and (5) constitutional
+violations that, individually and cumulatively, establish that no fair trial
+could have occurred on these facts.
+
+The petition is timely under 15 M.R.S. § 2128-B because the factual
+predicates were discovered no earlier than February 2024 (dashcam release)
+and as recently as October 2025 (AAG admission of inadvertent error; HUD FOIA
+records; BHA key log production; forensic phone extraction records).
+
+================================================================================
+
+                        STATEMENT OF FACTS
+
+1. ARREST AND STOP (August 2, 2018)
+
+On August 2, 2018, at approximately 12:56 PM, Officer Evan Haskell and Officer
+Perry stopped Petitioner on Davis Road, Glenburn, Maine. The dashcam video
+(released February 21, 2024 — 5.5 years after the arrest) shows:
+
+    a. No traffic infraction was articulated.
+    b. No warrant was in hand at the time of the stop.
+    c. Petitioner was handcuffed and transported from Davis Road to his
+       residence — an "off-site transport" of a "recent occupant" not authorized
+       by the residence warrant. See Bailey v. United States, 568 U.S. 186 (2013).
+    d. Petitioner asked for a warrant TWICE at the apartment door; both times
+       officers refused to show one. Officers produced a key from their pocket
+       and entered.
+    e. The search warrant application was signed approximately 2 hours AFTER
+       the traffic stop — meaning the entire initial detention was warrantless.
+    f. The traffic stop was never logged in dispatch or radio — an off-book stop.
+    g. Dashcam metadata (date, time, GPS coordinates, officer ID) was stripped
+       from the produced footage — evidence of tampering.
+
+2. CHAIN OF CUSTODY VIOLATION
+
+    a. Evidence was held by Officer Gastia in an unrecorded location for 18
+       hours overnight before being logged.
+    b. The TruNarc field test for the alleged heroin returned "INCONCLUSIVE."
+       No confirmatory laboratory test was completed. Charges of "in fact heroin"
+       were filed without scientific basis.
+    c. Gabapentin was charged as a controlled substance for August 2, 2018 conduct.
+       Gabapentin was not scheduled in Maine until October 15, 2019.
+       See Me. PL 2019, ch. 487 (eff. Oct. 15, 2019). The charge was legally
+       impossible.
+
+3. PHONE SEIZURES (August 2–September 2018)
+
+    a. The search warrant contained an explicit exclusionary clause prohibiting
+       seizure of cellular phones. Despite this, officers seized Petitioner's phone.
+    b. The phone was held in an evidence locker August 2–7 without a warrant.
+    c. A second warrant (August 7) was obtained to search the already-illegally-
+       seized phone. This warrant is tainted fruit. Wong Sun v. United States,
+       371 U.S. 471 (1963).
+    d. Amanda Ross's phone was seized for approximately 45 days without a warrant.
+       The DA stated it was never taken; forensic records prove it was extracted.
+    e. 1,000+ calls and 350+ private photos were extracted from multiple devices.
+       Private materials have since appeared on the internet.
+
+4. COERCED PLEA (September 21, 2021)
+
+    a. A prior court order required medical stabilization before any plea.
+    b. The September 21, 2021 hearing was calendared for a mental-health/
+       medication check-in, NOT a plea.
+    c. AAG Jason Horn arrived at the hearing and presented a surprise plea offer
+       with a 30-minute ultimatum. Petitioner was unmedicated and in mental
+       health crisis.
+    d. Horn threatened a 4-year mandatory minimum if the offer was refused.
+    e. Court-appointed counsel did not seek a continuance or disability
+       accommodations despite Petitioner's documented mental health conditions
+       (Bipolar Disorder, Panic Attack Disorder).
+    f. Counsel filed no suppression motions, no Franks challenge, no drug-testing
+       challenge, and did not enforce Brady/Rule 16 obligations.
+    g. The factual basis for "in fact heroin" was never established; the science
+       was inconclusive.
+
+5. NEWLY DISCOVERED EVIDENCE (Post-Conviction)
+
+    a. December 17, 2025: Former AAG Janice Stuver formally admitted the
+       Aggravated Class A charges were based on an "inadvertent error" regarding
+       the location of evidence.
+    b. February 21, 2024: Dashcam video released — 5.5 years after arrest.
+       The footage confirms: no warrant shown, officers had keys, three-hour
+       detention in 90-degree heat while Petitioner complained of injured wrist
+       and was denied medical attention.
+    c. October 2025: BHA Master Key Log (Exhibit B, MHRC complaint) produced,
+       confirming a key to Petitioner's apartment was issued to law enforcement
+       on August 2, 2018 without a court order.
+    d. October 5, 2025: Confirmation that AAG Stuver had previously represented
+       DHHS/CPS in a related family matter while this criminal case was pending —
+       a conflict of interest never disclosed.
+    e. HUD FOIA (Exhibit L, MHRC complaint): Internal emails reveal that HUD
+       officials Kara E. Norman and Richa Karki (Boston Regional Office) coordinated
+       with BHA counsel Bethany and BrHA Director Perkins to ignore Petitioner's
+       records requests — an inter-agency cover-up.
+
+================================================================================
+
+                        GROUNDS FOR RELIEF
+
+GROUND 1: INVOLUNTARY PLEA — BOYKIN v. ALABAMA / M.R.U. CRIM. P. 11(b)(3)
+
+The September 21, 2021 plea was not knowing, intelligent, or voluntary:
+    • Surprise plea at a hearing scheduled for mental-health review
+    • Petitioner unmedicated and in documented mental health crisis
+    • 30-minute ultimatum with 4-year threat
+    • No adequate explanation of rights being waived
+    • Factual basis for "in fact heroin" was unsupported (TruNarc inconclusive)
+    • Firearm aggravator lacked required "in furtherance" nexus
+
+Authorities: Boykin v. Alabama, 395 U.S. 238 (1969); Brady v. United States,
+397 U.S. 742 (1970); M.R.U. Crim. P. 11(b)(3).
+
+GROUND 2: INEFFECTIVE ASSISTANCE OF COUNSEL — STRICKLAND / HILL / LAFLER
+
+Counsel's performance was deficient and prejudicial. Specifically, counsel:
+    (1) Filed no motion to suppress the initial pretextual traffic stop
+        (no articulable basis, unrecorded stop — Rodriguez v. United States,
+        575 U.S. 348 (2015))
+    (2) Filed no motion challenging off-site transport/detention
+        (Bailey v. United States, 568 U.S. 186 (2013))
+    (3) Filed no Franks challenge despite nonexistent/contradictory "witness
+        statements" cited in the affidavit (Franks v. Delaware, 438 U.S. 154)
+    (4) Failed to challenge phone seizure that violated warrant's explicit
+        exclusionary clause
+    (5) Failed to move for independent drug testing or challenge inconclusive
+        TruNarc results
+    (6) Failed to move to dismiss the gabapentin charge (not scheduled in Maine
+        until October 2019)
+    (7) Failed to challenge the multiplicitous OAS counts
+    (8) Failed to challenge the firearm aggravator's lack of nexus
+    (9) Did not enforce Brady/Rule 16 — withheld dashcam produced 5.5 yrs late
+    (10) Did not seek continuance or disability accommodations at surprise plea
+
+But for these failures, there is a reasonable probability Petitioner would
+have rejected the plea and prevailed at suppression. Hill v. Lockhart, 474 U.S.
+52 (1985); Lafler v. Cooper, 566 U.S. 156 (2012); Missouri v. Frye, 566 U.S.
+134 (2012).
+
+GROUND 3: BRADY / GIGLIO / NAPUE VIOLATIONS
+
+The prosecution withheld or misrepresented:
+    • Inconclusive TruNarc heroin test results
+    • Full dashcam footage (withheld 5.5 years)
+    • Dashcam metadata/audit logs (still missing)
+    • Amanda Ross phone seizure and forensic extraction (DA falsely denied)
+    • Nonexistent or contradictory "witness statements" in warrant affidavit
+    • AAG Stuver's conflict of interest (CPS overlap)
+
+Authorities: Brady v. Maryland, 373 U.S. 83 (1963); Giglio v. United States,
+405 U.S. 150 (1972); Napue v. Illinois, 360 U.S. 264 (1959); Kyles v. Whitley,
+514 U.S. 419 (1995); Ferrara v. United States, 456 F.3d 278, 290-95
+(1st Cir. 2006) (Brady violations that materially influence a plea warrant vacatur).
+
+GROUND 4: FOURTH AMENDMENT — UNLAWFUL STOP, SEARCH, AND SEIZURE
+
+    a. Stop without articulated basis, unrecorded, warrant signed 2 hours post-stop
+    b. Off-site transport/detention without warrant authority (Bailey)
+    c. Residential entry with keys provided by BHA without warrant or consent
+       (4th Amendment; 24 C.F.R. § 966.4(d)(3); 5 M.R.S. § 4582)
+    d. Phone seized despite explicit warrant exclusion
+    e. Amanda Ross phone seized without any warrant for 45 days
+    f. All downstream evidence is tainted fruit (Wong Sun)
+
+GROUND 5: LEGALLY IMPOSSIBLE GABAPENTIN CHARGE
+
+Gabapentin was not a scheduled controlled substance in Maine on August 2, 2018.
+It was added to Schedule W by Me. PL 2019, ch. 487, effective October 15, 2019.
+A conviction cannot rest on conduct that was not criminal at the time.
+This ground requires dismissal of the gabapentin count regardless of other
+relief. See U.S. Const. art. I, § 10 (Ex Post Facto Clause).
+
+GROUND 6: COERCIVE PRETRIAL CONDITIONS — PLEA INVOLUNTARINESS CONTEXT
+
+    • $100,000 cash-only bail for a first-time, non-violent, disabled defendant
+      with $370, no passport, lifelong Bangor ties; parents' $450K home + 45 acres
+      + ankle monitoring denied
+    • Judicial comment at bail: "selling drugs that are killing people" — pre-verdict
+    • No-contact with spouse (80% of mental health support) despite observed
+      panic attacks
+    • Medication denied for 42 days of detention
+    • Transfer to Two Bridges Correctional (100 miles) — punitive, no reason given
+    • These conditions collectively coerced the plea
+
+GROUND 7: EQUITABLE TOLLING
+
+    • Petitioner was actively stonewalled by BHA, BPD, and state agencies for
+      over seven years
+    • Key evidence (dashcam, BHA key log, AAG admissions, HUD FOIA records)
+      was not available until 2024–2025
+    • All claims are timely under § 2128-B (newly discovered evidence pathway)
+    • Fraudulent concealment tolls limitations under 14 M.R.S. § 859
+
+================================================================================
+
+                        RELIEF REQUESTED
+
+Petitioner respectfully requests that this Court:
+
+    1. VACATE the September 21, 2021 plea and conviction;
+    2. PERMIT withdrawal of the plea;
+    3. ORDER the State to produce full Brady/Rule 16 disclosures including:
+         — Native dashcam files with hashes, metadata, and audit/export logs
+         — Complete crime lab packet (reports, bench notes, chromatograms,
+           instrument logs, chain of custody, analyst credentials)
+         — All "witness statement" records cited in the warrant affidavit
+         — All communications regarding AAG assignments and CPS overlap
+    4. CONDUCT evidentiary hearing on involuntariness, IAC, and Brady claims;
+    5. ADJUDICATE suppression under Rodriguez/Bailey if plea is withdrawn;
+    6. DISMISS the gabapentin count (not scheduled until 2019);
+    7. DISMISS multiplicitous OAS count;
+    8. STRIKE firearm aggravator (no "in furtherance" nexus);
+    9. APPOINT counsel pursuant to 15 M.R.S. § 2129(1)(B);
+   10. GRANT equitable tolling of all applicable deadlines.
+
+================================================================================
+
+                        VERIFICATION
+
+I, Keith A. King, declare under penalty of perjury under the laws of the State
+of Maine that the foregoing is true and correct to the best of my knowledge,
+information, and belief.
+
+Executed: April 2026
+
+____________________________
+Keith A. King, Pro Se
+P.O. Box 458
+Kenduskeag, ME 04450
+(207) 299-6448
+kking2055@pm.me
+
+================================================================================

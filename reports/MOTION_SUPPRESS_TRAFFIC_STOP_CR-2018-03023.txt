@@ -1,0 +1,173 @@
+================================================================================
+STATE OF MAINE
+PENOBSCOT, ss.                          UNIFIED CRIMINAL DOCKET
+                                        DOCKET NO. CR-2018-03023
+
+STATE OF MAINE,
+    Plaintiff,
+
+v.
+
+KEITH A. KING,
+    Defendant.
+
+PRO SE MOTION TO SUPPRESS ALL EVIDENCE
+(Illegal Traffic Stop / Warrantless Residential Entry / Tainted Fruit)
+
+Filed: April 2026
+Pro Se Defendant: Keith A. King, P.O. Box 458, Kenduskeag, ME 04450
+================================================================================
+
+                        INTRODUCTION
+
+Defendant Keith A. King moves to suppress all evidence obtained as a result
+of the August 2, 2018 traffic stop, residential search, and subsequent
+seizures. The stop was pretextual and unrecorded; the search warrant was
+signed hours after the stop had already begun; Defendant was transported
+off-site without authority; officers entered his home with keys provided
+by the housing authority — without a warrant, consent, or emergency — and
+phone evidence was seized in direct violation of the warrant's exclusionary
+clause.
+
+All downstream evidence is constitutionally tainted fruit. Wong Sun v.
+United States, 371 U.S. 471 (1963).
+
+                        FACTS
+
+1. THE STOP (August 2, 2018 — approximately 12:56 PM)
+
+    a. Officers stopped Defendant on Davis Road, Glenburn, Maine.
+    b. No traffic infraction was articulated at the time of the stop.
+    c. The stop was NEVER LOGGED in dispatch or radio — an off-book stop.
+    d. The search warrant was signed approximately 2 HOURS after the stop
+       began. The entire initial detention was warrantless.
+
+2. OFF-SITE TRANSPORT (Davis Road → Defendant's Residence)
+
+    Officers handcuffed Defendant at Davis Road and transported him to his
+    home for execution of the residence warrant. Under Bailey v. United States,
+    568 U.S. 186, 201-03 (2013), a residence search warrant does not authorize
+    off-site seizure and transport of "recent occupants" unless the person is
+    within the immediate vicinity when the search begins. Defendant was stopped
+    miles from his apartment. The transport was unauthorized.
+
+3. WARRANTLESS RESIDENTIAL ENTRY
+
+    a. At the apartment door, Defendant asked for a warrant TWICE and was
+       REFUSED BOTH TIMES (documented on dashcam video, released Feb. 2024).
+    b. Officers produced a key from their pocket — provided by BHA (Bangor
+       Housing Authority) without authorization — and entered without consent.
+    c. The BHA master key log (produced October 2025, MHRC Exhibit B)
+       confirms a key was issued to law enforcement on August 2, 2018 without
+       a court order.
+    d. This entry violated: (1) the Fourth Amendment; (2) 24 C.F.R. § 966.4(d)(3)
+       (federal tenant rights in HUD-subsidized housing); (3) 5 M.R.S. § 4582
+       (Maine right to privacy in housing).
+
+4. PHONE SEIZURE IN VIOLATION OF WARRANT'S EXCLUSIONARY CLAUSE
+
+    a. The search warrant contained an explicit clause EXCLUDING cellular phones.
+    b. Officers seized Defendant's phone in direct violation of this clause.
+    c. The phone was held August 2–7 without any warrant authority.
+    d. A second warrant (August 7) sought to search the already-illegally-seized
+       phone. That warrant is tainted fruit — it could not have been sought had
+       the initial illegal seizure not occurred. Wong Sun, 371 U.S. at 484-85.
+
+5. AMANDA ROSS PHONE — NO WARRANT EVER
+
+    Officers seized Amanda Ross's phone for approximately 45 days without any
+    warrant. The District Attorney falsely claimed the phone was never taken;
+    forensic records prove a full data extraction was performed. This seizure
+    was warrantless from inception.
+
+6. DASHCAM TAMPERING / EVIDENCE SUPPRESSION
+
+    The dashcam video was withheld for 5.5 years (released February 2024).
+    When produced, the file was missing date/time, GPS coordinates, and officer
+    identification — metadata stripped in violation of evidentiary obligations.
+    California v. Trombetta, 467 U.S. 479 (1984); Arizona v. Youngblood,
+    488 U.S. 51 (1988).
+
+                        LEGAL ARGUMENT
+
+I. THE INITIAL STOP LACKED REASONABLE ARTICULABLE SUSPICION.
+
+Under Terry v. Ohio, 392 U.S. 1 (1968), a stop requires specific, articulable
+facts supporting reasonable suspicion. No traffic violation appears on camera.
+The stop was not logged in dispatch or radio. The warrant was signed 2 hours
+after the stop. The stop was pretextual and constitutionally deficient.
+
+II. STOP EXTENSION VIOLATED RODRIGUEZ.
+
+Even if the initial stop were valid, officers extended the stop beyond any
+legitimate traffic mission without independent reasonable suspicion. Rodriguez
+v. United States, 575 U.S. 348, 354-57 (2015) ("A police stop exceeding the
+time needed to handle the matter for which the stop was made violates the
+Constitution's shield against unreasonable seizures.").
+
+III. OFF-SITE TRANSPORT WAS NOT AUTHORIZED BY THE RESIDENCE WARRANT.
+
+Under Bailey v. United States, 568 U.S. 186 (2013), a residence search warrant
+authorizes detention of persons found at the residence during the search, but
+does NOT authorize off-site seizure and transport. Defendant was stopped miles
+from his apartment, handcuffed, and transported there. This was an independent
+constitutional violation.
+
+IV. RESIDENTIAL ENTRY WITHOUT WARRANT OR CONSENT WAS UNCONSTITUTIONAL.
+
+The Fourth Amendment protects the home above all else. Payton v. New York,
+445 U.S. 573, 585 (1980). Officers entered Defendant's home after being denied
+warrant confirmation twice, using keys obtained from BHA without legal authority.
+There was no emergency, no consent, and no warrant at the time of entry.
+
+V. PHONE EVIDENCE IS TAINTED FRUIT ON TWO INDEPENDENT GROUNDS.
+
+    Ground A: The warrant itself excluded phones. Seizing a phone in direct
+    violation of a limiting clause in a warrant is an unconstitutional search
+    beyond the warrant's scope. Horton v. California, 496 U.S. 128 (1990).
+
+    Ground B: The August 7 warrant depended on the illegal August 2 seizure.
+    Without the illegal seizure, no second warrant could have been sought.
+    Wong Sun v. United States, 371 U.S. 471 (1963).
+
+VI. SUPPRESSION OF ALL DOWNSTREAM EVIDENCE IS REQUIRED.
+
+All evidence derived from the illegal stop, illegal transport, illegal entry,
+and illegal seizures must be suppressed as fruit of the poisonous tree:
+    • Controlled substances allegedly found in the residence
+    • Firearms allegedly found in the vehicle
+    • All phone contents and forensic extractions
+    • Any statements made during the 3-hour warrantless detention
+    • The "admission" allegedly obtained by Officer Perry in an isolated,
+      unrecorded, unwitnessed conversation
+
+                        RELIEF REQUESTED
+
+Defendant respectfully requests that this Court:
+
+    1. SUPPRESS all physical evidence seized from Defendant's vehicle,
+       person, and residence on August 2, 2018;
+    2. SUPPRESS all evidence obtained from Defendant's phone and Amanda
+       Ross's phone;
+    3. SUPPRESS all statements made by Defendant during the August 2, 2018
+       detention, including any alleged "admission" obtained by Officer Perry;
+    4. ORDER the State to produce complete dashcam files with original
+       metadata, audit logs, and chain of custody;
+    5. ORDER the State to produce all forensic phone extraction records,
+       including chain of custody for Amanda Ross's phone;
+    6. Grant such other and further relief as justice requires.
+
+================================================================================
+
+Respectfully submitted,
+
+____________________________
+Keith A. King, Pro Se
+P.O. Box 458
+Kenduskeag, ME 04450
+(207) 299-6448
+kking2055@pm.me
+
+Date: April 2026
+
+================================================================================
