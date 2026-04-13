@@ -1,9 +1,18 @@
 ====================================================================================================
-VIOLATION REPORT — Keith King  |  Case No. CR-2018-03023  |  Maine Superior Court
-Generated: 2026-04-13 10:47  |  Total Violations: 129
+MASTER VIOLATION REPORT — Keith King  |  Case No. CR-2018-03023  |  Maine Superior Court
+Generated: 2026-04-13 21:23  |  TOTAL VIOLATIONS: 217
+Full AI video analysis of all 12 segments (60 min dashcam) + comprehensive PCR document review
 ====================================================================================================
 
-FINDING #001  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+SUMMARY:
+  Critical (9-10/10): 59
+  Serious  (7-8/10):  4
+  Moderate (5-6/10):  33
+  Minor    (1-4/10):  121
+  From PCR document review: 63
+  From AI video frame analysis: 154
+
+FINDING #001  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Illegal Pretextual Traffic Stop — No PC / No RAS
 SEVERITY:  10/10  |  CATEGORY: illegal_stop
 LEGAL:     4th Amendment; Delaware v. Prouse (1979); Terry v. Ohio (1968); Maine Const. Art. I §5; 29-A M.R.S.A. §2104
@@ -15,7 +24,7 @@ DETAILS:
   analysis) + PCR petition Feb 18, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #002  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #002  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: 3-Hour Custodial Interrogation Without Miranda Warnings
 SEVERITY:  10/10  |  CATEGORY: miranda_violation
 LEGAL:     5th Amendment; Miranda v. Arizona (1966); 14th Amendment due process
@@ -26,7 +35,7 @@ DETAILS:
   video, February 2024 forensic analysis.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #003  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #003  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Phone Seized in Direct Violation of Warrant Exclusion Clause
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Groh v. Ramirez (2004); Riley v. California (2014); Maine Const. Art. I §5; 16 M.R.S.A. §645
@@ -37,7 +46,7 @@ DETAILS:
   Jan 17, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #004  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #004  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Warrantless 5-Day Detention of Phone (Aug 2-7, 2018)
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645
@@ -47,7 +56,7 @@ DETAILS:
   draft Jan 17, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #005  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #005  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Aug 7 Forensic Warrant Tainted — Fruit of the Poisonous Tree
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Wong Sun v. United States (1963); Carpenter v. United States (2018); 16 M.R.S.A. §645, §648
@@ -57,7 +66,7 @@ DETAILS:
   poisonous tree. DISCOVERED: Warrant review, PCR draft Jan 17, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #006  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #006  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Amanda Ross Phone — Warrantless Seizure & 45-Day Forensic Extraction
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Riley v. California (2014); 16 M.R.S.A. §645; 14th Amendment due process
@@ -67,7 +76,7 @@ DETAILS:
   extraction records, documented Jan 17, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #007  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #007  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Brady Violation — DA Lied: Amanda Ross Phone Was Never Taken
 SEVERITY:  10/10  |  CATEGORY: evidence_tampering
 LEGAL:     Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process; 17-A M.R.S.A. §451 (perjury)
@@ -77,7 +86,7 @@ DETAILS:
   misconduct. DISCOVERED: Forensic records, documented Jan 17, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #008  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #008  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Brady Violation — Heroin TruNarc Test 'Inconclusive' Withheld
 SEVERITY:  10/10  |  CATEGORY: evidence_tampering
 LEGAL:     Brady v. Maryland (1963); Napue v. Illinois (1959); 14th Amendment Due Process
@@ -87,7 +96,7 @@ DETAILS:
   FOAA records, December 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #009  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #009  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Former AAG Admitted Class A Charges Were 'Inadvertent Error'
 SEVERITY:  10/10  |  CATEGORY: prosecutorial_misconduct
 LEGAL:     Brady v. Maryland; 14th Amendment Due Process; 18 U.S.C. §242; prosecutorial misconduct
@@ -98,7 +107,7 @@ DETAILS:
   AAG, December 17, 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #010  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #010  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Officer Perry — Selective Recording Manipulation / False Narrative
 SEVERITY:  10/10  |  CATEGORY: evidence_tampering
 LEGAL:     17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B (body cam policy)
@@ -109,7 +118,7 @@ DETAILS:
   DISCOVERED: Forensic video analysis, February 2024.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #011  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #011  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Coerced Plea — Court Order Violated, No Medications, AAG Threatened 4-Year Minimum
 SEVERITY:  10/10  |  CATEGORY: coerced_plea
 LEGAL:     14th Amendment Due Process; Brady v. United States (1970); Godinez v. Moran (1993); 6th Amendment; contempt of court order
@@ -119,7 +128,7 @@ DETAILS:
   threatened 4-year mandatory minimum. DISCOVERED: Court records; PCR petition Feb 18, 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #012  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #012  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: 18-Hour Chain of Custody Gap — Officer Gastia Held Evidence in Unrecorded Location
 SEVERITY:  10/10  |  CATEGORY: evidence_tampering
 LEGAL:     Brady v. Maryland (chain of custody issues are exculpatory); Maine Rules of Evidence; 17-A M.R.S.A. §453 (potential tampering)
@@ -129,7 +138,7 @@ DETAILS:
   DISCOVERED: FOAA records, January 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #013  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #013  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: BHA Provided Keys for Warrantless Residential Entry; Keith Asked for Warrant Twice on Video
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Payton v. New York (1980); Maine Const. Art. I §5; 15 M.R.S.A. §1091; Steagald v. United States (1981)
@@ -140,7 +149,7 @@ DETAILS:
   key log via FOAA (Oct 6, 2025).
 ----------------------------------------------------------------------------------------------------
 
-FINDING #014  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #014  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Gabapentin Charge Legally Void — Not Scheduled in Maine Until Oct 15, 2019
 SEVERITY:  10/10  |  CATEGORY: impossible_charge
 LEGAL:     Ex Post Facto Clause (U.S. Const. Art. I §9; Maine Const. Art. I §11); Due Process; prosecutorial misconduct
@@ -151,7 +160,7 @@ DETAILS:
   2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #015  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #015  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Ineffective Assistance of Counsel — 10 Documented Failures
 SEVERITY:  10/10  |  CATEGORY: ineffective_counsel
 LEGAL:     6th Amendment; Strickland v. Washington (1984) — both deficient performance AND prejudice prongs met
@@ -164,7 +173,7 @@ DETAILS:
   Post-conviction review 2024-2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #016  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #016  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Warrant Signed 2 HOURS AFTER Traffic Stop — Entire Stop Was Warrantless
 SEVERITY:  10/10  |  CATEGORY: timeline
 LEGAL:     4th Amendment; Payton v. New York (1980); Beck v. Ohio (1964); Maine Const. Art. I §5
@@ -175,7 +184,7 @@ DETAILS:
   Warrant review — Perry IA complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #017  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #017  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: TEMPORAL IMPOSSIBILITY: Seizure Claimed at 12:00 PM — Police Didn't Arrive Until 12:56:39 PM
 SEVERITY:  10/10  |  CATEGORY: fabricated_evidence
 LEGAL:     4th Amendment; Due Process (14th Amend.); Brady v. Maryland; fabrication of records
@@ -187,7 +196,7 @@ DETAILS:
   cross-reference, Evidence Discrepancies doc 1/20/2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #018  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #018  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Traffic Stop Never Logged in Dispatch or Radio — Off-Book Coordinated Cover-Up
 SEVERITY:  10/10  |  CATEGORY: cover_up
 LEGAL:     17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; due process
@@ -200,7 +209,7 @@ DETAILS:
   1/12/2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #019  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #019  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Dashcam Video Tampered — Date/Time/Coordinates/Officer Info Stripped to Hide Pre-Warrant Stop
 SEVERITY:  10/10  |  CATEGORY: evidence_tampering
 LEGAL:     17-A M.R.S.A. §453 (tampering with physical evidence); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B
@@ -213,7 +222,7 @@ DETAILS:
   complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #020  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #020  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Exculpatory Evidence (Cruiser Video) Withheld for 5.5 Years — Until February 2024
 SEVERITY:  10/10  |  CATEGORY: brady_violation
 LEGAL:     Brady v. Maryland (1963); Strickler v. Greene (1999); 14th Amendment Due Process
@@ -225,7 +234,7 @@ DETAILS:
   DISCOVERED: February 2024 when video was finally produced.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #021  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #021  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Haskell's Own Police Report (Incident 18-060430, p.9) States 'No Illegal Drugs' in Vehicle
 SEVERITY:  10/10  |  CATEGORY: brady_violation
 LEGAL:     Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process
@@ -238,7 +247,7 @@ DETAILS:
   response with Haskell report — Keith's affidavit 12/1/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #022  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #022  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Four Cell Phones Seized Including Two Non-Activated Phones — 1,000+ Calls, 350+ Private Photos Extracted
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645; invasion of privacy
@@ -251,7 +260,7 @@ DETAILS:
   complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #023  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #023  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Amanda Ross Illegally Strip-Searched on Public Road by Male Officers — No Female Officer Present
 SEVERITY:  10/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; Maine Const. Art. I §5; 42 U.S.C. §1983; strip search requires warrant; gender-based rights violation
@@ -265,7 +274,7 @@ DETAILS:
   different location.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #024  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #024  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Shannon Farrar Named as Witness in Warrant Affidavit But Never Witnessed Anything
 SEVERITY:  10/10  |  CATEGORY: perjury_false_warrant
 LEGAL:     17-A M.R.S.A. §451 (perjury); §452 (false report); 4th Amendment — warrant based on false affidavit; Franks v. Delaware (1978)
@@ -279,7 +288,7 @@ DETAILS:
   3/17/2025; CAD showing Farrar at different location.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #025  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #025  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Perry Perjured Himself Before Grand Jury — ONLY Officer to Place Firearms at Apartment
 SEVERITY:  10/10  |  CATEGORY: perjury_grand_jury
 LEGAL:     17-A M.R.S.A. §451 (perjury); 18 U.S.C. §1623 (false declarations before grand jury); Due Process; Brady v. Maryland
@@ -293,7 +302,7 @@ DETAILS:
   jury. DISCOVERED: Cross-reference of officer statements — Perry IA complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #026  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #026  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Perry Made False Report to DHHS — Firearms Near Child (Son Was Not Even Home)
 SEVERITY:  10/10  |  CATEGORY: false_official_report
 LEGAL:     17-A M.R.S.A. §452 (false swearing/false report); 42 U.S.C. §1983; malicious prosecution
@@ -306,7 +315,7 @@ DETAILS:
   complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #027  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #027  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: 45-Day Detention: No Medications, No Family Contact, No Contact With Diabetic Son
 SEVERITY:  10/10  |  CATEGORY: unlawful_detention
 LEGAL:     8th Amendment; 14th Amendment Due Process; ADA; 42 U.S.C. §1983; Estelle v. Gamble (1976)
@@ -319,7 +328,7 @@ DETAILS:
   proffer agreement. DISCOVERED: Perry IA complaint 3/17/2025; King Narrative 10/1/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #028  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #028  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Three Court-Appointed Attorneys Concealed, Withheld, and Denied Existence of Evidence
 SEVERITY:  10/10  |  CATEGORY: iac_conspiracy
 LEGAL:     6th Amendment; Strickland v. Washington (1984); potential civil conspiracy (42 U.S.C. §1985); Brady violations by defense counsel
@@ -332,7 +341,7 @@ DETAILS:
   DISCOVERED: Perry IA complaint 3/17/2025; consistent across all PCR documents.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #029  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #029  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Private Photos/Videos Extracted From Phones Now Appearing on Internet
 SEVERITY:  10/10  |  CATEGORY: civil_rights_privacy
 LEGAL:     4th Amendment; invasion of privacy; 18 U.S.C. §2257; Maine privacy statutes; potential 18 U.S.C. §2252 (if images are intimate)
@@ -345,7 +354,7 @@ DETAILS:
   Narrative for Kielty 10/1/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #030  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #030  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Forced Proffer Under Duress — Same Officer Who Fabricated Charges Was Present
 SEVERITY:  10/10  |  CATEGORY: coerced_statement
 LEGAL:     5th Amendment; 14th Amendment Due Process; Brady v. United States (1970); IAC
@@ -358,7 +367,7 @@ DETAILS:
   inadmissible. DISCOVERED: Perry IA complaint 3/17/2025; PCR petition 2/18/2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #031  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #031  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: AAG Stuver Conflict of Interest — Previously Represented DHHS/CPS in Related Family Case While Criminal Case Was Pending
 SEVERITY:  10/10  |  CATEGORY: prosecutorial_misconduct
 LEGAL:     Maine Bar Rule 1.7 (conflict of interest); 14th Amendment Due Process; prosecutorial misconduct; Brady v. Maryland — conflicted AAG had duty to disclose
@@ -370,7 +379,7 @@ DETAILS:
   conflicted prosecutor is constitutionally tainted.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #032  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #032  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Parents Offered $450,000 Home + 45 Acres + Ankle Monitoring as Bail Surety — Denied. Court Called Keith 'Danger to Society' Despite No Evidence
 SEVERITY:  10/10  |  CATEGORY: excessive_bail
 LEGAL:     8th Amendment (excessive bail); Stack v. Boyle (1951); ADA; 14th Amendment equal protection; Maine Bail Code; judicial bias/prejudgment
@@ -383,7 +392,7 @@ DETAILS:
   proceeding.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #033  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #033  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: No-Contact Order With Spouse Imposed Despite Her Being 80% of Keith's Mental Health Support — Deliberate Psychological Harm
 SEVERITY:  10/10  |  CATEGORY: unlawful_detention
 LEGAL:     8th Amendment; ADA (deliberate indifference to disability); 14th Amendment Due Process; Estelle v. Gamble (1976); 42 U.S.C. §1983
@@ -395,7 +404,7 @@ DETAILS:
   explanation was deliberate psychological harm used to coerce cooperation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #034  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #034  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: BrHA Housing Approved Sept 3 2024, Revoked Oct 26 2024 — Internal Emails Show 'Revoke Now' Sent Immediately After FOAA Request on Oct 7
 SEVERITY:  10/10  |  CATEGORY: retaliation
 LEGAL:     Fair Housing Act 42 U.S.C. §3617 (retaliation); 1st Amendment; Maine Human Rights Act §4633; 42 U.S.C. §1983; HUD regulations
@@ -409,7 +418,7 @@ DETAILS:
   protected FOAA activity and adverse housing action.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #035  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #035  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: BHA Master Key Used Off-Book: Key Log (MHRC Exhibit B) Has ZERO Entry for Aug 2, 2018 — Police Obtained Key Outside Official Checkout System
 SEVERITY:  10/10  |  CATEGORY: evidence_tampering
 LEGAL:     Spoliation doctrine; 24 C.F.R. §908.101 (federal records retention); Brady v. Maryland; 18 U.S.C. §1519; adverse inference instruction
@@ -427,7 +436,7 @@ DETAILS:
   966.4(d)(3), and constitutes spoliation under Maine Rules of Evidence.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #036  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #036  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Bethany Instructed Property Managers in Writing: 'Ignore His Request — We Are Not Required to Provide Mr. King Any Information'
 SEVERITY:  10/10  |  CATEGORY: foaa_obstruction
 LEGAL:     1 M.R.S. §408-A (FOAA); 5 U.S.C. §552 (FOIA); Maine Bar Rules 3.4, 8.4 (misconduct); 42 U.S.C. §1983; obstruction of justice
@@ -440,7 +449,7 @@ DETAILS:
   public records laws.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #037  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #037  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Two Current BHA Employees Are Witnesses That No Warrant Was Shown on August 2, 2018
 SEVERITY:  10/10  |  CATEGORY: cover_up
 LEGAL:     4th Amendment; corroborating witness testimony; Brady v. Maryland (government must disclose witnesses); subpoena power
@@ -452,7 +461,7 @@ DETAILS:
   their pocket. BHA management has worked to suppress this evidence for over 7 years.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #038  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #038  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Family Forced to Live in Vehicle Through Two Maine Winters — Service Dog Died From Cold — ADA Damages
 SEVERITY:  10/10  |  CATEGORY: retaliation
 LEGAL:     Fair Housing Act §3617; ADA; 42 U.S.C. §1983; intentional infliction of emotional distress; Maine MHRA; compensatory and punitive damages
@@ -464,7 +473,7 @@ DETAILS:
   retaliatory housing revocation connected to the 2018 police incident.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #039  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #039  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Perry Isolated Keith From Witnesses — Unobserved Coerced Admission, No Camera Coverage
 SEVERITY:  10/10  |  CATEGORY: N/A
 LEGAL:     5th Amendment; 14th Amendment; Miranda v. Arizona, 384 U.S. 436 (1966)
@@ -476,7 +485,7 @@ DETAILS:
   statements. DISCOVERED: PCR Final Draft statement, Feb 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #040  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #040  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: Miranda Coercion Tactic — "Cannot Ask Questions or Will Be Read Rights" While Told Not Free to Go
 SEVERITY:  10/10  |  CATEGORY: N/A
 LEGAL:     5th Amendment; Miranda v. Arizona, 384 U.S. 436 (1966); Berkemer v. McCarty, 468 U.S. 420 (1984)
@@ -489,7 +498,7 @@ DETAILS:
   Amendment violation. DISCOVERED: PCR Final Draft, Feb 2026.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #041  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #041  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: HUD Officials Kara E. Norman and Richa Karki Instructed BHA/BrHA to Ignore Keith — Federal Cover-Up (Ex. L MHRC)
 SEVERITY:  10/10  |  CATEGORY: N/A
 LEGAL:     42 U.S.C. § 3617 (FHA Anti-Retaliation); 18 U.S.C. § 242; 5 U.S.C. § 552 (FOIA); 42 U.S.C. § 1983
@@ -506,7 +515,7 @@ DETAILS:
   of MHRC complaint, October 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #042  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #042  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: 24 C.F.R. § 966.4(d)(3) Violation — BHA Allowed Police Entry Without Tenant Consent or Court Order
 SEVERITY:  10/10  |  CATEGORY: N/A
 LEGAL:     24 C.F.R. § 966.4(d)(3); 4th Amendment; 42 U.S.C. § 1983; 5 M.R.S. § 4582 (Maine Right to Privacy in Housing)
@@ -523,7 +532,7 @@ DETAILS:
   liability under 42 U.S.C. § 1983. SOURCE: MHRC Complaint, Oct 9, 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #043  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+FINDING #043  [CRITICAL — 10/10]  [MANUAL_PCR]
 VIOLATION: MHRC Complaint Confirms: 'Revoke Now' Emails Immediately After FOAA Request — Knox, Bethany, and Perkins Named
 SEVERITY:  10/10  |  CATEGORY: N/A
 LEGAL:     42 U.S.C. § 3617 (FHA Retaliation); MHRA § 4633; 42 U.S.C. § 1985(3) (Civil Rights Conspiracy); 42 U.S.C. § 1983
@@ -539,7 +548,7 @@ DETAILS:
   Internal emails; MHRC Complaint, Oct 9, 2025, Section 2.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #044  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #044  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Denial of Medical Care During 3-Hour Detention in 90-Degree Heat
 SEVERITY:  9/10  |  CATEGORY: civil_rights
 LEGAL:     8th Amendment; 14th Amendment; City of Revere v. Mass. General Hospital (1983); 42 U.S.C. §1983
@@ -549,7 +558,7 @@ DETAILS:
   video, February 2024 forensic analysis.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #045  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #045  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Officer Perry Self-Assigned to CAD Call After Nothing Found — Classic Cover-Up Tactic
 SEVERITY:  9/10  |  CATEGORY: cover_up
 LEGAL:     17-A M.R.S.A. §453; Brady v. Maryland; due process
@@ -561,7 +570,7 @@ DETAILS:
   yielded no evidence. DISCOVERED: CAD analysis, Perry IA complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #046  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #046  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Residence Searched Before Vehicle Search Was Completed — Concurrent Illegal Searches
 SEVERITY:  9/10  |  CATEGORY: illegal_search
 LEGAL:     4th Amendment; scope of warrant violations; Maine Const. Art. I §5
@@ -573,7 +582,7 @@ DETAILS:
   DISCOVERED: Perry IA complaint 3/17/2025; CAD timeline analysis.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #047  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #047  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Wife's Vehicle Illegally Seized — Left Amanda and Diabetic Son Without Transportation
 SEVERITY:  9/10  |  CATEGORY: illegal_seizure
 LEGAL:     4th Amendment; 14th Amendment; 42 U.S.C. §1983
@@ -585,7 +594,7 @@ DETAILS:
   Kielty 10/1/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #048  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #048  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: $100,000 Bail — Excessive for Disabled Person With No Prior Record, $370 in Pocket
 SEVERITY:  9/10  |  CATEGORY: excessive_bail
 LEGAL:     8th Amendment (excessive bail); 14th Amendment equal protection; ADA (disability discrimination in bail setting)
@@ -598,7 +607,7 @@ DETAILS:
   own account.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #049  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #049  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Perry Slandered Keith King in Media — 'Selling Crack and Heroin From His Home' — Before Conviction
 SEVERITY:  9/10  |  CATEGORY: defamation_civil_rights
 LEGAL:     1st/14th Amendment (liberty interest in reputation); 42 U.S.C. §1983 Paul v. Davis (1976); Maine defamation law; prejudiced jury pool
@@ -610,7 +619,7 @@ DETAILS:
   was directly caused by Perry's false statements. DISCOVERED: Perry IA complaint 3/17/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #050  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #050  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: BHA Officials Exchanged Emails to Actively Conceal FOAA Records (Privilege Log Proves It)
 SEVERITY:  9/10  |  CATEGORY: foaa_obstruction
 LEGAL:     1 M.R.S.A. §408-A (FOAA); Due Process; 42 U.S.C. §1983; obstruction of justice
@@ -623,7 +632,7 @@ DETAILS:
   records. DISCOVERED: Keith's affidavit 12/1/2025; King Narrative 10/1/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #051  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #051  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: 72-Hour Eviction Issued 2.5 Months After Arrest — Caused 3+ Years of Homelessness
 SEVERITY:  9/10  |  CATEGORY: retaliation
 LEGAL:     Fair Housing Act; ADA; Maine Human Rights Act; 42 U.S.C. §1983 (retaliation); due process
@@ -636,7 +645,7 @@ DETAILS:
   key violation. DISCOVERED: King Narrative for Kielty 10/1/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #052  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #052  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Charlotte Perkins (BrHA) Lied to HUD About Date of Housing Revocation — Federal False Statement
 SEVERITY:  9/10  |  CATEGORY: false_official_report
 LEGAL:     18 U.S.C. §1001 (false statements to federal agency); Fair Housing Act; HUD enforcement authority; 42 U.S.C. §3617
@@ -648,7 +657,7 @@ DETAILS:
   2024 but no enforcement action has been taken.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #053  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #053  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Original AAG Removed From Case Mid-Prosecution Without Explanation — Successor Had No Case File
 SEVERITY:  9/10  |  CATEGORY: prosecutorial_misconduct
 LEGAL:     6th Amendment (fair trial); Brady v. Maryland (continuity of disclosure obligations); IAC — defense counsel failed to seek continuance when AAG had no file
@@ -660,7 +669,7 @@ DETAILS:
   plea.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #054  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #054  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Firearm Aggravator Lacks Required "In Furtherance" Nexus — Firearms Were in Vehicle, Not at Trafficking Location
 SEVERITY:  9/10  |  CATEGORY: N/A
 LEGAL:     17-A M.R.S.A. § 1105-A; United States v. Bailey, 516 U.S. 137 (1995); PCR claim under Strickland
@@ -674,7 +683,7 @@ DETAILS:
   Memo / grand jury analysis, Oct 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #055  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #055  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Judicial Bias at Bail — "Selling Drugs That Are Killing People" — Before Trial, No Sales Evidence, Inconclusive Test
 SEVERITY:  9/10  |  CATEGORY: N/A
 LEGAL:     U.S. Const. amend. XIV; 15 M.R.S. § 1026; Coffin v. United States, 156 U.S. 432 (1895) (presumption of innocence)
@@ -687,7 +696,7 @@ DETAILS:
   DISCOVERED: Attorney Intake Memo, Oct 2025 / bail hearing transcript.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #056  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #056  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Bethany FOAA Contradiction: 'No Records Exist' Followed by 'Records Were Destroyed' — False Official Statement
 SEVERITY:  9/10  |  CATEGORY: N/A
 LEGAL:     1 M.R.S.A. § 408-A (FOAA); 17-A M.R.S.A. § 453 (False Public Records); Maine FOAA Ombudsman
@@ -702,7 +711,7 @@ DETAILS:
   #1).
 ----------------------------------------------------------------------------------------------------
 
-FINDING #057  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #057  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Fair Housing Act § 3617 Retaliation — Housing Revoked Within Days of FOAA Request About 2018 Incident
 SEVERITY:  9/10  |  CATEGORY: N/A
 LEGAL:     42 U.S.C. § 3617 (FHA Anti-Retaliation); 24 C.F.R. § 100.400; 42 U.S.C. § 3604 (FHA); Maine Human Rights Act
@@ -720,7 +729,7 @@ DETAILS:
   approval/revocation documentation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #058  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #058  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: HUD DC Office Produced 95 Pages While BHA Said 'No Records' -- Proven False Statement
 SEVERITY:  9/10  |  CATEGORY: N/A
 LEGAL:     1 M.R.S.A. § 408-A (FOAA); 5 U.S.C. § 552 (FOIA); 17-A M.R.S.A. § 453; 42 U.S.C. § 1983
@@ -735,7 +744,7 @@ DETAILS:
   Public Records). SOURCE: Keith's letter to HUD, June 2025 (email #4).
 ----------------------------------------------------------------------------------------------------
 
-FINDING #059  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+FINDING #059  [CRITICAL — 9/10]  [MANUAL_PCR]
 VIOLATION: Housing Revoked 1 Day Before Scheduled Move-In -- Targeted Retaliation Timing
 SEVERITY:  9/10  |  CATEGORY: N/A
 LEGAL:     42 U.S.C. § 3617 (FHA Anti-Retaliation); 42 U.S.C. § 3604 (FHA); 24 C.F.R. § 100.400; Maine Human Rights Act
@@ -751,7 +760,7 @@ DETAILS:
   Keith's HUD complaint, June 2025 (email chain, Mr. Bethany emails #4).
 ----------------------------------------------------------------------------------------------------
 
-FINDING #060  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+FINDING #060  [SERIOUS — 8/10]  [MANUAL_PCR]
 VIOLATION: Initial Charging Document Unsigned and Undated — Legally Deficient Instrument
 SEVERITY:  8/10  |  CATEGORY: defective_charging
 LEGAL:     Maine Rules of Criminal Procedure; Due Process (14th Amendment); M.R. Crim. P. 3
@@ -764,7 +773,7 @@ DETAILS:
   discovery 10/16/2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #061  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+FINDING #061  [SERIOUS — 8/10]  [MANUAL_PCR]
 VIOLATION: DEA Involvement — Potential Federal Jurisdiction and Additional Exculpatory Evidence
 SEVERITY:  8/10  |  CATEGORY: brady_violation
 LEGAL:     Brady v. Maryland; Giglio v. United States; Federal FOIA (5 U.S.C. §552); due process
@@ -777,7 +786,7 @@ DETAILS:
   DEA.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #062  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+FINDING #062  [SERIOUS — 8/10]  [MANUAL_PCR]
 VIOLATION: Duplicative OAS Counts — Two Charges for Same Date/Statute — Multiplicity
 SEVERITY:  8/10  |  CATEGORY: N/A
 LEGAL:     5th Amendment Double Jeopardy; 17-A M.R.S.A. (applicable OAS statute); United States v. Dixon, 509 U.S. 688 (1993)
@@ -789,7 +798,7 @@ DETAILS:
   plea leverage. DISCOVERED: Attorney Intake Memo analysis, Oct 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #063  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+FINDING #063  [SERIOUS — 8/10]  [MANUAL_PCR]
 VIOLATION: Transfer to Two Bridges Correctional (100 Miles Away) — Punitive, No Reason Given, Away From Family and Medical Support
 SEVERITY:  8/10  |  CATEGORY: N/A
 LEGAL:     8th Amendment; 14th Amendment Due Process; 15 M.R.S. § 1026; Helling v. McKinney, 509 U.S. 25 (1993)
@@ -802,7 +811,61 @@ DETAILS:
   maximize psychological pressure toward a plea. DISCOVERED: Attorney Intake Memo, Oct 2025.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #064  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #064  [MODERATE — 6/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  6/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+DETAILS:
+  The person on the driver's side (appearing to be an officer in tan uniform) is in an
+  aggressive forward posture with arms extended toward the vehicle or its occupant. The body
+  positioning suggests physical force may be being applied, though the exact nature cannot be
+  fully determined from this single frame and distance.
+----------------------------------------------------------------------------------------------------
+
+FINDING #065  [MODERATE — 6/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-excessive-force
+SEVERITY:  6/10  |  CATEGORY: possible-excessive-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+DETAILS:
+  The officer on the driver's side is in an aggressive forward stance with arms extended toward
+  the vehicle occupant. The posture suggests physical force is being applied, possibly reaching
+  into the vehicle or physically engaging with the occupant. Without clear view of the
+  subject's behavior, proportionality of force cannot be fully assessed from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #066  [MODERATE — 6/10]  [AI_VIDEO_FRAME]
+VIOLATION: potential-excessive-force
+SEVERITY:  6/10  |  CATEGORY: potential-excessive-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+DETAILS:
+  Two apparent officers have what appear to be weapons drawn and pointed at the stopped
+  vehicle. Without knowing the underlying justification or threat level, the proportionality of
+  this force level cannot be fully assessed from this single frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #067  [MODERATE — 6/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-unlawful-vehicle-extraction
+SEVERITY:  6/10  |  CATEGORY: possible-unlawful-vehicle-extraction
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Subject appears to be removed or in the process of being removed from the vehicle. Without
+  visible evidence of a warrant, probable cause for arrest, or exigent circumstances, forcible
+  removal from a vehicle during a traffic stop may implicate 4th Amendment protections. Cannot
+  determine justification from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #068  [MODERATE — 6/10]  [AI_VIDEO_FRAME]
+VIOLATION: video-integrity-concern
+SEVERITY:  6/10  |  CATEGORY: video-integrity-concern
+LEGAL:     Maine Rules of Evidence Rule 901(a) / Federal Rules of Evidence Rule 901
+DETAILS:
+  The presence of a third-party video editing software (Bandicut) splash screen at timestamp
+  00:03:30 indicates this video has been edited, cut, or processed outside of the original
+  recording system. This raises questions about the completeness and integrity of the video
+  evidence.
+----------------------------------------------------------------------------------------------------
+
+FINDING #069  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-excessive-force
 SEVERITY:  5/10  |  CATEGORY: possible-excessive-force
 LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
@@ -812,7 +875,7 @@ DETAILS:
   level of force is proportionate to any resistance.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #065  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #070  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-vehicle-search
 SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -823,7 +886,7 @@ DETAILS:
   were asked to exit.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #066  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #071  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-search-without-visible-consent-or-warrant
 SEVERITY:  5/10  |  CATEGORY: possible-search-without-visible-consent-or-warrant
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -833,7 +896,7 @@ DETAILS:
   exists, or probable cause was established.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #067  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #072  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-vehicle-search
 SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -843,7 +906,7 @@ DETAILS:
   consent or warrant issuance is visible in this frame.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #068  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #073  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-vehicle-search
 SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -854,7 +917,7 @@ DETAILS:
   warrant exists, or probable cause has been established.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #069  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #074  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-use-of-force
 SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
 LEGAL:     17-A M.R.S.A. §107
@@ -865,7 +928,7 @@ DETAILS:
   assessed.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #070  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #075  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-search
 SEVERITY:  5/10  |  CATEGORY: possible-warrantless-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -875,7 +938,7 @@ DETAILS:
   armed and dangerous (Terry v. Ohio, 392 U.S. 1), this could constitute an unlawful search.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #071  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #076  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-search
 SEVERITY:  5/10  |  CATEGORY: possible-warrantless-search
 LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968) / Maine Constitution Art. I §5
@@ -885,7 +948,7 @@ DETAILS:
   weapons (Terry v. Ohio standard), this could constitute an unlawful search.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #072  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+FINDING #077  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-search
 SEVERITY:  5/10  |  CATEGORY: possible-warrantless-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Terry v. Ohio, 392 U.S. 1 (1968)
@@ -896,7 +959,207 @@ DETAILS:
   articulable suspicion of being armed.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #073  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #078  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-unlawful-search
+SEVERITY:  5/10  |  CATEGORY: possible-unlawful-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The figure in dark clothing appears to be leaning significantly into the driver's side window
+  of the stopped vehicle, which could indicate reaching into the vehicle. Without visible
+  consent or a warrant, this posture raises a potential 4th Amendment concern, though the exact
+  nature of the interaction cannot be confirmed from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #079  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Two individuals appearing to be officers are leaning into both sides of the stopped vehicle
+  simultaneously, which could indicate a search of the vehicle interior. It is unclear whether
+  consent was given or probable cause exists.
+----------------------------------------------------------------------------------------------------
+
+FINDING #080  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: potential-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: potential-warrantless-vehicle-search
+LEGAL:     Maine Constitution Art. I §5 / 4th Amendment / Carroll v. United States, 267 U.S. 132 (1925)
+DETAILS:
+  Both individuals appear to be reaching into or engaging with the vehicle from both sides
+  simultaneously. This could indicate a search of the vehicle or extraction of an occupant.
+  Without audio or additional context, it is unclear if consent was given or probable cause
+  existed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #081  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-entry
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-entry
+LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Arizona v. Gant, 556 U.S. 332 (2009)
+DETAILS:
+  The officer on the driver's side appears to be reaching into or making forceful contact with
+  the vehicle interior. If no consent, warrant, or exigent circumstances exist, this could
+  constitute an unlawful search or seizure.
+----------------------------------------------------------------------------------------------------
+
+FINDING #082  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: seizure-of-person
+SEVERITY:  5/10  |  CATEGORY: seizure-of-person
+LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  The positioning of two apparent officers with arms extended toward the vehicle on both sides
+  constitutes a seizure under the 4th Amendment. A reasonable person in the vehicle would not
+  feel free to leave. The legality depends on whether officers had probable cause or reasonable
+  suspicion justifying a high-risk stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #083  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  The individual on the driver's side appears to be physically engaging with the stopped
+  vehicle or its occupant(s) in a forceful posture — body leaned forward, arms extended
+  aggressively toward or into the vehicle. The second individual on the passenger side also
+  appears to be actively engaging. Without audio or additional context, it is unclear whether
+  this level of physical engagement is proportionate.
+----------------------------------------------------------------------------------------------------
+
+FINDING #084  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: video-integrity-concern
+SEVERITY:  5/10  |  CATEGORY: video-integrity-concern
+LEGAL:     Maine Rules of Evidence 901(a) / Federal Rules of Evidence 901(a)
+DETAILS:
+  The presence of a Bandicut video editing/cutting software watermark indicates this footage
+  has been processed through third-party video editing software. This raises questions about
+  the chain of custody and integrity of the video evidence, including whether portions may have
+  been cut, rearranged, or omitted.
+----------------------------------------------------------------------------------------------------
+
+FINDING #085  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-weapon-drawn
+SEVERITY:  5/10  |  CATEGORY: possible-weapon-drawn
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Officer's right arm appears extended in a manner that could indicate a drawn weapon or
+  pointing gesture, but the image resolution and distance make it impossible to determine with
+  certainty what is in the officer's hand
+----------------------------------------------------------------------------------------------------
+
+FINDING #086  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+DETAILS:
+  Two or more figures appear to be in physical contact or a struggle near the stopped vehicle.
+  Due to distance and image quality, it is unclear who is an officer and who is a subject, and
+  whether the force used is proportionate.
+----------------------------------------------------------------------------------------------------
+
+FINDING #087  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-excessive-force
+SEVERITY:  5/10  |  CATEGORY: possible-excessive-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Officer appears to be physically engaging with subject at the vehicle door, possibly pulling
+  or extracting the subject from the vehicle. The level of force and whether it is
+  proportionate cannot be fully determined from this single frame, but physical contact is
+  visible.
+----------------------------------------------------------------------------------------------------
+
+FINDING #088  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A person in what appears to be darker clothing (possibly an officer) is leaning into or
+  reaching into the truck bed area. If this is an officer, this may constitute a search of the
+  vehicle. No warrant is visible, and it is unclear whether consent was given or probable cause
+  exists.
+----------------------------------------------------------------------------------------------------
+
+FINDING #089  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+DETAILS:
+  A person in white appears to be physically engaged with someone or something at the open
+  driver-side door of the stopped vehicle. The nature of the contact cannot be definitively
+  determined at this distance, but there appears to be a physical interaction or struggle.
+----------------------------------------------------------------------------------------------------
+
+FINDING #090  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Two individuals appear to be engaged in physical contact or a struggle at the rear of the
+  truck. If one is an officer, the nature and proportionality of force cannot be determined
+  from this distance and angle.
+----------------------------------------------------------------------------------------------------
+
+FINDING #091  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: video-integrity-concern
+SEVERITY:  5/10  |  CATEGORY: video-integrity-concern
+LEGAL:     Maine Rules of Evidence 901(a) / Federal Rules of Evidence 901(a)
+DETAILS:
+  The presence of a Bandicut video editing software splash screen indicates the footage has
+  been cut, edited, or processed using third-party software. This raises questions about the
+  completeness and integrity of the video evidence. Footage may have been selectively trimmed
+  or segments removed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #092  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-felony-stop-procedures
+SEVERITY:  5/10  |  CATEGORY: possible-felony-stop-procedures
+LEGAL:     4th Amendment / 17-A M.R.S.A. §107
+DETAILS:
+  Subject appears to have arm(s) raised while exiting or standing at the vehicle door,
+  suggesting a high-risk or felony-style stop. The proportionality and justification for this
+  level of stop cannot be determined from this single frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #093  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A person in darker clothing on the passenger side appears to be reaching into or interacting
+  with the interior of the vehicle while the subject stands outside. If this is an officer
+  conducting a vehicle search, it is unclear whether consent was given or probable cause
+  existed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #094  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A person is leaning into/reaching into a stopped vehicle through the open driver's door. If
+  this is an officer, it may constitute a vehicle search. Cannot determine from this frame
+  alone whether consent was given or probable cause exists.
+----------------------------------------------------------------------------------------------------
+
+FINDING #095  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Person on the right side of the blue vehicle appears to have arms extended toward or against
+  another individual or the vehicle, which could indicate physical force being applied. Cannot
+  determine if this person is an officer or civilian from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #096  [MODERATE — 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: video-editing-or-tampering
+SEVERITY:  5/10  |  CATEGORY: video-editing-or-tampering
+LEGAL:     Maine Rules of Evidence, Rule 901(a) / Federal Rules of Evidence 901(a)
+DETAILS:
+  The presence of third-party video editing software (Bandicut) branding at this timestamp
+  indicates the original video footage has been edited, cut, or otherwise processed. This
+  raises questions about the integrity and completeness of the video evidence.
+----------------------------------------------------------------------------------------------------
+
+FINDING #097  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-vehicle-search
 SEVERITY:  4/10  |  CATEGORY: possible-warrantless-vehicle-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -906,7 +1169,7 @@ DETAILS:
   Without audio, it is unclear if consent was given or if probable cause exists.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #074  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #098  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-custodial-detention
 SEVERITY:  4/10  |  CATEGORY: possible-custodial-detention
 LEGAL:     5th Amendment / 17-A M.R.S.A. §107
@@ -917,7 +1180,7 @@ DETAILS:
   being used.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #075  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #099  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: traffic-stop-positioning
 SEVERITY:  4/10  |  CATEGORY: traffic-stop-positioning
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -927,7 +1190,7 @@ DETAILS:
   questions about the legality of the seizure
 ----------------------------------------------------------------------------------------------------
 
-FINDING #076  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #100  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-search
 SEVERITY:  4/10  |  CATEGORY: possible-warrantless-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -938,7 +1201,7 @@ DETAILS:
   could raise 4th Amendment concerns.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #077  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #101  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-search
 SEVERITY:  4/10  |  CATEGORY: possible-warrantless-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -950,7 +1213,7 @@ DETAILS:
   simply a conversational posture.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #078  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #102  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-search
 SEVERITY:  4/10  |  CATEGORY: possible-warrantless-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -961,7 +1224,7 @@ DETAILS:
   this single frame whether consent was given or probable cause exists.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #079  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #103  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-use-of-force
 SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
 LEGAL:     17-A M.R.S.A. §107
@@ -972,7 +1235,7 @@ DETAILS:
   force cannot be fully assessed.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #080  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #104  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: roadside-seizure-of-person
 SEVERITY:  4/10  |  CATEGORY: roadside-seizure-of-person
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -982,7 +1245,7 @@ DETAILS:
   stop to physical detention/restraint is not evident from this frame alone.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #081  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #105  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-entry-or-threshold-contact
 SEVERITY:  4/10  |  CATEGORY: possible-warrantless-entry-or-threshold-contact
 LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Payton v. New York, 445 U.S. 573 (1980)
@@ -994,7 +1257,7 @@ DETAILS:
   raises 4th Amendment concerns.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #082  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #106  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: warrantless-entry-concern
 SEVERITY:  4/10  |  CATEGORY: warrantless-entry-concern
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1004,7 +1267,7 @@ DETAILS:
   warrants further review of surrounding footage.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #083  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #107  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-use-of-force
 SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
 LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / 42 U.S.C. §1983
@@ -1014,7 +1277,7 @@ DETAILS:
   but at this distance and resolution it is not possible to confirm definitively.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #084  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #108  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-use-of-force
 SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
 LEGAL:     17-A M.R.S.A. §107
@@ -1024,7 +1287,7 @@ DETAILS:
   or applying force) cannot be definitively determined from this distance and single frame.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #085  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+FINDING #109  [MINOR — 4/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-physical-contact
 SEVERITY:  4/10  |  CATEGORY: possible-physical-contact
 LEGAL:     17-A M.R.S.A. §107
@@ -1034,7 +1297,132 @@ DETAILS:
   resolution.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #086  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #110  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search
+SEVERITY:  4/10  |  CATEGORY: possible-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The person on the passenger side of the vehicle has the rear area or trunk area open or is
+  standing near it with arms extended; this may indicate a search is being initiated or the
+  subject is being ordered out of the vehicle, but image resolution makes it difficult to
+  confirm
+----------------------------------------------------------------------------------------------------
+
+FINDING #111  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search
+SEVERITY:  4/10  |  CATEGORY: possible-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The person on the driver's side appears to be reaching into or making physical contact with
+  the vehicle. If this constitutes a search without consent or probable cause, it could be a
+  4th Amendment issue. Cannot confirm a search is occurring from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #112  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search-or-seizure
+SEVERITY:  4/10  |  CATEGORY: possible-warrantless-vehicle-search-or-seizure
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officers appear to be reaching into or physically interacting with the stopped vehicle from
+  both sides simultaneously. This could indicate a search or extraction. No warrant or consent
+  can be confirmed from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #113  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search-or-reach-in
+SEVERITY:  4/10  |  CATEGORY: possible-vehicle-search-or-reach-in
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The person standing at the driver's side appears to have their arm raised and is reaching
+  into or toward the vehicle interior, which could indicate a search or physical interaction
+  with the vehicle occupant without clear consent visible
+----------------------------------------------------------------------------------------------------
+
+FINDING #114  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search
+SEVERITY:  4/10  |  CATEGORY: possible-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The officer appears to be leaning into or reaching into the driver's side window area of the
+  vehicle. If the officer is reaching inside the vehicle without consent or probable cause,
+  this could constitute an unlawful search.
+----------------------------------------------------------------------------------------------------
+
+FINDING #115  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-unlawful-exit-order-or-search
+SEVERITY:  4/10  |  CATEGORY: possible-unlawful-exit-order-or-search
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968) / Maine Constitution Art. I §5
+DETAILS:
+  Subject is standing outside the vehicle with the officer in very close proximity. If the
+  subject was ordered out without articulable safety concern or reasonable suspicion of
+  criminal activity beyond a traffic infraction, this could raise 4th Amendment concerns. The
+  officer appears to be making physical contact or is positioned extremely close to the
+  subject, which may indicate a pat-down or physical detention.
+----------------------------------------------------------------------------------------------------
+
+FINDING #116  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: seizure-without-visible-justification
+SEVERITY:  4/10  |  CATEGORY: seizure-without-visible-justification
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A traffic stop and apparent foot pursuit are occurring; the basis for the stop and pursuit is
+  not determinable from this frame alone. If the subject on the passenger side is fleeing, the
+  circumstances of the stop and any subsequent use of force will be legally significant.
+----------------------------------------------------------------------------------------------------
+
+FINDING #117  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search
+SEVERITY:  4/10  |  CATEGORY: possible-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The vehicle door appears open and an individual who may be an officer is positioned near or
+  at the vehicle while a subject stands nearby. This positioning could indicate a vehicle
+  search is occurring, though it is not definitively clear from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #118  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-felony-stop-procedure
+SEVERITY:  4/10  |  CATEGORY: possible-felony-stop-procedure
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Subject appears to have hands raised/elevated near open driver's door while a second person
+  is positioned on the opposite side of the vehicle. This positioning may indicate a high-risk
+  or felony stop. The subject's raised hands suggest compliance; any use of force at this point
+  should be scrutinized for proportionality.
+----------------------------------------------------------------------------------------------------
+
+FINDING #119  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: vehicle-search-without-consent
+SEVERITY:  4/10  |  CATEGORY: vehicle-search-without-consent
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Both doors of the stopped vehicle are open, which could indicate a vehicle search is being
+  conducted or is about to be conducted. Cannot confirm from this single frame whether consent
+  was given or probable cause exists.
+----------------------------------------------------------------------------------------------------
+
+FINDING #120  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search-without-consent
+SEVERITY:  4/10  |  CATEGORY: possible-vehicle-search-without-consent
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Both doors of the stopped vehicle are open and at least one occupant appears to be outside
+  the vehicle. This configuration could indicate a vehicle search is being initiated or
+  occupants were ordered out. Without audio, it cannot be confirmed whether consent was given
+  or probable cause existed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #121  [MINOR — 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment
+DETAILS:
+  Two individuals appear to be in very close physical contact near the vehicle. The nature of
+  the interaction — whether consensual, an arrest, or a physical altercation — cannot be
+  definitively determined from this single frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #122  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-not-visible
 SEVERITY:  3/10  |  CATEGORY: officer-identification-not-visible
 LEGAL:     42 U.S.C. §1983
@@ -1044,7 +1432,7 @@ DETAILS:
   is a law enforcement officer from this frame alone.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #087  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #123  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-vehicle-search-without-consent
 SEVERITY:  3/10  |  CATEGORY: possible-vehicle-search-without-consent
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1055,7 +1443,7 @@ DETAILS:
   conducting a visual search.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #088  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #124  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: potential-warrantless-search
 SEVERITY:  3/10  |  CATEGORY: potential-warrantless-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1065,7 +1453,7 @@ DETAILS:
   this is a routine conversation or an intrusive visual inspection beyond plain view.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #089  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #125  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: plain-view-search-concern
 SEVERITY:  3/10  |  CATEGORY: plain-view-search-concern
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1075,7 +1463,7 @@ DETAILS:
   visible from a normal standing position, which could constitute a search beyond plain view.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #090  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #126  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  3/10  |  CATEGORY: officer-identification
 LEGAL:     Maine Constitution Art. I §6 / 5 M.R.S.A. §4681
@@ -1085,7 +1473,7 @@ DETAILS:
   this distance and angle
 ----------------------------------------------------------------------------------------------------
 
-FINDING #091  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #127  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-concern
 SEVERITY:  3/10  |  CATEGORY: officer-identification-concern
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1096,7 +1484,7 @@ DETAILS:
   clothing) raises concerns about proper identification during the stop.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #092  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #128  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: vehicle-search-concern
 SEVERITY:  3/10  |  CATEGORY: vehicle-search-concern
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1106,7 +1494,7 @@ DETAILS:
   applicable exception to the warrant requirement.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #093  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #129  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: roadside-stop-safety-concern
 SEVERITY:  3/10  |  CATEGORY: roadside-stop-safety-concern
 LEGAL:     17-A M.R.S.A. §107(1)(A)
@@ -1116,7 +1504,7 @@ DETAILS:
   concern for all parties.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #094  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #130  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-vehicle-search
 SEVERITY:  3/10  |  CATEGORY: possible-warrantless-vehicle-search
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1127,7 +1515,7 @@ DETAILS:
   frame.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #095  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #131  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: roadside-detention-safety
 SEVERITY:  3/10  |  CATEGORY: roadside-detention-safety
 LEGAL:     17-A M.R.S.A. §107
@@ -1137,7 +1525,7 @@ DETAILS:
   the detained individual.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #096  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #132  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: custodial-detention-without-visible-miranda
 SEVERITY:  3/10  |  CATEGORY: custodial-detention-without-visible-miranda
 LEGAL:     5th Amendment / Miranda v. Arizona, 384 U.S. 436 (1966)
@@ -1147,7 +1535,7 @@ DETAILS:
   without Miranda, it would be a violation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #097  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #133  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: unwarranted-exit-order
 SEVERITY:  3/10  |  CATEGORY: unwarranted-exit-order
 LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
@@ -1158,7 +1546,7 @@ DETAILS:
   determine from this single frame whether exit was voluntary or ordered.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #098  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #134  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-physical-contact
 SEVERITY:  3/10  |  CATEGORY: possible-physical-contact
 LEGAL:     17-A M.R.S.A. §107
@@ -1168,7 +1556,7 @@ DETAILS:
   position, but details are unclear at this distance
 ----------------------------------------------------------------------------------------------------
 
-FINDING #099  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #135  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: warrantless_residential_contact
 SEVERITY:  3/10  |  CATEGORY: warrantless
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1179,7 +1567,7 @@ DETAILS:
   the dwelling raises the question of whether any entry or curtilage intrusion occurred.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #100  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #136  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-use-of-force
 SEVERITY:  3/10  |  CATEGORY: possible-use-of-force
 LEGAL:     17-A M.R.S.A. §107
@@ -1189,7 +1577,7 @@ DETAILS:
   cannot be fully determined from this distance and angle.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #101  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #137  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: curtilage-encounter
 SEVERITY:  3/10  |  CATEGORY: curtilage-encounter
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1199,7 +1587,7 @@ DETAILS:
   curtilage protections under the 4th Amendment.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #102  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #138  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-warrantless-encounter-at-residence
 SEVERITY:  3/10  |  CATEGORY: possible-warrantless-encounter-at-residence
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1209,7 +1597,7 @@ DETAILS:
   whether a warrant exists, or whether the officer is on the curtilage of the property.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #103  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+FINDING #139  [MINOR — 3/10]  [AI_VIDEO_FRAME]
 VIOLATION: warrantless_residential_contact
 SEVERITY:  3/10  |  CATEGORY: warrantless
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1219,7 +1607,273 @@ DETAILS:
   exigent circumstances are present for the officer's presence at the doorway.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #104  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #140  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-safety-traffic-control
+SEVERITY:  3/10  |  CATEGORY: officer-safety-traffic-control
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  A vehicle is passing in the oncoming lane with no visible traffic control measures (cones,
+  flares, or secondary unit). No emergency lights are visibly reflecting off surrounding
+  surfaces, raising concern about whether the stop is properly marked for roadway safety.
+----------------------------------------------------------------------------------------------------
+
+FINDING #141  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: dual-officer-approach-both-sides
+SEVERITY:  3/10  |  CATEGORY: dual-officer-approach-both-sides
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Two officers simultaneously engaging the vehicle from both driver and passenger sides may
+  indicate an escalated tactical approach; this should be documented to assess whether force or
+  search procedures were proportionate to the circumstances.
+----------------------------------------------------------------------------------------------------
+
+FINDING #142  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: dual-side-approach
+SEVERITY:  3/10  |  CATEGORY: dual-side-approach
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Two individuals approaching both sides of the vehicle simultaneously is consistent with a
+  high-risk or felony stop procedure. If this level of tactical response was not proportionate
+  to the circumstances, it may raise concerns about proportionality of the encounter.
+----------------------------------------------------------------------------------------------------
+
+FINDING #143  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search
+SEVERITY:  3/10  |  CATEGORY: possible-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A second person is visible on the passenger side of the vehicle near the tree line, which
+  could indicate a second officer conducting a search or inspection of the passenger side;
+  however, the image is not clear enough to confirm this definitively
+----------------------------------------------------------------------------------------------------
+
+FINDING #144  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: dual-side-approach
+SEVERITY:  3/10  |  CATEGORY: dual-side-approach
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  Two figures are approaching or positioned on both the driver and passenger sides of the
+  stopped vehicle simultaneously, which may indicate a search posture or felony-stop technique.
+  If no reasonable suspicion or probable cause exists for this level of approach, it could
+  escalate the encounter beyond a routine traffic stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #145  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  3/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681 / 42 U.S.C. §1983
+DETAILS:
+  Neither officer's badge number, name tag, or other identifying information is visible from
+  this dashcam distance and resolution. This makes accountability difficult to establish.
+----------------------------------------------------------------------------------------------------
+
+FINDING #146  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  3/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681 / 42 U.S.C. §1983
+DETAILS:
+  Neither individual's badge number, name tag, or agency identification is visible from this
+  distance and resolution. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #147  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-basis
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-basis
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A traffic stop constitutes a seizure under the 4th Amendment; the basis for the stop cannot
+  be determined from this frame alone. The stop appears to be on a rural road with no visible
+  traffic violations evident in the frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #148  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: unclear-officer-identification
+SEVERITY:  3/10  |  CATEGORY: unclear-officer-identification
+LEGAL:     Maine Constitution Art. I §6 / 4th Amendment
+DETAILS:
+  The person who appears to be conducting the stop is not clearly identifiable as a law
+  enforcement officer — no visible uniform markings, badge, or patrol vehicle identifiers are
+  discernible at this distance and resolution
+----------------------------------------------------------------------------------------------------
+
+FINDING #149  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-procedure
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-procedure
+LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  The interaction appears to be occurring at the rear of the stopped vehicle on the roadway
+  rather than at the driver's window, which may indicate the subject was removed from the
+  vehicle. The basis for any such removal is not apparent from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #150  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-unlawful-exit-order
+SEVERITY:  3/10  |  CATEGORY: possible-unlawful-exit-order
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  Subject appears to be standing outside the vehicle during what appears to be a traffic stop
+  with hands raised near head level, suggesting the subject may have been ordered out of the
+  vehicle. While officers may order occupants out per Pennsylvania v. Mimms, the hands-up
+  posture may indicate a felony stop procedure which requires reasonable suspicion of a serious
+  offense.
+----------------------------------------------------------------------------------------------------
+
+FINDING #151  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: no-backup-present-during-use-of-force
+SEVERITY:  3/10  |  CATEGORY: no-backup-present-during-use-of-force
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  Only one officer is visible during what appears to be a physical engagement with a subject.
+  While not itself a legal violation, the absence of backup during a use-of-force event raises
+  concerns about procedural safety and escalation risk.
+----------------------------------------------------------------------------------------------------
+
+FINDING #152  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  Two individuals are outside a stopped vehicle on a roadway; it is unclear whether this is a
+  consensual encounter or a seizure under the 4th Amendment. The nature of the stop and its
+  justification cannot be determined from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #153  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-traffic-stop-without-visible-emergency-lights
+SEVERITY:  3/10  |  CATEGORY: possible-traffic-stop-without-visible-emergency-lights
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  A vehicle appears to have been stopped on the roadway. No visible emergency lights (red/blue)
+  can be clearly seen activated on the dashcam vehicle or on the stopped vehicle. If this is a
+  law enforcement stop, the absence of visible emergency lights raises questions about proper
+  stop procedures.
+----------------------------------------------------------------------------------------------------
+
+FINDING #154  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-physical-contact
+SEVERITY:  3/10  |  CATEGORY: possible-physical-contact
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment (Graham v. Connor, 490 U.S. 386)
+DETAILS:
+  The darker-clothed figure on the far right appears to be in very close proximity to the
+  vehicle or the other person, and their posture suggests possible physical engagement, though
+  the resolution and distance make it impossible to confirm whether force is being applied.
+----------------------------------------------------------------------------------------------------
+
+FINDING #155  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-search-or-seizure
+SEVERITY:  3/10  |  CATEGORY: possible-search-or-seizure
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The scene may depict a roadside stop with interaction at the rear of a vehicle. If this is a
+  traffic stop, the basis for the stop and any search of the vehicle bed cannot be determined
+  from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #156  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A traffic stop appears to be in progress on a rural road. The person approaching the
+  vehicle's driver side door is not clearly identifiable as law enforcement due to distance and
+  resolution. If this is an officer, no badge or identification is visible from this frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #157  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-procedure
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-procedure
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  Subject has exited the vehicle and is standing outside during a traffic stop. It is unclear
+  whether the officer directed the subject to exit or the subject exited voluntarily. If the
+  officer ordered the subject out without articulable safety concern, or conversely if the
+  subject exited without instruction, this may be relevant to the nature of the detention.
+----------------------------------------------------------------------------------------------------
+
+FINDING #158  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  3/10  |  CATEGORY: officer-identification
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  The individual's uniform details, badge, and name tag are not visible from this distance and
+  angle. Officer cannot be positively identified from this frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #159  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: unidentified-officer
+SEVERITY:  3/10  |  CATEGORY: unidentified-officer
+LEGAL:     Maine Constitution Art. I §5 / 4th Amendment
+DETAILS:
+  No uniformed officer is clearly visible approaching the vehicle or making contact with the
+  occupants despite this appearing to be a traffic stop initiated by the dashcam vehicle. It is
+  unclear who is law enforcement and who is a civilian in this frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #160  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: vehicle-exit-during-stop
+SEVERITY:  3/10  |  CATEGORY: vehicle-exit-during-stop
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  The driver-side door of the stopped vehicle is open and at least one person has exited the
+  vehicle. If a traffic stop is in progress, the occupants appear to be outside the vehicle
+  which may indicate the stop dynamics are unusual or that subjects were ordered out. Without
+  audio, the circumstances are unclear.
+----------------------------------------------------------------------------------------------------
+
+FINDING #161  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A traffic stop appears to be in progress but no officer is visibly present engaging with the
+  subject. The subject has exited or is exiting their vehicle, which may indicate a lack of
+  officer control of the stop or the subject was ordered out. Without audio or additional
+  context, the reason for the stop and whether reasonable suspicion or probable cause existed
+  cannot be determined from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #162  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-detention-or-seizure
+SEVERITY:  3/10  |  CATEGORY: possible-detention-or-seizure
+LEGAL:     4th Amendment
+DETAILS:
+  The positioning of the vehicles blocking the road and persons outside vehicles may indicate a
+  traffic stop or roadside detention. The patrol dashcam is recording from behind, suggesting
+  law enforcement initiated this stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #163  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: roadside-detention
+SEVERITY:  3/10  |  CATEGORY: roadside-detention
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Multiple individuals appear present around a stopped vehicle with at least one door open on a
+  public roadway, suggesting a possible traffic stop or roadside encounter. Unable to determine
+  from this frame alone whether reasonable suspicion or probable cause exists for the stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #164  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: exit-order-justification
+SEVERITY:  3/10  |  CATEGORY: exit-order-justification
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  If occupants were ordered out of the vehicle, under Pennsylvania v. Mimms (1977) and Maryland
+  v. Wilson (1997), officers may order occupants out during a lawful stop for safety. However,
+  both doors open and both occupants outside may warrant review of whether the stop escalated
+  beyond a routine traffic stop without justification.
+----------------------------------------------------------------------------------------------------
+
+FINDING #165  [MINOR — 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-safety
+SEVERITY:  3/10  |  CATEGORY: traffic-stop-safety
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A vehicle is stopped on the roadway with the driver-side door open into the travel lane, and
+  a person is positioned on the far side of the vehicle. The nature of the stop and whether
+  proper procedures are being followed cannot be fully determined from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #166  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     5 M.R.S.A. §4681 / 42 U.S.C. §1983
@@ -1228,7 +1882,7 @@ DETAILS:
   officer. This limits accountability documentation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #105  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #167  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-not-visible
 SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
 LEGAL:     42 U.S.C. §1983
@@ -1237,7 +1891,7 @@ DETAILS:
   identifier is visible on the officer. This limits accountability documentation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #106  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #168  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-not-visible
 SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
 LEGAL:     42 U.S.C. §1983
@@ -1246,7 +1900,7 @@ DETAILS:
   distance. It is not possible to confirm whether they are law enforcement officers.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #107  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #169  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: unidentified-officer
 SEVERITY:  2/10  |  CATEGORY: unidentified-officer
 LEGAL:     Maine Constitution Art. I §5 / 4th Amendment
@@ -1255,7 +1909,7 @@ DETAILS:
   angle and distance. Cannot confirm proper identification was provided to the subject.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #108  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #170  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     25 M.R.S.A. §2803-B
@@ -1264,7 +1918,7 @@ DETAILS:
   dashcam distance and angle. Cannot confirm proper identification was provided to the driver.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #109  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #171  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     Maine Constitution Art. I §6 / 42 U.S.C. §1983
@@ -1273,7 +1927,7 @@ DETAILS:
   dashcam angle and distance, making officer identification difficult
 ----------------------------------------------------------------------------------------------------
 
-FINDING #110  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #172  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     5 M.R.S.A. §4681
@@ -1283,7 +1937,7 @@ DETAILS:
   purposes.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #111  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #173  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     Maine Constitution Art. I §6
@@ -1292,7 +1946,7 @@ DETAILS:
   this dashcam distance and angle, making positive identification difficult for the record
 ----------------------------------------------------------------------------------------------------
 
-FINDING #112  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #174  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     Maine Constitution Art. I §6
@@ -1301,7 +1955,7 @@ DETAILS:
   dashcam distance. Cannot confirm proper identification was provided to the vehicle occupant.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #113  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #175  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     5 M.R.S.A. §4681
@@ -1310,7 +1964,7 @@ DETAILS:
   are visible or legible. This limits accountability documentation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #114  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #176  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: traffic-stop-monitoring
 SEVERITY:  2/10  |  CATEGORY: traffic-stop-monitoring
 LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
@@ -1320,7 +1974,7 @@ DETAILS:
   based on reasonable suspicion or probable cause.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #115  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #177  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     Maine Constitution Art. I §6 / 5 M.R.S.A. §4681
@@ -1330,7 +1984,7 @@ DETAILS:
   dashcam angle and distance
 ----------------------------------------------------------------------------------------------------
 
-FINDING #116  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #178  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: traffic-stop-documentation
 SEVERITY:  2/10  |  CATEGORY: traffic-stop-documentation
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1340,7 +1994,7 @@ DETAILS:
   to determine whether reasonable suspicion or probable cause existed for the stop.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #117  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #179  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     25 M.R.S.A. §2803-B
@@ -1350,7 +2004,7 @@ DETAILS:
   person is a uniformed officer.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #118  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #180  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-not-visible
 SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
 LEGAL:     5 M.R.S.A. §4681
@@ -1359,7 +2013,7 @@ DETAILS:
   Officer identification cannot be confirmed from this frame.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #119  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #181  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-not-visible
 SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
 LEGAL:     Department policy / 5 M.R.S.A. §4681
@@ -1368,7 +2022,7 @@ DETAILS:
   discernible on the officer's person.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #120  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #182  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     25 M.R.S.A. §2803-B
@@ -1378,7 +2032,7 @@ DETAILS:
   purposes.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #121  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #183  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     5 M.R.S.A. §4681
@@ -1387,7 +2041,7 @@ DETAILS:
   distance. This limits accountability documentation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #122  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #184  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: subject-outside-vehicle-concern
 SEVERITY:  2/10  |  CATEGORY: subject-outside-vehicle-concern
 LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
@@ -1399,7 +2053,7 @@ DETAILS:
   during a lawful stop.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #123  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #185  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: roadside-stop-documentation
 SEVERITY:  2/10  |  CATEGORY: roadside-stop-documentation
 LEGAL:     Maine Constitution Art. I §5
@@ -1408,7 +2062,7 @@ DETAILS:
   tag) are not visible from the dashcam distance, making accountability verification difficult
 ----------------------------------------------------------------------------------------------------
 
-FINDING #124  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #186  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: consensual_encounter_or_seizure
 SEVERITY:  2/10  |  CATEGORY: consensual
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1419,7 +2073,7 @@ DETAILS:
   voluntary interaction or a directed command to sit.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #125  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #187  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification
 SEVERITY:  2/10  |  CATEGORY: officer-identification
 LEGAL:     42 U.S.C. §1983
@@ -1428,7 +2082,7 @@ DETAILS:
   distance. This makes accountability documentation difficult.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #126  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #188  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: officer-identification-not-visible
 SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
 LEGAL:     5 M.R.S.A. §4681
@@ -1437,7 +2091,7 @@ DETAILS:
   discernible from the dashcam footage. This limits accountability documentation.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #127  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #189  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: curtilage-encounter
 SEVERITY:  2/10  |  CATEGORY: curtilage-encounter
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1448,7 +2102,7 @@ DETAILS:
   determined from this single frame.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #128  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+FINDING #190  [MINOR — 2/10]  [AI_VIDEO_FRAME]
 VIOLATION: possible-custodial-encounter-at-residence
 SEVERITY:  2/10  |  CATEGORY: possible-custodial-encounter-at-residence
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1459,7 +2113,259 @@ DETAILS:
   encounter cannot be determined from this single frame.
 ----------------------------------------------------------------------------------------------------
 
-FINDING #129  [MINOR — Severity 1/10]  [AI_VIDEO_FRAME]
+FINDING #191  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: unidentifiable-officer
+SEVERITY:  2/10  |  CATEGORY: unidentifiable-officer
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not visible or legible from
+  this dashcam distance and angle
+----------------------------------------------------------------------------------------------------
+
+FINDING #192  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  Neither individual's badge number, name tag, or department insignia is visible from this
+  distance and angle, making officer identification impossible from this frame alone
+----------------------------------------------------------------------------------------------------
+
+FINDING #193  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: unidentified-officer
+SEVERITY:  2/10  |  CATEGORY: unidentified-officer
+LEGAL:     Maine Constitution Art. I §6 / 42 U.S.C. §1983
+DETAILS:
+  Officer's badge number, name tag, and identifying details are not discernible from the
+  dashcam distance; cannot confirm whether officer properly identified themselves to the driver
+----------------------------------------------------------------------------------------------------
+
+FINDING #194  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  At the distance captured by the dashcam, no badge numbers, name tags, or agency identifiers
+  are legible on either individual. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #195  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  Officer's badge, name tag, and uniform identifiers are not visible from this dashcam distance
+  and angle, making positive identification difficult for accountability purposes
+----------------------------------------------------------------------------------------------------
+
+FINDING #196  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-approach
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-approach
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer is leaning closely into the driver's side window area; without audio it is unclear if
+  the basis for the stop was communicated or if consent for any search was requested. This
+  frame alone does not show a violation but warrants review of subsequent frames.
+----------------------------------------------------------------------------------------------------
+
+FINDING #197  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  The person at the vehicle window appears to be an officer conducting a traffic stop, but
+  badge number, name tag, and agency identification are not visible from this distance
+----------------------------------------------------------------------------------------------------
+
+FINDING #198  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not discernible from this
+  dashcam angle and distance, making it difficult to identify the officer for accountability
+  purposes
+----------------------------------------------------------------------------------------------------
+
+FINDING #199  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  Officer's badge number, name tag, and identifying details are not visible from this dashcam
+  angle and distance, making it impossible to confirm whether proper identification was
+  displayed to the subject
+----------------------------------------------------------------------------------------------------
+
+FINDING #200  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  At this distance and resolution, no badge number, name tag, or other identifying markings on
+  the officer are discernible. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #201  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     42 U.S.C. §1983 / Department policy requirements
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not visible or legible from
+  this dashcam distance, making accountability documentation difficult.
+----------------------------------------------------------------------------------------------------
+
+FINDING #202  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not legible from the
+  dashcam at this distance and resolution, making officer identification difficult
+----------------------------------------------------------------------------------------------------
+
+FINDING #203  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6 / 42 U.S.C. §1983
+DETAILS:
+  Officer's badge, name tag, and identifying information are not legible from the dashcam
+  distance in this frame
+----------------------------------------------------------------------------------------------------
+
+FINDING #204  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: vehicle-exit-order-or-request
+SEVERITY:  2/10  |  CATEGORY: vehicle-exit-order-or-request
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  Subject is standing outside the vehicle on the passenger side during what appears to be a
+  traffic stop. It is unclear whether the subject exited voluntarily or was ordered out. If
+  ordered out without justification beyond a routine stop, this may raise questions, though
+  Pennsylvania v. Mimms permits officers to order drivers out during a lawful stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #205  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  No officer is clearly visible in this frame to confirm identification, badge number, or
+  proper uniform during what appears to be a traffic stop
+----------------------------------------------------------------------------------------------------
+
+FINDING #206  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: passenger-side-approach-tactical
+SEVERITY:  2/10  |  CATEGORY: passenger-side-approach-tactical
+LEGAL:     4th Amendment / 17-A M.R.S.A. §107
+DETAILS:
+  Officer is approaching on the passenger side of the vehicle while the driver-side door is
+  open. This is a tactical choice but notable for documentation. The open driver door with the
+  officer on the opposite side could indicate the subject exited or was directed to exit the
+  vehicle.
+----------------------------------------------------------------------------------------------------
+
+FINDING #207  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not visible due to distance
+  and image resolution. Cannot confirm officer identification compliance.
+----------------------------------------------------------------------------------------------------
+
+FINDING #208  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Traffic stop appears to be in progress on a rural road. No officer is clearly visible
+  approaching the vehicle, and no identifiable officer information (badge, name) can be
+  confirmed from this frame. Context of the stop (reasonable suspicion or probable cause)
+  cannot be determined from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #209  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  The figure believed to be an officer is too far from the dashcam to confirm badge, name tag,
+  or any identifying markings on uniform. Officer identification cannot be verified from this
+  frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #210  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  At this distance and resolution, no officer badge number, name tag, or identifying markings
+  are visible on either individual. This makes it difficult to identify the officer for
+  accountability purposes.
+----------------------------------------------------------------------------------------------------
+
+FINDING #211  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  No badge number, name tag, or department identification is visible on the individual in
+  darker clothing at this distance and angle.
+----------------------------------------------------------------------------------------------------
+
+FINDING #212  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  Officer's badge number, name tag, and unit identifiers are not visible or readable in this
+  frame due to distance and resolution
+----------------------------------------------------------------------------------------------------
+
+FINDING #213  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-procedure
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-procedure
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  Subject has exited the vehicle during what appears to be a traffic stop. Under Pennsylvania
+  v. Mimms (1977), officers may order a driver to remain in or exit their vehicle. If the
+  subject exited voluntarily without being ordered back in, this is not itself a violation, but
+  the stop's basis and legality cannot be determined from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #214  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  A traffic stop appears to be in progress on a rural road. No officer is visible approaching
+  the vehicle yet. The subject has exited their vehicle, which may indicate the stop dynamics
+  are unclear or that the subject was not instructed to remain in the vehicle.
+----------------------------------------------------------------------------------------------------
+
+FINDING #215  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-procedure
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-procedure
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  Subject has exited their vehicle and is standing outside during a traffic stop. Standard
+  procedure typically involves the officer approaching the stopped vehicle, not the subject
+  exiting. It is unclear from this single frame whether the subject was ordered out or exited
+  voluntarily, which could be relevant to the nature of the detention.
+----------------------------------------------------------------------------------------------------
+
+FINDING #216  [MINOR — 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A traffic stop appears to be in progress on a rural road. The person in the white shirt has
+  exited or is standing outside the vehicle. It is unclear whether this person exited
+  voluntarily or was ordered out. No officer is clearly visible in the frame, making it
+  difficult to assess the nature of the interaction.
+----------------------------------------------------------------------------------------------------
+
+FINDING #217  [MINOR — 1/10]  [AI_VIDEO_FRAME]
 VIOLATION: traffic-stop-documentation
 SEVERITY:  1/10  |  CATEGORY: traffic-stop-documentation
 LEGAL:     4th Amendment / Maine Constitution Art. I §5
@@ -1470,4 +2376,4 @@ DETAILS:
 ----------------------------------------------------------------------------------------------------
 
 END OF REPORT
-Total: 129 violations documented
+Total: 217 violations | State of Maine v. Keith King | CR-2018-03023

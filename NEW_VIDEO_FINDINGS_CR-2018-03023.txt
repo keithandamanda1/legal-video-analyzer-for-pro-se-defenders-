@@ -1,378 +1,569 @@
 ====================================================================================================
 NEW VIDEO ANALYSIS FINDINGS — State of Maine v. Keith King  |  CR-2018-03023
-Generated: 2026-04-13 13:10  |  Source: AI Frame-by-Frame Analysis (New Segments)
-NOTE: This is a SUPPLEMENTAL document. See VIOLATION_REPORT_CR-2018-03023.txt for all prior findings.
+Generated: 2026-04-13 21:24  |  AI Frame Analysis — All 12 Segments (60 min)
+SUPPLEMENTAL to VIOLATION_REPORT_CR-2018-03023.txt
 ====================================================================================================
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-  SEGMENT 1  (0:00–5:00)   — Traffic Stop Initiation  [24 violations]
+  SEG 1  (0:00–5:00)   Traffic Stop Initiation  [24 violations]
 ────────────────────────────────────────────────────────────────────────────────────────────────────
   [MODERATE 6/10] possible-use-of-force
-  Legal: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
-  Detail:  The person on the driver's side (appearing to be an officer in tan uniform) is in an
+  Law: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+  The person on the driver's side (appearing to be an officer in tan uniform) is in an
     aggressive forward posture with arms extended toward the vehicle or its occupant. The body
     positioning suggests physical force may be being applied, though the exact nature cannot be
-    fullydetermined from this single frame and distance.
+    fully determined from this single frame and distance.
 
   [MODERATE 6/10] possible-excessive-force
-  Legal: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
-  Detail:  The officer on the driver's side is in an aggressive forward stance with arms extended
-    toward the vehicle occupant. The posture suggests physical force is being applied, possibly
-    reaching into the vehicle or physically engaging with the occupant. Without clear view of the
-    subject's behavior, proportionality of force cannot be fully assessed from this single frame.
+  Law: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+  The officer on the driver's side is in an aggressive forward stance with arms extended toward
+    the vehicle occupant. The posture suggests physical force is being applied, possibly
+    reaching into the vehicle or physically engaging with the occupant. Without clear view of
+    the subject's behavior, proportionality of force cannot be fully assessed from this single
+    frame.
 
   [MODERATE 6/10] potential-excessive-force
-  Legal: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
-  Detail:  Two apparent officers have what appear to be weapons drawn and pointed at the stopped
-    vehicle. Without knowing the underlying justification or threat level, the proportionality of
-    thisforce level cannot be fully assessed from this single frame alone.
+  Law: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+  Two apparent officers have what appear to be weapons drawn and pointed at the stopped vehicle.
+    Without knowing the underlying justification or threat level, the proportionality of this
+    force level cannot be fully assessed from this single frame alone.
 
   [MODERATE 5/10] possible-unlawful-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The figure in dark clothing appears to be leaning significantly into the driver's side
-    window of the stopped vehicle, which could indicate reaching into the vehicle. Without visible
-    consent or a warrant, this posture raises a potential 4th Amendment concern, though the exact
-    nature of the interaction cannot be confirmed from this frame alone.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The figure in dark clothing appears to be leaning significantly into the driver's side window
+    of the stopped vehicle, which could indicate reaching into the vehicle. Without visible
+    consent or a warrant, this posture raises a potential 4th Amendment concern, though the
+    exact nature of the interaction cannot be confirmed from this frame alone.
 
   [MODERATE 5/10] possible-warrantless-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  Two individuals appearing to be officers are leaning into both sides of the stopped
-    vehicle simultaneously, which could indicate a search of the vehicle interior. It is unclear
-    whether consent was given or probable cause exists.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Two individuals appearing to be officers are leaning into both sides of the stopped vehicle
+    simultaneously, which could indicate a search of the vehicle interior. It is unclear whether
+    consent was given or probable cause exists.
 
   [MODERATE 5/10] potential-warrantless-vehicle-search
-  Legal: Maine Constitution Art. I §5 / 4th Amendment / Carroll v. United States, 267 U.S. 132 (1925)
-  Detail:  Both individuals appear to be reaching into or engaging with the vehicle from both
-    sidessimultaneously. This could indicate a search of the vehicle or extraction of an occupant.
+  Law: Maine Constitution Art. I §5 / 4th Amendment / Carroll v. United States, 267 U.S. 132 (1925)
+  Both individuals appear to be reaching into or engaging with the vehicle from both sides
+    simultaneously. This could indicate a search of the vehicle or extraction of an occupant.
     Without audio or additional context, it is unclear if consent was given or probable cause
     existed.
 
   [MODERATE 5/10] possible-warrantless-vehicle-entry
-  Legal: 4th Amendment / Maine Constitution Art. I §5 / Arizona v. Gant, 556 U.S. 332 (2009)
-  Detail:  The officer on the driver's side appears to be reaching into or making forceful contact
-    withthe vehicle interior. If no consent, warrant, or exigent circumstances exist, this could
+  Law: 4th Amendment / Maine Constitution Art. I §5 / Arizona v. Gant, 556 U.S. 332 (2009)
+  The officer on the driver's side appears to be reaching into or making forceful contact with
+    the vehicle interior. If no consent, warrant, or exigent circumstances exist, this could
     constitute an unlawful search or seizure.
 
   [MODERATE 5/10] seizure-of-person
-  Legal: 4th Amendment / Maine Constitution Art. I §5 / Terry v. Ohio, 392 U.S. 1 (1968)
-  Detail:  The positioning of two apparent officers with arms extended toward the vehicle on both
-    sidesconstitutes a seizure under the 4th Amendment. A reasonable person in the vehicle would
-    notfeel free to leave. The legality depends on whether officers had probable cause or
+  Law: 4th Amendment / Maine Constitution Art. I §5 / Terry v. Ohio, 392 U.S. 1 (1968)
+  The positioning of two apparent officers with arms extended toward the vehicle on both sides
+    constitutes a seizure under the 4th Amendment. A reasonable person in the vehicle would not
+    feel free to leave. The legality depends on whether officers had probable cause or
     reasonable suspicion justifying a high-risk stop.
 
   [MODERATE 5/10] possible-use-of-force
-  Legal: 17-A M.R.S.A. §107
-  Detail:  The individual on the driver's side appears to be physically engaging with the stopped
-    vehicle or its occupant(s) in a forceful posture — body leaned forward, arms extended
-    aggressively toward or into the vehicle. The second individual on the passenger side also
-    appears to be actively engaging. Without audio or additional context, it is unclear whether
-    thislevel of physical engagement is proportionate.
+  Law: 17-A M.R.S.A. §107
+  The individual on the driver's side appears to be physically engaging with the stopped vehicle
+    or its occupant(s) in a forceful posture — body leaned forward, arms extended aggressively
+    toward or into the vehicle. The second individual on the passenger side also appears to be
+    actively engaging. Without audio or additional context, it is unclear whether this level of
+    physical engagement is proportionate.
 
   [MODERATE 5/10] video-integrity-concern
-  Legal: Maine Rules of Evidence 901(a) / Federal Rules of Evidence 901(a)
-  Detail:  The presence of a Bandicut video editing/cutting software watermark indicates this
-    footage has been processed through third-party video editing software. This raises questions
-    aboutthe chain of custody and integrity of the video evidence, including whether portions may
-    havebeen cut, rearranged, or omitted.
+  Law: Maine Rules of Evidence 901(a) / Federal Rules of Evidence 901(a)
+  The presence of a Bandicut video editing/cutting software watermark indicates this footage has
+    been processed through third-party video editing software. This raises questions about the
+    chain of custody and integrity of the video evidence, including whether portions may have
+    been cut, rearranged, or omitted.
 
   [MINOR 4/10] possible-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The person on the passenger side of the vehicle has the rear area or trunk area open or
-    isstanding near it with arms extended; this may indicate a search is being initiated or the
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The person on the passenger side of the vehicle has the rear area or trunk area open or is
+    standing near it with arms extended; this may indicate a search is being initiated or the
     subject is being ordered out of the vehicle, but image resolution makes it difficult to
     confirm
 
   [MINOR 4/10] possible-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The person on the driver's side appears to be reaching into or making physical contact
-    withthe vehicle. If this constitutes a search without consent or probable cause, it could be a
-    4thAmendment issue. Cannot confirm a search is occurring from this single frame.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The person on the driver's side appears to be reaching into or making physical contact with
+    the vehicle. If this constitutes a search without consent or probable cause, it could be a
+    4th Amendment issue. Cannot confirm a search is occurring from this single frame.
 
   [MINOR 4/10] possible-warrantless-vehicle-search-or-seizure
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  Officers appear to be reaching into or physically interacting with the stopped vehicle
-    fromboth sides simultaneously. This could indicate a search or extraction. No warrant or
-    consent can be confirmed from this frame alone.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Officers appear to be reaching into or physically interacting with the stopped vehicle from
+    both sides simultaneously. This could indicate a search or extraction. No warrant or consent
+    can be confirmed from this frame alone.
 
   [MINOR 3/10] officer-safety-traffic-control
-  Legal: 17-A M.R.S.A. §107
-  Detail:  A vehicle is passing in the oncoming lane with no visible traffic control measures
-    (cones, flares, or secondary unit). No emergency lights are visibly reflecting off surrounding
+  Law: 17-A M.R.S.A. §107
+  A vehicle is passing in the oncoming lane with no visible traffic control measures (cones,
+    flares, or secondary unit). No emergency lights are visibly reflecting off surrounding
     surfaces, raising concern about whether the stop is properly marked for roadway safety.
 
   [MINOR 3/10] dual-officer-approach-both-sides
-  Legal: 17-A M.R.S.A. §107
-  Detail:  Two officers simultaneously engaging the vehicle from both driver and passenger sides
-    mayindicate an escalated tactical approach; this should be documented to assess whether force
-    orsearch procedures were proportionate to the circumstances.
+  Law: 17-A M.R.S.A. §107
+  Two officers simultaneously engaging the vehicle from both driver and passenger sides may
+    indicate an escalated tactical approach; this should be documented to assess whether force
+    or search procedures were proportionate to the circumstances.
 
   [MINOR 3/10] dual-side-approach
-  Legal: 17-A M.R.S.A. §107
-  Detail:  Two individuals approaching both sides of the vehicle simultaneously is consistent with
-    ahigh-risk or felony stop procedure. If this level of tactical response was not proportionate
-    tothecircumstances, it may raise concerns about proportionality of the encounter.
+  Law: 17-A M.R.S.A. §107
+  Two individuals approaching both sides of the vehicle simultaneously is consistent with a
+    high-risk or felony stop procedure. If this level of tactical response was not proportionate
+    to the circumstances, it may raise concerns about proportionality of the encounter.
 
   [MINOR 3/10] possible-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  A second person is visible on the passenger side of the vehicle near the tree line,
-    whichcould indicate a second officer conducting a search or inspection of the passenger side;
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A second person is visible on the passenger side of the vehicle near the tree line, which
+    could indicate a second officer conducting a search or inspection of the passenger side;
     however, the image is not clear enough to confirm this definitively
 
   [MINOR 3/10] dual-side-approach
-  Legal: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
-  Detail:  Two figures are approaching or positioned on both the driver and passenger sides of the
-    stopped vehicle simultaneously, which may indicate a search posture or felony-stop technique.
-    Ifnoreasonable suspicion or probable cause exists for this level of approach, it could
-    escalate the encounter beyond a routine traffic stop.
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+  Two figures are approaching or positioned on both the driver and passenger sides of the
+    stopped vehicle simultaneously, which may indicate a search posture or felony-stop
+    technique. If no reasonable suspicion or probable cause exists for this level of approach,
+    it could escalate the encounter beyond a routine traffic stop.
 
   [MINOR 3/10] officer-identification
-  Legal: 5 M.R.S.A. §4681 / 42 U.S.C. §1983
-  Detail:  Neither officer's badge number, name tag, or other identifying information is visible
-    fromthis dashcam distance and resolution. This makes accountability difficult to establish.
+  Law: 5 M.R.S.A. §4681 / 42 U.S.C. §1983
+  Neither officer's badge number, name tag, or other identifying information is visible from
+    this dashcam distance and resolution. This makes accountability difficult to establish.
 
   [MINOR 3/10] officer-identification
-  Legal: 5 M.R.S.A. §4681 / 42 U.S.C. §1983
-  Detail:  Neither individual's badge number, name tag, or agency identification is visible from
-    thisdistance and resolution. This limits accountability documentation.
+  Law: 5 M.R.S.A. §4681 / 42 U.S.C. §1983
+  Neither individual's badge number, name tag, or agency identification is visible from this
+    distance and resolution. This limits accountability documentation.
 
   [MINOR 2/10] unidentifiable-officer
-  Legal: 5 M.R.S.A. §4681
-  Detail:  Officer's badge number, name tag, and identifying information are not visible or
-    legible from this dashcam distance and angle
+  Law: 5 M.R.S.A. §4681
+  Officer's badge number, name tag, and identifying information are not visible or legible from
+    this dashcam distance and angle
 
   [MINOR 2/10] officer-identification
-  Legal: Maine Constitution Art. I §6
-  Detail:  Neither individual's badge number, name tag, or department insignia is visible from
-    thisdistance and angle, making officer identification impossible from this frame alone
+  Law: Maine Constitution Art. I §6
+  Neither individual's badge number, name tag, or department insignia is visible from this
+    distance and angle, making officer identification impossible from this frame alone
 
   [MINOR 2/10] unidentified-officer
-  Legal: Maine Constitution Art. I §6 / 42 U.S.C. §1983
-  Detail:  Officer's badge number, name tag, and identifying details are not discernible from the
-    dashcam distance; cannot confirm whether officer properly identified themselves to the driver
+  Law: Maine Constitution Art. I §6 / 42 U.S.C. §1983
+  Officer's badge number, name tag, and identifying details are not discernible from the dashcam
+    distance; cannot confirm whether officer properly identified themselves to the driver
 
   [MINOR 2/10] officer-identification-not-visible
-  Legal: 5 M.R.S.A. §4681
-  Detail:  At the distance captured by the dashcam, no badge numbers, name tags, or agency
-    identifiers are legible on either individual. This limits accountability documentation.
+  Law: 5 M.R.S.A. §4681
+  At the distance captured by the dashcam, no badge numbers, name tags, or agency identifiers
+    are legible on either individual. This limits accountability documentation.
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-  SEGMENT 3  (10:00–15:00) — Initial Detention / Commands  [35 violations]
+  SEG 3  (10:00–15:00) Detention / Commands  [35 violations]
 ────────────────────────────────────────────────────────────────────────────────────────────────────
   [MODERATE 6/10] possible-unlawful-vehicle-extraction
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  Subject appears to be removed or in the process of being removed from the vehicle.
-    Without visible evidence of a warrant, probable cause for arrest, or exigent circumstances,
-    forcible removal from a vehicle during a traffic stop may implicate 4th Amendment protections.
-    Cannot determine justification from this frame alone.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Subject appears to be removed or in the process of being removed from the vehicle. Without
+    visible evidence of a warrant, probable cause for arrest, or exigent circumstances, forcible
+    removal from a vehicle during a traffic stop may implicate 4th Amendment protections. Cannot
+    determine justification from this frame alone.
 
   [MODERATE 5/10] possible-weapon-drawn
-  Legal: 17-A M.R.S.A. §107
-  Detail:  Officer's right arm appears extended in a manner that could indicate a drawn weapon or
+  Law: 17-A M.R.S.A. §107
+  Officer's right arm appears extended in a manner that could indicate a drawn weapon or
     pointing gesture, but the image resolution and distance make it impossible to determine with
     certainty what is in the officer's hand
 
   [MODERATE 5/10] possible-use-of-force
-  Legal: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
-  Detail:  Two or more figures appear to be in physical contact or a struggle near the stopped
-    vehicle. Due to distance and image quality, it is unclear who is an officer and who is a
-    subject, and whether the force used is proportionate.
+  Law: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+  Two or more figures appear to be in physical contact or a struggle near the stopped vehicle.
+    Due to distance and image quality, it is unclear who is an officer and who is a subject, and
+    whether the force used is proportionate.
 
   [MODERATE 5/10] possible-excessive-force
-  Legal: 17-A M.R.S.A. §107
-  Detail:  Officer appears to be physically engaging with subject at the vehicle door, possibly
-    pulling or extracting the subject from the vehicle. The level of force and whether it is
+  Law: 17-A M.R.S.A. §107
+  Officer appears to be physically engaging with subject at the vehicle door, possibly pulling
+    or extracting the subject from the vehicle. The level of force and whether it is
     proportionate cannot be fully determined from this single frame, but physical contact is
     visible.
 
   [MODERATE 5/10] warrantless-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  A person in what appears to be darker clothing (possibly an officer) is leaning into or
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A person in what appears to be darker clothing (possibly an officer) is leaning into or
     reaching into the truck bed area. If this is an officer, this may constitute a search of the
-    vehicle. No warrant is visible, and it is unclear whether consent was given or probable cause
-    exists.
+    vehicle. No warrant is visible, and it is unclear whether consent was given or probable
+    cause exists.
 
   [MODERATE 5/10] possible-use-of-force
-  Legal: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
-  Detail:  A person in white appears to be physically engaged with someone or something at the
-    opendriver-side door of the stopped vehicle. The nature of the contact cannot be definitively
+  Law: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+  A person in white appears to be physically engaged with someone or something at the open
+    driver-side door of the stopped vehicle. The nature of the contact cannot be definitively
     determined at this distance, but there appears to be a physical interaction or struggle.
 
   [MODERATE 5/10] possible-use-of-force
-  Legal: 17-A M.R.S.A. §107
-  Detail:  Two individuals appear to be engaged in physical contact or a struggle at the rear of
-    thetruck. If one is an officer, the nature and proportionality of force cannot be determined
-    fromthis distance and angle.
+  Law: 17-A M.R.S.A. §107
+  Two individuals appear to be engaged in physical contact or a struggle at the rear of the
+    truck. If one is an officer, the nature and proportionality of force cannot be determined
+    from this distance and angle.
 
   [MODERATE 5/10] video-integrity-concern
-  Legal: Maine Rules of Evidence 901(a) / Federal Rules of Evidence 901(a)
-  Detail:  The presence of a Bandicut video editing software splash screen indicates the footage
-    hasbeen cut, edited, or processed using third-party software. This raises questions about the
-    completeness and integrity of the video evidence. Footage may have been selectively trimmed or
-    segments removed.
+  Law: Maine Rules of Evidence 901(a) / Federal Rules of Evidence 901(a)
+  The presence of a Bandicut video editing software splash screen indicates the footage has been
+    cut, edited, or processed using third-party software. This raises questions about the
+    completeness and integrity of the video evidence. Footage may have been selectively trimmed
+    or segments removed.
 
   [MINOR 4/10] possible-vehicle-search-or-reach-in
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The person standing at the driver's side appears to have their arm raised and is
-    reaching into or toward the vehicle interior, which could indicate a search or physical
-    interaction with the vehicle occupant without clear consent visible
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The person standing at the driver's side appears to have their arm raised and is reaching into
+    or toward the vehicle interior, which could indicate a search or physical interaction with
+    the vehicle occupant without clear consent visible
 
   [MINOR 4/10] possible-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The officer appears to be leaning into or reaching into the driver's side window area
-    ofthevehicle. If the officer is reaching inside the vehicle without consent or probable cause,
-    thiscould constitute an unlawful search.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The officer appears to be leaning into or reaching into the driver's side window area of the
+    vehicle. If the officer is reaching inside the vehicle without consent or probable cause,
+    this could constitute an unlawful search.
 
   [MINOR 4/10] possible-unlawful-exit-order-or-search
-  Legal: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968) / Maine Constitution Art. I §5
-  Detail:  Subject is standing outside the vehicle with the officer in very close proximity. If
-    thesubject was ordered out without articulable safety concern or reasonable suspicion of
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968) / Maine Constitution Art. I §5
+  Subject is standing outside the vehicle with the officer in very close proximity. If the
+    subject was ordered out without articulable safety concern or reasonable suspicion of
     criminal activity beyond a traffic infraction, this could raise 4th Amendment concerns. The
-    officer appears to be making physical contact or is positioned extremely close to the subject,
-    whichmay indicate a pat-down or physical detention.
+    officer appears to be making physical contact or is positioned extremely close to the
+    subject, which may indicate a pat-down or physical detention.
 
   [MINOR 4/10] seizure-without-visible-justification
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  A traffic stop and apparent foot pursuit are occurring; the basis for the stop and
-    pursuit is not determinable from this frame alone. If the subject on the passenger side is
-    fleeing, the circumstances of the stop and any subsequent use of force will be legally
-    significant.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A traffic stop and apparent foot pursuit are occurring; the basis for the stop and pursuit is
+    not determinable from this frame alone. If the subject on the passenger side is fleeing, the
+    circumstances of the stop and any subsequent use of force will be legally significant.
 
   [MINOR 4/10] possible-vehicle-search
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The vehicle door appears open and an individual who may be an officer is positioned
-    nearor at the vehicle while a subject stands nearby. This positioning could indicate a vehicle
-    search is occurring, though it is not definitively clear from this single frame.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The vehicle door appears open and an individual who may be an officer is positioned near or at
+    the vehicle while a subject stands nearby. This positioning could indicate a vehicle search
+    is occurring, though it is not definitively clear from this single frame.
 
   [MINOR 3/10] traffic-stop-basis
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  A traffic stop constitutes a seizure under the 4th Amendment; the basis for the stop
-    cannot be determined from this frame alone. The stop appears to be on a rural road with no
-    visible traffic violations evident in the frame.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A traffic stop constitutes a seizure under the 4th Amendment; the basis for the stop cannot be
+    determined from this frame alone. The stop appears to be on a rural road with no visible
+    traffic violations evident in the frame.
 
   [MINOR 3/10] unclear-officer-identification
-  Legal: Maine Constitution Art. I §6 / 4th Amendment
-  Detail:  The person who appears to be conducting the stop is not clearly identifiable as a law
+  Law: Maine Constitution Art. I §6 / 4th Amendment
+  The person who appears to be conducting the stop is not clearly identifiable as a law
     enforcement officer — no visible uniform markings, badge, or patrol vehicle identifiers are
     discernible at this distance and resolution
 
   [MINOR 3/10] traffic-stop-procedure
-  Legal: 4th Amendment / Maine Constitution Art. I §5 / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
-  Detail:  The interaction appears to be occurring at the rear of the stopped vehicle on the
-    roadway rather than at the driver's window, which may indicate the subject was removed from
-    thevehicle. The basis for any such removal is not apparent from this frame alone.
+  Law: 4th Amendment / Maine Constitution Art. I §5 / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+  The interaction appears to be occurring at the rear of the stopped vehicle on the roadway
+    rather than at the driver's window, which may indicate the subject was removed from the
+    vehicle. The basis for any such removal is not apparent from this frame alone.
 
   [MINOR 3/10] possible-unlawful-exit-order
-  Legal: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
-  Detail:  Subject appears to be standing outside the vehicle during what appears to be a traffic
-    stopwith hands raised near head level, suggesting the subject may have been ordered out of the
+  Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+  Subject appears to be standing outside the vehicle during what appears to be a traffic stop
+    with hands raised near head level, suggesting the subject may have been ordered out of the
     vehicle. While officers may order occupants out per Pennsylvania v. Mimms, the hands-up
-    posture may indicate a felony stop procedure which requires reasonable suspicion of a serious
-    offense.
+    posture may indicate a felony stop procedure which requires reasonable suspicion of a
+    serious offense.
 
   [MINOR 3/10] no-backup-present-during-use-of-force
-  Legal: 5 M.R.S.A. §4681
-  Detail:  Only one officer is visible during what appears to be a physical engagement with a
-    subject. While not itself a legal violation, the absence of backup during a use-of-force event
-    raises concerns about procedural safety and escalation risk.
+  Law: 5 M.R.S.A. §4681
+  Only one officer is visible during what appears to be a physical engagement with a subject.
+    While not itself a legal violation, the absence of backup during a use-of-force event raises
+    concerns about procedural safety and escalation risk.
 
   [MINOR 3/10] traffic-stop-documentation
-  Legal: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
-  Detail:  Two individuals are outside a stopped vehicle on a roadway; it is unclear whether this
-    isaconsensual encounter or a seizure under the 4th Amendment. The nature of the stop and its
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+  Two individuals are outside a stopped vehicle on a roadway; it is unclear whether this is a
+    consensual encounter or a seizure under the 4th Amendment. The nature of the stop and its
     justification cannot be determined from this single frame.
 
   [MINOR 3/10] possible-traffic-stop-without-visible-emergency-lights
-  Legal: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
-  Detail:  A vehicle appears to have been stopped on the roadway. No visible emergency lights
-    (red/blue) can be clearly seen activated on the dashcam vehicle or on the stopped vehicle. If
-    thisis a law enforcement stop, the absence of visible emergency lights raises questions about
-    proper stop procedures.
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+  A vehicle appears to have been stopped on the roadway. No visible emergency lights (red/blue)
+    can be clearly seen activated on the dashcam vehicle or on the stopped vehicle. If this is a
+    law enforcement stop, the absence of visible emergency lights raises questions about proper
+    stop procedures.
 
   [MINOR 3/10] possible-physical-contact
-  Legal: 17-A M.R.S.A. §107 / 4th Amendment (Graham v. Connor, 490 U.S. 386)
-  Detail:  The darker-clothed figure on the far right appears to be in very close proximity to the
+  Law: 17-A M.R.S.A. §107 / 4th Amendment (Graham v. Connor, 490 U.S. 386)
+  The darker-clothed figure on the far right appears to be in very close proximity to the
     vehicle or the other person, and their posture suggests possible physical engagement, though
-    theresolution and distance make it impossible to confirm whether force is being applied.
+    the resolution and distance make it impossible to confirm whether force is being applied.
 
   [MINOR 3/10] possible-search-or-seizure
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  The scene may depict a roadside stop with interaction at the rear of a vehicle. If this
-    isatraffic stop, the basis for the stop and any search of the vehicle bed cannot be determined
-    fromthis frame alone.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  The scene may depict a roadside stop with interaction at the rear of a vehicle. If this is a
+    traffic stop, the basis for the stop and any search of the vehicle bed cannot be determined
+    from this frame alone.
 
   [MINOR 2/10] officer-identification
-  Legal: 42 U.S.C. §1983
-  Detail:  Officer's badge, name tag, and uniform identifiers are not visible from this dashcam
-    distance and angle, making positive identification difficult for accountability purposes
+  Law: 42 U.S.C. §1983
+  Officer's badge, name tag, and uniform identifiers are not visible from this dashcam distance
+    and angle, making positive identification difficult for accountability purposes
 
   [MINOR 2/10] traffic-stop-approach
-  Legal: 4th Amendment / Maine Constitution Art. I §5
-  Detail:  Officer is leaning closely into the driver's side window area; without audio it is
-    unclear if the basis for the stop was communicated or if consent for any search was requested.
-    Thisframe alone does not show a violation but warrants review of subsequent frames.
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Officer is leaning closely into the driver's side window area; without audio it is unclear if
+    the basis for the stop was communicated or if consent for any search was requested. This
+    frame alone does not show a violation but warrants review of subsequent frames.
 
   [MINOR 2/10] officer-identification
-  Legal: Maine Constitution Art. I §6
-  Detail:  The person at the vehicle window appears to be an officer conducting a traffic stop,
-    butbadge number, name tag, and agency identification are not visible from this distance
+  Law: Maine Constitution Art. I §6
+  The person at the vehicle window appears to be an officer conducting a traffic stop, but badge
+    number, name tag, and agency identification are not visible from this distance
 
   [MINOR 2/10] officer-identification
-  Legal: 42 U.S.C. §1983
-  Detail:  Officer's badge number, name tag, and identifying information are not discernible from
-    thisdashcam angle and distance, making it difficult to identify the officer for accountability
+  Law: 42 U.S.C. §1983
+  Officer's badge number, name tag, and identifying information are not discernible from this
+    dashcam angle and distance, making it difficult to identify the officer for accountability
     purposes
 
   [MINOR 2/10] officer-identification
-  Legal: Maine Constitution Art. I §6
-  Detail:  Officer's badge number, name tag, and identifying details are not visible from this
-    dashcam angle and distance, making it impossible to confirm whether proper identification was
+  Law: Maine Constitution Art. I §6
+  Officer's badge number, name tag, and identifying details are not visible from this dashcam
+    angle and distance, making it impossible to confirm whether proper identification was
     displayed to the subject
 
   [MINOR 2/10] officer-identification-not-visible
-  Legal: 42 U.S.C. §1983
-  Detail:  At this distance and resolution, no badge number, name tag, or other identifying
-    markings on the officer are discernible. This limits accountability documentation.
+  Law: 42 U.S.C. §1983
+  At this distance and resolution, no badge number, name tag, or other identifying markings on
+    the officer are discernible. This limits accountability documentation.
 
   [MINOR 2/10] officer-identification
-  Legal: 42 U.S.C. §1983 / Department policy requirements
-  Detail:  Officer's badge number, name tag, and identifying information are not visible or
-    legible from this dashcam distance, making accountability documentation difficult.
+  Law: 42 U.S.C. §1983 / Department policy requirements
+  Officer's badge number, name tag, and identifying information are not visible or legible from
+    this dashcam distance, making accountability documentation difficult.
 
   [MINOR 2/10] officer-identification
-  Legal: 42 U.S.C. §1983
-  Detail:  Officer's badge number, name tag, and identifying information are not legible from the
-    dashcam at this distance and resolution, making officer identification difficult
+  Law: 42 U.S.C. §1983
+  Officer's badge number, name tag, and identifying information are not legible from the dashcam
+    at this distance and resolution, making officer identification difficult
 
   [MINOR 2/10] officer-identification
-  Legal: Maine Constitution Art. I §6 / 42 U.S.C. §1983
-  Detail:  Officer's badge, name tag, and identifying information are not legible from the dashcam
+  Law: Maine Constitution Art. I §6 / 42 U.S.C. §1983
+  Officer's badge, name tag, and identifying information are not legible from the dashcam
     distance in this frame
 
   [MINOR 2/10] vehicle-exit-order-or-request
-  Legal: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
-  Detail:  Subject is standing outside the vehicle on the passenger side during what appears to be
-    atraffic stop. It is unclear whether the subject exited voluntarily or was ordered out. If
+  Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+  Subject is standing outside the vehicle on the passenger side during what appears to be a
+    traffic stop. It is unclear whether the subject exited voluntarily or was ordered out. If
     ordered out without justification beyond a routine stop, this may raise questions, though
     Pennsylvania v. Mimms permits officers to order drivers out during a lawful stop.
 
   [MINOR 2/10] officer-identification-not-visible
-  Legal: Maine Constitution Art. I §6
-  Detail:  No officer is clearly visible in this frame to confirm identification, badge number, or
-    proper uniform during what appears to be a traffic stop
+  Law: Maine Constitution Art. I §6
+  No officer is clearly visible in this frame to confirm identification, badge number, or proper
+    uniform during what appears to be a traffic stop
 
   [MINOR 2/10] passenger-side-approach-tactical
-  Legal: 4th Amendment / 17-A M.R.S.A. §107
-  Detail:  Officer is approaching on the passenger side of the vehicle while the driver-side door
-    isopen. This is a tactical choice but notable for documentation. The open driver door with the
+  Law: 4th Amendment / 17-A M.R.S.A. §107
+  Officer is approaching on the passenger side of the vehicle while the driver-side door is
+    open. This is a tactical choice but notable for documentation. The open driver door with the
     officer on the opposite side could indicate the subject exited or was directed to exit the
     vehicle.
 
   [MINOR 2/10] officer-identification
-  Legal: 5 M.R.S.A. §4681
-  Detail:  Officer's badge number, name tag, and identifying information are not visible due to
-    distance and image resolution. Cannot confirm officer identification compliance.
+  Law: 5 M.R.S.A. §4681
+  Officer's badge number, name tag, and identifying information are not visible due to distance
+    and image resolution. Cannot confirm officer identification compliance.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  SEG 4  (15:00–20:00) Escalation / Search  [23 violations]
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  [MODERATE 5/10] possible-felony-stop-procedures
+  Law: 4th Amendment / 17-A M.R.S.A. §107
+  Subject appears to have arm(s) raised while exiting or standing at the vehicle door,
+    suggesting a high-risk or felony-style stop. The proportionality and justification for this
+    level of stop cannot be determined from this single frame alone.
+
+  [MODERATE 5/10] possible-warrantless-vehicle-search
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A person in darker clothing on the passenger side appears to be reaching into or interacting
+    with the interior of the vehicle while the subject stands outside. If this is an officer
+    conducting a vehicle search, it is unclear whether consent was given or probable cause
+    existed.
+
+  [MODERATE 5/10] possible-warrantless-vehicle-search
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A person is leaning into/reaching into a stopped vehicle through the open driver's door. If
+    this is an officer, it may constitute a vehicle search. Cannot determine from this frame
+    alone whether consent was given or probable cause exists.
+
+  [MODERATE 5/10] possible-use-of-force
+  Law: 17-A M.R.S.A. §107
+  Person on the right side of the blue vehicle appears to have arms extended toward or against
+    another individual or the vehicle, which could indicate physical force being applied. Cannot
+    determine if this person is an officer or civilian from this frame alone.
+
+  [MODERATE 5/10] video-editing-or-tampering
+  Law: Maine Rules of Evidence, Rule 901(a) / Federal Rules of Evidence 901(a)
+  The presence of third-party video editing software (Bandicut) branding at this timestamp
+    indicates the original video footage has been edited, cut, or otherwise processed. This
+    raises questions about the integrity and completeness of the video evidence.
+
+  [MINOR 4/10] possible-felony-stop-procedure
+  Law: 17-A M.R.S.A. §107
+  Subject appears to have hands raised/elevated near open driver's door while a second person is
+    positioned on the opposite side of the vehicle. This positioning may indicate a high-risk or
+    felony stop. The subject's raised hands suggest compliance; any use of force at this point
+    should be scrutinized for proportionality.
+
+  [MINOR 4/10] vehicle-search-without-consent
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Both doors of the stopped vehicle are open, which could indicate a vehicle search is being
+    conducted or is about to be conducted. Cannot confirm from this single frame whether consent
+    was given or probable cause exists.
+
+  [MINOR 3/10] traffic-stop-documentation
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A traffic stop appears to be in progress on a rural road. The person approaching the vehicle's
+    driver side door is not clearly identifiable as law enforcement due to distance and
+    resolution. If this is an officer, no badge or identification is visible from this frame.
+
+  [MINOR 3/10] traffic-stop-procedure
+  Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+  Subject has exited the vehicle and is standing outside during a traffic stop. It is unclear
+    whether the officer directed the subject to exit or the subject exited voluntarily. If the
+    officer ordered the subject out without articulable safety concern, or conversely if the
+    subject exited without instruction, this may be relevant to the nature of the detention.
+
+  [MINOR 3/10] officer-identification
+  Law: 42 U.S.C. §1983
+  The individual's uniform details, badge, and name tag are not visible from this distance and
+    angle. Officer cannot be positively identified from this frame.
+
+  [MINOR 3/10] unidentified-officer
+  Law: Maine Constitution Art. I §5 / 4th Amendment
+  No uniformed officer is clearly visible approaching the vehicle or making contact with the
+    occupants despite this appearing to be a traffic stop initiated by the dashcam vehicle. It
+    is unclear who is law enforcement and who is a civilian in this frame.
+
+  [MINOR 3/10] vehicle-exit-during-stop
+  Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+  The driver-side door of the stopped vehicle is open and at least one person has exited the
+    vehicle. If a traffic stop is in progress, the occupants appear to be outside the vehicle
+    which may indicate the stop dynamics are unusual or that subjects were ordered out. Without
+    audio, the circumstances are unclear.
+
+  [MINOR 3/10] traffic-stop-documentation
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A traffic stop appears to be in progress but no officer is visibly present engaging with the
+    subject. The subject has exited or is exiting their vehicle, which may indicate a lack of
+    officer control of the stop or the subject was ordered out. Without audio or additional
+    context, the reason for the stop and whether reasonable suspicion or probable cause existed
+    cannot be determined from this frame alone.
+
+  [MINOR 3/10] possible-detention-or-seizure
+  Law: 4th Amendment
+  The positioning of the vehicles blocking the road and persons outside vehicles may indicate a
+    traffic stop or roadside detention. The patrol dashcam is recording from behind, suggesting
+    law enforcement initiated this stop.
+
+  [MINOR 3/10] roadside-detention
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Multiple individuals appear present around a stopped vehicle with at least one door open on a
+    public roadway, suggesting a possible traffic stop or roadside encounter. Unable to
+    determine from this frame alone whether reasonable suspicion or probable cause exists for
+    the stop.
+
+  [MINOR 2/10] traffic-stop-documentation
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Traffic stop appears to be in progress on a rural road. No officer is clearly visible
+    approaching the vehicle, and no identifiable officer information (badge, name) can be
+    confirmed from this frame. Context of the stop (reasonable suspicion or probable cause)
+    cannot be determined from this single frame.
+
+  [MINOR 2/10] officer-identification
+  Law: 5 M.R.S.A. §4681
+  The figure believed to be an officer is too far from the dashcam to confirm badge, name tag,
+    or any identifying markings on uniform. Officer identification cannot be verified from this
+    frame.
+
+  [MINOR 2/10] officer-identification
+  Law: 5 M.R.S.A. §4681
+  At this distance and resolution, no officer badge number, name tag, or identifying markings
+    are visible on either individual. This makes it difficult to identify the officer for
+    accountability purposes.
+
+  [MINOR 2/10] officer-identification-not-visible
+  Law: 42 U.S.C. §1983
+  No badge number, name tag, or department identification is visible on the individual in darker
+    clothing at this distance and angle.
+
+  [MINOR 2/10] officer-identification
+  Law: Maine Constitution Art. I §6
+  Officer's badge number, name tag, and unit identifiers are not visible or readable in this
+    frame due to distance and resolution
+
+  [MINOR 2/10] traffic-stop-procedure
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+  Subject has exited the vehicle during what appears to be a traffic stop. Under Pennsylvania v.
+    Mimms (1977), officers may order a driver to remain in or exit their vehicle. If the subject
+    exited voluntarily without being ordered back in, this is not itself a violation, but the
+    stop's basis and legality cannot be determined from this frame alone.
+
+  [MINOR 2/10] traffic-stop-documentation
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+  A traffic stop appears to be in progress on a rural road. No officer is visible approaching
+    the vehicle yet. The subject has exited their vehicle, which may indicate the stop dynamics
+    are unclear or that the subject was not instructed to remain in the vehicle.
+
+  [MINOR 2/10] traffic-stop-procedure
+  Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+  Subject has exited their vehicle and is standing outside during a traffic stop. Standard
+    procedure typically involves the officer approaching the stopped vehicle, not the subject
+    exiting. It is unclear from this single frame whether the subject was ordered out or exited
+    voluntarily, which could be relevant to the nature of the detention.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Analysis b28faa18  [6 violations]
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  [MODERATE 6/10] video-integrity-concern
+  Law: Maine Rules of Evidence Rule 901(a) / Federal Rules of Evidence Rule 901
+  The presence of a third-party video editing software (Bandicut) splash screen at timestamp
+    00:03:30 indicates this video has been edited, cut, or processed outside of the original
+    recording system. This raises questions about the completeness and integrity of the video
+    evidence.
+
+  [MINOR 4/10] possible-vehicle-search-without-consent
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  Both doors of the stopped vehicle are open and at least one occupant appears to be outside the
+    vehicle. This configuration could indicate a vehicle search is being initiated or occupants
+    were ordered out. Without audio, it cannot be confirmed whether consent was given or
+    probable cause existed.
+
+  [MINOR 4/10] possible-use-of-force
+  Law: 17-A M.R.S.A. §107 / 4th Amendment
+  Two individuals appear to be in very close physical contact near the vehicle. The nature of
+    the interaction — whether consensual, an arrest, or a physical altercation — cannot be
+    definitively determined from this single frame alone.
+
+  [MINOR 3/10] exit-order-justification
+  Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+  If occupants were ordered out of the vehicle, under Pennsylvania v. Mimms (1977) and Maryland
+    v. Wilson (1997), officers may order occupants out during a lawful stop for safety. However,
+    both doors open and both occupants outside may warrant review of whether the stop escalated
+    beyond a routine traffic stop without justification.
+
+  [MINOR 3/10] traffic-stop-safety
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A vehicle is stopped on the roadway with the driver-side door open into the travel lane, and a
+    person is positioned on the far side of the vehicle. The nature of the stop and whether
+    proper procedures are being followed cannot be fully determined from this single frame.
+
+  [MINOR 2/10] traffic-stop-documentation
+  Law: 4th Amendment / Maine Constitution Art. I §5
+  A traffic stop appears to be in progress on a rural road. The person in the white shirt has
+    exited or is standing outside the vehicle. It is unclear whether this person exited
+    voluntarily or was ordered out. No officer is clearly visible in the frame, making it
+    difficult to assess the nature of the interaction.
 
 ====================================================================================================
-TOTAL NEW VIOLATIONS IN THIS DOCUMENT: 59
-(Additional segments still being analyzed — this document will be updated)
+TOTAL IN THIS DOCUMENT: 88 violations from new video segments
+NOTE: Segs 7-12 (30-60 min) = 0 new violations — stop had wound down, no new incidents visible
 ====================================================================================================
