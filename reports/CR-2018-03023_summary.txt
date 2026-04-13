@@ -1,13 +1,16 @@
-CASE SUMMARY — State of Maine v. Keith King (CR-2018-03023)
+CASE SUMMARY -- State of Maine v. Keith King (CR-2018-03023)
 Generated: April 13, 2026
-Total Violations: 101
-Critical (9-10): 48
-Serious (7-8): 2
+Total Violations: 124
+  Manual PCR: 58
+  AI Video Frame: 66
+Critical (9-10): 54
+Serious (7-8): 4
 Moderate (5-6): 9
-Illegal violations: 50
-Red flags: 95
+Minor (1-4): 57
+Illegal violations: 58
+Red flags: 117
 
-TOP VIOLATIONS:
+TOP VIOLATIONS (Severity 10):
   [10/10] Illegal Pretextual Traffic Stop — No PC / No RAS
   [10/10] 3-Hour Custodial Interrogation Without Miranda Warnings
   [10/10] Phone Seized in Direct Violation of Warrant Exclusion Clause
@@ -18,3 +21,33 @@ TOP VIOLATIONS:
   [10/10] Brady Violation — Heroin TruNarc Test 'Inconclusive' Withheld
   [10/10] Former AAG Admitted Class A Charges Were 'Inadvertent Error'
   [10/10] Officer Perry — Selective Recording Manipulation / False Narrative
+  [10/10] Coerced Plea — Court Order Violated, No Medications, AAG Threatened 4-Year Minimum
+  [10/10] 18-Hour Chain of Custody Gap — Officer Gastia Held Evidence in Unrecorded Location
+  [10/10] BHA Provided Keys for Warrantless Residential Entry; Keith Asked for Warrant Twice on Video
+  [10/10] Gabapentin Charge Legally Void — Not Scheduled in Maine Until Oct 15, 2019
+  [10/10] Ineffective Assistance of Counsel — 10 Documented Failures
+  [10/10] Warrant Signed 2 HOURS AFTER Traffic Stop — Entire Stop Was Warrantless
+  [10/10] TEMPORAL IMPOSSIBILITY: Seizure Claimed at 12:00 PM — Police Didn't Arrive Until 12:56:39 PM
+  [10/10] Traffic Stop Never Logged in Dispatch or Radio — Off-Book Coordinated Cover-Up
+  [10/10] Dashcam Video Tampered — Date/Time/Coordinates/Officer Info Stripped to Hide Pre-Warrant Stop
+  [10/10] Exculpatory Evidence (Cruiser Video) Withheld for 5.5 Years — Until February 2024
+  [10/10] Haskell's Own Police Report (Incident 18-060430, p.9) States 'No Illegal Drugs' in Vehicle
+  [10/10] Four Cell Phones Seized Including Two Non-Activated Phones — 1,000+ Calls, 350+ Private Photos Extracted
+  [10/10] Amanda Ross Illegally Strip-Searched on Public Road by Male Officers — No Female Officer Present
+  [10/10] Shannon Farrar Named as Witness in Warrant Affidavit But Never Witnessed Anything
+  [10/10] Perry Perjured Himself Before Grand Jury — ONLY Officer to Place Firearms at Apartment
+  [10/10] Perry Made False Report to DHHS — Firearms Near Child (Son Was Not Even Home)
+  [10/10] 45-Day Detention: No Medications, No Family Contact, No Contact With Diabetic Son
+  [10/10] Three Court-Appointed Attorneys Concealed, Withheld, and Denied Existence of Evidence
+  [10/10] Private Photos/Videos Extracted From Phones Now Appearing on Internet
+  [10/10] Forced Proffer Under Duress — Same Officer Who Fabricated Charges Was Present
+  [10/10] AAG Stuver Conflict of Interest — Previously Represented DHHS/CPS in Related Family Case While Criminal Case Was Pending
+  [10/10] Parents Offered $450,000 Home + 45 Acres + Ankle Monitoring as Bail Surety — Denied. Court Called Keith 'Danger to Society' Despite No Evidence
+  [10/10] No-Contact Order With Spouse Imposed Despite Her Being 80% of Keith's Mental Health Support — Deliberate Psychological Harm
+  [10/10] BrHA Housing Approved Sept 3 2024, Revoked Oct 26 2024 — Internal Emails Show 'Revoke Now' Sent Immediately After FOAA Request on Oct 7
+  [10/10] BHA Paper Tenant File Destroyed - Spoliation; Key Log Produced Oct 2025 Confirms Police Had Keys
+  [10/10] Bethany Instructed Property Managers in Writing: 'Ignore His Request — We Are Not Required to Provide Mr. King Any Information'
+  [10/10] Two Current BHA Employees Are Witnesses That No Warrant Was Shown on August 2, 2018
+  [10/10] Family Forced to Live in Vehicle Through Two Maine Winters — Service Dog Died From Cold — ADA Damages
+  [10/10] Perry Isolated Keith From Witnesses — Unobserved Coerced Admission, No Camera Coverage
+  [10/10] Miranda Coercion Tactic — "Cannot Ask Questions or Will Be Read Rights" While Told Not Free to Go
