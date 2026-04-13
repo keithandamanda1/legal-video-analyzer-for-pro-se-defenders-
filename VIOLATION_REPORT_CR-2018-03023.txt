@@ -1,673 +1,1473 @@
-================================================================================
-VIOLATION REPORT -- STATE OF MAINE v. KEITH KING
-Case No. CR-2018-03023 | District Court, Penobscot County
-Generated: April 13, 2026
-Total Violations Documented: 129
-  Manual PCR (documented evidence): 63
-  AI Video Frame Analysis: 66
-================================================================================
-
-LEGAL DISCLAIMER: AI-assisted tool for pro se use. NOT legal advice.
-Pine Tree Legal: 207-774-8211 | Maine Legal Services: 1-800-750-5353
-
---------------------------------------------------------------------------------
-CRITICAL (Severity 9-10) -- 59 findings
---------------------------------------------------------------------------------
-
-#1 [MANUAL_PCR] Illegal Pretextual Traffic Stop — No PC / No RAS
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Delaware v. Prouse (1979); Terry v. Ohio (1968); Maine Const. Art. I §5; 29-A M.R.S.A. §2104
-   Officer Evan Haskell stopped Keith King on Davis Road at ~14:10 on Aug 2, 2018 with no stated traffic infraction. Reason given: 'doing an investigation for drug sales' and 'there was a search warrant for his house.' A residential warrant does NOT authorize a vehicle stop — entirely separate 4th Amendment instruments. DISCOVERED: Dashcam video (Feb 2024 forensic analysis) + PCR petition Feb 18, 2026.
-
-#2 [MANUAL_PCR] 3-Hour Custodial Interrogation Without Miranda Warnings
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 5th Amendment; Miranda v. Arizona (1966); 14th Amendment due process
-   Held ~3 hours by multiple officers before Miranda rights read. Told he 'could not ask questions' or would be Mirandized, yet told he was 'not free to go.' Classic custodial interrogation without Miranda. All statements made suppressed. DISCOVERED: Dashcam/body cam video, February 2024 forensic analysis.
-
-#3 [MANUAL_PCR] Phone Seized in Direct Violation of Warrant Exclusion Clause
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Groh v. Ramirez (2004); Riley v. California (2014); Maine Const. Art. I §5; 16 M.R.S.A. §645
-   Search warrant contained explicit exclusionary clause commanding officers NOT to seize cellular phones or forensic data. Officers seized phone anyway Aug 2, 2018, directly violating a court order. DISCOVERED: Review of original warrant text, documented PCR draft Jan 17, 2026.
-
-#4 [MANUAL_PCR] Warrantless 5-Day Detention of Phone (Aug 2-7, 2018)
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645
-   Phone held in evidence locker Aug 2-7 with no warrant. Original warrant explicitly excluded phones; no new warrant for 5 days. DISCOVERED: Evidence log and warrant date comparison, PCR draft Jan 17, 2026.
-
-#5 [MANUAL_PCR] Aug 7 Forensic Warrant Tainted — Fruit of the Poisonous Tree
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Wong Sun v. United States (1963); Carpenter v. United States (2018); 16 M.R.S.A. §645, §648
-   Second warrant obtained Aug 7 to search illegally held phone. Initial seizure was expressly forbidden by original warrant; second warrant and ALL forensic results are fruit of the poisonous tree. DISCOVERED: Warrant review, PCR draft Jan 17, 2026.
-
-#6 [MANUAL_PCR] Amanda Ross Phone — Warrantless Seizure & 45-Day Forensic Extraction
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Riley v. California (2014); 16 M.R.S.A. §645; 14th Amendment due process
-   Police seized Amanda Ross's phone on Aug 2, 2018. Third party not named in any warrant. Held 45 days. Full forensic extraction performed without any warrant. DISCOVERED: Forensic extraction records, documented Jan 17, 2026.
-
-#7 [MANUAL_PCR] Brady Violation — DA Lied: Amanda Ross Phone Was Never Taken
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process; 17-A M.R.S.A. §451 (perjury)
-   DA affirmatively represented Amanda Ross's phone was never seized. Forensic extraction records prove this was false — full data dump performed. Brady violation and prosecutorial misconduct. DISCOVERED: Forensic records, documented Jan 17, 2026.
-
-#8 [MANUAL_PCR] Brady Violation — Heroin TruNarc Test 'Inconclusive' Withheld
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland (1963); Napue v. Illinois (1959); 14th Amendment Due Process
-   Alleged heroin only tested 'inconclusive' on TruNarc field test. No lab confirmation exists for Class A Trafficking charge. Exculpatory test results withheld from defense. DISCOVERED: FOAA records, December 2025.
-
-#9 [MANUAL_PCR] Former AAG Admitted Class A Charges Were 'Inadvertent Error'
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland; 14th Amendment Due Process; 18 U.S.C. §242; prosecutorial misconduct
-   Dec 17, 2025: Former AAG Janice Stuver formally admitted Aggravated Class A charges were based on 'inadvertent error' regarding location of evidence. These charges used to threaten 4-year mandatory minimum and coerce plea. DISCOVERED: Formal written statement from former AAG, December 17, 2025.
-
-#10 [MANUAL_PCR] Officer Perry — Selective Recording Manipulation / False Narrative
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B (body cam policy)
-   Officer Perry's personal body recorder was selectively turned on/off — synchronized with cruiser video — to exclude illegal conduct and create false narrative. Perry pulled Petitioner away from all witnesses to a private area to obtain unwitnessed admission. DISCOVERED: Forensic video analysis, February 2024.
-
-#11 [MANUAL_PCR] Coerced Plea — Court Order Violated, No Medications, AAG Threatened 4-Year Minimum
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 14th Amendment Due Process; Brady v. United States (1970); Godinez v. Moran (1993); 6th Amendment; contempt of court order
-   Prior court order required medical stabilization before plea. Forced into plea within 20 minutes of status hearing without required medications. AAG Jason Horn refused continuance, threatened 4-year mandatory minimum. DISCOVERED: Court records; PCR petition Feb 18, 2026.
-
-#12 [MANUAL_PCR] 18-Hour Chain of Custody Gap — Officer Gastia Held Evidence in Unrecorded Location
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland (chain of custody issues are exculpatory); Maine Rules of Evidence; 17-A M.R.S.A. §453 (potential tampering)
-   FOAA records confirm 18-hour overnight gap where evidence held in unrecorded location by Officer Gastia before formal logging. Breaks chain of custody; raises tampering concerns. DISCOVERED: FOAA records, January 2026.
-
-#13 [MANUAL_PCR] BHA Provided Keys for Warrantless Residential Entry; Keith Asked for Warrant Twice on Video
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Payton v. New York (1980); Maine Const. Art. I §5; 15 M.R.S.A. §1091; Steagald v. United States (1981)
-   BHA provided apartment keys to police without proper authorization. Dashcam video shows Keith asking for warrant TWICE and being denied both times. Officer produces key from pocket. BHA Master Key Log confirms no key was legally issued. DISCOVERED: Dashcam video (Feb 2024) + BHA key log via FOAA (Oct 6, 2025).
-
-#14 [MANUAL_PCR] Gabapentin Charge Legally Void — Not Scheduled in Maine Until Oct 15, 2019
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Ex Post Facto Clause (U.S. Const. Art. I §9; Maine Const. Art. I §11); Due Process; prosecutorial misconduct
-   Class B Possession charge filed for gabapentin for 2018 conduct. Maine added gabapentin to Schedule W on Oct 15, 2019 (P.L. 2019 ch. 215). Not federally scheduled. On Aug 2, 2018 possessing gabapentin was legal. Charging a non-crime. DISCOVERED: Legal research April 12, 2026.
-
-#15 [MANUAL_PCR] Ineffective Assistance of Counsel — 10 Documented Failures
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 6th Amendment; Strickland v. Washington (1984) — both deficient performance AND prejudice prongs met
-   Defense counsel failed to: (1) challenge illegal stop, (2) challenge phone seizure violating warrant exclusion, (3) suppress pre-Miranda statements, (4) investigate 18-hr custody gap, (5) obtain inconclusive drug test results, (6) challenge BHA warrantless entry, (7) investigate Perry recording manipulation, (8) advocate for medical stabilization before plea, (9) move to dismiss gabapentin count, (10) challenge CAD/radio log discrepancies. DISCOVERED: Post-conviction review 2024-2026.
-
-#16 [MANUAL_PCR] Warrant Signed 2 HOURS AFTER Traffic Stop — Entire Stop Was Warrantless
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Payton v. New York (1980); Beck v. Ohio (1964); Maine Const. Art. I §5
-   Stop at 10:30 AM on Aug 2, 2018. Search warrant not signed by judge until 12:30 PM — TWO HOURS LATER. Officer Perry falsely claimed to have a signed warrant at the time of the stop. Everything from 10:30 AM to 12:30 PM was conducted without any warrant at all. DISCOVERED: Warrant review — Perry IA complaint 3/17/2025.
-
-#17 [MANUAL_PCR] TEMPORAL IMPOSSIBILITY: Seizure Claimed at 12:00 PM — Police Didn't Arrive Until 12:56:39 PM
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Due Process (14th Amend.); Brady v. Maryland; fabrication of records
-   Forfeiture complaint (Counts 9 & 11) claims Keith's property was seized 'as of 8/2/2018 12:00:00 PM.' CAD Report #2933952 shows units 750 and 756 did not arrive at address until 12:56:39 PM — 56 MINUTES AFTER the claimed seizure. It is legally impossible to seize property before officers arrive. This is a fabricated forfeiture record. DISCOVERED: CAD cross-reference, Evidence Discrepancies doc 1/20/2026.
-
-#18 [MANUAL_PCR] Traffic Stop Never Logged in Dispatch or Radio — Off-Book Coordinated Cover-Up
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; due process
-   No CAD entry or radio log event exists for the traffic stop of Keith King prior to the search warrant call. Officers communicated on personal cell phones, not police radios. Sgt. Betters (supervisor, Unit 709) instructed Officer Haskell to IMMEDIATELY TAKE CELL PHONES AWAY from the scene — destroying communications evidence. The stop was deliberately kept off official record. DISCOVERED: CAD/radio log analysis, Perry IA complaint, Police Procedure doc 1/12/2026.
-
-#19 [MANUAL_PCR] Dashcam Video Tampered — Date/Time/Coordinates/Officer Info Stripped to Hide Pre-Warrant Stop
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §453 (tampering with physical evidence); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B
-   Police cruiser video provided to Keith in February 2024 had ALL metadata stripped — no date, no time, no coordinates, no officer information. Every other police cruiser video in Maine includes this data by default. The stripping was deliberate to conceal that the stop occurred at 10:30 AM — TWO HOURS before the warrant was signed at 12:30 PM. Without timestamps, the constitutional violation is harder to prove. DISCOVERED: Video analysis, Feb 2024; Perry IA complaint 3/17/2025.
-
-#20 [MANUAL_PCR] Exculpatory Evidence (Cruiser Video) Withheld for 5.5 Years — Until February 2024
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland (1963); Strickler v. Greene (1999); 14th Amendment Due Process
-   The police cruiser video — which proved no warrant existed at time of stop, showed Keith asking for warrant twice and being denied, showed the entire illegal detention — was withheld from Keith from August 2, 2018 until February 2024. Over FIVE AND A HALF YEARS of Brady suppression of the single most critical piece of exculpatory evidence in the case. DISCOVERED: February 2024 when video was finally produced.
-
-#21 [MANUAL_PCR] Haskell's Own Police Report (Incident 18-060430, p.9) States 'No Illegal Drugs' in Vehicle
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process
-   Officer Haskell's own police report (Incident 18-060430, Page 9) explicitly confirms that a search of the vehicle on August 2, 2018 yielded 'NO ILLEGAL DRUGS.' Yet AAG Janice Stuver stated in her response to the Board of Overseers (July 15, 2025) that the charges were based on 'the presence of scheduled drugs within his vehicle.' The State's own police report contradicts the AAG's stated basis for prosecution. DISCOVERED: Cross-reference of Stuver response with Haskell report — Keith's affidavit 12/1/2025.
-
-#22 [MANUAL_PCR] Four Cell Phones Seized Including Two Non-Activated Phones — 1,000+ Calls, 350+ Private Photos Extracted
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645; invasion of privacy
-   Officer Perry seized FOUR cell phones — including two that were NOT EVEN ACTIVATED — all in violation of the warrant's explicit exclusion clause. From these devices he extracted: 1,000+ phone calls, 500+ text messages, 380 contacts, and 350+ private pictures and videos of Keith and Amanda. This intimate private material was accessed by the entire police department and forensics unit. Private material has since appeared on the internet. DISCOVERED: Perry IA complaint 3/17/2025.
-
-#23 [MANUAL_PCR] Amanda Ross Illegally Strip-Searched on Public Road by Male Officers — No Female Officer Present
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; Maine Const. Art. I §5; 42 U.S.C. §1983; strip search requires warrant; gender-based rights violation
-   Amanda Ross was subjected to a strip search on the side of Davis Road — asked to lift her shirt exposing her stomach, turn around, and shake out her bra — by MALE officers with NO female officers present. Officer Shannon Farrar (Unit 750) was on the call but was at Bald Mountain Drive, not at the traffic stop. She was available but was never dispatched to assist with a female subject. This is an unconstitutional strip search performed by male officers on a woman in public. DISCOVERED: Perry IA complaint 3/17/2025; CAD log showing Farrar at different location.
-
-#24 [MANUAL_PCR] Shannon Farrar Named as Witness in Warrant Affidavit But Never Witnessed Anything
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §451 (perjury); §452 (false report); 4th Amendment — warrant based on false affidavit; Franks v. Delaware (1978)
-   Officer Shannon Farrar is named throughout the warrant affidavit and police statements as a witness, yet she never actually witnessed the traffic stop, never laid eyes on Keith King or the vehicle, and never witnessed any alleged illegal activities firsthand. She was at 33 Bald Mountain Drive, not Davis Road. Including her as a witness in the warrant affidavit to add credibility constitutes false statements in a warrant application. Under Franks v. Delaware, a warrant based on deliberate falsehoods must be voided. DISCOVERED: Perry IA complaint 3/17/2025; CAD showing Farrar at different location.
-
-#25 [MANUAL_PCR] Perry Perjured Himself Before Grand Jury — ONLY Officer to Place Firearms at Apartment
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §451 (perjury); 18 U.S.C. §1623 (false declarations before grand jury); Due Process; Brady v. Maryland
-   Officer Perry testified before the grand jury that the firearms were found at the apartment WITH the illegal substances. ALL FIVE OTHER OFFICERS at the scene placed the firearms in the car on Davis Road, not the apartment. Perry was the only officer who made this false claim — to the grand jury, to DHHS, and in his written statements. His testimony was essential to the aggravated trafficking charge (firearm enhancement). If the firearms were NOT with the drugs, there is no legal basis for the firearm enhancement. Perry committed perjury before the grand jury. DISCOVERED: Cross-reference of officer statements — Perry IA complaint 3/17/2025.
-
-#26 [MANUAL_PCR] Perry Made False Report to DHHS — Firearms Near Child (Son Was Not Even Home)
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §452 (false swearing/false report); 42 U.S.C. §1983; malicious prosecution
-   Officer Perry reported to DHHS that the firearms were found at the home with illegal substances accessible to Keith's son. This was false in two ways: (1) the firearms were in the car on Davis Road, not the home; (2) the son was not even home — he was with family until the following Monday, five days later. Perry's false DHHS report was used to escalate the criminal charges and potentially threatened Keith's parental rights. DISCOVERED: Perry IA complaint 3/17/2025.
-
-#27 [MANUAL_PCR] 45-Day Detention: No Medications, No Family Contact, No Contact With Diabetic Son
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 8th Amendment; 14th Amendment Due Process; ADA; 42 U.S.C. §1983; Estelle v. Gamble (1976)
-   Keith was detained for 45 days without: (1) required psychiatric medications for 7 diagnosed mental health conditions, (2) any contact with his wife Amanda, (3) any contact with his Type 1 diabetic son who had no phone and no vehicle. This was done deliberately — Perry withheld medications despite Amanda's direct requests. The 45-day detention without medications, with no contact with family, while mentally disabled, was used to coerce cooperation and the proffer agreement. DISCOVERED: Perry IA complaint 3/17/2025; King Narrative 10/1/2025.
-
-#28 [MANUAL_PCR] Three Court-Appointed Attorneys Concealed, Withheld, and Denied Existence of Evidence
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 6th Amendment; Strickland v. Washington (1984); potential civil conspiracy (42 U.S.C. §1985); Brady violations by defense counsel
-   All three of Keith's court-appointed attorneys: observed the exculpatory evidence (the cruiser video), denied its existence to him, refused to investigate the warrant-before-stop issue, and failed to challenge any of the constitutional violations. Given that three different attorneys all engaged in the same pattern of concealment, this suggests a coordinated failure — potentially rising to civil conspiracy with the prosecution. DISCOVERED: Perry IA complaint 3/17/2025; consistent across all PCR documents.
-
-#29 [MANUAL_PCR] Private Photos/Videos Extracted From Phones Now Appearing on Internet
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; invasion of privacy; 18 U.S.C. §2257; Maine privacy statutes; potential 18 U.S.C. §2252 (if images are intimate)
-   Over 350 private pictures and videos of Keith and Amanda extracted from illegally seized phones — in violation of the warrant's exclusion clause — have since appeared on the internet. The entire BPD and forensics unit had access to this intimate material. Unauthorized distribution of illegally obtained private material by law enforcement officers is itself a crime and a severe civil rights violation. DISCOVERED: Keith's account in King Narrative for Kielty 10/1/2025.
-
-#30 [MANUAL_PCR] Forced Proffer Under Duress — Same Officer Who Fabricated Charges Was Present
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 5th Amendment; 14th Amendment Due Process; Brady v. United States (1970); IAC
-   Keith was forced into a proffer agreement after 45 days of isolation, no medications, and no family contact. The proffer was conducted with Officer Perry PRESENT — the same officer who fabricated the charges, made up the incriminating statement Perry claimed Keith made, and who would later use the proffer to go before the grand jury. Any statement made during such a coerced proffer, in the presence of the fabricating officer, is constitutionally inadmissible. DISCOVERED: Perry IA complaint 3/17/2025; PCR petition 2/18/2026.
-
-#31 [MANUAL_PCR] AAG Stuver Conflict of Interest — Previously Represented DHHS/CPS in Related Family Case While Criminal Case Was Pending
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Maine Bar Rule 1.7 (conflict of interest); 14th Amendment Due Process; prosecutorial misconduct; Brady v. Maryland — conflicted AAG had duty to disclose
-   Confirmed Oct 5, 2025: AAG Janice Stuver — the prosecutor who threatened Keith with a 4-year mandatory minimum and pressured his plea — had previously represented DHHS/CPS in a related child protective matter involving the same family while the criminal case was actively pending. This is a direct conflict of interest requiring recusal. Any plea obtained by a conflicted prosecutor is constitutionally tainted.
-
-#32 [MANUAL_PCR] Parents Offered $450,000 Home + 45 Acres + Ankle Monitoring as Bail Surety — Denied. Court Called Keith 'Danger to Society' Despite No Evidence
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 8th Amendment (excessive bail); Stack v. Boyle (1951); ADA; 14th Amendment equal protection; Maine Bail Code; judicial bias/prejudgment
-   Keith's parents offered their $450,000 home and 45 acres as surety PLUS home confinement with ankle monitoring — a zero-flight-risk package. Denied. The presiding judge publicly called Keith a 'danger to society' and accused him of 'selling drugs that are killing people' at the bail hearing — despite: (1) no conviction, (2) inconclusive drug tests, (3) no sales evidence, (4) no prior record. This prejudicial judicial commentary poisoned the entire proceeding.
-
-#33 [MANUAL_PCR] No-Contact Order With Spouse Imposed Despite Her Being 80% of Keith's Mental Health Support — Deliberate Psychological Harm
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 8th Amendment; ADA (deliberate indifference to disability); 14th Amendment Due Process; Estelle v. Gamble (1976); 42 U.S.C. §1983
-   Court imposed a no-contact order with Amanda Ross — Keith's wife and 80% of his documented mental health support system — during his 42-day pretrial detention without medications. Officers observed panic attacks during the search. Removing his primary mental health support while denying medications and transferring him 100 miles away to Two Bridges Jail with no explanation was deliberate psychological harm used to coerce cooperation.
-
-#34 [MANUAL_PCR] BrHA Housing Approved Sept 3 2024, Revoked Oct 26 2024 — Internal Emails Show 'Revoke Now' Sent Immediately After FOAA Request on Oct 7
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Fair Housing Act 42 U.S.C. §3617 (retaliation); 1st Amendment; Maine Human Rights Act §4633; 42 U.S.C. §1983; HUD regulations
-   Brewer Housing Authority approved Keith's housing application on September 3, 2024 and offered a 2-bedroom unit at 1 Norumbega Drive for October 1 move-in. On October 7, 2024, Keith filed a FOAA request for 2018 records. Internal emails obtained from HUD's Washington DC office show Knox, Bethany, and Perkins exchanged messages saying 'revoke now' IMMEDIATELY AFTER receiving the FOAA request. Approval was revoked October 26 citing a pretextual $600 debt and criminal history — both previously cleared. Direct documented causal link between protected FOAA activity and adverse housing action.
-
-#35 [MANUAL_PCR] BHA Paper Tenant File Destroyed - Spoliation; Key Log Produced Oct 2025 Confirms Police Had Keys
-   Severity: 10/10 | Confidence: 0.90 | Timestamp: N/A
-   Law: Spoliation doctrine; 24 C.F.R. §908.101 (federal records retention); Brady v. Maryland; 18 U.S.C. §1519; adverse inference instruction
-   Bethany (BHA) admitted in writing that the paper tenant file has been destroyed due to age. However, the 2018 master key log WAS produced in October 2025 (Exhibit B, MHRC complaint) and confirms that a key to Keith's apartment was issued to law enforcement on August 2, 2018 without a warrant. Federal housing retention rules (24 C.F.R. 908.101) require preservation of such records. The destruction of the paper tenant file constitutes spoliation of evidence. The surviving key log is direct documentary evidence of BHA-facilitated warrantless entry.
-
-#36 [MANUAL_PCR] Bethany Instructed Property Managers in Writing: 'Ignore His Request — We Are Not Required to Provide Mr. King Any Information'
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 1 M.R.S. §408-A (FOAA); 5 U.S.C. §552 (FOIA); Maine Bar Rules 3.4, 8.4 (misconduct); 42 U.S.C. §1983; obstruction of justice
-   Documents obtained from HUD's Washington DC office (via federal FOIA) show BHA General Counsel Joseph Bethany sent written instructions to property managers — including Charlotte Perkins at Brewer HA — directing them to 'IGNORE HIS REQUEST' and stating BHA 'is not required to provide Mr. King any of the information he is requesting.' This is documented FOAA/FOIA obstruction by a licensed attorney directing others to violate federal and state public records laws.
-
-#37 [MANUAL_PCR] Two Current BHA Employees Are Witnesses That No Warrant Was Shown on August 2, 2018
-   Severity: 10/10 | Confidence: 0.90 | Timestamp: N/A
-   Law: 4th Amendment; corroborating witness testimony; Brady v. Maryland (government must disclose witnesses); subpoena power
-   The MHRC complaint (Oct 9, 2025) states that two current BHA employees witnessed police entering Keith's apartment on August 2, 2018 and can testify that no warrant was ever shown or verified. These are live, identifiable witnesses who can corroborate what the dashcam shows — Keith asking for a warrant twice and being denied, with officers using a key from their pocket. BHA management has worked to suppress this evidence for over 7 years.
-
-#38 [MANUAL_PCR] Family Forced to Live in Vehicle Through Two Maine Winters — Service Dog Died From Cold — ADA Damages
-   Severity: 10/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Fair Housing Act §3617; ADA; 42 U.S.C. §1983; intentional infliction of emotional distress; Maine MHRA; compensatory and punitive damages
-   As a direct result of BHA/BrHA's retaliatory housing revocation, Keith, Amanda, and son Keenan were forced to live in their vehicle through two Maine winters. The family's service dog died from the cold during this period. Keith continues to suffer PTSD, anxiety, and depression linked to these events. This is the direct and documented consequence of the retaliatory housing revocation connected to the 2018 police incident.
-
-#39 [MANUAL_PCR] Perry Isolated Keith From Witnesses — Unobserved Coerced Admission, No Camera Coverage
-   Severity: 10/10 | Confidence: high | Timestamp: N/A
-   Law: 5th Amendment; 14th Amendment; Miranda v. Arizona, 384 U.S. 436 (1966)
-   PCR Final Draft (Feb 18, 2026) confirms: Officer Perry deliberately pulled Keith away from all other witnesses to a private area to obtain an alleged admission of guilt. The admission was never witnessed by other officers and was not captured on camera in full context. This is a textbook coercive interrogation tactic used to manufacture unverifiable incriminating statements. DISCOVERED: PCR Final Draft statement, Feb 2026.
-
-#40 [MANUAL_PCR] Miranda Coercion Tactic — "Cannot Ask Questions or Will Be Read Rights" While Told Not Free to Go
-   Severity: 10/10 | Confidence: high | Timestamp: N/A
-   Law: 5th Amendment; Miranda v. Arizona, 384 U.S. 436 (1966); Berkemer v. McCarty, 468 U.S. 420 (1984)
-   PCR Final Draft (Feb 2026): During detention, Keith was explicitly told he "could not ask questions" or he would be "read his rights" — used as a threat to silence him. Simultaneously, he was told he was "not free to go." This is a deliberate Miranda-chilling tactic: using the reading of Miranda rights as a PUNISHMENT for asking questions, while maintaining custodial control. This inverts the purpose of Miranda and constitutes a 5th Amendment violation. DISCOVERED: PCR Final Draft, Feb 2026.
-
-#41 [MANUAL_PCR] HUD Officials Kara E. Norman and Richa Karki Instructed BHA/BrHA to Ignore Keith — Federal Cover-Up (Ex. L MHRC)
-   Severity: 10/10 | Confidence: high | Timestamp: N/A
-   Law: 42 U.S.C. § 3617 (FHA Anti-Retaliation); 18 U.S.C. § 242; 5 U.S.C. § 552 (FOIA); 42 U.S.C. § 1983
-   HUD FOIA response (Exhibit L, MHRC complaint Oct 9, 2025) produced internal emails showing HUD officials Kara E. Norman and Richa Karki (Boston Regional Office) were included in communications instructing BHA (Bethany/Knox) and BrHA (Perkins) to ignore Keith's FOAA/FOIA requests. This establishes an inter-agency conspiracy involving federal housing officials actively participating in the retaliation and cover-up. HUD officials are bound by 5 U.S.C. § 552 (FOIA), 42 U.S.C. § 3617 (FHA anti-retaliation), and 18 U.S.C. § 242 (deprivation of rights under color of law). Participating in a scheme to deny housing records to a disabled person who was previously subjected to warrantless entry by police facilitated by the housing authority constitutes federal civil rights violations. SOURCE: HUD FOIA response, Exhibit L of MHRC complaint, October 2025.
-
-#42 [MANUAL_PCR] 24 C.F.R. § 966.4(d)(3) Violation — BHA Allowed Police Entry Without Tenant Consent or Court Order
-   Severity: 10/10 | Confidence: high | Timestamp: N/A
-   Law: 24 C.F.R. § 966.4(d)(3); 4th Amendment; 42 U.S.C. § 1983; 5 M.R.S. § 4582 (Maine Right to Privacy in Housing)
-   MHRC Complaint (Oct 9, 2025) cites 24 C.F.R. § 966.4(d)(3), the federal HUD regulation governing tenant rights in federally-subsidized public housing. Under this regulation, a public housing authority may only allow law enforcement entry: (1) pursuant to a valid warrant, (2) when an emergency exists, or (3) with tenant consent. On August 2, 2018, BHA provided keys to Bangor Police Department without any warrant (Keith asked twice and was refused), without any emergency, and without tenant consent. BHA's action violated its own federal regulatory obligations as a HUD-funded housing authority, making HUD financially complicit in the 4th Amendment violation. As a federally-funded entity, BHA's violation of 24 C.F.R. § 966.4(d)(3) also triggers potential HUD enforcement action and grounds for civil liability under 42 U.S.C. § 1983. SOURCE: MHRC Complaint, Oct 9, 2025.
-
-#43 [MANUAL_PCR] MHRC Complaint Confirms: 'Revoke Now' Emails Immediately After FOAA Request — Knox, Bethany, and Perkins Named
-   Severity: 10/10 | Confidence: high | Timestamp: N/A
-   Law: 42 U.S.C. § 3617 (FHA Retaliation); MHRA § 4633; 42 U.S.C. § 1985(3) (Civil Rights Conspiracy); 42 U.S.C. § 1983
-   The October 9, 2025 MHRC complaint, based on internal emails obtained through HUD FOIA, confirms: 'Internal emails obtained later show that Knox, Bethany, and Perkins exchanged messages saying revoke now immediately after receiving our FOAA request.' This is documentary evidence of coordinated retaliation by three separate housing officials: Joe Knox (former BHA Executive Director), Joseph Bethany (BHA General Counsel), and Charlotte Perkins (BrHA Executive Director). The emails establish the required 'causal link' for a Fair Housing Act § 3617 retaliation claim with three named conspirators. This evidence was obtained from HUD via FOIA — meaning the federal government's own records document the retaliation. SOURCES: Internal emails; MHRC Complaint, Oct 9, 2025, Section 2.
-
-#44 [MANUAL_PCR] Denial of Medical Care During 3-Hour Detention in 90-Degree Heat
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 8th Amendment; 14th Amendment; City of Revere v. Mass. General Hospital (1983); 42 U.S.C. §1983
-   Heard on video repeatedly complaining of injured wrist and extreme pain during 3+ hour detention in ~90-degree heat. Medical attention deliberately denied. DISCOVERED: Dashcam video, February 2024 forensic analysis.
-
-#45 [MANUAL_PCR] Officer Perry Self-Assigned to CAD Call After Nothing Found — Classic Cover-Up Tactic
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 17-A M.R.S.A. §453; Brady v. Maryland; due process
-   After the vehicle search on Davis Road found NOTHING ILLEGAL, Officer Perry performed a CAD call and SELF-ASSIGNED himself to it. Self-assignment (rather than being dispatched) is a known cover-up tactic that removes supervisory oversight of how an officer became involved in a case. This is how Perry inserted himself into the chain of events after the illegal stop yielded no evidence. DISCOVERED: CAD analysis, Perry IA complaint 3/17/2025.
-
-#46 [MANUAL_PCR] Residence Searched Before Vehicle Search Was Completed — Concurrent Illegal Searches
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; scope of warrant violations; Maine Const. Art. I §5
-   Officers began searching the residence at 33 Bald Mountain Drive while Keith was still detained on Davis Road and the vehicle search was not yet complete. The searches of vehicle and residence were conducted simultaneously — before any evidence from the vehicle had been evaluated. The home search was initiated without the legal predicate established in sequence. DISCOVERED: Perry IA complaint 3/17/2025; CAD timeline analysis.
-
-#47 [MANUAL_PCR] Wife's Vehicle Illegally Seized — Left Amanda and Diabetic Son Without Transportation
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 4th Amendment; 14th Amendment; 42 U.S.C. §1983
-   Officers illegally seized Amanda Ross's vehicle, leaving her without transportation for their Type 1 diabetic son's medical appointments. Amanda was also left with no cell phone (also seized). The illegal seizure of family property — vehicle and all phones — with a diabetic child in the household created a medical emergency risk. DISCOVERED: King Narrative for Kielty 10/1/2025.
-
-#48 [MANUAL_PCR] $100,000 Bail — Excessive for Disabled Person With No Prior Record, $370 in Pocket
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 8th Amendment (excessive bail); 14th Amendment equal protection; ADA (disability discrimination in bail setting)
-   $100,000 bail imposed on Keith King despite: no prior drug or violent criminal record, documented mental health disabilities, receiving SSI ($960/month), having only $370 at time of arrest, and being unable to work. Bail was set at an amount designed to ensure pretrial detention — not to ensure appearance. This is especially egregious given the charges were based on fabricated and falsified evidence. DISCOVERED: Perry IA complaint 3/17/2025; Keith's own account.
-
-#49 [MANUAL_PCR] Perry Slandered Keith King in Media — 'Selling Crack and Heroin From His Home' — Before Conviction
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 1st/14th Amendment (liberty interest in reputation); 42 U.S.C. §1983 Paul v. Davis (1976); Maine defamation law; prejudiced jury pool
-   Officer Perry made public statements to newspapers and TV news claiming Keith King was selling crack cocaine and heroin out of his home. These statements were: (1) made before any conviction, (2) based on no admissible evidence, (3) published multiple times, (4) damaging to Keith's reputation, and (5) designed to prejudice any future jury pool. The media coverage was directly caused by Perry's false statements. DISCOVERED: Perry IA complaint 3/17/2025.
-
-#50 [MANUAL_PCR] BHA Officials Exchanged Emails to Actively Conceal FOAA Records (Privilege Log Proves It)
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: 1 M.R.S.A. §408-A (FOAA); Due Process; 42 U.S.C. §1983; obstruction of justice
-   The BHA 'Privilege Log' shows BHA legal counsel (Joseph Bethany) and staff (Charlotte Perkins) exchanged emails on 10/1/24, 10/11/24, and 8/6/25 specifically regarding Keith's FOAA requests — actively coordinating to conceal records from him. Additionally, FOIA responses from HUD's Washington office revealed Bethany instructed property managers to 'IGNORE HIS REQUEST.' This is deliberate FOAA obstruction documented by their own internal records. DISCOVERED: Keith's affidavit 12/1/2025; King Narrative 10/1/2025.
-
-#51 [MANUAL_PCR] 72-Hour Eviction Issued 2.5 Months After Arrest — Caused 3+ Years of Homelessness
-   Severity: 9/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Fair Housing Act; ADA; Maine Human Rights Act; 42 U.S.C. §1983 (retaliation); due process
-   Two and a half months after the August 2, 2018 arrest, Keith's family received a 72-hour notice to vacate on a Friday evening with nowhere to go. This forced the family to sell nearly all their belongings and led to over THREE YEARS of homelessness, often living in a vehicle through Maine winters. The eviction was retaliatory — triggered by the BHA's complicity in the illegal police entry and their desire to suppress evidence of the master key violation. DISCOVERED: King Narrative for Kielty 10/1/2025.
-
-#52 [MANUAL_PCR] Charlotte Perkins (BrHA) Lied to HUD About Date of Housing Revocation — Federal False Statement
-   Severity: 9/10 | Confidence: 0.90 | Timestamp: N/A
-   Law: 18 U.S.C. §1001 (false statements to federal agency); Fair Housing Act; HUD enforcement authority; 42 U.S.C. §3617
-   Internal HUD documents show Charlotte Perkins (Executive Director, Brewer Housing Authority) provided false information to HUD investigators about the date Keith's housing approval was revoked. The lie was designed to obscure the 19-day gap between the FOAA request (Oct 7) and revocation (Oct 26) that proves retaliation. HUD Case CAS-70054-N9C2 was assigned December 2024 but no enforcement action has been taken.
-
-#53 [MANUAL_PCR] Original AAG Removed From Case Mid-Prosecution Without Explanation — Successor Had No Case File
-   Severity: 9/10 | Confidence: 0.85 | Timestamp: N/A
-   Law: 6th Amendment (fair trial); Brady v. Maryland (continuity of disclosure obligations); IAC — defense counsel failed to seek continuance when AAG had no file
-   The original AAG was removed from the case without transparent explanation during prosecution. The successor AAG appeared at a hearing with no case file history and immediately pressed for plea resolution. At the plea hearing, Keith was left explaining case history to an AAG who had no files. This chaotic transition was used to rush and coerce the plea.
-
-#54 [MANUAL_PCR] Firearm Aggravator Lacks Required "In Furtherance" Nexus — Firearms Were in Vehicle, Not at Trafficking Location
-   Severity: 9/10 | Confidence: high | Timestamp: N/A
-   Law: 17-A M.R.S.A. § 1105-A; United States v. Bailey, 516 U.S. 137 (1995); PCR claim under Strickland
-   17-A M.R.S.A. § 1105-A requires that the firearm aggravator be established by possession "in furtherance" of trafficking, contemporaneous with the drug activity. The firearms were found in Keith's vehicle on Davis Road during a traffic stop, not at the alleged trafficking location (apartment). Officer Perry perjured himself before the grand jury as the ONLY officer to place firearms at the apartment. Without the "in furtherance" nexus, the firearm aggravator fails and the Class A charge is legally unsupported. DISCOVERED: Attorney Intake Memo / grand jury analysis, Oct 2025.
-
-#55 [MANUAL_PCR] Judicial Bias at Bail — "Selling Drugs That Are Killing People" — Before Trial, No Sales Evidence, Inconclusive Test
-   Severity: 9/10 | Confidence: high | Timestamp: N/A
-   Law: U.S. Const. amend. XIV; 15 M.R.S. § 1026; Coffin v. United States, 156 U.S. 432 (1895) (presumption of innocence)
-   At the bail hearing, the judge stated Keith was "selling drugs that are killing people" — before any trial, based solely on the arrest, despite: (1) no evidence of drug sales — only alleged possession; (2) TruNarc heroin test was inconclusive; (3) no confirmatory lab results. This prejudicial judicial commentary at a bail proceeding, before any adjudication of guilt, violates the presumption of innocence and influenced the 00,000 cash-only bail. DISCOVERED: Attorney Intake Memo, Oct 2025 / bail hearing transcript.
-
-#56 [MANUAL_PCR] Bethany FOAA Contradiction: 'No Records Exist' Followed by 'Records Were Destroyed' — False Official Statement
-   Severity: 9/10 | Confidence: high | Timestamp: N/A
-   Law: 1 M.R.S.A. § 408-A (FOAA); 17-A M.R.S.A. § 453 (False Public Records); Maine FOAA Ombudsman
-   Bethany FOAA contradiction documented in writing. (1) May 12, 2025: Bethany stated 'We have received your request, but have no records responsive to your request in our possession.' -- implying records NEVER EXISTED. (2) June 3, 2025: After Keith followed up, Bethany changed position: 'due to the age of your file, any paper file has been destroyed, as is our policy.' -- now admitting records DID EXIST but were destroyed. These are irreconcilably contradictory statements under a legally binding FOAA obligation. A false statement in an FOAA response violates 1 M.R.S.A. § 408-A. SOURCE: Bethany email chain May-June 2025 (Mr. Bethany emails #1).
-
-#57 [MANUAL_PCR] Fair Housing Act § 3617 Retaliation — Housing Revoked Within Days of FOAA Request About 2018 Incident
-   Severity: 9/10 | Confidence: high | Timestamp: N/A
-   Law: 42 U.S.C. § 3617 (FHA Anti-Retaliation); 24 C.F.R. § 100.400; 42 U.S.C. § 3604 (FHA); Maine Human Rights Act
-   August 2024: Brewer Housing Authority (BrHA) approved Keith's housing application. Staff member Aaliyah verbally assured Keith that his background check issues were 'not a concern.' Keith was placed at the TOP of the waiting list for 2- and 3-bedroom apartments at Norumbega. An apartment was assigned with a move-in date. 2-3 days AFTER Keith submitted a FOAA request to Joe Knox (BHA) requesting 2018 incident records, BrHA revoked the housing approval -- citing the same '$600 debt and criminal history' that Aaliyah had already said was not a concern. The Fair Housing Act prohibits retaliation against persons who exercise fair housing rights or file complaints (42 U.S.C. § 3617). Filing a FOAA request about police misconduct in public housing is a protected activity. Revoking housing 2-3 days after that request constitutes retaliation. SOURCE: Keith FOIA/FOAA request Aug 3, 2025 and prior BrHA approval/revocation documentation.
-
-#58 [MANUAL_PCR] HUD DC Office Produced 95 Pages While BHA Said 'No Records' -- Proven False Statement
-   Severity: 9/10 | Confidence: high | Timestamp: N/A
-   Law: 1 M.R.S.A. § 408-A (FOAA); 5 U.S.C. § 552 (FOIA); 17-A M.R.S.A. § 453; 42 U.S.C. § 1983
-   BHA General Counsel Bethany responded to Keith's May 2025 FOAA request: 'We have received your request, but have no records responsive to your request in our possession.' However, Keith subsequently filed a FOIA request with HUD's Washington DC office (Tyler M. Wright), which produced 95 pages of records responsive to the same request. These 95 pages include BHA/BrHA internal communications about Keith's case -- records that Bethany claimed did not exist. This proves Bethany's FOAA response was knowingly false. Filing a false FOAA response by a public official violates 1 M.R.S.A. § 408-A and potentially 17-A M.R.S.A. § 453 (False Public Records). SOURCE: Keith's letter to HUD, June 2025 (email #4).
-
-#59 [MANUAL_PCR] Housing Revoked 1 Day Before Scheduled Move-In -- Targeted Retaliation Timing
-   Severity: 9/10 | Confidence: high | Timestamp: N/A
-   Law: 42 U.S.C. § 3617 (FHA Anti-Retaliation); 42 U.S.C. § 3604 (FHA); 24 C.F.R. § 100.400; Maine Human Rights Act
-   Keith's email to HUD (June 2025) confirms the precise timing: BrHA (Brewer Housing Authority) approved Keith's application, assigned him a specific apartment at Norumbega with a scheduled move-in date, and then REVOKED the approval LITERALLY ONE DAY BEFORE THE MOVE-IN DATE. The revocation came after Keith filed a FOAA request with Joe Knox (BHA) requesting records about the 2018 unauthorized police entry into his apartment. This specific 'day before' timing eliminates any innocent explanation -- it was deliberate retaliation. Combined with internal emails showing 'Revoke Now' instructions and Mrs. Perkins' communications with Rica about ignoring Keith, this constitutes Fair Housing Act retaliation (42 U.S.C. § 3617). SOURCE: Keith's HUD complaint, June 2025 (email chain, Mr. Bethany emails #4).
---------------------------------------------------------------------------------
-SERIOUS (Severity 7-8) -- 4 findings
---------------------------------------------------------------------------------
-
-#60 [MANUAL_PCR] Initial Charging Document Unsigned and Undated — Legally Deficient Instrument
-   Severity: 8/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Maine Rules of Criminal Procedure; Due Process (14th Amendment); M.R. Crim. P. 3
-   The initial criminal complaint (Counts 1-11) lacks both a DATE and a SIGNATURE from the swearing officer. Without an officer's sworn signature and date, the document is legally deficient as a charging instrument — it is not a valid information or complaint under Maine law. This deficiency calls into question the legality of the entire prosecution from its inception. DISCOVERED: Evidence Discrepancies doc 1/20/2026; charges document obtained in discovery 10/16/2025.
-
-#61 [MANUAL_PCR] DEA Involvement — Potential Federal Jurisdiction and Additional Exculpatory Evidence
-   Severity: 8/10 | Confidence: 0.95 | Timestamp: N/A
-   Law: Brady v. Maryland; Giglio v. United States; Federal FOIA (5 U.S.C. §552); due process
-   Keith's November 2025 FOAA request specifically sought DEA agent statements and inter-agency correspondence referencing pending lab results and joint investigations for the August 2, 2018 incident. DEA involvement in a Maine drug case raises additional Brady and Giglio obligations under federal law, and any inter-agency correspondence about pending (inconclusive) lab results must be disclosed. DISCOVERED: FOAA request 11/4/2025 references DEA.
-
-#62 [MANUAL_PCR] Duplicative OAS Counts — Two Charges for Same Date/Statute — Multiplicity
-   Severity: 8/10 | Confidence: high | Timestamp: N/A
-   Law: 5th Amendment Double Jeopardy; 17-A M.R.S.A. (applicable OAS statute); United States v. Dixon, 509 U.S. 688 (1993)
-   Attorney Intake Memo (PCR Part 2) identifies that two counts of Operating After Suspension (OAS) were filed for the same date and statute — a clear multiplicity issue. The Double Jeopardy Clause prohibits multiple punishments for the same offense. Defense counsel failed to move to dismiss the duplicative count, leaving it to inflate the charge sheet and increase plea leverage. DISCOVERED: Attorney Intake Memo analysis, Oct 2025.
-
-#63 [MANUAL_PCR] Transfer to Two Bridges Correctional (100 Miles Away) — Punitive, No Reason Given, Away From Family and Medical Support
-   Severity: 8/10 | Confidence: high | Timestamp: N/A
-   Law: 8th Amendment; 14th Amendment Due Process; 15 M.R.S. § 1026; Helling v. McKinney, 509 U.S. 25 (1993)
-   After arrest, Keith was transferred to Two Bridges Correctional Facility, approximately 100 miles from Bangor, without any stated reason. This transfer: (1) isolated him from his family and primary mental health support (Amanda); (2) denied him medication for 42 days; (3) separated him from his diabetic son who needed him. The transfer appears punitive rather than logistical, and combined with the no-contact order, constituted a deliberate strategy to maximize psychological pressure toward a plea. DISCOVERED: Attorney Intake Memo, Oct 2025.
---------------------------------------------------------------------------------
-MODERATE (Severity 5-6) -- 9 findings
---------------------------------------------------------------------------------
-
-#64 [AI_VIDEO_FRAME] possible-excessive-force
-   Severity: 5/10 | Confidence: low | Timestamp: 00:00:00
-   Law: 17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
-   Two officers appear to have physical contact with a single subject at the rear of the vehicle. The subject appears outnumbered and it is unclear from this single frame whether the level of force is proportionate to any resistance.
-
-#65 [AI_VIDEO_FRAME] possible-warrantless-vehicle-search
-   Severity: 5/10 | Confidence: medium | Timestamp: 00:00:20
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The officer appears to be leaning into or searching the vehicle. It is unclear from this single frame whether consent was given, whether probable cause exists, or whether a warrant was obtained. The two civilians are standing outside the vehicle, which may indicate they were asked to exit.
-
-#66 [AI_VIDEO_FRAME] possible-search-without-visible-consent-or-warrant
-   Severity: 5/10 | Confidence: low | Timestamp: 00:00:30
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Officer on the left appears to be leaning into or examining the rear/trunk area of the stopped vehicle. It is unclear from this single frame whether consent was given, a warrant exists, or probable cause was established.
-
-#67 [AI_VIDEO_FRAME] possible-warrantless-vehicle-search
-   Severity: 5/10 | Confidence: low | Timestamp: 00:00:40
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Two individuals appear to be examining or reaching into the rear area of the stopped vehicle. If these are officers conducting a search of the vehicle's trunk or rear compartment, no consent or warrant issuance is visible in this frame.
-
-#68 [AI_VIDEO_FRAME] possible-warrantless-vehicle-search
-   Severity: 5/10 | Confidence: low | Timestamp: 00:00:50
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Both individuals in dark clothing appear to be leaning into or looking into the vehicle from both sides simultaneously. If these are officers, this positioning could indicate a vehicle search in progress. Cannot confirm from this single frame whether consent was given, a warrant exists, or probable cause has been established.
-
-#69 [AI_VIDEO_FRAME] possible-use-of-force
-   Severity: 5/10 | Confidence: medium | Timestamp: 00:03:20
-   Law: 17-A M.R.S.A. §107
-   Officer and subject appear to be in very close physical contact at the rear of the vehicle. The subject's body posture appears off-balance, suggesting physical force may be being applied. Without audio or additional frames, the context and proportionality cannot be fully assessed.
-
-#70 [AI_VIDEO_FRAME] possible-warrantless-search
-   Severity: 5/10 | Confidence: low | Timestamp: 00:03:20
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The physical positioning of the officer's hands near the subject's body is consistent with a pat-down or frisk. If conducted without reasonable articulable suspicion that the subject is armed and dangerous (Terry v. Ohio, 392 U.S. 1), this could constitute an unlawful search.
-
-#71 [AI_VIDEO_FRAME] possible-warrantless-search
-   Severity: 5/10 | Confidence: medium | Timestamp: 00:03:40
-   Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968) / Maine Constitution Art. I §5
-   Officer appears to be conducting a pat-down or physical search of the subject at the rear of the vehicle during a traffic stop. Without observable reasonable articulable suspicion of weapons (Terry v. Ohio standard), this could constitute an unlawful search.
-
-#72 [AI_VIDEO_FRAME] possible-warrantless-search
-   Severity: 5/10 | Confidence: medium | Timestamp: 00:04:00
-   Law: 4th Amendment / Maine Constitution Art. I §5 / Terry v. Ohio, 392 U.S. 1 (1968)
-   The officer and subject appear to be in a position consistent with a pat-down or search at the rear of the vehicle. It is unclear from this single frame whether consent was given, whether probable cause exists, or whether this is a Terry stop frisk based on reasonable articulable suspicion of being armed.
---------------------------------------------------------------------------------
-MINOR (Severity 1-4) -- 57 findings
---------------------------------------------------------------------------------
-
-#73 [AI_VIDEO_FRAME] possible-warrantless-vehicle-search
-   Severity: 4/10 | Confidence: low | Timestamp: 00:00:10
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Two individuals appear to be accessing or examining the trunk/rear area of the stopped vehicle. If either individual is law enforcement, this could constitute a vehicle search. Without audio, it is unclear if consent was given or if probable cause exists.
-
-#74 [AI_VIDEO_FRAME] possible-custodial-detention
-   Severity: 4/10 | Confidence: low | Timestamp: 00:00:30
-   Law: 5th Amendment / 17-A M.R.S.A. §107
-   The subject on the right side of the vehicle appears to be in close physical proximity to an officer and may be physically restrained or positioned against the vehicle. From this distance and angle, it is difficult to confirm whether handcuffs are applied or force is being used.
-
-#75 [AI_VIDEO_FRAME] traffic-stop-positioning
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:00
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   No visible emergency lights or light bar activation can be confirmed in this frame; if the patrol vehicle's emergency lights were not activated during the stop, this could raise questions about the legality of the seizure
-
-#76 [AI_VIDEO_FRAME] possible-warrantless-search
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:10
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The officer appears to be leaning deeply into the driver's side window of the vehicle. This posture could indicate the officer is looking into or reaching into the vehicle interior, which may constitute a search beyond plain view. Without visible consent or a warrant, this could raise 4th Amendment concerns.
-
-#77 [AI_VIDEO_FRAME] possible-warrantless-search
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:20
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The person in dark clothing appears to be leaning significantly into the driver-side window of the stopped vehicle, which could indicate looking into or reaching into the vehicle interior beyond what is permissible during a routine traffic stop. However, at this distance and angle, it is difficult to determine definitively whether this constitutes a search or is simply a conversational posture.
-
-#78 [AI_VIDEO_FRAME] possible-warrantless-search
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:30
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The person standing at the driver's window appears to be leaning significantly into the vehicle's window area, which could constitute a visual search or physical intrusion into the vehicle. The extent of the lean suggests more than casual conversation — cannot confirm from this single frame whether consent was given or probable cause exists.
-
-#79 [AI_VIDEO_FRAME] possible-use-of-force
-   Severity: 4/10 | Confidence: medium | Timestamp: 00:03:50
-   Law: 17-A M.R.S.A. §107
-   Officer appears to be in very close physical contact with the subject at the rear of the vehicle. The subject's arm positioning may suggest being physically restrained or placed in a control hold. Without audio or additional frames, the proportionality and necessity of any force cannot be fully assessed.
-
-#80 [AI_VIDEO_FRAME] roadside-seizure-of-person
-   Severity: 4/10 | Confidence: medium | Timestamp: 00:03:50
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The subject appears to be detained and possibly physically restrained at the rear of the vehicle during what appears to be a traffic stop. The basis for escalation from a traffic stop to physical detention/restraint is not evident from this frame alone.
-
-#81 [AI_VIDEO_FRAME] possible-warrantless-entry-or-threshold-contact
-   Severity: 4/10 | Confidence: low | Timestamp: 00:01:30
-   Law: 4th Amendment / Maine Constitution Art. I §5 / Payton v. New York, 445 U.S. 573 (1980)
-   Officer appears to be positioned at or very near the open doorway/threshold of a private residence. From this distance it is not possible to determine if the officer has entered, is attempting to enter, or was invited. The door appears open. Without a warrant or valid exception (consent, exigent circumstances), officer presence at the threshold of a home raises 4th Amendment concerns.
-
-#82 [AI_VIDEO_FRAME] warrantless-entry-concern
-   Severity: 4/10 | Confidence: low | Timestamp: 00:01:40
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   An officer appears to be positioned at or just inside the threshold of the doorway of unit 33. It is unclear whether consent was given or a warrant obtained for entry. The positioning warrants further review of surrounding footage.
-
-#83 [AI_VIDEO_FRAME] possible-use-of-force
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:00
-   Law: 17-A M.R.S.A. §107 / 4th Amendment / 42 U.S.C. §1983
-   One individual appears to be standing over or leaning into another person who is seated/low on the steps of unit 33. The posture could suggest physical contact or force being applied, but at this distance and resolution it is not possible to confirm definitively.
-
-#84 [AI_VIDEO_FRAME] possible-use-of-force
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:30
-   Law: 17-A M.R.S.A. §107
-   Person in dark clothing appears to be leaning over and making physical contact with a person in a lower/seated position on the steps. The nature of the contact (assisting, restraining, or applying force) cannot be definitively determined from this distance and single frame.
-
-#85 [AI_VIDEO_FRAME] possible-physical-contact
-   Severity: 4/10 | Confidence: low | Timestamp: 00:02:40
-   Law: 17-A M.R.S.A. §107
-   There appears to be physical contact or a reaching/grasping motion between the officer and the seated individual on the steps, but the exact nature is unclear at this distance and resolution.
-
-#86 [AI_VIDEO_FRAME] officer-identification-not-visible
-   Severity: 3/10 | Confidence: low | Timestamp: 00:00:10
-   Law: 42 U.S.C. §1983
-   Neither individual is wearing clearly identifiable law enforcement uniform markings, badges, or name tags visible from this dashcam angle. It is not possible to confirm which, if either, is a law enforcement officer from this frame alone.
-
-#87 [AI_VIDEO_FRAME] possible-vehicle-search-without-consent
-   Severity: 3/10 | Confidence: low | Timestamp: 00:01:00
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Officer is leaning deeply into or toward the driver's side window area, which could indicate looking into the vehicle interior beyond what is in plain view. From this single frame alone, it is not possible to determine if the officer is merely speaking with the driver or conducting a visual search.
-
-#88 [AI_VIDEO_FRAME] potential-warrantless-search
-   Severity: 3/10 | Confidence: low | Timestamp: 00:01:10
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The individual is leaning deeply into or toward the driver-side window area, which could indicate visual search of the vehicle interior. From this single frame it is unclear whether this is a routine conversation or an intrusive visual inspection beyond plain view.
-
-#89 [AI_VIDEO_FRAME] plain-view-search-concern
-   Severity: 3/10 | Confidence: low | Timestamp: 00:01:30
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Officer is leaning significantly into or very close to the driver-side window of the vehicle. This posture could indicate the officer is looking into the vehicle interior beyond what is visible from a normal standing position, which could constitute a search beyond plain view.
-
-#90 [AI_VIDEO_FRAME] officer-identification
-   Severity: 3/10 | Confidence: low | Timestamp: 00:02:00
-   Law: Maine Constitution Art. I §6 / 5 M.R.S.A. §4681
-   The individual approaching the vehicle is not clearly identifiable as a law enforcement officer from this frame — no visible badge, uniform markings, or name tag can be confirmed at this distance and angle
-
-#91 [AI_VIDEO_FRAME] officer-identification-concern
-   Severity: 3/10 | Confidence: low | Timestamp: 00:03:00
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The individual approaching the stopped vehicle does not appear to be wearing a standard identifiable police uniform — clothing appears to be a casual patterned shirt. If this is a law enforcement officer, the lack of clearly visible identification (badge, uniform, marked clothing) raises concerns about proper identification during the stop.
-
-#92 [AI_VIDEO_FRAME] vehicle-search-concern
-   Severity: 3/10 | Confidence: low | Timestamp: 00:03:10
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The person at the driver's side appears to be leaning into or reaching toward the vehicle interior. If this constitutes a search, it would require consent, probable cause, or an applicable exception to the warrant requirement.
-
-#93 [AI_VIDEO_FRAME] roadside-stop-safety-concern
-   Severity: 3/10 | Confidence: medium | Timestamp: 00:03:20
-   Law: 17-A M.R.S.A. §107(1)(A)
-   The stop is being conducted on the travel lane/shoulder of a two-lane road with the subject and officer standing partially in the roadway near the yellow center line, creating a safety concern for all parties.
-
-#94 [AI_VIDEO_FRAME] possible-warrantless-vehicle-search
-   Severity: 3/10 | Confidence: low | Timestamp: 00:03:30
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The subject appears to be outside the vehicle holding or displaying items; it is unclear whether this is voluntary or if the subject was ordered to remove items from the vehicle. The context suggests possible vehicle search activity, but cannot be confirmed from this single frame.
-
-#95 [AI_VIDEO_FRAME] roadside-detention-safety
-   Severity: 3/10 | Confidence: medium | Timestamp: 00:03:40
-   Law: 17-A M.R.S.A. §107
-   Subject and officer are standing in or very near the travel lane of an active two-lane road, with at least one vehicle visible approaching in the distance, creating a safety concern for the detained individual.
-
-#96 [AI_VIDEO_FRAME] custodial-detention-without-visible-miranda
-   Severity: 3/10 | Confidence: low | Timestamp: 00:03:50
-   Law: 5th Amendment / Miranda v. Arizona, 384 U.S. 436 (1966)
-   If the subject is being physically restrained, this may constitute custody. No indication of Miranda warning can be determined from a single frame, but if custodial interrogation occurs without Miranda, it would be a violation.
-
-#97 [AI_VIDEO_FRAME] unwarranted-exit-order
-   Severity: 3/10 | Confidence: low | Timestamp: 00:04:10
-   Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
-   Subject is standing outside the vehicle during a traffic stop. While officers may lawfully order occupants out per Pennsylvania v. Mimms, if the subject was ordered out without safety justification and then subjected to a search, this could raise 4th Amendment concerns. Cannot determine from this single frame whether exit was voluntary or ordered.
-
-#98 [AI_VIDEO_FRAME] possible-physical-contact
-   Severity: 3/10 | Confidence: low | Timestamp: 00:04:40
-   Law: 17-A M.R.S.A. §107
-   The positioning of both individuals near the truck suggests close physical proximity; the person in white appears to have arms extended which could indicate being directed to assume a position, but details are unclear at this distance
-
-#99 [AI_VIDEO_FRAME] warrantless_residential_contact
-   Severity: 3/10 | Confidence: low | Timestamp: 00:01:50
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Officer is present at a residential property engaging with individuals near the entrance. It is unclear from this single frame whether the officer has a warrant, was invited, or is conducting a warrantless approach to the residence. The officer's proximity to the doorway of the dwelling raises the question of whether any entry or curtilage intrusion occurred.
-
-#100 [AI_VIDEO_FRAME] possible-use-of-force
-   Severity: 3/10 | Confidence: low | Timestamp: 00:02:10
-   Law: 17-A M.R.S.A. §107
-   The officer appears to be leaning over and reaching toward or making physical contact with a person who is in a low position (seated or crouched on the ground). The nature of the contact cannot be fully determined from this distance and angle.
-
-#101 [AI_VIDEO_FRAME] curtilage-encounter
-   Severity: 3/10 | Confidence: low | Timestamp: 00:02:10
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   The officer interaction is occurring at or near the entryway of a residential unit (unit 33). If the officer approached without a warrant or exigent circumstances, this could implicate curtilage protections under the 4th Amendment.
-
-#102 [AI_VIDEO_FRAME] possible-warrantless-encounter-at-residence
-   Severity: 3/10 | Confidence: low | Timestamp: 00:02:40
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Officer appears to be engaged in a contact or encounter at the entrance of a private residence (unit 33). It is unclear from this frame whether consent to approach was given, whether a warrant exists, or whether the officer is on the curtilage of the property.
-
-#103 [AI_VIDEO_FRAME] warrantless_residential_contact
-   Severity: 3/10 | Confidence: low | Timestamp: 00:03:20
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   Officer appears to be conducting an encounter at the entrance/threshold of a private residence. It is unclear from this frame whether a warrant exists, consent was given, or exigent circumstances are present for the officer's presence at the doorway.
-
-#104 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:00:00
-   Law: 5 M.R.S.A. §4681 / 42 U.S.C. §1983
-   At this distance, no badge numbers, name tags, or unit identifiers are legible on either officer. This limits accountability documentation.
-
-#105 [AI_VIDEO_FRAME] officer-identification-not-visible
-   Severity: 2/10 | Confidence: low | Timestamp: 00:00:20
-   Law: 42 U.S.C. §1983
-   At the distance and resolution of this dashcam frame, no badge number, name tag, or unit identifier is visible on the officer. This limits accountability documentation.
-
-#106 [AI_VIDEO_FRAME] officer-identification-not-visible
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:00:40
-   Law: 42 U.S.C. §1983
-   Neither individual's badge, name tag, or uniform insignia can be identified at this camera distance. It is not possible to confirm whether they are law enforcement officers.
-
-#107 [AI_VIDEO_FRAME] unidentified-officer
-   Severity: 2/10 | Confidence: low | Timestamp: 00:01:00
-   Law: Maine Constitution Art. I §5 / 4th Amendment
-   Officer's badge number, name tag, and agency identification are not visible from this dashcam angle and distance. Cannot confirm proper identification was provided to the subject.
-
-#108 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:01:10
-   Law: 25 M.R.S.A. §2803-B
-   Officer's badge number, name tag, and identifying information are not visible from this dashcam distance and angle. Cannot confirm proper identification was provided to the driver.
-
-#109 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:01:20
-   Law: Maine Constitution Art. I §6 / 42 U.S.C. §1983
-   Officer's badge number, name tag, and unit identifiers are not clearly visible from the dashcam angle and distance, making officer identification difficult
-
-#110 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:01:30
-   Law: 5 M.R.S.A. §4681
-   Officer's badge number, name tag, and identifying information are not visible from this dashcam distance and angle. This does not confirm a violation but is noted for documentation purposes.
-
-#111 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:01:40
-   Law: Maine Constitution Art. I §6
-   Officer's badge number, name tag, and specific uniform identifiers are not discernible from this dashcam distance and angle, making positive identification difficult for the record
-
-#112 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:01:50
-   Law: Maine Constitution Art. I §6
-   Officer's badge number, name tag, and specific identifying features are not visible from the dashcam distance. Cannot confirm proper identification was provided to the vehicle occupant.
-
-#113 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:02:30
-   Law: 5 M.R.S.A. §4681
-   At this distance, no badge number, name tag, or identifying markings on the person's uniform are visible or legible. This limits accountability documentation.
-
-#114 [AI_VIDEO_FRAME] traffic-stop-monitoring
-   Severity: 2/10 | Confidence: low | Timestamp: 00:02:40
-   Law: 4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
-   This appears to be a standard traffic stop approach. The officer is at the driver window, which is a 4th Amendment seizure. Without audio, it cannot be determined whether the stop is based on reasonable suspicion or probable cause.
-
-#115 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:02:50
-   Law: Maine Constitution Art. I §6 / 5 M.R.S.A. §4681
-   The person standing at the vehicle is not clearly identifiable as a law enforcement officer — no visible badge, name tag, or identifiable uniform markings can be confirmed from this dashcam angle and distance
-
-#116 [AI_VIDEO_FRAME] traffic-stop-documentation
-   Severity: 2/10 | Confidence: low | Timestamp: 00:03:00
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   A traffic stop is in progress on a rural road. The dashcam is actively recording, which is positive for documentation. However, only a single frame is available so it is not possible to determine whether reasonable suspicion or probable cause existed for the stop.
-
-#117 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:03:10
-   Law: 25 M.R.S.A. §2803-B
-   The individual approaching the vehicle does not have clearly visible badge, name tag, or identifiable uniform markings from this dashcam angle and distance. Cannot confirm this person is a uniformed officer.
-
-#118 [AI_VIDEO_FRAME] officer-identification-not-visible
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:03:30
-   Law: 5 M.R.S.A. §4681
-   At this distance, no badge number, name tag, or unit identifier is visible on the officer. Officer identification cannot be confirmed from this frame.
-
-#119 [AI_VIDEO_FRAME] officer-identification-not-visible
-   Severity: 2/10 | Confidence: low | Timestamp: 00:03:40
-   Law: Department policy / 5 M.R.S.A. §4681
-   At this distance, no badge number, name tag, or officer identification markings are discernible on the officer's person.
-
-#120 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: low | Timestamp: 00:04:00
-   Law: 25 M.R.S.A. §2803-B
-   Officer badge number, name tag, and unit identifiers are not visible or readable at this distance and resolution, making it difficult to identify the officer for accountability purposes.
-
-#121 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:04:10
-   Law: 5 M.R.S.A. §4681
-   Officer's badge number, name tag, and unit identifiers are not legible from the dashcam distance. This limits accountability documentation.
-
-#122 [AI_VIDEO_FRAME] subject-outside-vehicle-concern
-   Severity: 2/10 | Confidence: low | Timestamp: 00:04:30
-   Law: 4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
-   Subject is standing outside the vehicle at the rear during a traffic stop. It is unclear whether the officer directed the subject to exit or if the subject exited voluntarily. If the officer ordered the subject out without articulable safety concern, this may raise a question, though Pennsylvania v. Mimms (1977) generally permits officers to order drivers out during a lawful stop.
-
-#123 [AI_VIDEO_FRAME] roadside-stop-documentation
-   Severity: 2/10 | Confidence: low | Timestamp: 00:04:40
-   Law: Maine Constitution Art. I §5
-   Traffic stop is occurring on an open roadway; officer identification details (badge, name tag) are not visible from the dashcam distance, making accountability verification difficult
-
-#124 [AI_VIDEO_FRAME] consensual_encounter_or_seizure
-   Severity: 2/10 | Confidence: low | Timestamp: 00:00:50
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   A person who appears to be an officer is standing near a seated individual at their residence. It is unclear from this single frame whether this is a consensual encounter or a seizure/detention. The seated person's posture on their own steps could indicate either voluntary interaction or a directed command to sit.
-
-#125 [AI_VIDEO_FRAME] officer-identification
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:02:30
-   Law: 42 U.S.C. §1983
-   Officer badge number, name tag, and uniform details are not discernible from the dashcam distance. This makes accountability documentation difficult.
-
-#126 [AI_VIDEO_FRAME] officer-identification-not-visible
-   Severity: 2/10 | Confidence: medium | Timestamp: 00:02:40
-   Law: 5 M.R.S.A. §4681
-   At this distance, the officer's badge number, name tag, and identifying information are not discernible from the dashcam footage. This limits accountability documentation.
-
-#127 [AI_VIDEO_FRAME] curtilage-encounter
-   Severity: 2/10 | Confidence: low | Timestamp: 00:04:40
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   An apparent officer is present in the curtilage area of a private residence (front doorstep/entryway of unit 33). While a knock-and-talk is generally permissible, the encounter's context and whether the officer had a lawful basis to be there cannot be fully determined from this single frame.
-
-#128 [AI_VIDEO_FRAME] possible-custodial-encounter-at-residence
-   Severity: 2/10 | Confidence: low | Timestamp: 00:04:50
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   An officer appears to be standing near a person seated on their front steps at a residential address. It is unclear from this frame whether this is a consensual encounter, an investigative detention, or something else. The subject's freedom to leave or terminate the encounter cannot be determined from this single frame.
-
-#129 [AI_VIDEO_FRAME] traffic-stop-documentation
-   Severity: 1/10 | Confidence: low | Timestamp: 00:04:20
-   Law: 4th Amendment / Maine Constitution Art. I §5
-   This appears to be a traffic stop, likely for an unsecured or oversized load (mattress protruding from trunk). No officer is yet visible outside the vehicle to assess interaction. Context is needed from surrounding frames to determine if proper procedures are followed.
-
-================================================================================
+====================================================================================================
+VIOLATION REPORT — Keith King  |  Case No. CR-2018-03023  |  Maine Superior Court
+Generated: 2026-04-13 10:47  |  Total Violations: 129
+====================================================================================================
+
+FINDING #001  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Illegal Pretextual Traffic Stop — No PC / No RAS
+SEVERITY:  10/10  |  CATEGORY: illegal_stop
+LEGAL:     4th Amendment; Delaware v. Prouse (1979); Terry v. Ohio (1968); Maine Const. Art. I §5; 29-A M.R.S.A. §2104
+DETAILS:
+  Officer Evan Haskell stopped Keith King on Davis Road at ~14:10 on Aug 2, 2018 with no stated
+  traffic infraction. Reason given: 'doing an investigation for drug sales' and 'there was a
+  search warrant for his house.' A residential warrant does NOT authorize a vehicle stop —
+  entirely separate 4th Amendment instruments. DISCOVERED: Dashcam video (Feb 2024 forensic
+  analysis) + PCR petition Feb 18, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #002  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: 3-Hour Custodial Interrogation Without Miranda Warnings
+SEVERITY:  10/10  |  CATEGORY: miranda_violation
+LEGAL:     5th Amendment; Miranda v. Arizona (1966); 14th Amendment due process
+DETAILS:
+  Held ~3 hours by multiple officers before Miranda rights read. Told he 'could not ask
+  questions' or would be Mirandized, yet told he was 'not free to go.' Classic custodial
+  interrogation without Miranda. All statements made suppressed. DISCOVERED: Dashcam/body cam
+  video, February 2024 forensic analysis.
+----------------------------------------------------------------------------------------------------
+
+FINDING #003  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Phone Seized in Direct Violation of Warrant Exclusion Clause
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Groh v. Ramirez (2004); Riley v. California (2014); Maine Const. Art. I §5; 16 M.R.S.A. §645
+DETAILS:
+  Search warrant contained explicit exclusionary clause commanding officers NOT to seize
+  cellular phones or forensic data. Officers seized phone anyway Aug 2, 2018, directly
+  violating a court order. DISCOVERED: Review of original warrant text, documented PCR draft
+  Jan 17, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #004  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Warrantless 5-Day Detention of Phone (Aug 2-7, 2018)
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645
+DETAILS:
+  Phone held in evidence locker Aug 2-7 with no warrant. Original warrant explicitly excluded
+  phones; no new warrant for 5 days. DISCOVERED: Evidence log and warrant date comparison, PCR
+  draft Jan 17, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #005  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Aug 7 Forensic Warrant Tainted — Fruit of the Poisonous Tree
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Wong Sun v. United States (1963); Carpenter v. United States (2018); 16 M.R.S.A. §645, §648
+DETAILS:
+  Second warrant obtained Aug 7 to search illegally held phone. Initial seizure was expressly
+  forbidden by original warrant; second warrant and ALL forensic results are fruit of the
+  poisonous tree. DISCOVERED: Warrant review, PCR draft Jan 17, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #006  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Amanda Ross Phone — Warrantless Seizure & 45-Day Forensic Extraction
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Riley v. California (2014); 16 M.R.S.A. §645; 14th Amendment due process
+DETAILS:
+  Police seized Amanda Ross's phone on Aug 2, 2018. Third party not named in any warrant. Held
+  45 days. Full forensic extraction performed without any warrant. DISCOVERED: Forensic
+  extraction records, documented Jan 17, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #007  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Brady Violation — DA Lied: Amanda Ross Phone Was Never Taken
+SEVERITY:  10/10  |  CATEGORY: evidence_tampering
+LEGAL:     Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process; 17-A M.R.S.A. §451 (perjury)
+DETAILS:
+  DA affirmatively represented Amanda Ross's phone was never seized. Forensic extraction
+  records prove this was false — full data dump performed. Brady violation and prosecutorial
+  misconduct. DISCOVERED: Forensic records, documented Jan 17, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #008  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Brady Violation — Heroin TruNarc Test 'Inconclusive' Withheld
+SEVERITY:  10/10  |  CATEGORY: evidence_tampering
+LEGAL:     Brady v. Maryland (1963); Napue v. Illinois (1959); 14th Amendment Due Process
+DETAILS:
+  Alleged heroin only tested 'inconclusive' on TruNarc field test. No lab confirmation exists
+  for Class A Trafficking charge. Exculpatory test results withheld from defense. DISCOVERED:
+  FOAA records, December 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #009  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Former AAG Admitted Class A Charges Were 'Inadvertent Error'
+SEVERITY:  10/10  |  CATEGORY: prosecutorial_misconduct
+LEGAL:     Brady v. Maryland; 14th Amendment Due Process; 18 U.S.C. §242; prosecutorial misconduct
+DETAILS:
+  Dec 17, 2025: Former AAG Janice Stuver formally admitted Aggravated Class A charges were
+  based on 'inadvertent error' regarding location of evidence. These charges used to threaten
+  4-year mandatory minimum and coerce plea. DISCOVERED: Formal written statement from former
+  AAG, December 17, 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #010  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Officer Perry — Selective Recording Manipulation / False Narrative
+SEVERITY:  10/10  |  CATEGORY: evidence_tampering
+LEGAL:     17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B (body cam policy)
+DETAILS:
+  Officer Perry's personal body recorder was selectively turned on/off — synchronized with
+  cruiser video — to exclude illegal conduct and create false narrative. Perry pulled
+  Petitioner away from all witnesses to a private area to obtain unwitnessed admission.
+  DISCOVERED: Forensic video analysis, February 2024.
+----------------------------------------------------------------------------------------------------
+
+FINDING #011  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Coerced Plea — Court Order Violated, No Medications, AAG Threatened 4-Year Minimum
+SEVERITY:  10/10  |  CATEGORY: coerced_plea
+LEGAL:     14th Amendment Due Process; Brady v. United States (1970); Godinez v. Moran (1993); 6th Amendment; contempt of court order
+DETAILS:
+  Prior court order required medical stabilization before plea. Forced into plea within 20
+  minutes of status hearing without required medications. AAG Jason Horn refused continuance,
+  threatened 4-year mandatory minimum. DISCOVERED: Court records; PCR petition Feb 18, 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #012  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: 18-Hour Chain of Custody Gap — Officer Gastia Held Evidence in Unrecorded Location
+SEVERITY:  10/10  |  CATEGORY: evidence_tampering
+LEGAL:     Brady v. Maryland (chain of custody issues are exculpatory); Maine Rules of Evidence; 17-A M.R.S.A. §453 (potential tampering)
+DETAILS:
+  FOAA records confirm 18-hour overnight gap where evidence held in unrecorded location by
+  Officer Gastia before formal logging. Breaks chain of custody; raises tampering concerns.
+  DISCOVERED: FOAA records, January 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #013  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: BHA Provided Keys for Warrantless Residential Entry; Keith Asked for Warrant Twice on Video
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Payton v. New York (1980); Maine Const. Art. I §5; 15 M.R.S.A. §1091; Steagald v. United States (1981)
+DETAILS:
+  BHA provided apartment keys to police without proper authorization. Dashcam video shows Keith
+  asking for warrant TWICE and being denied both times. Officer produces key from pocket. BHA
+  Master Key Log confirms no key was legally issued. DISCOVERED: Dashcam video (Feb 2024) + BHA
+  key log via FOAA (Oct 6, 2025).
+----------------------------------------------------------------------------------------------------
+
+FINDING #014  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Gabapentin Charge Legally Void — Not Scheduled in Maine Until Oct 15, 2019
+SEVERITY:  10/10  |  CATEGORY: impossible_charge
+LEGAL:     Ex Post Facto Clause (U.S. Const. Art. I §9; Maine Const. Art. I §11); Due Process; prosecutorial misconduct
+DETAILS:
+  Class B Possession charge filed for gabapentin for 2018 conduct. Maine added gabapentin to
+  Schedule W on Oct 15, 2019 (P.L. 2019 ch. 215). Not federally scheduled. On Aug 2, 2018
+  possessing gabapentin was legal. Charging a non-crime. DISCOVERED: Legal research April 12,
+  2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #015  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Ineffective Assistance of Counsel — 10 Documented Failures
+SEVERITY:  10/10  |  CATEGORY: ineffective_counsel
+LEGAL:     6th Amendment; Strickland v. Washington (1984) — both deficient performance AND prejudice prongs met
+DETAILS:
+  Defense counsel failed to: (1) challenge illegal stop, (2) challenge phone seizure violating
+  warrant exclusion, (3) suppress pre-Miranda statements, (4) investigate 18-hr custody gap,
+  (5) obtain inconclusive drug test results, (6) challenge BHA warrantless entry, (7)
+  investigate Perry recording manipulation, (8) advocate for medical stabilization before plea,
+  (9) move to dismiss gabapentin count, (10) challenge CAD/radio log discrepancies. DISCOVERED:
+  Post-conviction review 2024-2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #016  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Warrant Signed 2 HOURS AFTER Traffic Stop — Entire Stop Was Warrantless
+SEVERITY:  10/10  |  CATEGORY: timeline
+LEGAL:     4th Amendment; Payton v. New York (1980); Beck v. Ohio (1964); Maine Const. Art. I §5
+DETAILS:
+  Stop at 10:30 AM on Aug 2, 2018. Search warrant not signed by judge until 12:30 PM — TWO
+  HOURS LATER. Officer Perry falsely claimed to have a signed warrant at the time of the stop.
+  Everything from 10:30 AM to 12:30 PM was conducted without any warrant at all. DISCOVERED:
+  Warrant review — Perry IA complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #017  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: TEMPORAL IMPOSSIBILITY: Seizure Claimed at 12:00 PM — Police Didn't Arrive Until 12:56:39 PM
+SEVERITY:  10/10  |  CATEGORY: fabricated_evidence
+LEGAL:     4th Amendment; Due Process (14th Amend.); Brady v. Maryland; fabrication of records
+DETAILS:
+  Forfeiture complaint (Counts 9 & 11) claims Keith's property was seized 'as of 8/2/2018
+  12:00:00 PM.' CAD Report #2933952 shows units 750 and 756 did not arrive at address until
+  12:56:39 PM — 56 MINUTES AFTER the claimed seizure. It is legally impossible to seize
+  property before officers arrive. This is a fabricated forfeiture record. DISCOVERED: CAD
+  cross-reference, Evidence Discrepancies doc 1/20/2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #018  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Traffic Stop Never Logged in Dispatch or Radio — Off-Book Coordinated Cover-Up
+SEVERITY:  10/10  |  CATEGORY: cover_up
+LEGAL:     17-A M.R.S.A. §453 (evidence tampering); 18 U.S.C. §1519; Brady v. Maryland; due process
+DETAILS:
+  No CAD entry or radio log event exists for the traffic stop of Keith King prior to the search
+  warrant call. Officers communicated on personal cell phones, not police radios. Sgt. Betters
+  (supervisor, Unit 709) instructed Officer Haskell to IMMEDIATELY TAKE CELL PHONES AWAY from
+  the scene — destroying communications evidence. The stop was deliberately kept off official
+  record. DISCOVERED: CAD/radio log analysis, Perry IA complaint, Police Procedure doc
+  1/12/2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #019  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Dashcam Video Tampered — Date/Time/Coordinates/Officer Info Stripped to Hide Pre-Warrant Stop
+SEVERITY:  10/10  |  CATEGORY: evidence_tampering
+LEGAL:     17-A M.R.S.A. §453 (tampering with physical evidence); 18 U.S.C. §1519; Brady v. Maryland; 25 M.R.S.A. §2803-B
+DETAILS:
+  Police cruiser video provided to Keith in February 2024 had ALL metadata stripped — no date,
+  no time, no coordinates, no officer information. Every other police cruiser video in Maine
+  includes this data by default. The stripping was deliberate to conceal that the stop occurred
+  at 10:30 AM — TWO HOURS before the warrant was signed at 12:30 PM. Without timestamps, the
+  constitutional violation is harder to prove. DISCOVERED: Video analysis, Feb 2024; Perry IA
+  complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #020  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Exculpatory Evidence (Cruiser Video) Withheld for 5.5 Years — Until February 2024
+SEVERITY:  10/10  |  CATEGORY: brady_violation
+LEGAL:     Brady v. Maryland (1963); Strickler v. Greene (1999); 14th Amendment Due Process
+DETAILS:
+  The police cruiser video — which proved no warrant existed at time of stop, showed Keith
+  asking for warrant twice and being denied, showed the entire illegal detention — was withheld
+  from Keith from August 2, 2018 until February 2024. Over FIVE AND A HALF YEARS of Brady
+  suppression of the single most critical piece of exculpatory evidence in the case.
+  DISCOVERED: February 2024 when video was finally produced.
+----------------------------------------------------------------------------------------------------
+
+FINDING #021  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Haskell's Own Police Report (Incident 18-060430, p.9) States 'No Illegal Drugs' in Vehicle
+SEVERITY:  10/10  |  CATEGORY: brady_violation
+LEGAL:     Brady v. Maryland (1963); Giglio v. United States (1972); 14th Amendment Due Process
+DETAILS:
+  Officer Haskell's own police report (Incident 18-060430, Page 9) explicitly confirms that a
+  search of the vehicle on August 2, 2018 yielded 'NO ILLEGAL DRUGS.' Yet AAG Janice Stuver
+  stated in her response to the Board of Overseers (July 15, 2025) that the charges were based
+  on 'the presence of scheduled drugs within his vehicle.' The State's own police report
+  contradicts the AAG's stated basis for prosecution. DISCOVERED: Cross-reference of Stuver
+  response with Haskell report — Keith's affidavit 12/1/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #022  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Four Cell Phones Seized Including Two Non-Activated Phones — 1,000+ Calls, 350+ Private Photos Extracted
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Riley v. California (2014); Carpenter v. United States (2018); 16 M.R.S.A. §645; invasion of privacy
+DETAILS:
+  Officer Perry seized FOUR cell phones — including two that were NOT EVEN ACTIVATED — all in
+  violation of the warrant's explicit exclusion clause. From these devices he extracted: 1,000+
+  phone calls, 500+ text messages, 380 contacts, and 350+ private pictures and videos of Keith
+  and Amanda. This intimate private material was accessed by the entire police department and
+  forensics unit. Private material has since appeared on the internet. DISCOVERED: Perry IA
+  complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #023  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Amanda Ross Illegally Strip-Searched on Public Road by Male Officers — No Female Officer Present
+SEVERITY:  10/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; Maine Const. Art. I §5; 42 U.S.C. §1983; strip search requires warrant; gender-based rights violation
+DETAILS:
+  Amanda Ross was subjected to a strip search on the side of Davis Road — asked to lift her
+  shirt exposing her stomach, turn around, and shake out her bra — by MALE officers with NO
+  female officers present. Officer Shannon Farrar (Unit 750) was on the call but was at Bald
+  Mountain Drive, not at the traffic stop. She was available but was never dispatched to assist
+  with a female subject. This is an unconstitutional strip search performed by male officers on
+  a woman in public. DISCOVERED: Perry IA complaint 3/17/2025; CAD log showing Farrar at
+  different location.
+----------------------------------------------------------------------------------------------------
+
+FINDING #024  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Shannon Farrar Named as Witness in Warrant Affidavit But Never Witnessed Anything
+SEVERITY:  10/10  |  CATEGORY: perjury_false_warrant
+LEGAL:     17-A M.R.S.A. §451 (perjury); §452 (false report); 4th Amendment — warrant based on false affidavit; Franks v. Delaware (1978)
+DETAILS:
+  Officer Shannon Farrar is named throughout the warrant affidavit and police statements as a
+  witness, yet she never actually witnessed the traffic stop, never laid eyes on Keith King or
+  the vehicle, and never witnessed any alleged illegal activities firsthand. She was at 33 Bald
+  Mountain Drive, not Davis Road. Including her as a witness in the warrant affidavit to add
+  credibility constitutes false statements in a warrant application. Under Franks v. Delaware,
+  a warrant based on deliberate falsehoods must be voided. DISCOVERED: Perry IA complaint
+  3/17/2025; CAD showing Farrar at different location.
+----------------------------------------------------------------------------------------------------
+
+FINDING #025  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Perry Perjured Himself Before Grand Jury — ONLY Officer to Place Firearms at Apartment
+SEVERITY:  10/10  |  CATEGORY: perjury_grand_jury
+LEGAL:     17-A M.R.S.A. §451 (perjury); 18 U.S.C. §1623 (false declarations before grand jury); Due Process; Brady v. Maryland
+DETAILS:
+  Officer Perry testified before the grand jury that the firearms were found at the apartment
+  WITH the illegal substances. ALL FIVE OTHER OFFICERS at the scene placed the firearms in the
+  car on Davis Road, not the apartment. Perry was the only officer who made this false claim —
+  to the grand jury, to DHHS, and in his written statements. His testimony was essential to the
+  aggravated trafficking charge (firearm enhancement). If the firearms were NOT with the drugs,
+  there is no legal basis for the firearm enhancement. Perry committed perjury before the grand
+  jury. DISCOVERED: Cross-reference of officer statements — Perry IA complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #026  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Perry Made False Report to DHHS — Firearms Near Child (Son Was Not Even Home)
+SEVERITY:  10/10  |  CATEGORY: false_official_report
+LEGAL:     17-A M.R.S.A. §452 (false swearing/false report); 42 U.S.C. §1983; malicious prosecution
+DETAILS:
+  Officer Perry reported to DHHS that the firearms were found at the home with illegal
+  substances accessible to Keith's son. This was false in two ways: (1) the firearms were in
+  the car on Davis Road, not the home; (2) the son was not even home — he was with family until
+  the following Monday, five days later. Perry's false DHHS report was used to escalate the
+  criminal charges and potentially threatened Keith's parental rights. DISCOVERED: Perry IA
+  complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #027  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: 45-Day Detention: No Medications, No Family Contact, No Contact With Diabetic Son
+SEVERITY:  10/10  |  CATEGORY: unlawful_detention
+LEGAL:     8th Amendment; 14th Amendment Due Process; ADA; 42 U.S.C. §1983; Estelle v. Gamble (1976)
+DETAILS:
+  Keith was detained for 45 days without: (1) required psychiatric medications for 7 diagnosed
+  mental health conditions, (2) any contact with his wife Amanda, (3) any contact with his Type
+  1 diabetic son who had no phone and no vehicle. This was done deliberately — Perry withheld
+  medications despite Amanda's direct requests. The 45-day detention without medications, with
+  no contact with family, while mentally disabled, was used to coerce cooperation and the
+  proffer agreement. DISCOVERED: Perry IA complaint 3/17/2025; King Narrative 10/1/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #028  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Three Court-Appointed Attorneys Concealed, Withheld, and Denied Existence of Evidence
+SEVERITY:  10/10  |  CATEGORY: iac_conspiracy
+LEGAL:     6th Amendment; Strickland v. Washington (1984); potential civil conspiracy (42 U.S.C. §1985); Brady violations by defense counsel
+DETAILS:
+  All three of Keith's court-appointed attorneys: observed the exculpatory evidence (the
+  cruiser video), denied its existence to him, refused to investigate the warrant-before-stop
+  issue, and failed to challenge any of the constitutional violations. Given that three
+  different attorneys all engaged in the same pattern of concealment, this suggests a
+  coordinated failure — potentially rising to civil conspiracy with the prosecution.
+  DISCOVERED: Perry IA complaint 3/17/2025; consistent across all PCR documents.
+----------------------------------------------------------------------------------------------------
+
+FINDING #029  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Private Photos/Videos Extracted From Phones Now Appearing on Internet
+SEVERITY:  10/10  |  CATEGORY: civil_rights_privacy
+LEGAL:     4th Amendment; invasion of privacy; 18 U.S.C. §2257; Maine privacy statutes; potential 18 U.S.C. §2252 (if images are intimate)
+DETAILS:
+  Over 350 private pictures and videos of Keith and Amanda extracted from illegally seized
+  phones — in violation of the warrant's exclusion clause — have since appeared on the
+  internet. The entire BPD and forensics unit had access to this intimate material.
+  Unauthorized distribution of illegally obtained private material by law enforcement officers
+  is itself a crime and a severe civil rights violation. DISCOVERED: Keith's account in King
+  Narrative for Kielty 10/1/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #030  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Forced Proffer Under Duress — Same Officer Who Fabricated Charges Was Present
+SEVERITY:  10/10  |  CATEGORY: coerced_statement
+LEGAL:     5th Amendment; 14th Amendment Due Process; Brady v. United States (1970); IAC
+DETAILS:
+  Keith was forced into a proffer agreement after 45 days of isolation, no medications, and no
+  family contact. The proffer was conducted with Officer Perry PRESENT — the same officer who
+  fabricated the charges, made up the incriminating statement Perry claimed Keith made, and who
+  would later use the proffer to go before the grand jury. Any statement made during such a
+  coerced proffer, in the presence of the fabricating officer, is constitutionally
+  inadmissible. DISCOVERED: Perry IA complaint 3/17/2025; PCR petition 2/18/2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #031  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: AAG Stuver Conflict of Interest — Previously Represented DHHS/CPS in Related Family Case While Criminal Case Was Pending
+SEVERITY:  10/10  |  CATEGORY: prosecutorial_misconduct
+LEGAL:     Maine Bar Rule 1.7 (conflict of interest); 14th Amendment Due Process; prosecutorial misconduct; Brady v. Maryland — conflicted AAG had duty to disclose
+DETAILS:
+  Confirmed Oct 5, 2025: AAG Janice Stuver — the prosecutor who threatened Keith with a 4-year
+  mandatory minimum and pressured his plea — had previously represented DHHS/CPS in a related
+  child protective matter involving the same family while the criminal case was actively
+  pending. This is a direct conflict of interest requiring recusal. Any plea obtained by a
+  conflicted prosecutor is constitutionally tainted.
+----------------------------------------------------------------------------------------------------
+
+FINDING #032  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Parents Offered $450,000 Home + 45 Acres + Ankle Monitoring as Bail Surety — Denied. Court Called Keith 'Danger to Society' Despite No Evidence
+SEVERITY:  10/10  |  CATEGORY: excessive_bail
+LEGAL:     8th Amendment (excessive bail); Stack v. Boyle (1951); ADA; 14th Amendment equal protection; Maine Bail Code; judicial bias/prejudgment
+DETAILS:
+  Keith's parents offered their $450,000 home and 45 acres as surety PLUS home confinement with
+  ankle monitoring — a zero-flight-risk package. Denied. The presiding judge publicly called
+  Keith a 'danger to society' and accused him of 'selling drugs that are killing people' at the
+  bail hearing — despite: (1) no conviction, (2) inconclusive drug tests, (3) no sales
+  evidence, (4) no prior record. This prejudicial judicial commentary poisoned the entire
+  proceeding.
+----------------------------------------------------------------------------------------------------
+
+FINDING #033  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: No-Contact Order With Spouse Imposed Despite Her Being 80% of Keith's Mental Health Support — Deliberate Psychological Harm
+SEVERITY:  10/10  |  CATEGORY: unlawful_detention
+LEGAL:     8th Amendment; ADA (deliberate indifference to disability); 14th Amendment Due Process; Estelle v. Gamble (1976); 42 U.S.C. §1983
+DETAILS:
+  Court imposed a no-contact order with Amanda Ross — Keith's wife and 80% of his documented
+  mental health support system — during his 42-day pretrial detention without medications.
+  Officers observed panic attacks during the search. Removing his primary mental health support
+  while denying medications and transferring him 100 miles away to Two Bridges Jail with no
+  explanation was deliberate psychological harm used to coerce cooperation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #034  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: BrHA Housing Approved Sept 3 2024, Revoked Oct 26 2024 — Internal Emails Show 'Revoke Now' Sent Immediately After FOAA Request on Oct 7
+SEVERITY:  10/10  |  CATEGORY: retaliation
+LEGAL:     Fair Housing Act 42 U.S.C. §3617 (retaliation); 1st Amendment; Maine Human Rights Act §4633; 42 U.S.C. §1983; HUD regulations
+DETAILS:
+  Brewer Housing Authority approved Keith's housing application on September 3, 2024 and
+  offered a 2-bedroom unit at 1 Norumbega Drive for October 1 move-in. On October 7, 2024,
+  Keith filed a FOAA request for 2018 records. Internal emails obtained from HUD's Washington
+  DC office show Knox, Bethany, and Perkins exchanged messages saying 'revoke now' IMMEDIATELY
+  AFTER receiving the FOAA request. Approval was revoked October 26 citing a pretextual $600
+  debt and criminal history — both previously cleared. Direct documented causal link between
+  protected FOAA activity and adverse housing action.
+----------------------------------------------------------------------------------------------------
+
+FINDING #035  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: BHA Master Key Used Off-Book: Key Log (MHRC Exhibit B) Has ZERO Entry for Aug 2, 2018 — Police Obtained Key Outside Official Checkout System
+SEVERITY:  10/10  |  CATEGORY: evidence_tampering
+LEGAL:     Spoliation doctrine; 24 C.F.R. §908.101 (federal records retention); Brady v. Maryland; 18 U.S.C. §1519; adverse inference instruction
+DETAILS:
+  The BHA master key log produced in October 2025 (MHRC Exhibit B) contains NO ENTRY for August
+  2, 2018. This is more damning than a logged entry: it means officers obtained and used the
+  master key to Keith's apartment entirely outside the official checkout system, with zero
+  paperwork. Keith's December 2025 PCR affidavit states explicitly: "the key log obtained
+  October 7, 2025 has NO ENTRY for August 2, 2018." The MHRC complaint (Oct 9, 2025)
+  corroborates this. The dashcam video confirms officers entered the apartment — yet no key
+  checkout record exists. The absence of any entry proves the key transfer was covert and
+  unauthorized. The paper tenant file was separately destroyed (spoliation). Combined: (1)
+  covert off-book key handoff, (2) warrantless apartment entry, (3) key log gap as affirmative
+  evidence of concealment. Violates 4th Amendment (Payton v. New York), 24 C.F.R. §
+  966.4(d)(3), and constitutes spoliation under Maine Rules of Evidence.
+----------------------------------------------------------------------------------------------------
+
+FINDING #036  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Bethany Instructed Property Managers in Writing: 'Ignore His Request — We Are Not Required to Provide Mr. King Any Information'
+SEVERITY:  10/10  |  CATEGORY: foaa_obstruction
+LEGAL:     1 M.R.S. §408-A (FOAA); 5 U.S.C. §552 (FOIA); Maine Bar Rules 3.4, 8.4 (misconduct); 42 U.S.C. §1983; obstruction of justice
+DETAILS:
+  Documents obtained from HUD's Washington DC office (via federal FOIA) show BHA General
+  Counsel Joseph Bethany sent written instructions to property managers — including Charlotte
+  Perkins at Brewer HA — directing them to 'IGNORE HIS REQUEST' and stating BHA 'is not
+  required to provide Mr. King any of the information he is requesting.' This is documented
+  FOAA/FOIA obstruction by a licensed attorney directing others to violate federal and state
+  public records laws.
+----------------------------------------------------------------------------------------------------
+
+FINDING #037  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Two Current BHA Employees Are Witnesses That No Warrant Was Shown on August 2, 2018
+SEVERITY:  10/10  |  CATEGORY: cover_up
+LEGAL:     4th Amendment; corroborating witness testimony; Brady v. Maryland (government must disclose witnesses); subpoena power
+DETAILS:
+  The MHRC complaint (Oct 9, 2025) states that two current BHA employees witnessed police
+  entering Keith's apartment on August 2, 2018 and can testify that no warrant was ever shown
+  or verified. These are live, identifiable witnesses who can corroborate what the dashcam
+  shows — Keith asking for a warrant twice and being denied, with officers using a key from
+  their pocket. BHA management has worked to suppress this evidence for over 7 years.
+----------------------------------------------------------------------------------------------------
+
+FINDING #038  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Family Forced to Live in Vehicle Through Two Maine Winters — Service Dog Died From Cold — ADA Damages
+SEVERITY:  10/10  |  CATEGORY: retaliation
+LEGAL:     Fair Housing Act §3617; ADA; 42 U.S.C. §1983; intentional infliction of emotional distress; Maine MHRA; compensatory and punitive damages
+DETAILS:
+  As a direct result of BHA/BrHA's retaliatory housing revocation, Keith, Amanda, and son
+  Keenan were forced to live in their vehicle through two Maine winters. The family's service
+  dog died from the cold during this period. Keith continues to suffer PTSD, anxiety, and
+  depression linked to these events. This is the direct and documented consequence of the
+  retaliatory housing revocation connected to the 2018 police incident.
+----------------------------------------------------------------------------------------------------
+
+FINDING #039  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Perry Isolated Keith From Witnesses — Unobserved Coerced Admission, No Camera Coverage
+SEVERITY:  10/10  |  CATEGORY: N/A
+LEGAL:     5th Amendment; 14th Amendment; Miranda v. Arizona, 384 U.S. 436 (1966)
+DETAILS:
+  PCR Final Draft (Feb 18, 2026) confirms: Officer Perry deliberately pulled Keith away from
+  all other witnesses to a private area to obtain an alleged admission of guilt. The admission
+  was never witnessed by other officers and was not captured on camera in full context. This is
+  a textbook coercive interrogation tactic used to manufacture unverifiable incriminating
+  statements. DISCOVERED: PCR Final Draft statement, Feb 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #040  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: Miranda Coercion Tactic — "Cannot Ask Questions or Will Be Read Rights" While Told Not Free to Go
+SEVERITY:  10/10  |  CATEGORY: N/A
+LEGAL:     5th Amendment; Miranda v. Arizona, 384 U.S. 436 (1966); Berkemer v. McCarty, 468 U.S. 420 (1984)
+DETAILS:
+  PCR Final Draft (Feb 2026): During detention, Keith was explicitly told he "could not ask
+  questions" or he would be "read his rights" — used as a threat to silence him.
+  Simultaneously, he was told he was "not free to go." This is a deliberate Miranda-chilling
+  tactic: using the reading of Miranda rights as a PUNISHMENT for asking questions, while
+  maintaining custodial control. This inverts the purpose of Miranda and constitutes a 5th
+  Amendment violation. DISCOVERED: PCR Final Draft, Feb 2026.
+----------------------------------------------------------------------------------------------------
+
+FINDING #041  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: HUD Officials Kara E. Norman and Richa Karki Instructed BHA/BrHA to Ignore Keith — Federal Cover-Up (Ex. L MHRC)
+SEVERITY:  10/10  |  CATEGORY: N/A
+LEGAL:     42 U.S.C. § 3617 (FHA Anti-Retaliation); 18 U.S.C. § 242; 5 U.S.C. § 552 (FOIA); 42 U.S.C. § 1983
+DETAILS:
+  HUD FOIA response (Exhibit L, MHRC complaint Oct 9, 2025) produced internal emails showing
+  HUD officials Kara E. Norman and Richa Karki (Boston Regional Office) were included in
+  communications instructing BHA (Bethany/Knox) and BrHA (Perkins) to ignore Keith's FOAA/FOIA
+  requests. This establishes an inter-agency conspiracy involving federal housing officials
+  actively participating in the retaliation and cover-up. HUD officials are bound by 5 U.S.C. §
+  552 (FOIA), 42 U.S.C. § 3617 (FHA anti-retaliation), and 18 U.S.C. § 242 (deprivation of
+  rights under color of law). Participating in a scheme to deny housing records to a disabled
+  person who was previously subjected to warrantless entry by police facilitated by the housing
+  authority constitutes federal civil rights violations. SOURCE: HUD FOIA response, Exhibit L
+  of MHRC complaint, October 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #042  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: 24 C.F.R. § 966.4(d)(3) Violation — BHA Allowed Police Entry Without Tenant Consent or Court Order
+SEVERITY:  10/10  |  CATEGORY: N/A
+LEGAL:     24 C.F.R. § 966.4(d)(3); 4th Amendment; 42 U.S.C. § 1983; 5 M.R.S. § 4582 (Maine Right to Privacy in Housing)
+DETAILS:
+  MHRC Complaint (Oct 9, 2025) cites 24 C.F.R. § 966.4(d)(3), the federal HUD regulation
+  governing tenant rights in federally-subsidized public housing. Under this regulation, a
+  public housing authority may only allow law enforcement entry: (1) pursuant to a valid
+  warrant, (2) when an emergency exists, or (3) with tenant consent. On August 2, 2018, BHA
+  provided keys to Bangor Police Department without any warrant (Keith asked twice and was
+  refused), without any emergency, and without tenant consent. BHA's action violated its own
+  federal regulatory obligations as a HUD-funded housing authority, making HUD financially
+  complicit in the 4th Amendment violation. As a federally-funded entity, BHA's violation of 24
+  C.F.R. § 966.4(d)(3) also triggers potential HUD enforcement action and grounds for civil
+  liability under 42 U.S.C. § 1983. SOURCE: MHRC Complaint, Oct 9, 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #043  [CRITICAL — Severity 10/10]  [MANUAL_PCR]
+VIOLATION: MHRC Complaint Confirms: 'Revoke Now' Emails Immediately After FOAA Request — Knox, Bethany, and Perkins Named
+SEVERITY:  10/10  |  CATEGORY: N/A
+LEGAL:     42 U.S.C. § 3617 (FHA Retaliation); MHRA § 4633; 42 U.S.C. § 1985(3) (Civil Rights Conspiracy); 42 U.S.C. § 1983
+DETAILS:
+  The October 9, 2025 MHRC complaint, based on internal emails obtained through HUD FOIA,
+  confirms: 'Internal emails obtained later show that Knox, Bethany, and Perkins exchanged
+  messages saying revoke now immediately after receiving our FOAA request.' This is documentary
+  evidence of coordinated retaliation by three separate housing officials: Joe Knox (former BHA
+  Executive Director), Joseph Bethany (BHA General Counsel), and Charlotte Perkins (BrHA
+  Executive Director). The emails establish the required 'causal link' for a Fair Housing Act §
+  3617 retaliation claim with three named conspirators. This evidence was obtained from HUD via
+  FOIA — meaning the federal government's own records document the retaliation. SOURCES:
+  Internal emails; MHRC Complaint, Oct 9, 2025, Section 2.
+----------------------------------------------------------------------------------------------------
+
+FINDING #044  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Denial of Medical Care During 3-Hour Detention in 90-Degree Heat
+SEVERITY:  9/10  |  CATEGORY: civil_rights
+LEGAL:     8th Amendment; 14th Amendment; City of Revere v. Mass. General Hospital (1983); 42 U.S.C. §1983
+DETAILS:
+  Heard on video repeatedly complaining of injured wrist and extreme pain during 3+ hour
+  detention in ~90-degree heat. Medical attention deliberately denied. DISCOVERED: Dashcam
+  video, February 2024 forensic analysis.
+----------------------------------------------------------------------------------------------------
+
+FINDING #045  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Officer Perry Self-Assigned to CAD Call After Nothing Found — Classic Cover-Up Tactic
+SEVERITY:  9/10  |  CATEGORY: cover_up
+LEGAL:     17-A M.R.S.A. §453; Brady v. Maryland; due process
+DETAILS:
+  After the vehicle search on Davis Road found NOTHING ILLEGAL, Officer Perry performed a CAD
+  call and SELF-ASSIGNED himself to it. Self-assignment (rather than being dispatched) is a
+  known cover-up tactic that removes supervisory oversight of how an officer became involved in
+  a case. This is how Perry inserted himself into the chain of events after the illegal stop
+  yielded no evidence. DISCOVERED: CAD analysis, Perry IA complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #046  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Residence Searched Before Vehicle Search Was Completed — Concurrent Illegal Searches
+SEVERITY:  9/10  |  CATEGORY: illegal_search
+LEGAL:     4th Amendment; scope of warrant violations; Maine Const. Art. I §5
+DETAILS:
+  Officers began searching the residence at 33 Bald Mountain Drive while Keith was still
+  detained on Davis Road and the vehicle search was not yet complete. The searches of vehicle
+  and residence were conducted simultaneously — before any evidence from the vehicle had been
+  evaluated. The home search was initiated without the legal predicate established in sequence.
+  DISCOVERED: Perry IA complaint 3/17/2025; CAD timeline analysis.
+----------------------------------------------------------------------------------------------------
+
+FINDING #047  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Wife's Vehicle Illegally Seized — Left Amanda and Diabetic Son Without Transportation
+SEVERITY:  9/10  |  CATEGORY: illegal_seizure
+LEGAL:     4th Amendment; 14th Amendment; 42 U.S.C. §1983
+DETAILS:
+  Officers illegally seized Amanda Ross's vehicle, leaving her without transportation for their
+  Type 1 diabetic son's medical appointments. Amanda was also left with no cell phone (also
+  seized). The illegal seizure of family property — vehicle and all phones — with a diabetic
+  child in the household created a medical emergency risk. DISCOVERED: King Narrative for
+  Kielty 10/1/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #048  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: $100,000 Bail — Excessive for Disabled Person With No Prior Record, $370 in Pocket
+SEVERITY:  9/10  |  CATEGORY: excessive_bail
+LEGAL:     8th Amendment (excessive bail); 14th Amendment equal protection; ADA (disability discrimination in bail setting)
+DETAILS:
+  $100,000 bail imposed on Keith King despite: no prior drug or violent criminal record,
+  documented mental health disabilities, receiving SSI ($960/month), having only $370 at time
+  of arrest, and being unable to work. Bail was set at an amount designed to ensure pretrial
+  detention — not to ensure appearance. This is especially egregious given the charges were
+  based on fabricated and falsified evidence. DISCOVERED: Perry IA complaint 3/17/2025; Keith's
+  own account.
+----------------------------------------------------------------------------------------------------
+
+FINDING #049  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Perry Slandered Keith King in Media — 'Selling Crack and Heroin From His Home' — Before Conviction
+SEVERITY:  9/10  |  CATEGORY: defamation_civil_rights
+LEGAL:     1st/14th Amendment (liberty interest in reputation); 42 U.S.C. §1983 Paul v. Davis (1976); Maine defamation law; prejudiced jury pool
+DETAILS:
+  Officer Perry made public statements to newspapers and TV news claiming Keith King was
+  selling crack cocaine and heroin out of his home. These statements were: (1) made before any
+  conviction, (2) based on no admissible evidence, (3) published multiple times, (4) damaging
+  to Keith's reputation, and (5) designed to prejudice any future jury pool. The media coverage
+  was directly caused by Perry's false statements. DISCOVERED: Perry IA complaint 3/17/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #050  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: BHA Officials Exchanged Emails to Actively Conceal FOAA Records (Privilege Log Proves It)
+SEVERITY:  9/10  |  CATEGORY: foaa_obstruction
+LEGAL:     1 M.R.S.A. §408-A (FOAA); Due Process; 42 U.S.C. §1983; obstruction of justice
+DETAILS:
+  The BHA 'Privilege Log' shows BHA legal counsel (Joseph Bethany) and staff (Charlotte
+  Perkins) exchanged emails on 10/1/24, 10/11/24, and 8/6/25 specifically regarding Keith's
+  FOAA requests — actively coordinating to conceal records from him. Additionally, FOIA
+  responses from HUD's Washington office revealed Bethany instructed property managers to
+  'IGNORE HIS REQUEST.' This is deliberate FOAA obstruction documented by their own internal
+  records. DISCOVERED: Keith's affidavit 12/1/2025; King Narrative 10/1/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #051  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: 72-Hour Eviction Issued 2.5 Months After Arrest — Caused 3+ Years of Homelessness
+SEVERITY:  9/10  |  CATEGORY: retaliation
+LEGAL:     Fair Housing Act; ADA; Maine Human Rights Act; 42 U.S.C. §1983 (retaliation); due process
+DETAILS:
+  Two and a half months after the August 2, 2018 arrest, Keith's family received a 72-hour
+  notice to vacate on a Friday evening with nowhere to go. This forced the family to sell
+  nearly all their belongings and led to over THREE YEARS of homelessness, often living in a
+  vehicle through Maine winters. The eviction was retaliatory — triggered by the BHA's
+  complicity in the illegal police entry and their desire to suppress evidence of the master
+  key violation. DISCOVERED: King Narrative for Kielty 10/1/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #052  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Charlotte Perkins (BrHA) Lied to HUD About Date of Housing Revocation — Federal False Statement
+SEVERITY:  9/10  |  CATEGORY: false_official_report
+LEGAL:     18 U.S.C. §1001 (false statements to federal agency); Fair Housing Act; HUD enforcement authority; 42 U.S.C. §3617
+DETAILS:
+  Internal HUD documents show Charlotte Perkins (Executive Director, Brewer Housing Authority)
+  provided false information to HUD investigators about the date Keith's housing approval was
+  revoked. The lie was designed to obscure the 19-day gap between the FOAA request (Oct 7) and
+  revocation (Oct 26) that proves retaliation. HUD Case CAS-70054-N9C2 was assigned December
+  2024 but no enforcement action has been taken.
+----------------------------------------------------------------------------------------------------
+
+FINDING #053  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Original AAG Removed From Case Mid-Prosecution Without Explanation — Successor Had No Case File
+SEVERITY:  9/10  |  CATEGORY: prosecutorial_misconduct
+LEGAL:     6th Amendment (fair trial); Brady v. Maryland (continuity of disclosure obligations); IAC — defense counsel failed to seek continuance when AAG had no file
+DETAILS:
+  The original AAG was removed from the case without transparent explanation during
+  prosecution. The successor AAG appeared at a hearing with no case file history and
+  immediately pressed for plea resolution. At the plea hearing, Keith was left explaining case
+  history to an AAG who had no files. This chaotic transition was used to rush and coerce the
+  plea.
+----------------------------------------------------------------------------------------------------
+
+FINDING #054  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Firearm Aggravator Lacks Required "In Furtherance" Nexus — Firearms Were in Vehicle, Not at Trafficking Location
+SEVERITY:  9/10  |  CATEGORY: N/A
+LEGAL:     17-A M.R.S.A. § 1105-A; United States v. Bailey, 516 U.S. 137 (1995); PCR claim under Strickland
+DETAILS:
+  17-A M.R.S.A. § 1105-A requires that the firearm aggravator be established by possession "in
+  furtherance" of trafficking, contemporaneous with the drug activity. The firearms were found
+  in Keith's vehicle on Davis Road during a traffic stop, not at the alleged trafficking
+  location (apartment). Officer Perry perjured himself before the grand jury as the ONLY
+  officer to place firearms at the apartment. Without the "in furtherance" nexus, the firearm
+  aggravator fails and the Class A charge is legally unsupported. DISCOVERED: Attorney Intake
+  Memo / grand jury analysis, Oct 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #055  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Judicial Bias at Bail — "Selling Drugs That Are Killing People" — Before Trial, No Sales Evidence, Inconclusive Test
+SEVERITY:  9/10  |  CATEGORY: N/A
+LEGAL:     U.S. Const. amend. XIV; 15 M.R.S. § 1026; Coffin v. United States, 156 U.S. 432 (1895) (presumption of innocence)
+DETAILS:
+  At the bail hearing, the judge stated Keith was "selling drugs that are killing people" —
+  before any trial, based solely on the arrest, despite: (1) no evidence of drug sales — only
+  alleged possession; (2) TruNarc heroin test was inconclusive; (3) no confirmatory lab
+  results. This prejudicial judicial commentary at a bail proceeding, before any adjudication
+  of guilt, violates the presumption of innocence and influenced the 00,000 cash-only bail.
+  DISCOVERED: Attorney Intake Memo, Oct 2025 / bail hearing transcript.
+----------------------------------------------------------------------------------------------------
+
+FINDING #056  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Bethany FOAA Contradiction: 'No Records Exist' Followed by 'Records Were Destroyed' — False Official Statement
+SEVERITY:  9/10  |  CATEGORY: N/A
+LEGAL:     1 M.R.S.A. § 408-A (FOAA); 17-A M.R.S.A. § 453 (False Public Records); Maine FOAA Ombudsman
+DETAILS:
+  Bethany FOAA contradiction documented in writing. (1) May 12, 2025: Bethany stated 'We have
+  received your request, but have no records responsive to your request in our possession.' --
+  implying records NEVER EXISTED. (2) June 3, 2025: After Keith followed up, Bethany changed
+  position: 'due to the age of your file, any paper file has been destroyed, as is our policy.'
+  -- now admitting records DID EXIST but were destroyed. These are irreconcilably contradictory
+  statements under a legally binding FOAA obligation. A false statement in an FOAA response
+  violates 1 M.R.S.A. § 408-A. SOURCE: Bethany email chain May-June 2025 (Mr. Bethany emails
+  #1).
+----------------------------------------------------------------------------------------------------
+
+FINDING #057  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Fair Housing Act § 3617 Retaliation — Housing Revoked Within Days of FOAA Request About 2018 Incident
+SEVERITY:  9/10  |  CATEGORY: N/A
+LEGAL:     42 U.S.C. § 3617 (FHA Anti-Retaliation); 24 C.F.R. § 100.400; 42 U.S.C. § 3604 (FHA); Maine Human Rights Act
+DETAILS:
+  August 2024: Brewer Housing Authority (BrHA) approved Keith's housing application. Staff
+  member Aaliyah verbally assured Keith that his background check issues were 'not a concern.'
+  Keith was placed at the TOP of the waiting list for 2- and 3-bedroom apartments at Norumbega.
+  An apartment was assigned with a move-in date. 2-3 days AFTER Keith submitted a FOAA request
+  to Joe Knox (BHA) requesting 2018 incident records, BrHA revoked the housing approval --
+  citing the same '$600 debt and criminal history' that Aaliyah had already said was not a
+  concern. The Fair Housing Act prohibits retaliation against persons who exercise fair housing
+  rights or file complaints (42 U.S.C. § 3617). Filing a FOAA request about police misconduct
+  in public housing is a protected activity. Revoking housing 2-3 days after that request
+  constitutes retaliation. SOURCE: Keith FOIA/FOAA request Aug 3, 2025 and prior BrHA
+  approval/revocation documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #058  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: HUD DC Office Produced 95 Pages While BHA Said 'No Records' -- Proven False Statement
+SEVERITY:  9/10  |  CATEGORY: N/A
+LEGAL:     1 M.R.S.A. § 408-A (FOAA); 5 U.S.C. § 552 (FOIA); 17-A M.R.S.A. § 453; 42 U.S.C. § 1983
+DETAILS:
+  BHA General Counsel Bethany responded to Keith's May 2025 FOAA request: 'We have received
+  your request, but have no records responsive to your request in our possession.' However,
+  Keith subsequently filed a FOIA request with HUD's Washington DC office (Tyler M. Wright),
+  which produced 95 pages of records responsive to the same request. These 95 pages include
+  BHA/BrHA internal communications about Keith's case -- records that Bethany claimed did not
+  exist. This proves Bethany's FOAA response was knowingly false. Filing a false FOAA response
+  by a public official violates 1 M.R.S.A. § 408-A and potentially 17-A M.R.S.A. § 453 (False
+  Public Records). SOURCE: Keith's letter to HUD, June 2025 (email #4).
+----------------------------------------------------------------------------------------------------
+
+FINDING #059  [CRITICAL — Severity 9/10]  [MANUAL_PCR]
+VIOLATION: Housing Revoked 1 Day Before Scheduled Move-In -- Targeted Retaliation Timing
+SEVERITY:  9/10  |  CATEGORY: N/A
+LEGAL:     42 U.S.C. § 3617 (FHA Anti-Retaliation); 42 U.S.C. § 3604 (FHA); 24 C.F.R. § 100.400; Maine Human Rights Act
+DETAILS:
+  Keith's email to HUD (June 2025) confirms the precise timing: BrHA (Brewer Housing Authority)
+  approved Keith's application, assigned him a specific apartment at Norumbega with a scheduled
+  move-in date, and then REVOKED the approval LITERALLY ONE DAY BEFORE THE MOVE-IN DATE. The
+  revocation came after Keith filed a FOAA request with Joe Knox (BHA) requesting records about
+  the 2018 unauthorized police entry into his apartment. This specific 'day before' timing
+  eliminates any innocent explanation -- it was deliberate retaliation. Combined with internal
+  emails showing 'Revoke Now' instructions and Mrs. Perkins' communications with Rica about
+  ignoring Keith, this constitutes Fair Housing Act retaliation (42 U.S.C. § 3617). SOURCE:
+  Keith's HUD complaint, June 2025 (email chain, Mr. Bethany emails #4).
+----------------------------------------------------------------------------------------------------
+
+FINDING #060  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+VIOLATION: Initial Charging Document Unsigned and Undated — Legally Deficient Instrument
+SEVERITY:  8/10  |  CATEGORY: defective_charging
+LEGAL:     Maine Rules of Criminal Procedure; Due Process (14th Amendment); M.R. Crim. P. 3
+DETAILS:
+  The initial criminal complaint (Counts 1-11) lacks both a DATE and a SIGNATURE from the
+  swearing officer. Without an officer's sworn signature and date, the document is legally
+  deficient as a charging instrument — it is not a valid information or complaint under Maine
+  law. This deficiency calls into question the legality of the entire prosecution from its
+  inception. DISCOVERED: Evidence Discrepancies doc 1/20/2026; charges document obtained in
+  discovery 10/16/2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #061  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+VIOLATION: DEA Involvement — Potential Federal Jurisdiction and Additional Exculpatory Evidence
+SEVERITY:  8/10  |  CATEGORY: brady_violation
+LEGAL:     Brady v. Maryland; Giglio v. United States; Federal FOIA (5 U.S.C. §552); due process
+DETAILS:
+  Keith's November 2025 FOAA request specifically sought DEA agent statements and inter-agency
+  correspondence referencing pending lab results and joint investigations for the August 2,
+  2018 incident. DEA involvement in a Maine drug case raises additional Brady and Giglio
+  obligations under federal law, and any inter-agency correspondence about pending
+  (inconclusive) lab results must be disclosed. DISCOVERED: FOAA request 11/4/2025 references
+  DEA.
+----------------------------------------------------------------------------------------------------
+
+FINDING #062  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+VIOLATION: Duplicative OAS Counts — Two Charges for Same Date/Statute — Multiplicity
+SEVERITY:  8/10  |  CATEGORY: N/A
+LEGAL:     5th Amendment Double Jeopardy; 17-A M.R.S.A. (applicable OAS statute); United States v. Dixon, 509 U.S. 688 (1993)
+DETAILS:
+  Attorney Intake Memo (PCR Part 2) identifies that two counts of Operating After Suspension
+  (OAS) were filed for the same date and statute — a clear multiplicity issue. The Double
+  Jeopardy Clause prohibits multiple punishments for the same offense. Defense counsel failed
+  to move to dismiss the duplicative count, leaving it to inflate the charge sheet and increase
+  plea leverage. DISCOVERED: Attorney Intake Memo analysis, Oct 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #063  [SERIOUS — Severity 8/10]  [MANUAL_PCR]
+VIOLATION: Transfer to Two Bridges Correctional (100 Miles Away) — Punitive, No Reason Given, Away From Family and Medical Support
+SEVERITY:  8/10  |  CATEGORY: N/A
+LEGAL:     8th Amendment; 14th Amendment Due Process; 15 M.R.S. § 1026; Helling v. McKinney, 509 U.S. 25 (1993)
+DETAILS:
+  After arrest, Keith was transferred to Two Bridges Correctional Facility, approximately 100
+  miles from Bangor, without any stated reason. This transfer: (1) isolated him from his family
+  and primary mental health support (Amanda); (2) denied him medication for 42 days; (3)
+  separated him from his diabetic son who needed him. The transfer appears punitive rather than
+  logistical, and combined with the no-contact order, constituted a deliberate strategy to
+  maximize psychological pressure toward a plea. DISCOVERED: Attorney Intake Memo, Oct 2025.
+----------------------------------------------------------------------------------------------------
+
+FINDING #064  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-excessive-force
+SEVERITY:  5/10  |  CATEGORY: possible-excessive-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / Graham v. Connor, 490 U.S. 386 (1989)
+DETAILS:
+  Two officers appear to have physical contact with a single subject at the rear of the
+  vehicle. The subject appears outnumbered and it is unclear from this single frame whether the
+  level of force is proportionate to any resistance.
+----------------------------------------------------------------------------------------------------
+
+FINDING #065  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The officer appears to be leaning into or searching the vehicle. It is unclear from this
+  single frame whether consent was given, whether probable cause exists, or whether a warrant
+  was obtained. The two civilians are standing outside the vehicle, which may indicate they
+  were asked to exit.
+----------------------------------------------------------------------------------------------------
+
+FINDING #066  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-search-without-visible-consent-or-warrant
+SEVERITY:  5/10  |  CATEGORY: possible-search-without-visible-consent-or-warrant
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer on the left appears to be leaning into or examining the rear/trunk area of the
+  stopped vehicle. It is unclear from this single frame whether consent was given, a warrant
+  exists, or probable cause was established.
+----------------------------------------------------------------------------------------------------
+
+FINDING #067  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Two individuals appear to be examining or reaching into the rear area of the stopped vehicle.
+  If these are officers conducting a search of the vehicle's trunk or rear compartment, no
+  consent or warrant issuance is visible in this frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #068  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Both individuals in dark clothing appear to be leaning into or looking into the vehicle from
+  both sides simultaneously. If these are officers, this positioning could indicate a vehicle
+  search in progress. Cannot confirm from this single frame whether consent was given, a
+  warrant exists, or probable cause has been established.
+----------------------------------------------------------------------------------------------------
+
+FINDING #069  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  5/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Officer and subject appear to be in very close physical contact at the rear of the vehicle.
+  The subject's body posture appears off-balance, suggesting physical force may be being
+  applied. Without audio or additional frames, the context and proportionality cannot be fully
+  assessed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #070  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The physical positioning of the officer's hands near the subject's body is consistent with a
+  pat-down or frisk. If conducted without reasonable articulable suspicion that the subject is
+  armed and dangerous (Terry v. Ohio, 392 U.S. 1), this could constitute an unlawful search.
+----------------------------------------------------------------------------------------------------
+
+FINDING #071  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-search
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968) / Maine Constitution Art. I §5
+DETAILS:
+  Officer appears to be conducting a pat-down or physical search of the subject at the rear of
+  the vehicle during a traffic stop. Without observable reasonable articulable suspicion of
+  weapons (Terry v. Ohio standard), this could constitute an unlawful search.
+----------------------------------------------------------------------------------------------------
+
+FINDING #072  [MODERATE — Severity 5/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-search
+SEVERITY:  5/10  |  CATEGORY: possible-warrantless-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  The officer and subject appear to be in a position consistent with a pat-down or search at
+  the rear of the vehicle. It is unclear from this single frame whether consent was given,
+  whether probable cause exists, or whether this is a Terry stop frisk based on reasonable
+  articulable suspicion of being armed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #073  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  4/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Two individuals appear to be accessing or examining the trunk/rear area of the stopped
+  vehicle. If either individual is law enforcement, this could constitute a vehicle search.
+  Without audio, it is unclear if consent was given or if probable cause exists.
+----------------------------------------------------------------------------------------------------
+
+FINDING #074  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-custodial-detention
+SEVERITY:  4/10  |  CATEGORY: possible-custodial-detention
+LEGAL:     5th Amendment / 17-A M.R.S.A. §107
+DETAILS:
+  The subject on the right side of the vehicle appears to be in close physical proximity to an
+  officer and may be physically restrained or positioned against the vehicle. From this
+  distance and angle, it is difficult to confirm whether handcuffs are applied or force is
+  being used.
+----------------------------------------------------------------------------------------------------
+
+FINDING #075  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-positioning
+SEVERITY:  4/10  |  CATEGORY: traffic-stop-positioning
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  No visible emergency lights or light bar activation can be confirmed in this frame; if the
+  patrol vehicle's emergency lights were not activated during the stop, this could raise
+  questions about the legality of the seizure
+----------------------------------------------------------------------------------------------------
+
+FINDING #076  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-search
+SEVERITY:  4/10  |  CATEGORY: possible-warrantless-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The officer appears to be leaning deeply into the driver's side window of the vehicle. This
+  posture could indicate the officer is looking into or reaching into the vehicle interior,
+  which may constitute a search beyond plain view. Without visible consent or a warrant, this
+  could raise 4th Amendment concerns.
+----------------------------------------------------------------------------------------------------
+
+FINDING #077  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-search
+SEVERITY:  4/10  |  CATEGORY: possible-warrantless-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The person in dark clothing appears to be leaning significantly into the driver-side window
+  of the stopped vehicle, which could indicate looking into or reaching into the vehicle
+  interior beyond what is permissible during a routine traffic stop. However, at this distance
+  and angle, it is difficult to determine definitively whether this constitutes a search or is
+  simply a conversational posture.
+----------------------------------------------------------------------------------------------------
+
+FINDING #078  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-search
+SEVERITY:  4/10  |  CATEGORY: possible-warrantless-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The person standing at the driver's window appears to be leaning significantly into the
+  vehicle's window area, which could constitute a visual search or physical intrusion into the
+  vehicle. The extent of the lean suggests more than casual conversation — cannot confirm from
+  this single frame whether consent was given or probable cause exists.
+----------------------------------------------------------------------------------------------------
+
+FINDING #079  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Officer appears to be in very close physical contact with the subject at the rear of the
+  vehicle. The subject's arm positioning may suggest being physically restrained or placed in a
+  control hold. Without audio or additional frames, the proportionality and necessity of any
+  force cannot be fully assessed.
+----------------------------------------------------------------------------------------------------
+
+FINDING #080  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: roadside-seizure-of-person
+SEVERITY:  4/10  |  CATEGORY: roadside-seizure-of-person
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The subject appears to be detained and possibly physically restrained at the rear of the
+  vehicle during what appears to be a traffic stop. The basis for escalation from a traffic
+  stop to physical detention/restraint is not evident from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #081  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-entry-or-threshold-contact
+SEVERITY:  4/10  |  CATEGORY: possible-warrantless-entry-or-threshold-contact
+LEGAL:     4th Amendment / Maine Constitution Art. I §5 / Payton v. New York, 445 U.S. 573 (1980)
+DETAILS:
+  Officer appears to be positioned at or very near the open doorway/threshold of a private
+  residence. From this distance it is not possible to determine if the officer has entered, is
+  attempting to enter, or was invited. The door appears open. Without a warrant or valid
+  exception (consent, exigent circumstances), officer presence at the threshold of a home
+  raises 4th Amendment concerns.
+----------------------------------------------------------------------------------------------------
+
+FINDING #082  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: warrantless-entry-concern
+SEVERITY:  4/10  |  CATEGORY: warrantless-entry-concern
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  An officer appears to be positioned at or just inside the threshold of the doorway of unit
+  33. It is unclear whether consent was given or a warrant obtained for entry. The positioning
+  warrants further review of surrounding footage.
+----------------------------------------------------------------------------------------------------
+
+FINDING #083  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107 / 4th Amendment / 42 U.S.C. §1983
+DETAILS:
+  One individual appears to be standing over or leaning into another person who is seated/low
+  on the steps of unit 33. The posture could suggest physical contact or force being applied,
+  but at this distance and resolution it is not possible to confirm definitively.
+----------------------------------------------------------------------------------------------------
+
+FINDING #084  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  4/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Person in dark clothing appears to be leaning over and making physical contact with a person
+  in a lower/seated position on the steps. The nature of the contact (assisting, restraining,
+  or applying force) cannot be definitively determined from this distance and single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #085  [MINOR — Severity 4/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-physical-contact
+SEVERITY:  4/10  |  CATEGORY: possible-physical-contact
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  There appears to be physical contact or a reaching/grasping motion between the officer and
+  the seated individual on the steps, but the exact nature is unclear at this distance and
+  resolution.
+----------------------------------------------------------------------------------------------------
+
+FINDING #086  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  3/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  Neither individual is wearing clearly identifiable law enforcement uniform markings, badges,
+  or name tags visible from this dashcam angle. It is not possible to confirm which, if either,
+  is a law enforcement officer from this frame alone.
+----------------------------------------------------------------------------------------------------
+
+FINDING #087  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-vehicle-search-without-consent
+SEVERITY:  3/10  |  CATEGORY: possible-vehicle-search-without-consent
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer is leaning deeply into or toward the driver's side window area, which could indicate
+  looking into the vehicle interior beyond what is in plain view. From this single frame alone,
+  it is not possible to determine if the officer is merely speaking with the driver or
+  conducting a visual search.
+----------------------------------------------------------------------------------------------------
+
+FINDING #088  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: potential-warrantless-search
+SEVERITY:  3/10  |  CATEGORY: potential-warrantless-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The individual is leaning deeply into or toward the driver-side window area, which could
+  indicate visual search of the vehicle interior. From this single frame it is unclear whether
+  this is a routine conversation or an intrusive visual inspection beyond plain view.
+----------------------------------------------------------------------------------------------------
+
+FINDING #089  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: plain-view-search-concern
+SEVERITY:  3/10  |  CATEGORY: plain-view-search-concern
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer is leaning significantly into or very close to the driver-side window of the vehicle.
+  This posture could indicate the officer is looking into the vehicle interior beyond what is
+  visible from a normal standing position, which could constitute a search beyond plain view.
+----------------------------------------------------------------------------------------------------
+
+FINDING #090  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  3/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6 / 5 M.R.S.A. §4681
+DETAILS:
+  The individual approaching the vehicle is not clearly identifiable as a law enforcement
+  officer from this frame — no visible badge, uniform markings, or name tag can be confirmed at
+  this distance and angle
+----------------------------------------------------------------------------------------------------
+
+FINDING #091  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-concern
+SEVERITY:  3/10  |  CATEGORY: officer-identification-concern
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The individual approaching the stopped vehicle does not appear to be wearing a standard
+  identifiable police uniform — clothing appears to be a casual patterned shirt. If this is a
+  law enforcement officer, the lack of clearly visible identification (badge, uniform, marked
+  clothing) raises concerns about proper identification during the stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #092  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: vehicle-search-concern
+SEVERITY:  3/10  |  CATEGORY: vehicle-search-concern
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The person at the driver's side appears to be leaning into or reaching toward the vehicle
+  interior. If this constitutes a search, it would require consent, probable cause, or an
+  applicable exception to the warrant requirement.
+----------------------------------------------------------------------------------------------------
+
+FINDING #093  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: roadside-stop-safety-concern
+SEVERITY:  3/10  |  CATEGORY: roadside-stop-safety-concern
+LEGAL:     17-A M.R.S.A. §107(1)(A)
+DETAILS:
+  The stop is being conducted on the travel lane/shoulder of a two-lane road with the subject
+  and officer standing partially in the roadway near the yellow center line, creating a safety
+  concern for all parties.
+----------------------------------------------------------------------------------------------------
+
+FINDING #094  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-vehicle-search
+SEVERITY:  3/10  |  CATEGORY: possible-warrantless-vehicle-search
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The subject appears to be outside the vehicle holding or displaying items; it is unclear
+  whether this is voluntary or if the subject was ordered to remove items from the vehicle. The
+  context suggests possible vehicle search activity, but cannot be confirmed from this single
+  frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #095  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: roadside-detention-safety
+SEVERITY:  3/10  |  CATEGORY: roadside-detention-safety
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  Subject and officer are standing in or very near the travel lane of an active two-lane road,
+  with at least one vehicle visible approaching in the distance, creating a safety concern for
+  the detained individual.
+----------------------------------------------------------------------------------------------------
+
+FINDING #096  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: custodial-detention-without-visible-miranda
+SEVERITY:  3/10  |  CATEGORY: custodial-detention-without-visible-miranda
+LEGAL:     5th Amendment / Miranda v. Arizona, 384 U.S. 436 (1966)
+DETAILS:
+  If the subject is being physically restrained, this may constitute custody. No indication of
+  Miranda warning can be determined from a single frame, but if custodial interrogation occurs
+  without Miranda, it would be a violation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #097  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: unwarranted-exit-order
+SEVERITY:  3/10  |  CATEGORY: unwarranted-exit-order
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  Subject is standing outside the vehicle during a traffic stop. While officers may lawfully
+  order occupants out per Pennsylvania v. Mimms, if the subject was ordered out without safety
+  justification and then subjected to a search, this could raise 4th Amendment concerns. Cannot
+  determine from this single frame whether exit was voluntary or ordered.
+----------------------------------------------------------------------------------------------------
+
+FINDING #098  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-physical-contact
+SEVERITY:  3/10  |  CATEGORY: possible-physical-contact
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  The positioning of both individuals near the truck suggests close physical proximity; the
+  person in white appears to have arms extended which could indicate being directed to assume a
+  position, but details are unclear at this distance
+----------------------------------------------------------------------------------------------------
+
+FINDING #099  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: warrantless_residential_contact
+SEVERITY:  3/10  |  CATEGORY: warrantless
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer is present at a residential property engaging with individuals near the entrance. It
+  is unclear from this single frame whether the officer has a warrant, was invited, or is
+  conducting a warrantless approach to the residence. The officer's proximity to the doorway of
+  the dwelling raises the question of whether any entry or curtilage intrusion occurred.
+----------------------------------------------------------------------------------------------------
+
+FINDING #100  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-use-of-force
+SEVERITY:  3/10  |  CATEGORY: possible-use-of-force
+LEGAL:     17-A M.R.S.A. §107
+DETAILS:
+  The officer appears to be leaning over and reaching toward or making physical contact with a
+  person who is in a low position (seated or crouched on the ground). The nature of the contact
+  cannot be fully determined from this distance and angle.
+----------------------------------------------------------------------------------------------------
+
+FINDING #101  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: curtilage-encounter
+SEVERITY:  3/10  |  CATEGORY: curtilage-encounter
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  The officer interaction is occurring at or near the entryway of a residential unit (unit 33).
+  If the officer approached without a warrant or exigent circumstances, this could implicate
+  curtilage protections under the 4th Amendment.
+----------------------------------------------------------------------------------------------------
+
+FINDING #102  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-warrantless-encounter-at-residence
+SEVERITY:  3/10  |  CATEGORY: possible-warrantless-encounter-at-residence
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer appears to be engaged in a contact or encounter at the entrance of a private
+  residence (unit 33). It is unclear from this frame whether consent to approach was given,
+  whether a warrant exists, or whether the officer is on the curtilage of the property.
+----------------------------------------------------------------------------------------------------
+
+FINDING #103  [MINOR — Severity 3/10]  [AI_VIDEO_FRAME]
+VIOLATION: warrantless_residential_contact
+SEVERITY:  3/10  |  CATEGORY: warrantless
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  Officer appears to be conducting an encounter at the entrance/threshold of a private
+  residence. It is unclear from this frame whether a warrant exists, consent was given, or
+  exigent circumstances are present for the officer's presence at the doorway.
+----------------------------------------------------------------------------------------------------
+
+FINDING #104  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681 / 42 U.S.C. §1983
+DETAILS:
+  At this distance, no badge numbers, name tags, or unit identifiers are legible on either
+  officer. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #105  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  At the distance and resolution of this dashcam frame, no badge number, name tag, or unit
+  identifier is visible on the officer. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #106  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  Neither individual's badge, name tag, or uniform insignia can be identified at this camera
+  distance. It is not possible to confirm whether they are law enforcement officers.
+----------------------------------------------------------------------------------------------------
+
+FINDING #107  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: unidentified-officer
+SEVERITY:  2/10  |  CATEGORY: unidentified-officer
+LEGAL:     Maine Constitution Art. I §5 / 4th Amendment
+DETAILS:
+  Officer's badge number, name tag, and agency identification are not visible from this dashcam
+  angle and distance. Cannot confirm proper identification was provided to the subject.
+----------------------------------------------------------------------------------------------------
+
+FINDING #108  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     25 M.R.S.A. §2803-B
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not visible from this
+  dashcam distance and angle. Cannot confirm proper identification was provided to the driver.
+----------------------------------------------------------------------------------------------------
+
+FINDING #109  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6 / 42 U.S.C. §1983
+DETAILS:
+  Officer's badge number, name tag, and unit identifiers are not clearly visible from the
+  dashcam angle and distance, making officer identification difficult
+----------------------------------------------------------------------------------------------------
+
+FINDING #110  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  Officer's badge number, name tag, and identifying information are not visible from this
+  dashcam distance and angle. This does not confirm a violation but is noted for documentation
+  purposes.
+----------------------------------------------------------------------------------------------------
+
+FINDING #111  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  Officer's badge number, name tag, and specific uniform identifiers are not discernible from
+  this dashcam distance and angle, making positive identification difficult for the record
+----------------------------------------------------------------------------------------------------
+
+FINDING #112  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6
+DETAILS:
+  Officer's badge number, name tag, and specific identifying features are not visible from the
+  dashcam distance. Cannot confirm proper identification was provided to the vehicle occupant.
+----------------------------------------------------------------------------------------------------
+
+FINDING #113  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  At this distance, no badge number, name tag, or identifying markings on the person's uniform
+  are visible or legible. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #114  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-monitoring
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-monitoring
+LEGAL:     4th Amendment / Terry v. Ohio, 392 U.S. 1 (1968)
+DETAILS:
+  This appears to be a standard traffic stop approach. The officer is at the driver window,
+  which is a 4th Amendment seizure. Without audio, it cannot be determined whether the stop is
+  based on reasonable suspicion or probable cause.
+----------------------------------------------------------------------------------------------------
+
+FINDING #115  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     Maine Constitution Art. I §6 / 5 M.R.S.A. §4681
+DETAILS:
+  The person standing at the vehicle is not clearly identifiable as a law enforcement officer —
+  no visible badge, name tag, or identifiable uniform markings can be confirmed from this
+  dashcam angle and distance
+----------------------------------------------------------------------------------------------------
+
+FINDING #116  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  2/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A traffic stop is in progress on a rural road. The dashcam is actively recording, which is
+  positive for documentation. However, only a single frame is available so it is not possible
+  to determine whether reasonable suspicion or probable cause existed for the stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #117  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     25 M.R.S.A. §2803-B
+DETAILS:
+  The individual approaching the vehicle does not have clearly visible badge, name tag, or
+  identifiable uniform markings from this dashcam angle and distance. Cannot confirm this
+  person is a uniformed officer.
+----------------------------------------------------------------------------------------------------
+
+FINDING #118  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  At this distance, no badge number, name tag, or unit identifier is visible on the officer.
+  Officer identification cannot be confirmed from this frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #119  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     Department policy / 5 M.R.S.A. §4681
+DETAILS:
+  At this distance, no badge number, name tag, or officer identification markings are
+  discernible on the officer's person.
+----------------------------------------------------------------------------------------------------
+
+FINDING #120  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     25 M.R.S.A. §2803-B
+DETAILS:
+  Officer badge number, name tag, and unit identifiers are not visible or readable at this
+  distance and resolution, making it difficult to identify the officer for accountability
+  purposes.
+----------------------------------------------------------------------------------------------------
+
+FINDING #121  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  Officer's badge number, name tag, and unit identifiers are not legible from the dashcam
+  distance. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #122  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: subject-outside-vehicle-concern
+SEVERITY:  2/10  |  CATEGORY: subject-outside-vehicle-concern
+LEGAL:     4th Amendment / Pennsylvania v. Mimms, 434 U.S. 106 (1977)
+DETAILS:
+  Subject is standing outside the vehicle at the rear during a traffic stop. It is unclear
+  whether the officer directed the subject to exit or if the subject exited voluntarily. If the
+  officer ordered the subject out without articulable safety concern, this may raise a
+  question, though Pennsylvania v. Mimms (1977) generally permits officers to order drivers out
+  during a lawful stop.
+----------------------------------------------------------------------------------------------------
+
+FINDING #123  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: roadside-stop-documentation
+SEVERITY:  2/10  |  CATEGORY: roadside-stop-documentation
+LEGAL:     Maine Constitution Art. I §5
+DETAILS:
+  Traffic stop is occurring on an open roadway; officer identification details (badge, name
+  tag) are not visible from the dashcam distance, making accountability verification difficult
+----------------------------------------------------------------------------------------------------
+
+FINDING #124  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: consensual_encounter_or_seizure
+SEVERITY:  2/10  |  CATEGORY: consensual
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  A person who appears to be an officer is standing near a seated individual at their
+  residence. It is unclear from this single frame whether this is a consensual encounter or a
+  seizure/detention. The seated person's posture on their own steps could indicate either
+  voluntary interaction or a directed command to sit.
+----------------------------------------------------------------------------------------------------
+
+FINDING #125  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification
+SEVERITY:  2/10  |  CATEGORY: officer-identification
+LEGAL:     42 U.S.C. §1983
+DETAILS:
+  Officer badge number, name tag, and uniform details are not discernible from the dashcam
+  distance. This makes accountability documentation difficult.
+----------------------------------------------------------------------------------------------------
+
+FINDING #126  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: officer-identification-not-visible
+SEVERITY:  2/10  |  CATEGORY: officer-identification-not-visible
+LEGAL:     5 M.R.S.A. §4681
+DETAILS:
+  At this distance, the officer's badge number, name tag, and identifying information are not
+  discernible from the dashcam footage. This limits accountability documentation.
+----------------------------------------------------------------------------------------------------
+
+FINDING #127  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: curtilage-encounter
+SEVERITY:  2/10  |  CATEGORY: curtilage-encounter
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  An apparent officer is present in the curtilage area of a private residence (front
+  doorstep/entryway of unit 33). While a knock-and-talk is generally permissible, the
+  encounter's context and whether the officer had a lawful basis to be there cannot be fully
+  determined from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #128  [MINOR — Severity 2/10]  [AI_VIDEO_FRAME]
+VIOLATION: possible-custodial-encounter-at-residence
+SEVERITY:  2/10  |  CATEGORY: possible-custodial-encounter-at-residence
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  An officer appears to be standing near a person seated on their front steps at a residential
+  address. It is unclear from this frame whether this is a consensual encounter, an
+  investigative detention, or something else. The subject's freedom to leave or terminate the
+  encounter cannot be determined from this single frame.
+----------------------------------------------------------------------------------------------------
+
+FINDING #129  [MINOR — Severity 1/10]  [AI_VIDEO_FRAME]
+VIOLATION: traffic-stop-documentation
+SEVERITY:  1/10  |  CATEGORY: traffic-stop-documentation
+LEGAL:     4th Amendment / Maine Constitution Art. I §5
+DETAILS:
+  This appears to be a traffic stop, likely for an unsecured or oversized load (mattress
+  protruding from trunk). No officer is yet visible outside the vehicle to assess interaction.
+  Context is needed from surrounding frames to determine if proper procedures are followed.
+----------------------------------------------------------------------------------------------------
+
 END OF REPORT
-================================================================================
+Total: 129 violations documented
