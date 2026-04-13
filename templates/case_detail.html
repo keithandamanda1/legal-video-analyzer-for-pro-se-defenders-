@@ -374,6 +374,109 @@
         </div>
       </div>
 
+      <!-- Uploaded legal documents -->
+      <div class="card mb-4" id="legal-docs">
+        <div class="card-header d-flex justify-content-between align-items-center" style="color:#a78bfa;">
+          <span><i class="bi bi-folder2-open me-2"></i>Uploaded Legal Documents</span>
+          <button class="btn btn-sm btn-outline-light no-print" data-bs-toggle="collapse" data-bs-target="#legalDocUploadCollapse">
+            <i class="bi bi-upload me-1"></i>Upload
+          </button>
+        </div>
+
+        <!-- Upload form -->
+        <div class="collapse" id="legalDocUploadCollapse">
+          <div class="card-body border-bottom" style="border-color:#334155!important;">
+            <p class="small text-muted mb-3">
+              Upload the Board of Overseers dismissal, complaint responses, court orders, briefs,
+              evidence photos, or any other legal document. Accepted: PDF, DOCX, DOC, TXT, RTF, PNG, JPG, and more.
+            </p>
+            <form method="POST" action="/case/{{ case.id }}/upload_legal_doc" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label class="form-label small">Document File</label>
+                <input type="file" class="form-control form-control-sm" name="legal_doc_file"
+                       accept=".pdf,.doc,.docx,.txt,.rtf,.odt,.png,.jpg,.jpeg,.gif,.tiff,.tif,.bmp,.webp,.xls,.xlsx,.csv"
+                       required>
+                <div class="form-text text-muted">PDF, DOCX, TXT, RTF, PNG, JPG, TIFF, XLS — Max 4 GB</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small">Document Category</label>
+                <select class="form-select form-select-sm" name="doc_category">
+                  {% for cat_key, cat_label in legal_doc_categories.items() %}
+                  <option value="{{ cat_key }}">{{ cat_label }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small">Notes (optional)</label>
+                <input type="text" class="form-control form-control-sm" name="doc_notes"
+                       placeholder="e.g. Board of Overseers dismissal received April 13, 2026">
+              </div>
+              <button type="submit" class="btn btn-sm w-100" style="background:#7c3aed;color:#fff;">
+                <i class="bi bi-cloud-upload me-1"></i>Upload Document
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Document list -->
+        <div class="card-body p-0">
+          {% if legal_docs %}
+          <div class="list-group list-group-flush">
+            {% for doc in legal_docs %}
+            <div class="list-group-item d-flex justify-content-between align-items-start gap-2"
+                 style="background:#0f172a;border-color:#334155;color:#cbd5e1;">
+              <div class="flex-grow-1 min-width-0">
+                <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                  <span class="badge" style="background:#3b0764;color:#e9d5ff;font-size:0.7rem;">
+                    {{ legal_doc_categories.get(doc.doc_category, doc.doc_category) }}
+                  </span>
+                  <span class="badge bg-secondary" style="font-size:0.7rem;">{{ doc.file_type|upper }}</span>
+                  {% if doc.file_size %}
+                  <span class="text-muted" style="font-size:0.7rem;">
+                    {{ "%.1f"|format(doc.file_size / 1024) }} KB
+                  </span>
+                  {% endif %}
+                </div>
+                <div class="small text-light text-truncate" title="{{ doc.original_name }}">
+                  <i class="bi bi-file-earmark me-1"></i>{{ doc.original_name }}
+                </div>
+                {% if doc.doc_notes %}
+                <div class="text-muted" style="font-size:0.75rem;">{{ doc.doc_notes }}</div>
+                {% endif %}
+                <div class="text-muted" style="font-size:0.7rem;">
+                  {{ doc.uploaded_at[:16] if doc.uploaded_at else '' }}
+                </div>
+              </div>
+              <div class="d-flex gap-1 flex-shrink-0 no-print">
+                <a href="/case/{{ case.id }}/legal_docs/{{ doc.id }}/view"
+                   target="_blank" class="btn btn-sm btn-outline-light" title="View">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="/case/{{ case.id }}/legal_docs/{{ doc.id }}/download"
+                   class="btn btn-sm btn-outline-light" title="Download">
+                  <i class="bi bi-download"></i>
+                </a>
+                <form method="POST" action="/case/{{ case.id }}/legal_docs/{{ doc.id }}/delete"
+                      class="d-inline"
+                      onsubmit="return confirm('Delete this document? This cannot be undone.')">
+                  <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete">
+                    <i class="bi bi-trash3"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="text-center py-4 text-muted">
+            <i class="bi bi-folder2 display-4 d-block mb-2"></i>
+            No documents uploaded yet.<br>
+            <small>Click "Upload" to add the Board of Overseers dismissal or other documents.</small>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
       <!-- Danger zone -->
       <div class="card" style="border-color:#dc2626;">
         <div class="card-header text-danger"><i class="bi bi-trash3-fill me-2"></i>Danger Zone</div>

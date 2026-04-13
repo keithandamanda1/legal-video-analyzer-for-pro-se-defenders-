@@ -130,6 +130,20 @@ def init_db() -> None:
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE CASCADE
         );
+
+        -- ── Uploaded legal documents (complaints, dismissals, briefs, etc.) ──
+        CREATE TABLE IF NOT EXISTS uploaded_legal_docs (
+            id            TEXT PRIMARY KEY,
+            case_id       TEXT NOT NULL,
+            file_path     TEXT NOT NULL,
+            file_type     TEXT,
+            original_name TEXT,
+            file_size     INTEGER,
+            doc_category  TEXT DEFAULT 'other',
+            doc_notes     TEXT,
+            uploaded_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE CASCADE
+        );
         """)
         conn.commit()
     finally:
@@ -438,6 +452,64 @@ def get_document(doc_id: str) -> Optional[dict]:
     try:
         row = conn.execute("SELECT * FROM documents WHERE id=?", (doc_id,)).fetchone()
         return dict(row) if row else None
+    finally:
+        conn.close()
+
+
+# ── Uploaded legal documents ──────────────────────────────────────────────────
+
+def add_legal_doc(case_id: str, file_path: str, **kwargs) -> dict:
+    did = new_id()
+    fields = {
+        "id": did, "case_id": case_id, "file_path": file_path,
+        "file_type": kwargs.get("file_type"),
+        "original_name": kwargs.get("original_name"),
+        "file_size": kwargs.get("file_size"),
+        "doc_category": kwargs.get("doc_category", "other"),
+        "doc_notes": kwargs.get("doc_notes"),
+    }
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO uploaded_legal_docs
+               (id,case_id,file_path,file_type,original_name,file_size,doc_category,doc_notes)
+               VALUES (:id,:case_id,:file_path,:file_type,:original_name,:file_size,:doc_category,:doc_notes)""",
+            fields
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return fields
+
+
+def list_legal_docs(case_id: str) -> list:
+    conn = get_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM uploaded_legal_docs WHERE case_id=? ORDER BY uploaded_at DESC",
+            (case_id,)
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def get_legal_doc(doc_id: str) -> Optional[dict]:
+    conn = get_db()
+    try:
+        row = conn.execute(
+            "SELECT * FROM uploaded_legal_docs WHERE id=?", (doc_id,)
+        ).fetchone()
+        return dict(row) if row else None
+    finally:
+        conn.close()
+
+
+def delete_legal_doc(doc_id: str) -> None:
+    conn = get_db()
+    try:
+        conn.execute("DELETE FROM uploaded_legal_docs WHERE id=?", (doc_id,))
+        conn.commit()
     finally:
         conn.close()
 
