@@ -1,15 +1,12 @@
 CASE SUMMARY -- State of Maine v. Keith King (CR-2018-03023)
 Generated: April 13, 2026
-Total Violations: 126
-  Manual PCR (documented evidence): 60
-  AI Video Frame Analysis: 66
-Critical (9-10): 56
-Serious (7-8): 4
-Moderate (5-6): 9
-Minor (1-4): 57
-Illegal violations: 60
+Total Violations: 129
+  Manual PCR (documented): 63
+  AI Video Frame: 66
+Critical (9-10): 59  |  Serious (7-8): 4
+Illegal violations: 63
 
-SEVERITY 10 VIOLATIONS:
+SEVERITY 10 VIOLATIONS (43 total):
   [10/10] Illegal Pretextual Traffic Stop — No PC / No RAS
   [10/10] 3-Hour Custodial Interrogation Without Miranda Warnings
   [10/10] Phone Seized in Direct Violation of Warrant Exclusion Clause
@@ -50,3 +47,6 @@ SEVERITY 10 VIOLATIONS:
   [10/10] Family Forced to Live in Vehicle Through Two Maine Winters — Service Dog Died From Cold — ADA Damages
   [10/10] Perry Isolated Keith From Witnesses — Unobserved Coerced Admission, No Camera Coverage
   [10/10] Miranda Coercion Tactic — "Cannot Ask Questions or Will Be Read Rights" While Told Not Free to Go
+  [10/10] HUD Officials Kara E. Norman and Richa Karki Instructed BHA/BrHA to Ignore Keith — Federal Cover-Up (Ex. L MHRC)
+  [10/10] 24 C.F.R. § 966.4(d)(3) Violation — BHA Allowed Police Entry Without Tenant Consent or Court Order
+  [10/10] MHRC Complaint Confirms: 'Revoke Now' Emails Immediately After FOAA Request — Knox, Bethany, and Perkins Named

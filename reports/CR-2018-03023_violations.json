@@ -1,8 +1,8 @@
 {
   "case": "State of Maine v. Keith King",
   "case_no": "CR-2018-03023",
-  "generated": "2026-04-13T03:14:04.956338",
-  "total": 126,
+  "generated": "2026-04-13T03:16:16.312384",
+  "total": 129,
   "violations": [
     {
       "id": "400f8854-5834-4fdf-8f2d-d2fa14c3de05",
@@ -603,6 +603,51 @@
       "recommendation": "File Motion to Suppress all statements. Challenge constitutionality of using Miranda as a silencing weapon.",
       "analysis_type": "manual_pcr",
       "created_at": "2026-04-13T03:08:07.515093"
+    },
+    {
+      "id": "048e21d9-9bbc-4eed-acf5-e7985493794d",
+      "violation_type": "HUD Officials Kara E. Norman and Richa Karki Instructed BHA/BrHA to Ignore Keith \u2014 Federal Cover-Up (Ex. L MHRC)",
+      "severity": 10,
+      "description": "HUD FOIA response (Exhibit L, MHRC complaint Oct 9, 2025) produced internal emails showing HUD officials Kara E. Norman and Richa Karki (Boston Regional Office) were included in communications instructing BHA (Bethany/Knox) and BrHA (Perkins) to ignore Keith's FOAA/FOIA requests. This establishes an inter-agency conspiracy involving federal housing officials actively participating in the retaliation and cover-up. HUD officials are bound by 5 U.S.C. \u00a7 552 (FOIA), 42 U.S.C. \u00a7 3617 (FHA anti-retaliation), and 18 U.S.C. \u00a7 242 (deprivation of rights under color of law). Participating in a scheme to deny housing records to a disabled person who was previously subjected to warrantless entry by police facilitated by the housing authority constitutes federal civil rights violations. SOURCE: HUD FOIA response, Exhibit L of MHRC complaint, October 2025.",
+      "law_reference": "42 U.S.C. \u00a7 3617 (FHA Anti-Retaliation); 18 U.S.C. \u00a7 242; 5 U.S.C. \u00a7 552 (FOIA); 42 U.S.C. \u00a7 1983",
+      "law_title": "Federal Housing Officials Participated in Cover-Up \u2014 18 U.S.C. \u00a7 242 Deprivation of Rights",
+      "confidence": "high",
+      "timestamp_label": null,
+      "is_illegal": 1,
+      "is_red_flag": 1,
+      "recommendation": "Include in PCR and FHA complaint. Subpoena all named officials. Request full email chain as exhibits.",
+      "analysis_type": "manual_pcr",
+      "created_at": "2026-04-13T03:15:55.212834"
+    },
+    {
+      "id": "c93f153d-a5e6-46c8-8fc4-751ceacf61a8",
+      "violation_type": "24 C.F.R. \u00a7 966.4(d)(3) Violation \u2014 BHA Allowed Police Entry Without Tenant Consent or Court Order",
+      "severity": 10,
+      "description": "MHRC Complaint (Oct 9, 2025) cites 24 C.F.R. \u00a7 966.4(d)(3), the federal HUD regulation governing tenant rights in federally-subsidized public housing. Under this regulation, a public housing authority may only allow law enforcement entry: (1) pursuant to a valid warrant, (2) when an emergency exists, or (3) with tenant consent. On August 2, 2018, BHA provided keys to Bangor Police Department without any warrant (Keith asked twice and was refused), without any emergency, and without tenant consent. BHA's action violated its own federal regulatory obligations as a HUD-funded housing authority, making HUD financially complicit in the 4th Amendment violation. As a federally-funded entity, BHA's violation of 24 C.F.R. \u00a7 966.4(d)(3) also triggers potential HUD enforcement action and grounds for civil liability under 42 U.S.C. \u00a7 1983. SOURCE: MHRC Complaint, Oct 9, 2025.",
+      "law_reference": "24 C.F.R. \u00a7 966.4(d)(3); 4th Amendment; 42 U.S.C. \u00a7 1983; 5 M.R.S. \u00a7 4582 (Maine Right to Privacy in Housing)",
+      "law_title": "Federal HUD Regulation 24 C.F.R. \u00a7 966.4(d)(3) \u2014 BHA Violated Tenant Entry Rights",
+      "confidence": "high",
+      "timestamp_label": null,
+      "is_illegal": 1,
+      "is_red_flag": 1,
+      "recommendation": "Include in PCR and FHA complaint. Subpoena all named officials. Request full email chain as exhibits.",
+      "analysis_type": "manual_pcr",
+      "created_at": "2026-04-13T03:15:55.214198"
+    },
+    {
+      "id": "233d620f-48a8-4ce9-adc3-d63d2c9a000a",
+      "violation_type": "MHRC Complaint Confirms: 'Revoke Now' Emails Immediately After FOAA Request \u2014 Knox, Bethany, and Perkins Named",
+      "severity": 10,
+      "description": "The October 9, 2025 MHRC complaint, based on internal emails obtained through HUD FOIA, confirms: 'Internal emails obtained later show that Knox, Bethany, and Perkins exchanged messages saying revoke now immediately after receiving our FOAA request.' This is documentary evidence of coordinated retaliation by three separate housing officials: Joe Knox (former BHA Executive Director), Joseph Bethany (BHA General Counsel), and Charlotte Perkins (BrHA Executive Director). The emails establish the required 'causal link' for a Fair Housing Act \u00a7 3617 retaliation claim with three named conspirators. This evidence was obtained from HUD via FOIA \u2014 meaning the federal government's own records document the retaliation. SOURCES: Internal emails; MHRC Complaint, Oct 9, 2025, Section 2.",
+      "law_reference": "42 U.S.C. \u00a7 3617 (FHA Retaliation); MHRA \u00a7 4633; 42 U.S.C. \u00a7 1985(3) (Civil Rights Conspiracy); 42 U.S.C. \u00a7 1983",
+      "law_title": "'Revoke Now' Email Evidence \u2014 3 Named Co-Conspirators in FHA Retaliation",
+      "confidence": "high",
+      "timestamp_label": null,
+      "is_illegal": 1,
+      "is_red_flag": 1,
+      "recommendation": "Include in PCR and FHA complaint. Subpoena all named officials. Request full email chain as exhibits.",
+      "analysis_type": "manual_pcr",
+      "created_at": "2026-04-13T03:15:55.214291"
     },
     {
       "id": "7185d4f3-754a-4080-b777-bec5ddb91c68",
