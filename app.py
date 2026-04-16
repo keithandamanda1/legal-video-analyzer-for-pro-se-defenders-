@@ -589,7 +589,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print(f"  Database: {config.DATABASE_PATH}")
     print(f"  Uploads:  {config.UPLOAD_FOLDER}")
-    print(f"  API Key:  {'CONFIGURED' if config.ANTHROPIC_API_KEY else 'NOT SET — add to .env'}")
+    print(f"  API Key:  {'CONFIGURED (' + config.api_provider + ')' if config.is_configured else 'NOT SET — add to .env'}")
     print(f"\n  Open in browser: http://{config.HOST}:{config.PORT}")
     print("=" * 60 + "\n")
     app.run(
