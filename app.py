@@ -581,6 +581,20 @@ def server_error(e):
     return render_template("error.html", error=str(e), code=500), 500
 
 
+# ── Quick file download ───────────────────────────────────────────────────────
+
+@app.route("/dl/<path:filename>")
+def quick_download(filename):
+    """Serve any file from /home/user/Desktop by name."""
+    desktop = Path("/home/user/Desktop")
+    target = (desktop / filename).resolve()
+    if not str(target).startswith(str(desktop)):
+        abort(403)
+    if not target.exists():
+        abort(404)
+    return send_file(str(target), as_attachment=True, download_name=filename)
+
+
 # ── Entrypoint ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
