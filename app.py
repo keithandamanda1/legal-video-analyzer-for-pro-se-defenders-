@@ -14,6 +14,7 @@ Features:
 """
 
 import os
+import uuid
 import threading
 import json
 from pathlib import Path
@@ -32,6 +33,7 @@ from analyzers.legal_analyzer import analyze_case_legal_posture
 from analyzers.document_generator import (
     generate_document, DOCUMENT_TITLES
 )
+import mimetypes
 
 # ── App setup ─────────────────────────────────────────────────────────────────
 
@@ -54,8 +56,29 @@ VIDEO_EXTENSIONS = {
     "m4v", "mpg", "mpeg", "3gp", "ts", "mts", "m2ts",
 }
 
+LEGAL_DOC_EXTENSIONS = {
+    "pdf", "doc", "docx", "txt", "rtf", "odt",
+    "png", "jpg", "jpeg", "gif", "tiff", "tif", "bmp", "webp",
+    "xls", "xlsx", "csv",
+}
+
+LEGAL_DOC_CATEGORIES = {
+    "complaint":  "Complaint Filed",
+    "dismissal":  "Dismissal / Response",
+    "brief":      "Legal Brief / Motion",
+    "evidence":   "Evidence Document",
+    "order":      "Court Order",
+    "transcript": "Transcript",
+    "affidavit":  "Affidavit / Declaration",
+    "letter":     "Correspondence",
+    "other":      "Other Document",
+}
+
 def allowed_file(filename: str) -> bool:
     return "." in filename and filename.rsplit(".", 1)[1].lower() in VIDEO_EXTENSIONS
+
+def allowed_legal_doc(filename: str) -> bool:
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in LEGAL_DOC_EXTENSIONS
 
 
 # ── Context processors ────────────────────────────────────────────────────────
@@ -138,6 +161,7 @@ def case_detail(case_id):
     violations = db.get_case_violations(case_id)
     notes = db.get_notes(case_id)
     documents = db.list_documents(case_id)
+    legal_docs = db.list_legal_docs(case_id)
 
     # Latest completed analysis for summary
     latest_analysis = None
@@ -169,6 +193,8 @@ def case_detail(case_id):
         illegal_count=illegal_count,
         notes=notes,
         documents=documents,
+        legal_docs=legal_docs,
+        legal_doc_categories=LEGAL_DOC_CATEGORIES,
         latest_analysis=latest_analysis,
         legal_posture=legal_posture,
         document_types=DOCUMENT_TITLES,
@@ -255,6 +281,109 @@ def upload_evidence(case_id):
 
     flash(f'Evidence "{original_name}" uploaded. Run analysis to examine it.', "success")
     return redirect(url_for("case_detail", case_id=case_id))
+
+
+# ── Routes: Legal document upload ─────────────────────────────────────────────
+
+@app.route("/case/<case_id>/upload_legal_doc", methods=["POST"])
+def upload_legal_doc(case_id):
+    case = db.get_case(case_id)
+    if not case:
+        abort(404)
+
+    if "legal_doc_file" not in request.files:
+        flash("No file selected.", "error")
+        return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
+
+    file = request.files["legal_doc_file"]
+    if file.filename == "":
+        flash("No file selected.", "error")
+        return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
+
+    if not allowed_legal_doc(file.filename):
+        exts = ", ".join(sorted(LEGAL_DOC_EXTENSIONS))
+        flash(f"File type not supported. Supported: {exts}", "error")
+        return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
+
+    original_name = file.filename
+    safe_name = secure_filename(file.filename)
+    legal_docs_dir = Path(config.UPLOAD_FOLDER) / case_id / "legal_docs"
+    legal_docs_dir.mkdir(parents=True, exist_ok=True)
+
+    # Avoid overwriting by adding a short unique prefix if name already exists
+    dest = legal_docs_dir / safe_name
+    if dest.exists():
+        prefix = str(uuid.uuid4())[:8]
+        safe_name = f"{prefix}_{safe_name}"
+        dest = legal_docs_dir / safe_name
+
+    file.save(str(dest))
+    file_size = os.path.getsize(str(dest))
+    ext = safe_name.rsplit(".", 1)[-1].lower() if "." in safe_name else "unknown"
+
+    doc_category = request.form.get("doc_category", "other")
+    if doc_category not in LEGAL_DOC_CATEGORIES:
+        doc_category = "other"
+    doc_notes = request.form.get("doc_notes", "").strip()
+
+    db.add_legal_doc(
+        case_id=case_id,
+        file_path=str(dest),
+        file_type=ext,
+        original_name=original_name,
+        file_size=file_size,
+        doc_category=doc_category,
+        doc_notes=doc_notes or None,
+    )
+
+    flash(f'Document "{original_name}" uploaded successfully.', "success")
+    return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
+
+
+@app.route("/case/<case_id>/legal_docs/<doc_id>/download")
+def download_legal_doc(case_id, doc_id):
+    doc = db.get_legal_doc(doc_id)
+    if not doc or doc["case_id"] != case_id:
+        abort(404)
+    file_path = doc["file_path"]
+    if not os.path.exists(file_path):
+        flash("Document file not found on disk.", "error")
+        return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
+    return send_file(
+        file_path,
+        as_attachment=True,
+        download_name=doc["original_name"] or os.path.basename(file_path),
+    )
+
+
+@app.route("/case/<case_id>/legal_docs/<doc_id>/view")
+def view_legal_doc(case_id, doc_id):
+    doc = db.get_legal_doc(doc_id)
+    if not doc or doc["case_id"] != case_id:
+        abort(404)
+    file_path = doc["file_path"]
+    if not os.path.exists(file_path):
+        flash("Document file not found on disk.", "error")
+        return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
+    mime_type, _ = mimetypes.guess_type(file_path)
+    mime_type = mime_type or "application/octet-stream"
+    return send_file(file_path, mimetype=mime_type)
+
+
+@app.route("/case/<case_id>/legal_docs/<doc_id>/delete", methods=["POST"])
+def delete_legal_doc(case_id, doc_id):
+    doc = db.get_legal_doc(doc_id)
+    if not doc or doc["case_id"] != case_id:
+        abort(404)
+    file_path = doc["file_path"]
+    db.delete_legal_doc(doc_id)
+    try:
+        if os.path.exists(file_path):
+            os.remove(file_path)
+    except OSError:
+        pass
+    flash("Document deleted.", "warning")
+    return redirect(url_for("case_detail", case_id=case_id) + "#legal-docs")
 
 
 # ── Routes: Analysis ──────────────────────────────────────────────────────────
@@ -452,6 +581,20 @@ def server_error(e):
     return render_template("error.html", error=str(e), code=500), 500
 
 
+# ── Quick file download ───────────────────────────────────────────────────────
+
+@app.route("/dl/<path:filename>")
+def quick_download(filename):
+    """Serve any file from /home/user/Desktop by name."""
+    desktop = Path("/home/user/Desktop")
+    target = (desktop / filename).resolve()
+    if not str(target).startswith(str(desktop)):
+        abort(403)
+    if not target.exists():
+        abort(404)
+    return send_file(str(target), as_attachment=True, download_name=filename)
+
+
 # ── Entrypoint ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
@@ -460,7 +603,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print(f"  Database: {config.DATABASE_PATH}")
     print(f"  Uploads:  {config.UPLOAD_FOLDER}")
-    print(f"  API Key:  {'CONFIGURED' if config.ANTHROPIC_API_KEY else 'NOT SET — add to .env'}")
+    print(f"  API Key:  {'CONFIGURED (' + config.api_provider + ')' if config.is_configured else 'NOT SET — add to .env'}")
     print(f"\n  Open in browser: http://{config.HOST}:{config.PORT}")
     print("=" * 60 + "\n")
     app.run(

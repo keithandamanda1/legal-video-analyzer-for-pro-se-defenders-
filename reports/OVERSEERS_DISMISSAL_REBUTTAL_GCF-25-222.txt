@@ -1,0 +1,444 @@
+================================================================================
+FORMAL OBJECTION AND REQUEST FOR PUBLIC MEMBER REVIEW
+GCF #25-222 — Keith King v. Janice S. Stuver, Esq.
+
+To:   Board Clerk, Maine Board of Overseers of the Bar
+      Clerk@mebaroverseers.org  /  P.O. Box 527, Augusta, ME 04332-0527
+
+From: Keith A. King, Pro Se
+      P.O. Box 458, Kenduskeag, ME 04450
+      (207) 299-6448  |  kking2055@pm.me
+
+Re:   Objection to Dismissal Letter of April 9, 2026 (Special Counsel
+      J. David Canarie, Jr., Esq.)
+
+Date: April 13, 2026
+================================================================================
+
+                     PRELIMINARY STATEMENT
+
+Pursuant to Maine Bar Rule 13(e), I hereby formally request review of the
+April 9, 2026 dismissal by a public (non-attorney) member of the Grievance
+Commission or Board of Overseers. This request is timely, submitted within
+21 days of receipt.
+
+This response also serves as a formal objection to the dismissal on the
+grounds that it: (1) contains a demonstrably false statement of Maine law;
+(2) ignores the State's own written admission of the central fabrication at
+issue; (3) accepts Stuver's false statement to the Board about the Amanda Ross
+phone as fact, despite documentary proof to the contrary; (4) misapplies the
+MRPC to the evidence presented; (5) fails entirely to address the conflict-of-
+interest allegation; and (6) employs an improper personal attack on the
+complainant's submissions rather than addressing their substance.
+
+The errors below are not matters of opinion or interpretation. Several are
+verifiable on the face of public records and documents already in the
+Board's file.
+
+================================================================================
+
+I.  BOARD'S FACTUAL ERROR ON GABAPENTIN — REQUIRES CORRECTION AS A
+    THRESHOLD MATTER
+
+The dismissal (Page 3) states:
+
+    "Contrary to your suggestion, Gabapentin is a Schedule Z drug in Maine
+    and was so at the time of your arrest."
+
+This statement is factually incorrect as a matter of law.
+
+Gabapentin was NOT a scheduled controlled substance in Maine on August 2,
+2018 — the date of the arrest. Gabapentin was added to Maine's Schedule Z
+by:
+
+    Maine Public Law 2019, Chapter 487
+    "An Act To Schedule Gabapentin as a Schedule Z Controlled Substance"
+    Effective date: October 15, 2019
+
+The legislative history is publicly available from the Maine Legislature's
+online database. The effective date is unambiguous: more than fourteen months
+AFTER the conduct charged.
+
+This is not a close legal question. A conviction for conduct that was not
+criminal at the time of occurrence violates the Ex Post Facto Clause,
+U.S. Const. art. I, § 10; Me. Const. art. I, § 11. See Collins v.
+Youngblood, 497 U.S. 37 (1990); Rogers v. Tennessee, 532 U.S. 451 (2001).
+
+Charging a defendant with gabapentin trafficking for conduct in August 2018
+was legally impossible — and defense counsel's failure to raise this
+meritorious, dispositive issue constitutes ineffective assistance of counsel
+on its face. Strickland v. Washington, 466 U.S. 668 (1984).
+
+The Board's dismissal on this point rests on a false premise. A charging
+decision based on a legally impossible charge — a substance that was not
+scheduled at the time — is not a reasonable exercise of prosecutorial
+discretion under MRPC 3.8(a); it is a failure of basic legal competence.
+
+The Board is requested to correct this error of law in any reconsideration.
+
+================================================================================
+
+II. THE BOARD IGNORED THE STATE'S OWN WRITTEN ADMISSION OF FABRICATED
+    AGGRAVATION — THE CORE EVIDENCE IN THE FILE
+
+The dismissal's analysis of Count 2 (Malicious Prosecution / Fabricating
+Charges) makes no mention whatsoever of the November 6, 2025 letter from
+current Assistant Attorney General Jason D. Anton, Esq. — the same attorney
+copied on the dismissal letter itself.
+
+That letter is in this Board's file. It constitutes the State of Maine's
+own written admission that the Aggravated Trafficking charges were based on
+an "inadvertent error" regarding the location of evidence — specifically, the
+claim that drugs and firearms were found together in the vehicle.
+
+To be precise about what the State admitted and what it means:
+
+    STUVER'S CLAIM (July 15, 2025, Response to Board):
+    "Three counts of Aggravated Trafficking...were based on the weight of
+    the heroin and two firearms found in Mr. King's vehicle."
+    (Also: "the presence of scheduled drugs within his vehicle...and the
+    presence of the two firearms in his vehicle.")
+
+    STATE'S OWN INDICTMENT (Ex. C, Counts 9-10, Place of Seizure):
+    "33 Bald Mountain Drive, Bangor, Maine" — the RESIDENCE, not the vehicle.
+
+    STATE'S ADMISSION (Anton letter, November 6, 2025):
+    The claim that drugs were found with firearms in the vehicle was an
+    "inadvertent error."
+
+The legal significance is decisive. Maine's Aggravated Trafficking statute,
+17-A M.R.S.A. § 1105-A(1)(C-1), requires that the firearm be possessed "in
+furtherance of" the trafficking offense — a nexus that requires proximity.
+Drugs in an apartment and firearms in a vehicle on Davis Road satisfy no such
+nexus. The aggravation factor was legally unsupportable from the start.
+
+These inflated Class A charges, later admitted to be false, were used by the
+prosecution to threaten a four-year mandatory minimum sentence, coerce the
+proffer, and pressure a guilty plea. The harm is direct and documented.
+
+The Board's dismissal states: "there was no evidence presented to support
+the allegation that the indictment was drafted maliciously." This finding
+cannot stand when the Board's own file contains a letter from the State's
+current prosecutor admitting the factual predicate for the most serious
+charges was erroneous. That is not "no evidence" — that is a smoking gun.
+
+MRPC 3.8(a) prohibits a prosecutor from "institut[ing] criminal charges that
+the prosecutor knows or reasonably should know are not supported by probable
+cause." Charging aggravated trafficking based on a firearms-drugs nexus that
+does not exist — and that the State later admits was an error — raises a
+direct question under MRPC 3.8(a) that the Board failed to analyze.
+
+================================================================================
+
+III. STUVER MADE A FALSE STATEMENT TO THIS BOARD — DIRECTLY WITHIN SCOPE
+
+The dismissal (Page 5) states:
+
+    "Attorney Stuver states that she is not aware of any search of
+    Ms. Ross's cellphone that occurred."
+
+This statement is directly contradicted by a document in this Board's file
+and by public court records:
+
+The Search Warrant issued August 7, 2018 (Docket No. SW-18-180, Maine
+District Court, Southern Penobscot Division) — which Attorney Stuver's own
+counsel cited as authority for the phone seizures — explicitly lists as a
+target of the search:
+
+    "Black LG Touch screen smartphone MEID (D) #A100003E98DD95. This phone
+    is owned by Amanda Ross and currently held at Bangor Police Department."
+
+The warrant proving the Ross phone was held and searched is a public court
+record. It is the same warrant Stuver's counsel used to defend the legality
+of the seizures. Stuver's counsel cannot simultaneously cite this warrant as
+evidence of lawful procedure and allow her to claim she is "not aware of any
+search of Ms. Ross's cellphone."
+
+One of two things is true:
+
+    (a) Attorney Stuver is not aware of the contents of the warrant she
+        oversaw — raising serious competence concerns under MRPC 1.1; or
+
+    (b) Attorney Stuver made a false statement to Bar Counsel — a direct
+        violation of MRPC 8.4(c) (conduct involving dishonesty, fraud,
+        deceit or misrepresentation).
+
+Either way, this statement to the Board warranted scrutiny. Instead, Bar
+Counsel accepted it without examination.
+
+Furthermore, the Ross phone was seized on August 2, 2018 — before ANY
+warrant authorized it. The residence warrant contained no authorization to
+seize Amanda Ross's property. The subsequent August 7 warrant — obtained to
+search a phone already illegally held — does not retroactively legalize the
+initial seizure. Wong Sun v. United States, 371 U.S. 471 (1963). Officer
+Perry's seizure of the Ross phone on August 2 was warrantless. Stuver, as
+supervising prosecutor, was responsible for that chain of custody.
+
+================================================================================
+
+IV. THE VIDEO TIMELINE IS IRRECONCILABLE WITH THE DISMISSAL'S FINDING
+
+The dismissal (Page 2) states:
+
+    "Attorney Stuver's counsel provided evidence demonstrating that Attorney
+    Stuver made the video evidence available to your attorney within two weeks
+    of your arrest."
+
+The full dashcam video of the August 2, 2018 incident was not produced to
+the Complainant until February 21, 2024 — five and a half years after the
+arrest. This was confirmed through FOAA request. The footage shows:
+
+    — No traffic infraction articulated at the stop
+    — No warrant shown at the apartment door despite two direct requests
+    — Officers producing a key from their own pocket to enter the apartment
+    — A three-hour detention in 90-degree heat with a complained-of injury
+      receiving no medical attention
+    — Dashcam metadata (timestamp, GPS, officer ID) completely stripped
+      from the produced file
+
+If some video was produced "within two weeks," it was not the complete
+footage. Selective early disclosure of partial video while withholding the
+full recording for 5.5 years is itself a Brady violation. Brady v. Maryland,
+373 U.S. 83 (1963). The withholding of material exculpatory video for nearly
+six years is not addressed by the dismissal's finding.
+
+The dismissal also states that Complainant's reply "asks the Respondent to
+prove a negative" regarding unedited audio. To the contrary: where a
+prosecutor controls the production of evidence, the burden to demonstrate
+completeness rests with the State. The stripping of metadata from a dashcam
+file is an affirmative act — not an absence of proof — and it is documented.
+
+================================================================================
+
+V.  THE BOARD FAILED ENTIRELY TO ADDRESS THE CONFLICT-OF-INTEREST ALLEGATION
+
+The complaint raised the allegation, supported by documentation produced in
+October 2025, that Attorney Stuver had previously represented the Department
+of Health and Human Services / Child Protective Services (DHHS/CPS) in a
+related family matter involving Keith King and his family while the criminal
+case against him was simultaneously pending.
+
+This allegation implicates MRPC 1.7 (Conflict of Interest: Current Clients)
+and/or MRPC 1.9 (Duties to Former Clients), as well as the heightened duty
+of a prosecutor under MRPC 3.8 to ensure fair proceedings. A prosecutor who
+has represented an adverse state agency in proceedings against the same
+individual's family — without disclosure — carries a potential institutional
+bias that a defendant is entitled to know about and challenge.
+
+The dismissal does not address this allegation anywhere in its twelve-point
+analysis. This is a material omission. The omission itself warrants review.
+
+================================================================================
+
+VI. THE BOARD'S PERSONAL ATTACK ON THE COMPLAINANT'S SUBMISSIONS IS
+    IMPROPER AND DOES NOT SUBSTITUTE FOR LEGAL ANALYSIS
+
+The dismissal (Page 2, footnote 2) states:
+
+    "I note that there are instances in your submissions to the Board where
+    citations are not in alignment with your allegations, possibly due to
+    the errors of a content generator you may have used."
+
+And at footnote 2:
+
+    "your December 16, 2025, email contains language indicating possible use
+    of a content generator, as the following statement appears at the bottom
+    of the e-mail: 'Would you like me to send this email now, or should I
+    refine the section regarding the Davis Road stop further?'"
+
+This observation — made twice — serves no legal purpose in the analysis. Bar
+Counsel states she "reviewed your allegations under all applicable rules of
+professional conduct, regardless of whether they were accurately cited."
+If that is true, the source of the citations is irrelevant to the outcome.
+
+Pro se complainants may use any lawful tool — word processor, legal research
+database, or AI assistant — to prepare submissions. The use of writing
+assistance does not affect the truth or falsity of the underlying facts, the
+validity of the legal arguments, or the complainant's rights under the Maine
+Bar Rules. Penalizing a disabled, unrepresented complainant for using
+assistive technology while allowing the Respondent to be represented by a
+licensed attorney (Jason Anton, Esq.) is a structural imbalance — not a
+neutral observation.
+
+The core factual contradictions in this complaint — drug location, firearms
+location, gabapentin scheduling date, phone warrant timeline — do not require
+a content generator to identify. They are established by the face of the
+indictment, the police reports, and the State's own subsequent admissions.
+
+================================================================================
+
+VII. THE SCOPE LIMITATIONS WERE APPLIED OVERBROAD AND SHIELDED THE MOST
+     SERIOUS CONDUCT FROM REVIEW
+
+Bar Counsel repeatedly states that the investigation is "limited to allegations
+against Attorney Stuver." This is correct as to third parties. However, the
+Board's scope limitations were used to avoid the most direct evidence of
+Stuver's own misconduct:
+
+    — Stuver's false statement to this Board (Sec. III above) is directly
+      within scope — it is Stuver's own conduct before this very tribunal.
+
+    — Stuver's filing of an indictment based on a firearm-drugs nexus she
+      later admitted was erroneous is directly within scope under MRPC 3.8(a).
+
+    — Stuver's pursuit of a gabapentin charge under a law that did not exist
+      at the time of the conduct is directly within scope under MRPC 3.1
+      (Meritorious Claims) and MRPC 3.8(a).
+
+    — Stuver's undisclosed concurrent conflict of interest (DHHS/CPS) is
+      directly within scope under MRPC 1.7 and 3.8.
+
+None of these require analysis of third-party conduct. All are Stuver's own
+actions. The Board's scope limitations should not have prevented their review.
+
+================================================================================
+
+VIII. THE BAIL ANALYSIS IGNORES ITS OWN LOGICAL IMPLICATION
+
+The dismissal (Page 3) states that "the fact that the court subsequently
+lowered your bail from $75,000 to $5,000 on your motion does not establish
+that there was anything inappropriate with the initial bail amount."
+
+This is circular reasoning. The court reduced bail by 93% — from $75,000 to
+$5,000 — on a motion challenging its excessiveness. That reduction is judicial
+validation of the excessiveness claim, not evidence against it. The original
+bail was tied directly to the inflated Class A Aggravated Trafficking charges
+that the State later admitted were based on an "inadvertent error." When the
+factual predicate for the most serious charges was erroneous, the bail
+premised on those charges was correspondingly unsupported.
+
+================================================================================
+
+IX. STUVER'S DEPARTURE IN DECEMBER 2019 DOES NOT INSULATE HER FROM
+    RESPONSIBILITY FOR CONDUCT THAT OCCURRED WHILE SHE WAS THE PROSECUTOR
+
+The dismissal repeatedly notes that Attorney Stuver left the AG's office in
+December 2019 and was not present at the September 2021 plea. This is used
+to deflect responsibility for the coercive plea.
+
+The complaint does not allege that Stuver was present at the 2021 plea. It
+alleges that Stuver's actions — specifically, the filing of false Aggravated
+Class A charges based on a nonexistent firearm-drug nexus — created the
+coercive pressure that her successor exploited to threaten a four-year
+mandatory minimum and force the plea. Stuver built the weapon; Horn fired it.
+
+An attorney who files charges they know or should know are unsupported by
+probable cause cannot avoid professional responsibility for the downstream
+consequences of those charges simply by leaving the office before the
+resulting coercion takes effect.
+
+================================================================================
+
+                    SUMMARY OF GROUNDS FOR REVIEW
+
+The following specific errors and omissions in the April 9, 2026 dismissal
+warrant review by a public member:
+
+    1. FACTUAL ERROR OF LAW: The dismissal incorrectly states that gabapentin
+       was scheduled in Maine at the time of the August 2, 2018 arrest. It
+       was not. Me. PL 2019, ch. 487 (eff. Oct. 15, 2019).
+
+    2. IGNORED ADMISSION: The State's own November 6, 2025 letter admitting
+       the aggravation charges were based on an "inadvertent error" is in
+       the Board's file and was not addressed in the dismissal.
+
+    3. FALSE STATEMENT TO BOARD UNEXAMINED: Stuver's claim she is "not
+       aware" of the Ross phone search is directly contradicted by the
+       August 7, 2018 warrant — the same warrant her counsel cited in her
+       defense. This was accepted without scrutiny.
+
+    4. INCOMPLETE VIDEO DISCLOSURE UNADDRESSED: Full dashcam withheld
+       5.5 years; metadata stripped. The dismissal addresses only whether
+       some video was produced early, not whether complete disclosure occurred.
+
+    5. CONFLICT OF INTEREST OMITTED: The DHHS/CPS concurrent representation
+       allegation is not addressed anywhere in the twelve-point dismissal.
+
+    6. IMPROPER BURDEN-SHIFTING: The Board shifted the burden of proof to the
+       Complainant on matters (video completeness, bail excessiveness) where
+       the documentary record supports the allegations.
+
+    7. SCOPE TOO NARROW: Direct conduct by Stuver — her statements to this
+       Board, her gabapentin charge, her undisclosed conflict — was excluded
+       under a scope limitation that does not apply to Stuver's own actions.
+
+================================================================================
+
+                        RELIEF REQUESTED
+
+Complainant respectfully requests that the public member reviewer:
+
+    1. CONDUCT a full review of all twelve dismissed allegations, with
+       specific attention to the factual and legal errors identified above;
+
+    2. CORRECT the Board's false statement of law regarding gabapentin
+       scheduling in Maine;
+
+    3. REQUIRE Bar Counsel to address the November 6, 2025 Anton admission
+       letter and its implications for the MRPC 3.8(a) analysis;
+
+    4. REQUIRE Bar Counsel to address whether Stuver's statement to this
+       Board regarding the Ross phone constitutes a violation of MRPC 8.4(c);
+
+    5. REQUIRE Bar Counsel to address the DHHS/CPS conflict-of-interest
+       allegation under MRPC 1.7;
+
+    6. FIND that the dismissal was premature and that the evidence in the
+       file — including the State's own admission — supports referral of
+       the complaint to the Grievance Commission for a formal hearing.
+
+================================================================================
+
+                           VERIFICATION
+
+I, Keith A. King, declare under penalty of perjury under the laws of the
+State of Maine that the foregoing is true and correct to the best of my
+knowledge, information, and belief.
+
+Executed: April 13, 2026
+
+____________________________
+Keith A. King, Pro Se
+P.O. Box 458
+Kenduskeag, ME 04450
+(207) 299-6448
+kking2055@pm.me
+
+================================================================================
+
+APPENDIX: KEY EVIDENCE CROSS-REFERENCE
+
+The following documents, all previously submitted to or available from the
+Board, directly support the grounds above:
+
+    A. November 6, 2025 — Letter from AAG Jason Anton admitting "inadvertent
+       error" on drugs-in-vehicle claim. [Already in Board's file.]
+
+    B. October 31, 2018 — Indictment, Counts 9-10: Place of Seizure listed
+       as "33 Bald Mountain Drive" (residence), not vehicle. [Ex. C in
+       Stuver's own submission.]
+
+    C. August 7, 2018 — Search Warrant SW-18-180: Names Amanda Ross's phone
+       (Black LG Touch screen, MEID A100003E98DD95) as target of search,
+       directly contradicting Stuver's claim of no awareness. [Public court
+       record.]
+
+    D. Maine Public Law 2019, Chapter 487 (eff. Oct. 15, 2019): Gabapentin
+       added to Schedule Z. [Public legislative record, Maine Legislature
+       website.]
+
+    E. February 21, 2024 — FOAA production of dashcam video, 5.5 years
+       post-arrest, with metadata stripped. [Produced to Complainant.]
+
+    F. Complainant's August 12, 2025 Reply to Bar Counsel, documenting
+       firearms location discrepancy in Stuver's own exhibits. [Already
+       in Board's file.]
+
+    G. October 2025 — Confirmation of Stuver's DHHS/CPS representation
+       overlap (MHRC complaint Exhibit documentation). [Previously submitted.]
+
+================================================================================
+            TIME-SENSITIVE: 21-DAY DEADLINE FOR PUBLIC MEMBER REVIEW
+                 Letter received April 13, 2026 — Deadline: May 4, 2026
+                    Send to: Clerk@mebaroverseers.org
+================================================================================
