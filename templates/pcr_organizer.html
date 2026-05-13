@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+{% block title %}PCR Petition Organizer{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-3">
+
+  {# ── Header ── #}
+  <div class="d-flex align-items-start justify-content-between mb-3 flex-wrap gap-2">
+    <div>
+      <h2 class="fw-bold mb-0" style="color:#a855f7;">
+        <i class="bi bi-file-earmark-ruled-fill me-2"></i>PCR Petition Organizer
+      </h2>
+      <div class="text-secondary small mt-1">
+        Docket No. CR-2018-03023 &nbsp;·&nbsp; Petitioner: Keith A. King
+        &nbsp;·&nbsp; Filed: April 13, 2026 &nbsp;·&nbsp; 15 M.R.S. §§ 2121–2132
+      </div>
+    </div>
+    <div class="d-flex gap-2 flex-wrap">
+      <a href="{{ url_for('pcr_exhibit_index') }}" class="btn btn-outline-light btn-sm">
+        <i class="bi bi-download me-1"></i>Export Exhibit Index (.txt)
+      </a>
+    </div>
+  </div>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in messages %}
+      <div class="alert alert-{{ 'success' if cat=='success' else 'warning' if cat=='info' else 'danger' }} alert-dismissible fade show py-2">
+        {{ msg }}<button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+      </div>
+    {% endfor %}
+  {% endwith %}
+
+  {# ── Stats ── #}
+  <div class="row g-2 mb-4">
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#a855f7;">{{ grounds|length }}</div>
+        <div class="text-secondary small">Grounds for Relief</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#ef4444;">{{ contradictions|length }}</div>
+        <div class="text-secondary small">Contradictions</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#22c55e;">{{ obtained_count }}</div>
+        <div class="text-secondary small">Exhibits Obtained</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#f59e0b;">{{ missing_count }}</div>
+        <div class="text-secondary small">Exhibits Needed</div>
+      </div>
+    </div>
+  </div>
+
+  {# ── Missing evidence alert ── #}
+  {% if missing_evidence %}
+  <div class="alert mb-3 py-2" style="background:#2d1a00; border:1px solid #f59e0b; color:#fcd34d;">
+    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+    <strong>{{ missing_evidence|length }} item(s) still needed or missing</strong> — immediate Brady demand required:
+    <ul class="mb-0 mt-1 small">
+      {% for m in missing_evidence %}
+        <li>{{ m.title }} <span class="badge bg-secondary ms-1">{{ m.exhibit_label or 'no exhibit' }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {# ── Grounds filter ── #}
+  <div class="mb-3 d-flex flex-wrap gap-1">
+    <a href="{{ url_for('pcr_organizer') }}" class="btn btn-sm {% if not ground_filter %}btn-primary{% else %}btn-outline-light{% endif %}">All Grounds</a>
+    {% for g_num, g_title in grounds.items() %}
+      <a href="{{ url_for('pcr_organizer', ground=g_num) }}"
+         class="btn btn-sm {% if ground_filter == g_num %}btn-primary{% else %}btn-outline-light{% endif %}">
+        Ground {{ g_num }}
+      </a>
+    {% endfor %}
+  </div>
+
+  {# ── Grounds summary ── #}
+  <div class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#a855f7;"><i class="bi bi-list-ol me-2"></i>Grounds for Relief</h5>
+    <div class="row g-2">
+      {% for g_num, g_title in grounds.items() %}
+      {% set g_evidence = evidence|selectattr('ground_number','equalto', g_num)|list %}
+      {% set g_contradictions = contradictions|selectattr('ground_number','equalto', g_num)|list %}
+      <div class="col-12 col-md-6">
+        <div class="card border-0 h-100" style="background:#1e293b; border-left:4px solid #a855f7 !important;">
+          <div class="card-body py-2 px-3">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="fw-bold" style="color:#d8b4fe; font-size:0.9rem;">
+                <a href="{{ url_for('pcr_organizer', ground=g_num) }}" class="text-decoration-none" style="color:#d8b4fe;">
+                  Ground {{ g_num }}: {{ g_title }}
+                </a>
+              </div>
+            </div>
+            <div class="mt-1 d-flex gap-2">
+              <span class="badge bg-dark border border-secondary text-secondary">{{ g_evidence|length }} evidence</span>
+              <span class="badge bg-dark border border-secondary text-secondary">{{ g_contradictions|length }} contradictions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {# ── Contradiction tracker ── #}
+  <div id="contradictions" class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#ef4444;"><i class="bi bi-exclamation-octagon-fill me-2"></i>Contradiction Tracker</h5>
+    <div class="text-secondary small mb-2">Each row is a documented lie, error, or gap that can be cross-examined at hearing.</div>
+    {% for co in contradictions %}
+    <div class="card mb-3 border-0" style="background:#0f172a; border-left:4px solid #ef4444 !important;">
+      <div class="card-body py-2 px-3">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-1">
+          <div class="fw-semibold small" style="color:#fca5a5;">Ground {{ co.ground_number }}
+            {% if co.contradiction_date %}&nbsp;·&nbsp; {{ co.contradiction_date }}{% endif %}
+          </div>
+          <form action="{{ url_for('pcr_delete_contradiction', cid=co.id) }}" method="post" onsubmit="return confirm('Delete?');">
+            <button type="submit" class="btn btn-link btn-sm text-secondary p-0"><i class="bi bi-trash"></i></button>
+          </form>
+        </div>
+        <div class="row g-2 mt-1">
+          <div class="col-md-5">
+            <div class="small fw-bold mb-1" style="color:#94a3b8;">{{ co.item_a_label }}</div>
+            <div class="p-2 rounded small" style="background:#1a0a0a; color:#fca5a5;">{{ co.item_a_text }}</div>
+          </div>
+          <div class="col-md-2 d-flex align-items-center justify-content-center">
+            <div class="text-center">
+              <i class="bi bi-arrow-left-right fs-4 text-danger"></i>
+              <div class="small text-secondary">CONTRADICTS</div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="small fw-bold mb-1" style="color:#94a3b8;">{{ co.item_b_label }}</div>
+            <div class="p-2 rounded small" style="background:#0a1a0a; color:#86efac;">{{ co.item_b_text }}</div>
+          </div>
+        </div>
+        {% if co.significance %}
+          <div class="mt-2 small fw-bold" style="color:#fcd34d;"><i class="bi bi-star-fill me-1"></i>{{ co.significance }}</div>
+        {% endif %}
+        {% if co.law_reference %}
+          <div class="mt-1 small" style="color:#64748b;"><i class="bi bi-book me-1"></i>{{ co.law_reference }}</div>
+        {% endif %}
+        {% if co.resolution_needed %}
+          <div class="mt-1 small p-2 rounded" style="background:#1e293b; color:#94a3b8;"><i class="bi bi-wrench me-1"></i>TO DO: {{ co.resolution_needed }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Add contradiction</summary>
+      <form action="{{ url_for('pcr_add_contradiction') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-2"><input type="date" name="contradiction_date" class="form-control form-control-sm bg-dark text-light border-secondary"></div>
+          <div class="col-md-2">
+            <select name="ground_number" class="form-select form-select-sm bg-dark text-light border-secondary">
+              {% for g_num in grounds.keys() %}<option value="{{ g_num }}">Ground {{ g_num }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="col-md-4"><input type="text" name="item_a_label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Item A label (e.g. 'TruNarc result')" required></div>
+          <div class="col-md-4"><input type="text" name="item_b_label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Item B label (e.g. 'Charging language')" required></div>
+          <div class="col-md-6"><textarea name="item_a_text" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Item A text / what the record shows" required></textarea></div>
+          <div class="col-md-6"><textarea name="item_b_text" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Item B text / what contradicts it" required></textarea></div>
+          <div class="col-12"><textarea name="significance" rows="1" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Why this contradiction matters legally"></textarea></div>
+          <div class="col-md-6"><input type="text" name="law_reference" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Legal authority"></div>
+          <div class="col-md-6"><input type="text" name="resolution_needed" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="What to obtain to resolve / prove this"></div>
+          <div class="col-auto"><button type="submit" class="btn btn-danger btn-sm">Add Contradiction</button></div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+  {# ── Exhibit index ── #}
+  <div id="exhibits" class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="fw-bold mb-0" style="color:#22c55e;"><i class="bi bi-folder2-open me-2"></i>Exhibit Index</h5>
+      <a href="{{ url_for('pcr_exhibit_index') }}" class="btn btn-sm btn-outline-success">
+        <i class="bi bi-download me-1"></i>Download .txt
+      </a>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-sm table-dark" style="font-size:0.83rem;">
+        <thead style="color:#94a3b8;">
+          <tr>
+            <th>Exhibit</th><th>Title</th><th>Source</th><th>Grounds</th><th>Obtained</th><th>Filed</th><th>Notes</th><th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for ex in exhibits %}
+          <tr style="{% if not ex.obtained %}background:#1a1200;{% endif %}">
+            <td class="fw-bold" style="color:{% if ex.obtained %}#86efac{% else %}#fcd34d{% endif %}; white-space:nowrap;">{{ ex.exhibit_label }}</td>
+            <td>
+              {{ ex.title }}
+              {% if ex.description %}<div class="text-secondary" style="font-size:0.78rem;">{{ ex.description }}</div>{% endif %}
+            </td>
+            <td class="text-secondary" style="max-width:140px; font-size:0.78rem;">{{ ex.source }}</td>
+            <td>{{ ex.ground_numbers or '—' }}</td>
+            <td>
+              {% if ex.obtained %}<span class="badge bg-success">YES</span>
+              {% else %}<span class="badge bg-danger">NEEDED</span>{% endif %}
+            </td>
+            <td>
+              {% if ex.filed %}<span class="badge bg-success">YES</span>
+              {% else %}<span class="badge bg-secondary">NO</span>{% endif %}
+            </td>
+            <td class="text-secondary" style="max-width:160px; font-size:0.78rem;">{{ ex.notes or '' }}</td>
+            <td>
+              <form action="{{ url_for('pcr_delete_exhibit', eid=ex.id) }}" method="post" onsubmit="return confirm('Delete?');">
+                <button type="submit" class="btn btn-link btn-sm text-danger p-0"><i class="bi bi-trash"></i></button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Add exhibit</summary>
+      <form action="{{ url_for('pcr_add_exhibit') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-2"><input type="text" name="exhibit_label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Exhibit label (e.g. Exhibit A)" required></div>
+          <div class="col-md-6"><input type="text" name="title" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Title" required></div>
+          <div class="col-md-4"><input type="text" name="ground_numbers" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Grounds (e.g. 1,3)"></div>
+          <div class="col-md-8"><textarea name="description" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Description"></textarea></div>
+          <div class="col-md-4"><input type="text" name="source" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Source"></div>
+          <div class="col-md-8"><textarea name="notes" rows="1" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Notes / action needed"></textarea></div>
+          <div class="col-auto">
+            <div class="form-check text-light small d-inline-block me-3"><input class="form-check-input" type="checkbox" name="obtained" id="ex_obtained"><label class="form-check-label" for="ex_obtained">Obtained</label></div>
+            <div class="form-check text-light small d-inline-block me-3"><input class="form-check-input" type="checkbox" name="filed" id="ex_filed"><label class="form-check-label" for="ex_filed">Filed</label></div>
+            <button type="submit" class="btn btn-success btn-sm">Add Exhibit</button>
+          </div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+  {# ── Evidence entries ── #}
+  <div id="evidence" class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#60a5fa;"><i class="bi bi-journal-medical me-2"></i>Evidence Entries{% if ground_filter %} — Ground {{ ground_filter }}{% endif %}</h5>
+    {% for ev in evidence|sort(attribute='event_date') %}
+    {% set status_color = {'documented':'#3b82f6','obtained':'#22c55e','missing':'#ef4444','needed':'#f59e0b'} %}
+    <div class="card mb-2 border-0"
+         style="background:#0f172a; border-left:4px solid {{ status_color.get(ev.status, '#475569') }} !important;">
+      <div class="card-body py-2 px-3">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-1">
+          <div class="fw-semibold small" style="color:#e2e8f0;">{{ ev.title }}</div>
+          <div class="d-flex gap-1 align-items-center flex-wrap">
+            {% if ev.event_date %}<span class="badge bg-secondary">{{ ev.event_date }}</span>{% endif %}
+            <span class="badge" style="background:#1e293b; color:#94a3b8;">Ground {{ ev.ground_number }}</span>
+            {% if ev.exhibit_label %}<span class="badge" style="background:#1d4ed8; color:#bfdbfe;">{{ ev.exhibit_label }}</span>{% endif %}
+            <span class="badge" style="background:{{ status_color.get(ev.status,'#475569') }}20; color:{{ status_color.get(ev.status,'#94a3b8') }}; border:1px solid {{ status_color.get(ev.status,'#475569') }};">
+              {{ ev.status|upper }}
+            </span>
+            <form action="{{ url_for('pcr_delete_evidence', eid=ev.id) }}" method="post" class="d-inline" onsubmit="return confirm('Delete?');">
+              <button type="submit" class="btn btn-link btn-sm text-secondary p-0"><i class="bi bi-trash"></i></button>
+            </form>
+          </div>
+        </div>
+        {% if ev.description %}
+          <div class="small mt-1" style="color:#94a3b8;">{{ ev.description }}</div>
+        {% endif %}
+        <div class="mt-1 d-flex gap-3 flex-wrap">
+          {% if ev.source %}<span class="small" style="color:#475569;"><i class="bi bi-files me-1"></i>{{ ev.source }}</span>{% endif %}
+          {% if ev.law_reference %}<span class="small" style="color:#475569;"><i class="bi bi-book me-1"></i>{{ ev.law_reference }}</span>{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Add evidence entry</summary>
+      <form action="{{ url_for('pcr_add_evidence') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-2"><input type="date" name="event_date" class="form-control form-control-sm bg-dark text-light border-secondary"></div>
+          <div class="col-md-2">
+            <select name="ground_number" class="form-select form-select-sm bg-dark text-light border-secondary">
+              {% for g_num in grounds.keys() %}<option value="{{ g_num }}">Ground {{ g_num }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="col-md-2">
+            <select name="category" class="form-select form-select-sm bg-dark text-light border-secondary">
+              {% for cat in categories %}<option value="{{ cat }}">{{ cat|title }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select name="status" class="form-select form-select-sm bg-dark text-light border-secondary">
+              {% for s in statuses %}<option value="{{ s }}">{{ s|title }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="col-md-2"><input type="text" name="exhibit_label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Exhibit"></div>
+          <div class="col-12"><input type="text" name="title" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Title" required></div>
+          <div class="col-12"><textarea name="description" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Description"></textarea></div>
+          <div class="col-md-6"><input type="text" name="source" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Source / record name"></div>
+          <div class="col-md-6"><input type="text" name="law_reference" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Legal authority"></div>
+          <div class="col-auto"><button type="submit" class="btn btn-primary btn-sm">Add Entry</button></div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+  {# ── Notes ── #}
+  <div id="notes" class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#94a3b8;"><i class="bi bi-sticky me-2"></i>Case Notes</h5>
+    {% for note in notes %}
+    <div class="card mb-2 border-0" style="background:#1e293b;">
+      <div class="card-body py-2 px-3">
+        <div class="d-flex justify-content-between">
+          <span class="small text-secondary">{{ note.created_at[:16] if note.created_at else '' }} {% if note.ground_num %}· Ground {{ note.ground_num }}{% endif %}</span>
+        </div>
+        <div class="small mt-1" style="color:#cbd5e1; white-space:pre-wrap;">{{ note.note }}</div>
+      </div>
+    </div>
+    {% endfor %}
+    <form action="{{ url_for('pcr_add_note_route') }}" method="post" class="mt-2">
+      <div class="row g-2">
+        <div class="col-md-2">
+          <select name="ground_num" class="form-select form-select-sm bg-dark text-light border-secondary">
+            <option value="">All grounds</option>
+            {% for g_num in grounds.keys() %}<option value="{{ g_num }}">Ground {{ g_num }}</option>{% endfor %}
+          </select>
+        </div>
+        <div class="col-md-8"><textarea name="note" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Add a note…" required></textarea></div>
+        <div class="col-md-2 d-flex align-items-end"><button type="submit" class="btn btn-secondary btn-sm w-100">Save Note</button></div>
+      </div>
+    </form>
+  </div>
+
+</div>
+{% endblock %}

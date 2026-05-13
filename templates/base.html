@@ -115,13 +115,19 @@
       <i class="bi bi-camera-video-fill me-1"></i>Legal<span>Video</span>Analyzer
       <small class="text-muted ms-1" style="font-size:0.65rem">Pro Se Defense Tool</small>
     </a>
-    <div class="ms-auto d-flex align-items-center gap-2">
+    <div class="ms-auto d-flex align-items-center gap-2 flex-wrap">
       {% if not api_configured %}
       <span class="badge bg-danger"><i class="bi bi-exclamation-triangle-fill me-1"></i>API Key Not Set</span>
       {% else %}
       <span class="badge bg-success"><i class="bi bi-check-circle-fill me-1"></i>API Ready</span>
       {% endif %}
-      <a href="/" class="btn btn-sm btn-outline-light"><i class="bi bi-house-fill me-1"></i>Cases</a>
+      <a href="/" class="btn btn-sm btn-outline-light"><i class="bi bi-camera-video me-1"></i>Cases</a>
+      <a href="{{ url_for('housing_dashboard') }}" class="btn btn-sm btn-outline-light" style="border-color:#f59e0b; color:#f59e0b;">
+        <i class="bi bi-house-exclamation-fill me-1"></i>Housing
+      </a>
+      <a href="{{ url_for('pcr_organizer') }}" class="btn btn-sm btn-outline-light" style="border-color:#a855f7; color:#a855f7;">
+        <i class="bi bi-file-earmark-ruled-fill me-1"></i>PCR
+      </a>
       <a href="/case/new" class="btn btn-sm btn-warning"><i class="bi bi-plus-lg me-1"></i>New Case</a>
     </div>
   </div>

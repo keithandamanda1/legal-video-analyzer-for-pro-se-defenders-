@@ -130,6 +130,112 @@ def init_db() -> None:
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE CASCADE
         );
+
+        -- ══════════════════════════════════════════════════════════════════════
+        -- HOUSING CASE DASHBOARD  (H25-0389 / H25-0395 — FHA federal track)
+        -- ══════════════════════════════════════════════════════════════════════
+
+        CREATE TABLE IF NOT EXISTS housing_evidence (
+            id            TEXT PRIMARY KEY,
+            event_date    TEXT,
+            category      TEXT,   -- 'fact','email','foaa','denial','document','testimony'
+            title         TEXT NOT NULL,
+            description   TEXT,
+            source        TEXT,
+            exhibit_label TEXT,
+            verified      INTEGER DEFAULT 0,
+            flagged       INTEGER DEFAULT 0,
+            flag_reason   TEXT,
+            created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS housing_emails (
+            id            TEXT PRIMARY KEY,
+            sent_date     TEXT,
+            sender        TEXT,
+            recipient     TEXT,
+            subject       TEXT NOT NULL,
+            summary       TEXT,
+            exhibit_label TEXT,
+            produced      INTEGER DEFAULT 0,
+            missing       INTEGER DEFAULT 0,
+            notes         TEXT,
+            created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS housing_denial_changes (
+            id              TEXT PRIMARY KEY,
+            change_date     TEXT,
+            reason_before   TEXT,
+            reason_after    TEXT,
+            source_document TEXT,
+            significance    TEXT,
+            created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS housing_deadlines (
+            id          TEXT PRIMARY KEY,
+            deadline_date TEXT NOT NULL,
+            label       TEXT NOT NULL,
+            description TEXT,
+            authority   TEXT,
+            critical    INTEGER DEFAULT 0,
+            met         INTEGER DEFAULT 0,
+            created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        -- ══════════════════════════════════════════════════════════════════════
+        -- PCR PETITION ORGANIZER  (CR-2018-03023, 15 M.R.S. §§ 2121-2132)
+        -- ══════════════════════════════════════════════════════════════════════
+
+        CREATE TABLE IF NOT EXISTS pcr_evidence (
+            id            TEXT PRIMARY KEY,
+            event_date    TEXT,
+            category      TEXT,   -- 'stop','chain_of_custody','phone','plea','newly_discovered','brady'
+            ground_number INTEGER,
+            title         TEXT NOT NULL,
+            description   TEXT,
+            source        TEXT,
+            exhibit_label TEXT,
+            law_reference TEXT,
+            status        TEXT DEFAULT 'documented',  -- 'documented','obtained','missing','needed'
+            created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS pcr_contradictions (
+            id              TEXT PRIMARY KEY,
+            contradiction_date TEXT,
+            ground_number   INTEGER,
+            item_a_label    TEXT,
+            item_a_text     TEXT,
+            item_b_label    TEXT,
+            item_b_text     TEXT,
+            significance    TEXT,
+            law_reference   TEXT,
+            resolution_needed TEXT,
+            created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS pcr_exhibits (
+            id            TEXT PRIMARY KEY,
+            exhibit_label TEXT NOT NULL,
+            title         TEXT NOT NULL,
+            description   TEXT,
+            source        TEXT,
+            ground_numbers TEXT,
+            obtained      INTEGER DEFAULT 0,
+            filed         INTEGER DEFAULT 0,
+            notes         TEXT,
+            created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        CREATE TABLE IF NOT EXISTS pcr_notes (
+            id         TEXT PRIMARY KEY,
+            note       TEXT NOT NULL,
+            ground_num INTEGER,
+            author     TEXT DEFAULT 'User',
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
         """)
         conn.commit()
     finally:
@@ -465,5 +571,326 @@ def get_notes(case_id: str) -> list:
             "SELECT * FROM case_notes WHERE case_id=? ORDER BY created_at", (case_id,)
         ).fetchall()
         return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# HOUSING DASHBOARD — H25-0389 / H25-0395
+# ══════════════════════════════════════════════════════════════════════════════
+
+def housing_add_evidence(event_date, category, title, description="", source="",
+                         exhibit_label="", verified=0, flagged=0, flag_reason="") -> str:
+    eid = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO housing_evidence
+               (id,event_date,category,title,description,source,exhibit_label,
+                verified,flagged,flag_reason)
+               VALUES (?,?,?,?,?,?,?,?,?,?)""",
+            (eid, event_date, category, title, description, source,
+             exhibit_label, verified, flagged, flag_reason)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return eid
+
+
+def housing_list_evidence(category=None) -> list:
+    conn = get_db()
+    try:
+        if category:
+            rows = conn.execute(
+                "SELECT * FROM housing_evidence WHERE category=? ORDER BY event_date, created_at",
+                (category,)
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT * FROM housing_evidence ORDER BY event_date, created_at"
+            ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def housing_delete_evidence(eid: str) -> None:
+    conn = get_db()
+    try:
+        conn.execute("DELETE FROM housing_evidence WHERE id=?", (eid,))
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def housing_add_email(sent_date, sender, recipient, subject, summary="",
+                      exhibit_label="", produced=0, missing=0, notes="") -> str:
+    eid = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO housing_emails
+               (id,sent_date,sender,recipient,subject,summary,exhibit_label,
+                produced,missing,notes)
+               VALUES (?,?,?,?,?,?,?,?,?,?)""",
+            (eid, sent_date, sender, recipient, subject, summary,
+             exhibit_label, produced, missing, notes)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return eid
+
+
+def housing_list_emails() -> list:
+    conn = get_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM housing_emails ORDER BY sent_date, created_at"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def housing_delete_email(eid: str) -> None:
+    conn = get_db()
+    try:
+        conn.execute("DELETE FROM housing_emails WHERE id=?", (eid,))
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def housing_add_denial_change(change_date, reason_before, reason_after,
+                               source_document="", significance="") -> str:
+    did = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO housing_denial_changes
+               (id,change_date,reason_before,reason_after,source_document,significance)
+               VALUES (?,?,?,?,?,?)""",
+            (did, change_date, reason_before, reason_after, source_document, significance)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return did
+
+
+def housing_list_denial_changes() -> list:
+    conn = get_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM housing_denial_changes ORDER BY change_date"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def housing_add_deadline(deadline_date, label, description="",
+                          authority="", critical=0, met=0) -> str:
+    did = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO housing_deadlines
+               (id,deadline_date,label,description,authority,critical,met)
+               VALUES (?,?,?,?,?,?,?)""",
+            (did, deadline_date, label, description, authority, critical, met)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return did
+
+
+def housing_list_deadlines() -> list:
+    conn = get_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM housing_deadlines ORDER BY deadline_date"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def housing_seeded() -> bool:
+    conn = get_db()
+    try:
+        count = conn.execute("SELECT COUNT(*) FROM housing_evidence").fetchone()[0]
+        return count > 0
+    finally:
+        conn.close()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PCR ORGANIZER — CR-2018-03023
+# ══════════════════════════════════════════════════════════════════════════════
+
+def pcr_add_evidence(event_date, category, ground_number, title,
+                     description="", source="", exhibit_label="",
+                     law_reference="", status="documented") -> str:
+    eid = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO pcr_evidence
+               (id,event_date,category,ground_number,title,description,
+                source,exhibit_label,law_reference,status)
+               VALUES (?,?,?,?,?,?,?,?,?,?)""",
+            (eid, event_date, category, ground_number, title, description,
+             source, exhibit_label, law_reference, status)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return eid
+
+
+def pcr_list_evidence(ground_number=None) -> list:
+    conn = get_db()
+    try:
+        if ground_number is not None:
+            rows = conn.execute(
+                "SELECT * FROM pcr_evidence WHERE ground_number=? ORDER BY event_date, created_at",
+                (ground_number,)
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT * FROM pcr_evidence ORDER BY event_date, created_at"
+            ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def pcr_delete_evidence(eid: str) -> None:
+    conn = get_db()
+    try:
+        conn.execute("DELETE FROM pcr_evidence WHERE id=?", (eid,))
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def pcr_add_contradiction(contradiction_date, ground_number, item_a_label, item_a_text,
+                           item_b_label, item_b_text, significance="",
+                           law_reference="", resolution_needed="") -> str:
+    cid = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO pcr_contradictions
+               (id,contradiction_date,ground_number,item_a_label,item_a_text,
+                item_b_label,item_b_text,significance,law_reference,resolution_needed)
+               VALUES (?,?,?,?,?,?,?,?,?,?)""",
+            (cid, contradiction_date, ground_number, item_a_label, item_a_text,
+             item_b_label, item_b_text, significance, law_reference, resolution_needed)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return cid
+
+
+def pcr_list_contradictions(ground_number=None) -> list:
+    conn = get_db()
+    try:
+        if ground_number is not None:
+            rows = conn.execute(
+                "SELECT * FROM pcr_contradictions WHERE ground_number=? ORDER BY contradiction_date",
+                (ground_number,)
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT * FROM pcr_contradictions ORDER BY ground_number, contradiction_date"
+            ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def pcr_delete_contradiction(cid: str) -> None:
+    conn = get_db()
+    try:
+        conn.execute("DELETE FROM pcr_contradictions WHERE id=?", (cid,))
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def pcr_add_exhibit(exhibit_label, title, description="", source="",
+                    ground_numbers="", obtained=0, filed=0, notes="") -> str:
+    eid = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            """INSERT INTO pcr_exhibits
+               (id,exhibit_label,title,description,source,ground_numbers,obtained,filed,notes)
+               VALUES (?,?,?,?,?,?,?,?,?)""",
+            (eid, exhibit_label, title, description, source,
+             ground_numbers, obtained, filed, notes)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return eid
+
+
+def pcr_list_exhibits() -> list:
+    conn = get_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM pcr_exhibits ORDER BY exhibit_label"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def pcr_delete_exhibit(eid: str) -> None:
+    conn = get_db()
+    try:
+        conn.execute("DELETE FROM pcr_exhibits WHERE id=?", (eid,))
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def pcr_add_note(note: str, ground_num: int = None, author: str = "User") -> str:
+    nid = new_id()
+    conn = get_db()
+    try:
+        conn.execute(
+            "INSERT INTO pcr_notes (id,note,ground_num,author) VALUES (?,?,?,?)",
+            (nid, note, ground_num, author)
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return nid
+
+
+def pcr_list_notes() -> list:
+    conn = get_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM pcr_notes ORDER BY created_at"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def pcr_seeded() -> bool:
+    conn = get_db()
+    try:
+        count = conn.execute("SELECT COUNT(*) FROM pcr_evidence").fetchone()[0]
+        return count > 0
     finally:
         conn.close()

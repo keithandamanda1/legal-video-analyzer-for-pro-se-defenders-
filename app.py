@@ -26,6 +26,8 @@ from flask import (
 
 from config import config
 import database as db
+from data.housing_facts import seed_housing_data
+from data.pcr_facts import seed_pcr_data
 from analyzers.video_analyzer import analyze_video
 from analyzers.metadata_analyzer import analyze_metadata, format_metadata_for_display
 from analyzers.legal_analyzer import analyze_case_legal_posture
@@ -47,6 +49,8 @@ for d in [config.UPLOAD_FOLDER, config.CASES_FOLDER,
 
 # Initialize database on startup
 db.init_db()
+seed_housing_data()
+seed_pcr_data()
 
 # ── Allowed file extensions ───────────────────────────────────────────────────
 VIDEO_EXTENSIONS = {
@@ -432,6 +436,285 @@ def download_document(case_id, doc_id):
         as_attachment=True,
         download_name=os.path.basename(file_path),
     )
+
+
+# ── Routes: Housing Dashboard ─────────────────────────────────────────────────
+# MHRC H25-0389 / H25-0395 — BHA (Bangor Housing Authority) — FHA federal track
+
+@app.route("/housing")
+def housing_dashboard():
+    from datetime import date
+    today = date.today()
+    evidence = db.housing_list_evidence()
+    emails = db.housing_list_emails()
+    denial_changes = db.housing_list_denial_changes()
+    deadlines = db.housing_list_deadlines()
+
+    # Compute days remaining for each deadline
+    for dl in deadlines:
+        try:
+            dl_date = date.fromisoformat(dl["deadline_date"])
+            dl["days_remaining"] = (dl_date - today).days
+        except Exception:
+            dl["days_remaining"] = None
+
+    flagged = [e for e in evidence if e.get("flagged")]
+    missing_emails = [em for em in emails if em.get("missing")]
+    categories = sorted({e["category"] for e in evidence if e.get("category")})
+
+    return render_template(
+        "housing_dashboard.html",
+        evidence=evidence,
+        emails=emails,
+        denial_changes=denial_changes,
+        deadlines=deadlines,
+        flagged=flagged,
+        missing_emails=missing_emails,
+        categories=categories,
+        today=today.isoformat(),
+    )
+
+
+@app.route("/housing/evidence/add", methods=["POST"])
+def housing_add_evidence():
+    db.housing_add_evidence(
+        event_date=request.form.get("event_date", ""),
+        category=request.form.get("category", "fact"),
+        title=request.form.get("title", "").strip(),
+        description=request.form.get("description", "").strip(),
+        source=request.form.get("source", "").strip(),
+        exhibit_label=request.form.get("exhibit_label", "").strip(),
+        verified=1 if request.form.get("verified") else 0,
+        flagged=1 if request.form.get("flagged") else 0,
+        flag_reason=request.form.get("flag_reason", "").strip(),
+    )
+    flash("Evidence entry added.", "success")
+    return redirect(url_for("housing_dashboard") + "#evidence")
+
+
+@app.route("/housing/evidence/<eid>/delete", methods=["POST"])
+def housing_delete_evidence(eid):
+    db.housing_delete_evidence(eid)
+    flash("Entry deleted.", "info")
+    return redirect(url_for("housing_dashboard") + "#evidence")
+
+
+@app.route("/housing/email/add", methods=["POST"])
+def housing_add_email():
+    db.housing_add_email(
+        sent_date=request.form.get("sent_date", ""),
+        sender=request.form.get("sender", "").strip(),
+        recipient=request.form.get("recipient", "").strip(),
+        subject=request.form.get("subject", "").strip(),
+        summary=request.form.get("summary", "").strip(),
+        exhibit_label=request.form.get("exhibit_label", "").strip(),
+        produced=1 if request.form.get("produced") else 0,
+        missing=1 if request.form.get("missing") else 0,
+        notes=request.form.get("notes", "").strip(),
+    )
+    flash("Email record added.", "success")
+    return redirect(url_for("housing_dashboard") + "#emails")
+
+
+@app.route("/housing/email/<eid>/delete", methods=["POST"])
+def housing_delete_email(eid):
+    db.housing_delete_email(eid)
+    flash("Email record deleted.", "info")
+    return redirect(url_for("housing_dashboard") + "#emails")
+
+
+@app.route("/housing/denial/add", methods=["POST"])
+def housing_add_denial():
+    db.housing_add_denial_change(
+        change_date=request.form.get("change_date", ""),
+        reason_before=request.form.get("reason_before", "").strip(),
+        reason_after=request.form.get("reason_after", "").strip(),
+        source_document=request.form.get("source_document", "").strip(),
+        significance=request.form.get("significance", "").strip(),
+    )
+    flash("Denial reason change recorded.", "success")
+    return redirect(url_for("housing_dashboard") + "#denials")
+
+
+@app.route("/housing/deadline/add", methods=["POST"])
+def housing_add_deadline():
+    db.housing_add_deadline(
+        deadline_date=request.form.get("deadline_date", ""),
+        label=request.form.get("label", "").strip(),
+        description=request.form.get("description", "").strip(),
+        authority=request.form.get("authority", "").strip(),
+        critical=1 if request.form.get("critical") else 0,
+        met=1 if request.form.get("met") else 0,
+    )
+    flash("Deadline added.", "success")
+    return redirect(url_for("housing_dashboard") + "#deadlines")
+
+
+@app.route("/housing/note/add", methods=["POST"])
+def housing_add_note():
+    note = request.form.get("note", "").strip()
+    if note:
+        db.pcr_add_note(note, ground_num=None, author="Housing Case")
+        flash("Note saved.", "success")
+    return redirect(url_for("housing_dashboard") + "#notes")
+
+
+# ── Routes: PCR Petition Organizer ───────────────────────────────────────────
+# CR-2018-03023 — 15 M.R.S. §§ 2121-2132
+
+PCR_GROUNDS = {
+    1: "Involuntary Plea — Boykin / M.R.U. Crim. P. 11(b)(3)",
+    2: "Ineffective Assistance of Counsel — Strickland / Hill / Lafler",
+    3: "Brady / Giglio / Napue Violations",
+    4: "Fourth Amendment — Unlawful Stop, Search, and Seizure",
+    5: "Legally Impossible Gabapentin Charge (Ex Post Facto)",
+    6: "Coercive Pretrial Conditions — Plea Involuntariness Context",
+    7: "Equitable Tolling / Newly Discovered Evidence — 15 M.R.S. § 2128-B",
+}
+
+
+@app.route("/pcr")
+def pcr_organizer():
+    ground_filter = request.args.get("ground", type=int)
+    evidence = db.pcr_list_evidence(ground_filter)
+    contradictions = db.pcr_list_contradictions(ground_filter)
+    exhibits = db.pcr_list_exhibits()
+    notes = db.pcr_list_notes()
+
+    obtained_count = sum(1 for ex in exhibits if ex.get("obtained"))
+    missing_count = sum(1 for ex in exhibits if not ex.get("obtained"))
+    filed_count = sum(1 for ex in exhibits if ex.get("filed"))
+
+    missing_evidence = [e for e in evidence if e.get("status") in ("missing", "needed")]
+
+    return render_template(
+        "pcr_organizer.html",
+        evidence=evidence,
+        contradictions=contradictions,
+        exhibits=exhibits,
+        notes=notes,
+        grounds=PCR_GROUNDS,
+        ground_filter=ground_filter,
+        obtained_count=obtained_count,
+        missing_count=missing_count,
+        filed_count=filed_count,
+        missing_evidence=missing_evidence,
+        categories=["stop", "chain_of_custody", "phone", "plea",
+                    "newly_discovered", "brady"],
+        statuses=["documented", "obtained", "missing", "needed"],
+    )
+
+
+@app.route("/pcr/evidence/add", methods=["POST"])
+def pcr_add_evidence():
+    db.pcr_add_evidence(
+        event_date=request.form.get("event_date", ""),
+        category=request.form.get("category", ""),
+        ground_number=int(request.form.get("ground_number", 0) or 0),
+        title=request.form.get("title", "").strip(),
+        description=request.form.get("description", "").strip(),
+        source=request.form.get("source", "").strip(),
+        exhibit_label=request.form.get("exhibit_label", "").strip(),
+        law_reference=request.form.get("law_reference", "").strip(),
+        status=request.form.get("status", "documented"),
+    )
+    flash("Evidence entry added.", "success")
+    return redirect(url_for("pcr_organizer") + "#evidence")
+
+
+@app.route("/pcr/evidence/<eid>/delete", methods=["POST"])
+def pcr_delete_evidence(eid):
+    db.pcr_delete_evidence(eid)
+    flash("Entry deleted.", "info")
+    return redirect(url_for("pcr_organizer") + "#evidence")
+
+
+@app.route("/pcr/contradiction/add", methods=["POST"])
+def pcr_add_contradiction():
+    db.pcr_add_contradiction(
+        contradiction_date=request.form.get("contradiction_date", ""),
+        ground_number=int(request.form.get("ground_number", 0) or 0),
+        item_a_label=request.form.get("item_a_label", "").strip(),
+        item_a_text=request.form.get("item_a_text", "").strip(),
+        item_b_label=request.form.get("item_b_label", "").strip(),
+        item_b_text=request.form.get("item_b_text", "").strip(),
+        significance=request.form.get("significance", "").strip(),
+        law_reference=request.form.get("law_reference", "").strip(),
+        resolution_needed=request.form.get("resolution_needed", "").strip(),
+    )
+    flash("Contradiction logged.", "success")
+    return redirect(url_for("pcr_organizer") + "#contradictions")
+
+
+@app.route("/pcr/contradiction/<cid>/delete", methods=["POST"])
+def pcr_delete_contradiction(cid):
+    db.pcr_delete_contradiction(cid)
+    flash("Contradiction deleted.", "info")
+    return redirect(url_for("pcr_organizer") + "#contradictions")
+
+
+@app.route("/pcr/exhibit/add", methods=["POST"])
+def pcr_add_exhibit():
+    db.pcr_add_exhibit(
+        exhibit_label=request.form.get("exhibit_label", "").strip(),
+        title=request.form.get("title", "").strip(),
+        description=request.form.get("description", "").strip(),
+        source=request.form.get("source", "").strip(),
+        ground_numbers=request.form.get("ground_numbers", "").strip(),
+        obtained=1 if request.form.get("obtained") else 0,
+        filed=1 if request.form.get("filed") else 0,
+        notes=request.form.get("notes", "").strip(),
+    )
+    flash("Exhibit added to index.", "success")
+    return redirect(url_for("pcr_organizer") + "#exhibits")
+
+
+@app.route("/pcr/exhibit/<eid>/delete", methods=["POST"])
+def pcr_delete_exhibit(eid):
+    db.pcr_delete_exhibit(eid)
+    flash("Exhibit deleted.", "info")
+    return redirect(url_for("pcr_organizer") + "#exhibits")
+
+
+@app.route("/pcr/note/add", methods=["POST"])
+def pcr_add_note_route():
+    note = request.form.get("note", "").strip()
+    ground_num = request.form.get("ground_num", "")
+    if note:
+        db.pcr_add_note(note, ground_num=int(ground_num) if ground_num else None)
+        flash("Note saved.", "success")
+    return redirect(url_for("pcr_organizer") + "#notes")
+
+
+@app.route("/pcr/exhibit-index.txt")
+def pcr_exhibit_index():
+    exhibits = db.pcr_list_exhibits()
+    lines = [
+        "EXHIBIT INDEX",
+        "PETITION FOR POST-CONVICTION REVIEW",
+        "Docket No. CR-2018-03023 — State of Maine",
+        "Petitioner: Keith A. King",
+        "=" * 70,
+        "",
+    ]
+    for ex in exhibits:
+        status = "OBTAINED" if ex.get("obtained") else "NEEDED"
+        filed = " / FILED" if ex.get("filed") else ""
+        lines.append(f"{ex['exhibit_label']}: {ex['title']}")
+        lines.append(f"  Status: {status}{filed}")
+        lines.append(f"  Source: {ex.get('source', '')}")
+        if ex.get("ground_numbers"):
+            lines.append(f"  Grounds: {ex['ground_numbers']}")
+        if ex.get("description"):
+            lines.append(f"  Description: {ex['description']}")
+        if ex.get("notes"):
+            lines.append(f"  Notes: {ex['notes']}")
+        lines.append("")
+
+    from flask import Response
+    return Response("\n".join(lines), mimetype="text/plain",
+                    headers={"Content-Disposition":
+                             "attachment; filename=exhibit-index-CR-2018-03023.txt"})
 
 
 # ── Routes: Error handlers ────────────────────────────────────────────────────
