@@ -581,19 +581,37 @@ def server_error(e):
     return render_template("error.html", error=str(e), code=500), 500
 
 
-# ── Quick file download ───────────────────────────────────────────────────────
+# ── Report downloads ──────────────────────────────────────────────────────────
 
-@app.route("/dl/<path:filename>")
-def quick_download(filename):
-    """Serve any file from /home/user/Desktop by name."""
-    desktop = Path("/home/user/Desktop")
-    target = (desktop / filename).resolve()
-    if not str(target).startswith(str(desktop)):
+REPORTS_DIR = Path(__file__).parent / "reports"
+
+@app.route("/reports/<path:filename>")
+def download_report(filename):
+    """Serve any file from the reports/ directory as a download."""
+    target = (REPORTS_DIR / filename).resolve()
+    if not str(target).startswith(str(REPORTS_DIR.resolve())):
         abort(403)
     if not target.exists():
         abort(404)
     return send_file(str(target), as_attachment=True, download_name=filename)
 
+@app.route("/reports/")
+def list_reports():
+    """HTML index of available report files."""
+    files = sorted(REPORTS_DIR.glob("*")) if REPORTS_DIR.exists() else []
+    rows = "".join(
+        f'<tr><td><a href="/reports/{f.name}">{f.name}</a></td>'
+        f'<td>{round(f.stat().st_size/1024,1)} KB</td></tr>'
+        for f in files if f.is_file()
+    )
+    return (
+        f"<html><head><title>Reports</title>"
+        f"<style>body{{font-family:monospace;padding:2em}}table{{border-collapse:collapse}}"
+        f"td{{padding:6px 18px;border-bottom:1px solid #ccc}}"
+        f"a{{color:#1a4a8a}}</style></head>"
+        f"<body><h2>GCF #25-222 — Report Files</h2>"
+        f"<table><tr><th>File</th><th>Size</th></tr>{rows}</table></body></html>"
+    )
 
 # ── Entrypoint ────────────────────────────────────────────────────────────────
 
