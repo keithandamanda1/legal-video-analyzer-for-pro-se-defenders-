@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+{% block title %}Housing Evidence Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-3">
+
+  {# ── Header ── #}
+  <div class="d-flex align-items-start justify-content-between mb-3 flex-wrap gap-2">
+    <div>
+      <h2 class="fw-bold mb-0" style="color:#f59e0b;">
+        <i class="bi bi-house-exclamation-fill me-2"></i>Housing Evidence Dashboard
+      </h2>
+      <div class="text-secondary small mt-1">
+        MHRC H25-0389 / H25-0395 &nbsp;·&nbsp; Respondent: Bangor Housing Authority (BHA) / Perkins
+        &nbsp;·&nbsp; FHA Federal Track
+      </div>
+    </div>
+    <div class="d-flex gap-2 flex-wrap">
+      <span class="badge bg-danger fs-6 px-3 py-2">FHA Deadline: Sep 26, 2026</span>
+      <span class="badge bg-warning text-dark fs-6 px-3 py-2">Today: {{ today }}</span>
+    </div>
+  </div>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in messages %}
+      <div class="alert alert-{{ 'success' if cat=='success' else 'warning' if cat=='info' else 'danger' }} alert-dismissible fade show py-2">
+        {{ msg }}<button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+      </div>
+    {% endfor %}
+  {% endwith %}
+
+  {# ── Deadline countdown cards ── #}
+  <div id="deadlines" class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#f59e0b;"><i class="bi bi-alarm-fill me-2"></i>Deadlines</h5>
+    <div class="row g-2">
+      {% for dl in deadlines %}
+      {% set days = dl.days_remaining %}
+      {% set is_past = days is not none and days < 0 %}
+      {% set is_urgent = days is not none and 0 <= days <= 60 %}
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 border-0"
+             style="background: {% if is_past %}#1a0000{% elif dl.critical and is_urgent %}#2d1a00{% elif dl.critical %}#1a1200{% else %}#1e293b{% endif %};
+                    border-left: 4px solid {% if is_past %}#6b7280{% elif dl.critical and is_urgent %}#ef4444{% elif dl.critical %}#f59e0b{% else %}#3b82f6{% endif %} !important;">
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="fw-bold" style="color:{% if is_past %}#6b7280{% elif dl.critical and is_urgent %}#fca5a5{% elif dl.critical %}#fcd34d{% else %}#93c5fd{% endif %}; font-size:0.9rem;">
+                {{ dl.label }}
+              </div>
+              {% if dl.met %}
+                <span class="badge bg-secondary ms-2">MET</span>
+              {% elif is_past %}
+                <span class="badge bg-secondary ms-2">PAST</span>
+              {% elif days is not none and days <= 14 %}
+                <span class="badge bg-danger ms-2">{{ days }}d LEFT</span>
+              {% elif days is not none and days <= 60 %}
+                <span class="badge bg-warning text-dark ms-2">{{ days }}d LEFT</span>
+              {% elif days is not none %}
+                <span class="badge bg-success ms-2">{{ days }}d LEFT</span>
+              {% endif %}
+            </div>
+            <div class="text-secondary small mt-1">{{ dl.deadline_date }}</div>
+            {% if dl.description %}
+              <div class="mt-2 small" style="color:#cbd5e1;">{{ dl.description }}</div>
+            {% endif %}
+            {% if dl.authority %}
+              <div class="mt-1 small" style="color:#64748b;"><i class="bi bi-book me-1"></i>{{ dl.authority }}</div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {# Add deadline form #}
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Add deadline</summary>
+      <form action="{{ url_for('housing_add_deadline') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-3"><input type="date" name="deadline_date" class="form-control form-control-sm bg-dark text-light border-secondary" required></div>
+          <div class="col-md-5"><input type="text" name="label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Label" required></div>
+          <div class="col-md-4"><input type="text" name="authority" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Legal authority"></div>
+          <div class="col-12"><textarea name="description" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Description"></textarea></div>
+          <div class="col-auto"><div class="form-check form-check-inline text-light small"><input class="form-check-input" type="checkbox" name="critical" id="dl_critical"><label class="form-check-label" for="dl_critical">Critical</label></div></div>
+          <div class="col-auto"><div class="form-check form-check-inline text-light small"><input class="form-check-input" type="checkbox" name="met" id="dl_met"><label class="form-check-label" for="dl_met">Already met</label></div></div>
+          <div class="col-auto"><button type="submit" class="btn btn-warning btn-sm">Add</button></div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+  {# ── Stats row ── #}
+  <div class="row g-2 mb-4">
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#f59e0b;">{{ evidence|length }}</div>
+        <div class="text-secondary small">Evidence Entries</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#ef4444;">{{ flagged|length }}</div>
+        <div class="text-secondary small">Flagged Items</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#f59e0b;">{{ missing_emails|length }}</div>
+        <div class="text-secondary small">Missing Emails</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card text-center py-3" style="background:#1e293b;">
+        <div class="fw-bold fs-3" style="color:#a855f7;">{{ denial_changes|length }}</div>
+        <div class="text-secondary small">Denial Reason Shifts</div>
+      </div>
+    </div>
+  </div>
+
+  {# ── Denial reason change tracker ── #}
+  <div id="denials" class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#a855f7;"><i class="bi bi-arrow-left-right me-2"></i>Denial Reason Shifts (Pretext Pattern)</h5>
+    <div class="text-secondary small mb-2">Multiple shifting rationales = pretext under <em>McDonnell Douglas</em>. Each shift is recorded here.</div>
+    {% for dc in denial_changes %}
+    <div class="card mb-2 border-0" style="background:#1e293b; border-left:4px solid #a855f7 !important;">
+      <div class="card-body py-2 px-3">
+        <div class="d-flex justify-content-between align-items-start">
+          <span class="badge bg-secondary me-2">{{ dc.change_date }}</span>
+          <span class="text-secondary small">{{ dc.source_document }}</span>
+        </div>
+        <div class="mt-2 d-flex gap-3 flex-wrap align-items-start">
+          <div style="flex:1; min-width:200px;">
+            <div class="small text-secondary mb-1">Before</div>
+            <div class="small" style="color:#fca5a5; background:#2d0000; border-radius:4px; padding:6px;">{{ dc.reason_before }}</div>
+          </div>
+          <div class="text-secondary align-self-center fs-4">→</div>
+          <div style="flex:1; min-width:200px;">
+            <div class="small text-secondary mb-1">After</div>
+            <div class="small" style="color:#fcd34d; background:#2d1a00; border-radius:4px; padding:6px;">{{ dc.reason_after }}</div>
+          </div>
+        </div>
+        {% if dc.significance %}
+          <div class="small mt-2" style="color:#94a3b8;"><i class="bi bi-info-circle me-1"></i>{{ dc.significance }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Record another denial reason shift</summary>
+      <form action="{{ url_for('housing_add_denial') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-3"><input type="date" name="change_date" class="form-control form-control-sm bg-dark text-light border-secondary" required></div>
+          <div class="col-md-9"><input type="text" name="source_document" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Source document (letter, MHRC filing, etc.)"></div>
+          <div class="col-md-6"><textarea name="reason_before" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Reason before (prior stated reason)" required></textarea></div>
+          <div class="col-md-6"><textarea name="reason_after" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="New reason given (post-shift)" required></textarea></div>
+          <div class="col-12"><textarea name="significance" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Significance / why this matters legally"></textarea></div>
+          <div class="col-auto"><button type="submit" class="btn btn-warning btn-sm">Record Shift</button></div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+  {# ── Email index ── #}
+  <div id="emails" class="mb-4">
+    <h5 class="fw-bold mb-2" style="color:#ef4444;"><i class="bi bi-envelope-exclamation-fill me-2"></i>Knox-Perkins / FOAA Email Index</h5>
+    {% if missing_emails %}
+      <div class="alert py-2 mb-2" style="background:#2d0000; border:1px solid #ef4444; color:#fca5a5;">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+        <strong>{{ missing_emails|length }} email(s) MISSING</strong> — requested in FOAA but not produced. These gaps are flagged for MHRC and potential federal court motion to compel.
+      </div>
+    {% endif %}
+    <div class="table-responsive">
+      <table class="table table-sm table-dark" style="font-size:0.85rem;">
+        <thead style="color:#94a3b8;">
+          <tr>
+            <th>Date</th><th>From</th><th>To</th><th>Subject</th><th>Exhibit</th><th>Status</th><th>Notes</th><th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for em in emails %}
+          <tr style="{% if em.missing %}background:#1a0000;{% endif %}">
+            <td class="text-nowrap">{{ em.sent_date or '—' }}</td>
+            <td>{{ em.sender }}</td>
+            <td>{{ em.recipient }}</td>
+            <td>
+              {{ em.subject }}
+              {% if em.summary %}<div class="text-secondary" style="font-size:0.8rem;">{{ em.summary }}</div>{% endif %}
+            </td>
+            <td>{{ em.exhibit_label or '—' }}</td>
+            <td>
+              {% if em.missing %}
+                <span class="badge bg-danger">MISSING</span>
+              {% elif em.produced %}
+                <span class="badge bg-success">PRODUCED</span>
+              {% else %}
+                <span class="badge bg-secondary">UNKNOWN</span>
+              {% endif %}
+            </td>
+            <td class="text-secondary" style="font-size:0.8rem; max-width:180px;">{{ em.notes or '' }}</td>
+            <td>
+              <form action="{{ url_for('housing_delete_email', eid=em.id) }}" method="post" onsubmit="return confirm('Delete this email record?');">
+                <button type="submit" class="btn btn-link btn-sm text-danger p-0"><i class="bi bi-trash"></i></button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Add email record</summary>
+      <form action="{{ url_for('housing_add_email') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-2"><input type="date" name="sent_date" class="form-control form-control-sm bg-dark text-light border-secondary"></div>
+          <div class="col-md-3"><input type="text" name="sender" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="From" required></div>
+          <div class="col-md-3"><input type="text" name="recipient" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="To"></div>
+          <div class="col-md-4"><input type="text" name="subject" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Subject" required></div>
+          <div class="col-md-8"><textarea name="summary" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Summary / relevance"></textarea></div>
+          <div class="col-md-2"><input type="text" name="exhibit_label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Exhibit"></div>
+          <div class="col-md-2">
+            <div class="form-check text-light small"><input class="form-check-input" type="checkbox" name="produced" id="em_produced"><label class="form-check-label" for="em_produced">Produced</label></div>
+            <div class="form-check text-light small mt-1"><input class="form-check-input" type="checkbox" name="missing" id="em_missing"><label class="form-check-label" for="em_missing">Missing</label></div>
+          </div>
+          <div class="col-md-8"><textarea name="notes" rows="1" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Notes"></textarea></div>
+          <div class="col-auto"><button type="submit" class="btn btn-danger btn-sm">Add Email</button></div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+  {# ── Evidence timeline ── #}
+  <div id="evidence" class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+      <h5 class="fw-bold mb-0" style="color:#60a5fa;"><i class="bi bi-journal-text me-2"></i>Evidence Timeline</h5>
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="{{ url_for('housing_dashboard') }}#evidence" class="btn btn-sm {% if not request.args.get('cat') %}btn-primary{% else %}btn-outline-light{% endif %}">All</a>
+        {% for cat in categories %}
+          <a href="{{ url_for('housing_dashboard') }}?cat={{ cat }}#evidence"
+             class="btn btn-sm {% if request.args.get('cat') == cat %}btn-primary{% else %}btn-outline-light{% endif %}">
+            {{ cat|title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% set filtered = evidence if not request.args.get('cat') else evidence|selectattr('category','equalto',request.args.get('cat'))|list %}
+    {% for ev in filtered|sort(attribute='event_date') %}
+    <div class="card mb-2 border-0"
+         style="background:#0f172a; border-left:4px solid
+         {% if ev.flagged %}#ef4444{% elif ev.category=='foaa' %}#f59e0b{% elif ev.category=='email' %}#a855f7{% elif ev.category=='denial' %}#ec4899{% else %}#3b82f6{% endif %} !important;">
+      <div class="card-body py-2 px-3">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-1">
+          <div class="fw-semibold" style="color:{% if ev.flagged %}#fca5a5{% else %}#e2e8f0{% endif %};">
+            {{ ev.title }}
+            {% if ev.verified %}<i class="bi bi-check-circle-fill text-success ms-1" title="Verified"></i>{% endif %}
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="badge bg-secondary">{{ ev.event_date or '—' }}</span>
+            <span class="badge" style="background:#1e293b; color:#94a3b8;">{{ ev.category }}</span>
+            {% if ev.exhibit_label %}<span class="badge" style="background:#1d4ed8; color:#bfdbfe;">{{ ev.exhibit_label }}</span>{% endif %}
+            {% if ev.flagged %}<span class="badge bg-danger">FLAGGED</span>{% endif %}
+            <form action="{{ url_for('housing_delete_evidence', eid=ev.id) }}" method="post" class="d-inline" onsubmit="return confirm('Delete this entry?');">
+              <button type="submit" class="btn btn-link btn-sm text-secondary p-0"><i class="bi bi-trash"></i></button>
+            </form>
+          </div>
+        </div>
+        {% if ev.flag_reason and ev.flagged %}
+          <div class="small mt-1" style="color:#fca5a5; font-style:italic;"><i class="bi bi-exclamation-triangle-fill me-1"></i>{{ ev.flag_reason }}</div>
+        {% endif %}
+        {% if ev.description %}
+          <div class="small mt-1" style="color:#94a3b8;">{{ ev.description }}</div>
+        {% endif %}
+        {% if ev.source %}
+          <div class="small mt-1" style="color:#475569;"><i class="bi bi-files me-1"></i>{{ ev.source }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    <details class="mt-2">
+      <summary class="text-secondary small" style="cursor:pointer;">+ Add evidence entry</summary>
+      <form action="{{ url_for('housing_add_evidence') }}" method="post" class="mt-2 p-3 rounded" style="background:#0f172a;">
+        <div class="row g-2">
+          <div class="col-md-2"><input type="date" name="event_date" class="form-control form-control-sm bg-dark text-light border-secondary"></div>
+          <div class="col-md-2">
+            <select name="category" class="form-select form-select-sm bg-dark text-light border-secondary">
+              <option value="fact">Fact</option>
+              <option value="email">Email</option>
+              <option value="foaa">FOAA</option>
+              <option value="denial">Denial</option>
+              <option value="document">Document</option>
+              <option value="testimony">Testimony</option>
+            </select>
+          </div>
+          <div class="col-md-6"><input type="text" name="title" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Title" required></div>
+          <div class="col-md-2"><input type="text" name="exhibit_label" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Exhibit"></div>
+          <div class="col-12"><textarea name="description" rows="2" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Description"></textarea></div>
+          <div class="col-md-8"><input type="text" name="source" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Source / document name"></div>
+          <div class="col-md-4 d-flex gap-3 align-items-center">
+            <div class="form-check text-light small"><input class="form-check-input" type="checkbox" name="verified" id="ev_verified"><label class="form-check-label" for="ev_verified">Verified</label></div>
+            <div class="form-check text-light small"><input class="form-check-input" type="checkbox" name="flagged" id="ev_flagged"><label class="form-check-label" for="ev_flagged">Flag</label></div>
+          </div>
+          <div class="col-12"><input type="text" name="flag_reason" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Flag reason (if flagged)"></div>
+          <div class="col-auto"><button type="submit" class="btn btn-primary btn-sm">Add Entry</button></div>
+        </div>
+      </form>
+    </details>
+  </div>
+
+</div>
+{% endblock %}
