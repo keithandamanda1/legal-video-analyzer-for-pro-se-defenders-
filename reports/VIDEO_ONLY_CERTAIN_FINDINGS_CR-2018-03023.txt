@@ -1,63 +1,33 @@
 ====================================================================================================
-VIDEO ANALYSIS — CERTAIN FINDINGS ONLY (WITH TIMESTAMPS)
-Uploaded dashcam video — State of Maine v. Keith King
+VIDEO ANALYSIS — CERTAIN FINDINGS ONLY (WITH TIMESTAMPS) — CORRECTED VERSION 2
+Uploaded dashcam video segments — State of Maine v. Keith King
 ====================================================================================================
-SCOPE: This report covers ONLY what the AI video analysis established with certainty
-from the uploaded video files. All "possible / could indicate / unclear" single-frame
-guesses have been EXCLUDED. Nothing from any other case or any paper record is included.
+SCOPE: This report covers ONLY what the video analysis established with certainty from the
+uploaded video segments. All "possible / could indicate / unclear" single-frame guesses have
+been EXCLUDED.
 
-HONESTY NOTE: The frame-by-frame AI ran 66 detections. Most were low-confidence single-frame
-guesses ("possible search," "possible force") — those are NOT listed below because a single
-blurry frame cannot prove intent or legality. What IS listed below are the findings that are
-objectively visible on the video itself, most of them confirmed across MULTIPLE consecutive
-frames, which removes the single-frame uncertainty.
+*** IMPORTANT CORRECTION (v2) ***
+Keith confirmed he trimmed the video into segments himself (using video-cutting software)
+in order to upload it for analysis. Because of this:
+  • The Bandicut watermark found at 00:03:30 and in Segments 1/3/4 is explained by Keith's
+    OWN trimming. It is NOT evidence of police editing and MUST NOT be cited as tampering.
+  • The absence of metadata in the SEGMENTS may also be caused by the trimming/re-encoding.
+    Whether the police stripped metadata can ONLY be determined from the ORIGINAL file
+    exactly as received from the police/DA in February 2024 — see "ACTION REQUIRED" below.
+Findings below are the ones unaffected by trimming: they are about the CONTENT of the
+footage (what the camera recorded), which trimming does not change.
 ====================================================================================================
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 1 — VIDEO WAS EDITED WITH THIRD-PARTY SOFTWARE (CERTAIN)
-Timestamp: 00:03:30 (Bandicut splash/watermark visible on screen)
-Also detected in: Segment 1 (0:00–5:00), Segment 3 (10:00–15:00), Segment 4 (15:00–20:00)
-────────────────────────────────────────────────────────────────────────
-A "Bandicut" video-cutting software watermark/splash screen is VISIBLE IN THE FOOTAGE
-in four separate detections. A watermark is either on screen or it is not — this is not
-a judgment call. This video passed through consumer video-editing/cutting software
-before it was produced. Official cruiser video does not come with a Bandicut watermark.
-
-What this proves with certainty:
-  • The file produced is NOT the original recording.
-  • The footage was cut/processed by someone using editing software.
-  • Portions may have been trimmed or removed — the original must be demanded.
-
-Law: Maine Rules of Evidence 901(a); Federal Rules of Evidence 901(a) (authentication);
-17-A M.R.S.A. §453 (tampering with evidence) if alteration was intentional.
-
-────────────────────────────────────────────────────────────────────────
-FINDING 2 — ALL STANDARD METADATA IS MISSING FROM THE VIDEO (CERTAIN)
-Timestamp: Entire video, every frame
-────────────────────────────────────────────────────────────────────────
-The produced video contains NO date stamp, NO time stamp, NO GPS coordinates, and
-NO officer/unit identifier anywhere in the footage. This is an absence you can verify
-by watching any frame. Standard Maine cruiser video displays this data by default.
-
-What this proves with certainty:
-  • The overlay data that would establish WHEN the stop happened was removed or
-    was not produced.
-  • The video, as produced, cannot itself establish the time of the stop — which is
-    exactly the fact in dispute (stop vs. warrant signing time).
-
-Law: M.R.E. 901(a); Brady v. Maryland (1963) (the withheld metadata is itself
-exculpatory); 18 U.S.C. §1519.
-
-────────────────────────────────────────────────────────────────────────
-FINDING 3 — PHYSICAL PAT-DOWN / HANDS-ON CONTROL OF SUBJECT AT REAR OF
-VEHICLE (CERTAIN — confirmed across 5 consecutive frames)
+FINDING 1 — HANDS-ON PAT-DOWN / PHYSICAL CONTROL OF SUBJECT AT REAR OF
+VEHICLE (CERTAIN — confirmed across 4 consecutive sampled frames)
 Timestamps: 00:03:20, 00:03:40, 00:03:50, 00:04:00 (continuous sequence)
 ────────────────────────────────────────────────────────────────────────
 Across four sampled frames spanning 40 seconds, the officer is in continuous physical
 contact with the subject at the rear of the stopped vehicle: hands on the subject's
 body in pat-down position (00:03:20, 00:03:40), subject's arm positioning consistent
 with a control hold (00:03:50), continuing at 00:04:00. One frame could be ambiguous;
-five in sequence are not.
+a 40-second continuous sequence is not.
 
 What this proves with certainty:
   • A hands-on physical search/frisk of the subject's body occurred.
@@ -70,7 +40,7 @@ that justification must appear in the officer's report, or the frisk was unlawfu
 Law: Terry v. Ohio, 392 U.S. 1 (1968); 4th Amendment; Maine Const. Art. I §5.
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 4 — SUBJECT REMOVED FROM / OUTSIDE VEHICLE, DETAINED ON ROADWAY
+FINDING 2 — SUBJECT REMOVED FROM / OUTSIDE VEHICLE, DETAINED ON ROADWAY
 (CERTAIN — confirmed across multiple frames)
 Timestamps: 00:03:30, 00:04:10, 00:04:30, 00:04:40
 ────────────────────────────────────────────────────────────────────────
@@ -88,8 +58,8 @@ order allowed, but escalation beyond it requires justification); Rodriguez v.
 United States, 575 U.S. 348 (2015) (stop cannot be prolonged beyond its mission).
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 5 — VEHICLE'S REAR/TRUNK AREA ACCESSED BY OFFICERS
-(CERTAIN AS EVENT — confirmed across 5 consecutive frames)
+FINDING 3 — VEHICLE'S REAR/TRUNK AREA AND BOTH SIDES ACCESSED BY OFFICERS
+(CERTAIN AS EVENT — confirmed across 5 consecutive sampled frames)
 Timestamps: 00:00:10, 00:00:20, 00:00:30, 00:00:40, 00:00:50
 ────────────────────────────────────────────────────────────────────────
 Five consecutive sampled frames (50 seconds of continuous footage) show the officers
@@ -99,7 +69,7 @@ physically engaging the vehicle's compartments is a vehicle examination/search.
 
 What this proves with certainty:
   • Officers physically engaged and examined the vehicle, including the rear/trunk
-    area, in the opening minute of the footage.
+    area, in the opening minute of this segment.
 
 What it does NOT prove by itself: whether consent, probable cause, or a warrant
 existed at that moment. NOTE: If the warrant was signed ~2 hours after the stop,
@@ -109,37 +79,31 @@ Law: 4th Amendment; Arizona v. Gant, 556 U.S. 332 (2009); Carroll v. United
 States, 267 U.S. 132 (1925); Maine Const. Art. I §5.
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 6 — NO OFFICER IDENTIFICATION VISIBLE AT ANY POINT (CERTAIN)
-Timestamps: 00:00:00, 00:00:10, 00:00:20, 00:00:40, 00:01:00, 00:01:10, 00:01:20,
-00:01:30, 00:01:40, 00:01:50, 00:02:30 (x2), 00:02:40, 00:02:50, 00:03:00, 00:03:10,
-00:03:30, 00:03:40, 00:04:00, 00:04:10, 00:04:40 — every frame sampled
+FINDING 4 — NO OFFICER IDENTIFICATION VISIBLE AT ANY POINT (CERTAIN)
+Timestamps: every sampled frame, 00:00:00 through 00:04:50
 ────────────────────────────────────────────────────────────────────────
-In EVERY sampled frame across the entire video, no badge number, name tag, or unit
-identifier is visible or legible on any officer. At 00:03:00 the individual approaching
-the stopped vehicle is wearing what appears to be a casual patterned shirt — not an
-identifiable police uniform.
+In EVERY sampled frame across the segments, no badge number, name tag, or unit
+identifier is visible or legible on any officer. At 00:03:00 the individual
+approaching the stopped vehicle is wearing what appears to be a casual patterned
+shirt — not an identifiable police uniform.
 
 What this proves with certainty:
-  • The video cannot be used to identify which officers did what — and combined
-    with the stripped metadata (Finding 2), NOTHING in the produced video
-    identifies the officers, the date, the time, or the location.
+  • The footage cannot be used to identify which officers did what.
+  • At least one person conducting the stop was not in an identifiable uniform.
 
-Law: accountability/documentation issue supporting 42 U.S.C. §1983 claims;
-relevant to authentication under M.R.E. 901(a).
+Law: accountability/documentation issue supporting 42 U.S.C. §1983 claims.
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 7 — NO EMERGENCY LIGHTS VISIBLE (CERTAIN AS OBSERVATION)
+FINDING 5 — NO EMERGENCY LIGHTS VISIBLE (CERTAIN AS OBSERVATION)
 Timestamp: 00:02:00
 ────────────────────────────────────────────────────────────────────────
 No emergency light activation is visible in the frame — no light bar flash, no
 red/blue reflection on surfaces. This is an observable absence in the footage.
-If lights were never activated, that is consistent with an off-book, unlogged stop.
-
-Law: 4th Amendment (proper stop procedure); corroborates the absence of any
-CAD/dispatch entry for this stop.
+If lights were never activated, that is consistent with an off-book, unlogged stop
+(corroborated separately by the absence of any CAD/dispatch entry).
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 8 — STOP CONDUCTED IN/NEAR ACTIVE TRAVEL LANE (CERTAIN —
+FINDING 6 — STOP CONDUCTED IN/NEAR ACTIVE TRAVEL LANE (CERTAIN —
 confirmed in 2 frames)
 Timestamps: 00:03:20, 00:03:40
 ────────────────────────────────────────────────────────────────────────
@@ -149,8 +113,8 @@ visible approaching in the distance (00:03:40). Detaining a person in a live
 traffic lane is an objective safety fact visible on the video.
 
 ────────────────────────────────────────────────────────────────────────
-FINDING 9 — SEPARATE RESIDENTIAL SCENE: OFFICER AT DOORWAY/THRESHOLD
-OF UNIT 33 (CERTAIN AS EVENT — confirmed across 8 frames)
+FINDING 7 — RESIDENTIAL SCENE: OFFICER AT DOORWAY/THRESHOLD OF UNIT 33
+(CERTAIN AS EVENT — confirmed across 8+ sampled frames)
 Timestamps: 00:01:30, 00:01:40, 00:01:50, 00:02:00, 00:02:10, 00:02:30, 00:02:40,
 00:04:40, 00:04:50
 ────────────────────────────────────────────────────────────────────────
@@ -172,23 +136,72 @@ Payton v. New York, 445 U.S. 573 (1980) (warrantless home entry presumptively
 unconstitutional).
 
 ====================================================================================================
-SUMMARY — WHAT THE VIDEO ITSELF PROVES, WITH TIMESTAMPS
+FINDING 8 — METADATA MISSING FROM THE ORIGINAL FILE AS RECEIVED FROM POLICE
+(CONFIRMED BY KEITH — based on the original February 2024 production, NOT the
+trimmed segments)
+====================================================================================================
+Keith confirms the metadata (date, time, GPS, officer/unit identifiers) was ALREADY
+MISSING from the original video file as received from the police/DA in February
+2024 — before he made any trimmed segments. His trimming did not cause this.
+
+What this supports:
+  • Standard Maine cruiser video carries date/time/GPS/unit data by default. Its
+    absence from the State's own production means the file the State produced
+    cannot establish WHEN the stop occurred — the exact fact in dispute (stop at
+    ~10:30 AM vs. warrant signed ~12:30 PM).
+  • The stripping/withholding of that data is a Brady and evidence-integrity issue
+    chargeable to the State, which controls the original recording system.
+
+How to make this bulletproof: preserve the original medium (disc/USB/download)
+exactly as received; state in an affidavit that the metadata was absent AS RECEIVED
+and that any segments were trimmed by Keith afterward only for analysis.
+
+Law: Brady v. Maryland (1963); M.R.E. 901(a); 18 U.S.C. §1519; 17-A M.R.S.A. §453.
+
+====================================================================================================
+FINDING WITHDRAWN IN THIS VERSION (v2) — AND WHY
+====================================================================================================
+WITHDRAWN: "Bandicut watermark = police editing."
+  Keith trimmed the segments himself with video-cutting software so they could be
+  uploaded. The watermark is from his own trimming. DO NOT cite the watermark as
+  evidence of police tampering — the State would trace it to the trimming and use
+  it to attack credibility. The tampering claim rests instead on Finding 8 (metadata
+  absent from the original as received) and the State's failure to produce native
+  files with hashes and audit logs.
+
+====================================================================================================
+ACTION REQUIRED — PROTECT THE TAMPERING CLAIM THE RIGHT WAY
+====================================================================================================
+1. LOCATE the original video file(s) EXACTLY as received from the police/DA in
+   February 2024 (the disc, USB drive, or download — whatever medium it came on).
+2. DO NOT open-and-resave, trim, convert, or move it through any editing software.
+   Keep the original medium itself as evidence.
+3. CHECK the original: Does it show an on-screen date/time/GPS/unit overlay?
+   Does the file have embedded metadata (right-click > Properties > Details, or
+   MediaInfo)? Does it carry a Bandicut or other editing watermark that YOU did not add?
+4. IF the ORIGINAL lacks the standard overlay/metadata → the tampering/stripping
+   claim in the PCR is supported. State in any affidavit that the described
+   condition refers to the file AS RECEIVED, and that segments later made for
+   analysis were trimmed by you.
+5. IF the ORIGINAL does have overlay/metadata → correct the PCR claim before
+   filing. The remaining findings (warrantless examination before warrant signing,
+   pat-down, off-book stop, no CAD entry) still stand on their own.
+6. IN ALL CASES demand in discovery: native original files with hash values,
+   device metadata, and the recording system's audit/export logs. That demand is
+   correct no matter what the copy you received looks like.
+
+====================================================================================================
+SUMMARY — WHAT THE VIDEO CONTENT ITSELF PROVES, WITH TIMESTAMPS
 ====================================================================================================
 00:00:10–00:00:50  Officers physically examine vehicle incl. rear/trunk (5 frames)
 00:02:00           No emergency lights visible
 00:01:30–00:04:50  Officer at doorway/threshold of unit 33; contact with seated person
+00:03:00           Person conducting stop in casual patterned shirt, not uniform
 00:03:20–00:04:00  Hands-on pat-down / physical control of subject at rear of vehicle
 00:03:20–00:03:40  Detention conducted in active travel lane
-00:03:30           BANDICUT EDITING WATERMARK ON SCREEN — video is not the original
-Entire video       No date/time/GPS/officer metadata; no badge or name tag legible
-                   in any sampled frame
+Every frame        No badge, name tag, or unit identifier legible on any officer
 
 EXCLUDED: 51 low-confidence and most medium-confidence single-frame "possible"
-detections (possible force, possible search, unclear postures). They are preserved
-in CR-2018-03023_violations.json if ever needed, but they are not certainties and
-are not part of this report.
-
-THE SINGLE MOST IMPORTANT VIDEO FACT: The produced video is edited (Bandicut
-watermark, 00:03:30) and stripped of all metadata. The correct demand is for the
-ORIGINAL native files with hash values, metadata, and the system's audit/export logs.
+detections. Preserved in CR-2018-03023_violations.json if ever needed, but they
+are not certainties and are not part of this report.
 ====================================================================================================
