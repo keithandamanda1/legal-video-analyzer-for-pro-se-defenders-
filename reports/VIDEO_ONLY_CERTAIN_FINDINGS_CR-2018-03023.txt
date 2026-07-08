@@ -266,3 +266,129 @@ Keith's own trimming of the long video into uploadable parts. It is noted here
 ONLY so nobody ever mistakes it for police editing. It has no evidentiary value.
 
 ====================================================================================================
+SEGMENTS 2, 3, AND 5 OF 12 — ANALYZED 2026-07-08 (direct frame review,
+15-second sampling plus high-resolution zoom of key moments)
+Files: "EvanHaskell_201808021410_27_358653820 (3) - 2of12 / 3of12 / 5of12.mp4"
+Each segment runs 3:45. Segment positions within the recording:
+  Seg 2 ≈ 03:45–07:30   Seg 3 ≈ 07:30–11:15   Seg 5 ≈ 15:00–18:45
+(All timestamps below are within-segment; recording begins 14:10 per the
+police filename.)
+====================================================================================================
+
+FINDING S2-A — SUBJECT HELD AT REAR OF CAR, FLANKED BY TWO OFFICERS
+(CERTAIN — consecutive frames)
+Seg 2 timestamps: 00:07, 00:37, 01:07
+────────────────────────────────────────────────────────────────────────
+The subject (light shirt) is positioned at the rear/passenger corner of the
+stopped car with an officer beside him on the shoulder and a second officer
+standing IN THE TRAVEL LANE near the center line. By 00:37 all three are
+clustered at the trunk. This is full custodial control of the subject within
+the first minutes of the segment.
+
+FINDING S2-B — OFFICER REPEATEDLY LEANING AND REACHING INTO THE DRIVER'S
+WINDOW/INTERIOR (CERTAIN — five sampled frames spanning two minutes)
+Seg 2 timestamps: 01:37, 02:07, 02:37, 03:07, 03:37
+────────────────────────────────────────────────────────────────────────
+While the subject is held at the rear by another officer, one officer bends
+into and reaches through the driver's window/door area over and over across
+a two-minute span — sustained physical intrusion into the vehicle interior.
+This is a SEARCH of the interior, not a conversation: the subject is not in
+the car, so there is no one at the window to talk to.
+
+Law: 4th Amendment; Arizona v. Gant, 556 U.S. 332 (2009) (no search incident
+to arrest of a secured, removed occupant absent reasonable belief of evidence
+of the OFFENSE OF ARREST in the car); Maine Const. Art. I §5.
+
+FINDING S3-A — SUBJECT SPREAD FACE-DOWN ACROSS THE TRUNK (CERTAIN — zoom-
+confirmed)
+Seg 3 timestamp: ~02:50
+────────────────────────────────────────────────────────────────────────
+Zoom review shows the subject in the white shirt bent forward with his torso
+over the trunk lid and arms spread to the sides — the classic felony-stop
+"spread on the vehicle" control position — while an officer stands at the
+open driver's door. This is a maximal-control detention posture, far beyond
+a routine traffic stop, and it is on camera.
+
+Law: 4th Amendment (scope/proportionality of detention); Terry v. Ohio;
+Graham v. Connor, 490 U.S. 386 (1989).
+
+FINDING S3-B — TRUNK OPENED AND SEARCHED; BOTH DOORS OPEN; THREE PEOPLE
+AROUND THE CAR (CERTAIN — multiple frames + zoom)
+Seg 3 timestamps: ~03:20 through 03:45
+────────────────────────────────────────────────────────────────────────
+By ~03:20 the trunk lid is raised and a person is bent INTO the open trunk
+while both front doors stand open and a third person stands at the right.
+The car's locked rear compartment was opened and physically searched at the
+roadside.
+
+Law: A trunk search requires probable cause (Carroll/Acevedo) or a warrant.
+No warrant for any search existed at this time (the residence warrant was
+signed approximately two hours after the stop, and it covered the residence,
+not the vehicle). Officer Haskell's own report (Incident 18-060430, p.9)
+states the vehicle search found "no illegal drugs" — meaning this on-camera
+trunk search produced nothing and still no PC basis appears anywhere.
+
+FINDING S3-C — DRIVER DOOR OPEN, TWO PEOPLE CLOSE TOGETHER AT DRIVER'S SIDE,
+OBJECTS ON THE ROADWAY BEHIND THE CAR (CERTAIN)
+Seg 3 timestamp: ~01:45
+────────────────────────────────────────────────────────────────────────
+Zoom shows the driver's door open with two people pressed close together
+beside it, and elongated dark objects lying on the road surface behind the
+car's bumper — items outside the vehicle on the pavement.
+
+FINDING S5-A — SEARCH STILL UNDERWAY 15+ MINUTES IN: ALL DOORS OPEN THE
+ENTIRE SEGMENT (CERTAIN — every sampled frame)
+Seg 5 timestamps: 00:07 through 03:37 (all 15 frames)
+────────────────────────────────────────────────────────────────────────
+Both front doors (and at times rear doors) stand open in every single frame
+of Segment 5 — approximately 15:00 to 18:45 into the recording. The vehicle
+remains torn open on the roadside a quarter hour after the stop began.
+
+Law: Rodriguez v. United States, 575 U.S. 348 (2015) — a stop may last no
+longer than needed for its mission. A 15+ minute vehicle search with the
+subject detained is far beyond any traffic mission.
+
+FINDING S5-B — ITEMS FROM THE CAR LYING ON THE ROADWAY (CERTAIN — multiple
+frames)
+Seg 5 timestamps: 00:37, 01:07
+────────────────────────────────────────────────────────────────────────
+Objects are visible lying on the pavement beside/behind the car — contents
+removed from the vehicle and placed on the road during the search.
+
+FINDING S5-C — SUBJECT HELD AT REAR THROUGHOUT; AT ONE POINT SITTING ON THE
+REAR BUMPER/TRUNK EDGE (CERTAIN)
+Seg 5 timestamps: 00:07, 00:37, 01:07, 01:37, 02:07 (seated), 02:37, 03:07
+────────────────────────────────────────────────────────────────────────
+The subject in the white shirt remains detained at the rear of his car for
+the entire segment, standing in the sun, and at ~02:07 is seated on the rear
+bumper/trunk edge. Two officers are positioned at the tree line at 02:37.
+This corroborates the prolonged outdoor detention (the full recording spans
+the ~90-degree August afternoon documented elsewhere).
+
+FINDING S5-D — OFFICER CARRIES AN OBJECT BACK TOWARD THE CRUISER (CERTAIN
+AS EVENT; object not identifiable)
+Seg 5 timestamp: ~03:37
+────────────────────────────────────────────────────────────────────────
+An officer walks from the car back toward the dashcam carrying something in
+his left hand. What the item is cannot be determined from the footage — but
+an item taken from the direction of the searched car is visible in an
+officer's hand.
+
+────────────────────────────────────────────────────────────────────────
+COMBINED TIMELINE ACROSS ANALYZED SEGMENTS (within-recording time)
+────────────────────────────────────────────────────────────────────────
+~04:00–05:00   Subject at rear corner, officer in travel lane, 3 people at trunk
+~05:20–07:20   Officer repeatedly reaching into driver's window while subject
+               held at rear (5 consecutive sampled frames)
+~09:15         Driver door open; objects on roadway behind car
+~10:20         SUBJECT SPREAD FACE-DOWN OVER THE TRUNK, arms out
+~10:50–11:15   TRUNK OPEN; person leaning INTO trunk; both doors open
+~15:00–18:45   All doors still open; items on roadway; subject held at rear
+               (seated on bumper ~17:10); officer carries object away ~18:40
+~40:00–43:45   (Seg 9) Fixed surveillance of residence; personnel at doorway
+               and basement-window areas; dog on walkway
+
+NOT YET ANALYZED: Segment 6 (≈18:45–22:30) — file exceeds the 10 MB transfer
+limit; Keith will split it into two halves for upload. Segments 1, 4, 7, 8,
+10, 11, 12 were covered in prior runs or pending links.
+====================================================================================================
