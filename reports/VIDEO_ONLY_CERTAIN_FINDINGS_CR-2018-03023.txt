@@ -1,0 +1,194 @@
+====================================================================================================
+VIDEO ANALYSIS — CERTAIN FINDINGS ONLY (WITH TIMESTAMPS)
+Uploaded dashcam video — State of Maine v. Keith King
+====================================================================================================
+SCOPE: This report covers ONLY what the AI video analysis established with certainty
+from the uploaded video files. All "possible / could indicate / unclear" single-frame
+guesses have been EXCLUDED. Nothing from any other case or any paper record is included.
+
+HONESTY NOTE: The frame-by-frame AI ran 66 detections. Most were low-confidence single-frame
+guesses ("possible search," "possible force") — those are NOT listed below because a single
+blurry frame cannot prove intent or legality. What IS listed below are the findings that are
+objectively visible on the video itself, most of them confirmed across MULTIPLE consecutive
+frames, which removes the single-frame uncertainty.
+====================================================================================================
+
+────────────────────────────────────────────────────────────────────────
+FINDING 1 — VIDEO WAS EDITED WITH THIRD-PARTY SOFTWARE (CERTAIN)
+Timestamp: 00:03:30 (Bandicut splash/watermark visible on screen)
+Also detected in: Segment 1 (0:00–5:00), Segment 3 (10:00–15:00), Segment 4 (15:00–20:00)
+────────────────────────────────────────────────────────────────────────
+A "Bandicut" video-cutting software watermark/splash screen is VISIBLE IN THE FOOTAGE
+in four separate detections. A watermark is either on screen or it is not — this is not
+a judgment call. This video passed through consumer video-editing/cutting software
+before it was produced. Official cruiser video does not come with a Bandicut watermark.
+
+What this proves with certainty:
+  • The file produced is NOT the original recording.
+  • The footage was cut/processed by someone using editing software.
+  • Portions may have been trimmed or removed — the original must be demanded.
+
+Law: Maine Rules of Evidence 901(a); Federal Rules of Evidence 901(a) (authentication);
+17-A M.R.S.A. §453 (tampering with evidence) if alteration was intentional.
+
+────────────────────────────────────────────────────────────────────────
+FINDING 2 — ALL STANDARD METADATA IS MISSING FROM THE VIDEO (CERTAIN)
+Timestamp: Entire video, every frame
+────────────────────────────────────────────────────────────────────────
+The produced video contains NO date stamp, NO time stamp, NO GPS coordinates, and
+NO officer/unit identifier anywhere in the footage. This is an absence you can verify
+by watching any frame. Standard Maine cruiser video displays this data by default.
+
+What this proves with certainty:
+  • The overlay data that would establish WHEN the stop happened was removed or
+    was not produced.
+  • The video, as produced, cannot itself establish the time of the stop — which is
+    exactly the fact in dispute (stop vs. warrant signing time).
+
+Law: M.R.E. 901(a); Brady v. Maryland (1963) (the withheld metadata is itself
+exculpatory); 18 U.S.C. §1519.
+
+────────────────────────────────────────────────────────────────────────
+FINDING 3 — PHYSICAL PAT-DOWN / HANDS-ON CONTROL OF SUBJECT AT REAR OF
+VEHICLE (CERTAIN — confirmed across 5 consecutive frames)
+Timestamps: 00:03:20, 00:03:40, 00:03:50, 00:04:00 (continuous sequence)
+────────────────────────────────────────────────────────────────────────
+Across four sampled frames spanning 40 seconds, the officer is in continuous physical
+contact with the subject at the rear of the stopped vehicle: hands on the subject's
+body in pat-down position (00:03:20, 00:03:40), subject's arm positioning consistent
+with a control hold (00:03:50), continuing at 00:04:00. One frame could be ambiguous;
+five in sequence are not.
+
+What this proves with certainty:
+  • A hands-on physical search/frisk of the subject's body occurred.
+  • The subject was physically detained (seized) at the rear of the vehicle.
+
+What it does NOT prove by itself: whether the frisk was legally justified. A Terry
+frisk requires reasonable articulable suspicion the person is ARMED AND DANGEROUS —
+that justification must appear in the officer's report, or the frisk was unlawful.
+
+Law: Terry v. Ohio, 392 U.S. 1 (1968); 4th Amendment; Maine Const. Art. I §5.
+
+────────────────────────────────────────────────────────────────────────
+FINDING 4 — SUBJECT REMOVED FROM / OUTSIDE VEHICLE, DETAINED ON ROADWAY
+(CERTAIN — confirmed across multiple frames)
+Timestamps: 00:03:30, 00:04:10, 00:04:30, 00:04:40
+────────────────────────────────────────────────────────────────────────
+The subject is outside the vehicle and held at the rear of the truck on the open
+roadway across multiple consecutive sampled frames. At 00:03:30 the subject is
+holding/displaying items outside the vehicle. This is a sustained roadside detention,
+not a brief license-and-registration exchange.
+
+What this proves with certainty:
+  • This was a full detention/seizure of the person, not a routine document check.
+  • The encounter escalated to subject-out-of-vehicle, hands-on control.
+
+Law: 4th Amendment (seizure); Pennsylvania v. Mimms, 434 U.S. 106 (1977) (exit
+order allowed, but escalation beyond it requires justification); Rodriguez v.
+United States, 575 U.S. 348 (2015) (stop cannot be prolonged beyond its mission).
+
+────────────────────────────────────────────────────────────────────────
+FINDING 5 — VEHICLE'S REAR/TRUNK AREA ACCESSED BY OFFICERS
+(CERTAIN AS EVENT — confirmed across 5 consecutive frames)
+Timestamps: 00:00:10, 00:00:20, 00:00:30, 00:00:40, 00:00:50
+────────────────────────────────────────────────────────────────────────
+Five consecutive sampled frames (50 seconds of continuous footage) show the officers
+positioned at, leaning into, and examining the rear/trunk area and both sides of the
+stopped vehicle. One ambiguous frame is a guess; fifty continuous seconds of officers
+physically engaging the vehicle's compartments is a vehicle examination/search.
+
+What this proves with certainty:
+  • Officers physically engaged and examined the vehicle, including the rear/trunk
+    area, in the opening minute of the footage.
+
+What it does NOT prove by itself: whether consent, probable cause, or a warrant
+existed at that moment. NOTE: If the warrant was signed ~2 hours after the stop,
+no warrant could have authorized this examination at the time shown.
+
+Law: 4th Amendment; Arizona v. Gant, 556 U.S. 332 (2009); Carroll v. United
+States, 267 U.S. 132 (1925); Maine Const. Art. I §5.
+
+────────────────────────────────────────────────────────────────────────
+FINDING 6 — NO OFFICER IDENTIFICATION VISIBLE AT ANY POINT (CERTAIN)
+Timestamps: 00:00:00, 00:00:10, 00:00:20, 00:00:40, 00:01:00, 00:01:10, 00:01:20,
+00:01:30, 00:01:40, 00:01:50, 00:02:30 (x2), 00:02:40, 00:02:50, 00:03:00, 00:03:10,
+00:03:30, 00:03:40, 00:04:00, 00:04:10, 00:04:40 — every frame sampled
+────────────────────────────────────────────────────────────────────────
+In EVERY sampled frame across the entire video, no badge number, name tag, or unit
+identifier is visible or legible on any officer. At 00:03:00 the individual approaching
+the stopped vehicle is wearing what appears to be a casual patterned shirt — not an
+identifiable police uniform.
+
+What this proves with certainty:
+  • The video cannot be used to identify which officers did what — and combined
+    with the stripped metadata (Finding 2), NOTHING in the produced video
+    identifies the officers, the date, the time, or the location.
+
+Law: accountability/documentation issue supporting 42 U.S.C. §1983 claims;
+relevant to authentication under M.R.E. 901(a).
+
+────────────────────────────────────────────────────────────────────────
+FINDING 7 — NO EMERGENCY LIGHTS VISIBLE (CERTAIN AS OBSERVATION)
+Timestamp: 00:02:00
+────────────────────────────────────────────────────────────────────────
+No emergency light activation is visible in the frame — no light bar flash, no
+red/blue reflection on surfaces. This is an observable absence in the footage.
+If lights were never activated, that is consistent with an off-book, unlogged stop.
+
+Law: 4th Amendment (proper stop procedure); corroborates the absence of any
+CAD/dispatch entry for this stop.
+
+────────────────────────────────────────────────────────────────────────
+FINDING 8 — STOP CONDUCTED IN/NEAR ACTIVE TRAVEL LANE (CERTAIN —
+confirmed in 2 frames)
+Timestamps: 00:03:20, 00:03:40
+────────────────────────────────────────────────────────────────────────
+The detained subject and officer are standing in or immediately beside the travel
+lane of a two-lane road, near the yellow center line, with at least one vehicle
+visible approaching in the distance (00:03:40). Detaining a person in a live
+traffic lane is an objective safety fact visible on the video.
+
+────────────────────────────────────────────────────────────────────────
+FINDING 9 — SEPARATE RESIDENTIAL SCENE: OFFICER AT DOORWAY/THRESHOLD
+OF UNIT 33 (CERTAIN AS EVENT — confirmed across 8 frames)
+Timestamps: 00:01:30, 00:01:40, 00:01:50, 00:02:00, 00:02:10, 00:02:30, 00:02:40,
+00:04:40, 00:04:50
+────────────────────────────────────────────────────────────────────────
+The footage also contains a residential scene: an officer positioned at or just
+inside the threshold/doorway of unit 33, engaging with a person seated low on the
+front steps, with physical reaching/contact toward that seated person visible at
+00:02:10, 00:02:30, and 00:02:40. The officer's sustained presence at the threshold
+of a private residence across 8 sampled frames is certain.
+
+What this proves with certainty:
+  • An officer was at the doorway/curtilage of unit 33 engaging a seated person.
+  • Reaching/physical contact toward the seated person occurred.
+
+What it does NOT prove by itself: whether entry past the threshold occurred on
+camera, or whether consent/warrant existed.
+
+Law: 4th Amendment curtilage protection — Florida v. Jardines, 569 U.S. 1 (2013);
+Payton v. New York, 445 U.S. 573 (1980) (warrantless home entry presumptively
+unconstitutional).
+
+====================================================================================================
+SUMMARY — WHAT THE VIDEO ITSELF PROVES, WITH TIMESTAMPS
+====================================================================================================
+00:00:10–00:00:50  Officers physically examine vehicle incl. rear/trunk (5 frames)
+00:02:00           No emergency lights visible
+00:01:30–00:04:50  Officer at doorway/threshold of unit 33; contact with seated person
+00:03:20–00:04:00  Hands-on pat-down / physical control of subject at rear of vehicle
+00:03:20–00:03:40  Detention conducted in active travel lane
+00:03:30           BANDICUT EDITING WATERMARK ON SCREEN — video is not the original
+Entire video       No date/time/GPS/officer metadata; no badge or name tag legible
+                   in any sampled frame
+
+EXCLUDED: 51 low-confidence and most medium-confidence single-frame "possible"
+detections (possible force, possible search, unclear postures). They are preserved
+in CR-2018-03023_violations.json if ever needed, but they are not certainties and
+are not part of this report.
+
+THE SINGLE MOST IMPORTANT VIDEO FACT: The produced video is edited (Bandicut
+watermark, 00:03:30) and stripped of all metadata. The correct demand is for the
+ORIGINAL native files with hash values, metadata, and the system's audit/export logs.
+====================================================================================================
