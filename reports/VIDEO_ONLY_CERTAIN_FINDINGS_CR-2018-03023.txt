@@ -204,4 +204,65 @@ Every frame        No badge, name tag, or unit identifier legible on any officer
 EXCLUDED: 51 low-confidence and most medium-confidence single-frame "possible"
 detections. Preserved in CR-2018-03023_violations.json if ever needed, but they
 are not certainties and are not part of this report.
+
+====================================================================================================
+SEGMENT 9 OF 12 — ANALYZED 2026-07-08 (direct frame review, 15-second sampling
+plus high-resolution zoom review of the active portion)
+File: "EvanHaskell_201808021410_27_358653820 (3) - 9of12.mp4"  |  Duration: 3:45
+====================================================================================================
+
+FINDING 9-A — THE ORIGINAL FILENAME ITSELF CONTAINS THE OFFICER AND DATE/TIME
+(CERTAIN — it is the name of the file as produced)
+────────────────────────────────────────────────────────────────────────
+The police-produced file is named: EvanHaskell_201808021410_27_358653820
+That encodes: Officer EVAN HASKELL — 2018-08-02 14:10 (2:10 PM) — unit/counter 27.
+Even though the video FRAMES carry no date/time overlay, the recording system's
+own file-naming convention preserves the officer identity and a 14:10 (2:10 PM)
+recording timestamp for this video. This is recoverable metadata that:
+  • Ties the footage to Officer Haskell's unit;
+  • Anchors the recording to Aug 2, 2018 at 2:10 PM — usable, with the CAD
+    report (#2933952, arrival 12:56:39 PM) and the warrant signing time, to
+    reconstruct the true timeline the stripped overlay was hiding;
+  • Proves the recording system DOES stamp identifying data (filename level),
+    strengthening the demand for the native files and audit logs.
+
+FINDING 9-B — DASHCAM HELD A FIXED SURVEILLANCE VIEW OF THE RESIDENCE
+(CERTAIN — all 15 sampled frames)
+Segment timestamps 00:00–03:45 (approx. 40:00–43:45 of the hour)
+────────────────────────────────────────────────────────────────────────
+The entire segment is a stationary camera view facing the front of the
+multi-unit public-housing building (the residence block including unit
+entry, walkway, and basement-level windows). This documents continued,
+sustained police presence at the residence.
+
+FINDING 9-C — PERSONNEL ACTIVE AT THE UNIT ENTRY AND BASEMENT-WINDOW AREA
+(CERTAIN AS EVENTS — confirmed in consecutive frames and zoomed crops)
+Segment timestamps: ~02:35 through 03:45
+────────────────────────────────────────────────────────────────────────
+  ~02:35–03:10  A dog appears on the front walkway near the entry.
+  ~03:07–03:15  A man in dark clothing wearing a white/light cap stands at the
+                right-side entry/basement-window area facing the building.
+  ~03:20        Two people visible: one in dark uniform-style clothing standing
+                on the lawn facing the building; a second figure at the
+                building's corner/basement-window area with an ARM RAISED toward
+                the building (zoom-confirmed).
+  ~03:30–03:45  Both figures converge near the unit doorway alcove; one carries
+                an object (zoom shows an item in hand — not identifiable).
+
+What this proves with certainty:
+  • Multiple personnel were moving around the residence exterior — doorway,
+    corner, and basement-window areas — while the dashcam held position.
+  • No badge, name tag, or unit ID is legible on anyone in any frame.
+  • No date/time/GPS overlay appears anywhere in the segment.
+
+What it does NOT prove by itself: what the raised arm or handheld object was,
+or whether entry occurred during this segment.
+
+FINDING 9-D — END-OF-SEGMENT SPLASH SCREEN (NOT EVIDENCE)
+Segment timestamp: ~03:40–03:45
+────────────────────────────────────────────────────────────────────────
+The Bandicut "Easy Video Cutter" splash at the very end of this segment is from
+Keith's own trimming of the long video into uploadable parts. It is noted here
+ONLY so nobody ever mistakes it for police editing. It has no evidentiary value.
+
 ====================================================================================================
