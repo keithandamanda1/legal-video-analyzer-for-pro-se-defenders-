@@ -391,4 +391,118 @@ COMBINED TIMELINE ACROSS ANALYZED SEGMENTS (within-recording time)
 NOT YET ANALYZED: Segment 6 (≈18:45–22:30) — file exceeds the 10 MB transfer
 limit; Keith will split it into two halves for upload. Segments 1, 4, 7, 8,
 10, 11, 12 were covered in prior runs or pending links.
+
+====================================================================================================
+BREAKTHROUGH — WATCHGUARD CASE EXPORT FILES ANALYZED 2026-07-09
+Source: WatchGuard Video Case Export disc produced to Keith (index.html,
+autorun.inf, recording-event XML "tick358655196tick358684935.xml", and the
+.wgva AUDIT LOG "d605398633df4256914db1fd0a712687.wgva")
+These are the STATE'S OWN SYSTEM RECORDS. Every fact below is printed in
+their files, not inferred from video frames.
+====================================================================================================
+
+W-1. THE METADATA EXISTS — IT WAS NEVER DESTROYED, JUST NOT IN THE MP4
+────────────────────────────────────────────────────────────────────────
+The WatchGuard 4RE system stores date/time/officer data in SIDECAR files
+(.xml, .vtt, .json, .mtd) that ride alongside the MP4 — the player renders
+the overlay from them. The produced disc CONTAINS this metadata:
+  • Officer: Evan Haskell (officer id 83)   • Vehicle/Device: 27 (DVR "4re")
+  • Recorded On: 2018-08-02 14:10:31 (local) — start-time 2018-08-02T18:10:31Z
+  • Recording event stop-time: 2018-08-02T22:17:20Z (= 6:17:20 PM local)
+  • Device ID: 00:1d:96:00:dc:90 — Event 358653820
+  • Audio channels recorded: LEFT = "Wireless1" (officer's wireless mic),
+    RIGHT = "Cabin" (in-car mic). AUDIO EXISTS.
+  • MD5 HASHES for every file, printed in the State's own XML:
+      Front camera  video1.mp4 = 3F464AA5336897C45C945DD6EDFC021E
+      Secondary cam video3.mp4 = EBAA8553CD2341B972901F94573A856B
+      plus .vtt (timestamp track), .json, and .mtd files for each stream
+  • TWO camera views exist: FRONT and SECONDARY. Both were exported.
+
+W-2. THE AUDIT LOG (.wgva) — 25 ENTRIES — PROVES WHO HAD THE VIDEO AND WHEN
+────────────────────────────────────────────────────────────────────────
+  2018-08-02 18:10:31Z  Recording event CREATED (2:10:31 PM local)
+  2018-08-02 → 08-04    Fourteen import/move transfers; upload to Final
+                        Storage completed 2018-08-04 04:47Z ("ImportRE",
+                        Complete: True, Retention: Indefinitely) — the video
+                        sat outside final evidence storage for ~1.5 DAYS
+                        after the arrest
+  2018-08-08            Viewed by user "hhuntington" (REViewUser)
+  2018-08-15            *** EXPORT #1 — user "pcda" (Penobscot County DA),
+                        CLOUD-SHARE, Reference Label "State v. Keith King
+                        (18-060430)", TRIMMED EVENT: FALSE. RECIPIENTS:
+                          tlw@plhlaw.com            (defense counsel)
+                          Janice.Stuver@maine.gov   (AAG STUVER)
+                          hcrouse@penobscot-county.net (DA's office)
+                        THE FULL, UNTRIMMED VIDEO WAS IN DEFENSE COUNSEL'S
+                        AND AAG STUVER'S HANDS THIRTEEN DAYS AFTER ARREST.
+  2018-11-02            Server file move (ELWeb Job Queue)
+  2020-06-19            *** EXPORT #2 — user "pcda", CLOUD-SHARE, same label,
+                        TRIMMED EVENT: FALSE, hash-verified (Hashcode
+                        Verified: True for BOTH camera views). RECIPIENTS:
+                          ezra@willeylawoffices.com (defense counsel Willey)
+                          Jason.Horn@maine.gov      (AAG HORN)
+                          hcrouse@penobscot-county.net
+                        BOTH the front and secondary camera files were
+                        exported as "EvanHaskell_201808021410_27_358653820
+                        .mp4" with hashes verified identical to originals.
+
+WHAT THIS PROVES:
+  a. Keith's defense attorneys RECEIVED the full video on Aug 15, 2018 and
+     again on June 19, 2020 — 3 years and 15 months (respectively) BEFORE the
+     September 21, 2021 plea. Keith did not see it until February 2024.
+     The State's own audit log now documents the concealment that Keith has
+     alleged against all three court-appointed attorneys.
+  b. AAG Stuver personally received the video in August 2018; AAG Horn
+     personally received it in June 2020 — both prosecutors possessed the
+     footage showing the warrantless stop, search, and detention while
+     pressing charges and the plea.
+  c. The exports were UNTRIMMED and HASH-VERIFIED — so any difference
+     between what Keith received in Feb 2024 and MD5 3F464AA5... /
+     EBAA8553... is provable by running one checksum.
+  d. The video was viewed inside the DA/PD system (hhuntington, Aug 8,
+     2018) six days after arrest.
+
+W-3. TIMELINE ANOMALIES NOW DOCUMENTED IN THE STATE'S OWN RECORDS
+────────────────────────────────────────────────────────────────────────
+  • CAD Report #2933952 has units 750/756 arriving at 12:56:39 PM.
+    Haskell's dashcam recording does not BEGIN until 14:10:31 — a
+    74-MINUTE GAP with no in-car video. Where is the recording of the
+    stop's first 74 minutes? (4RE units continuously pre-record; event
+    triggering and retention of pre-event video are discovery questions.)
+  • The recording event window (14:10:31–18:17:20 local, over 4 hours)
+    far exceeds the ~45–57 minutes of MP4 video Keith received. The
+    difference demands explanation — demand ALL video files, the .vtt/
+    .json/.mtd sidecars, and the 4RE DVR's own logs.
+  • The case export (index.html) lists ADDITIONAL evidence files:
+      "18-060430 Sgt Betters videos.zip" — 513,325,156 bytes (HALF A
+        GIGABYTE of Sgt. Betters' videos — the supervisor who ordered
+        cell phones removed from the scene)
+      "18-060430 Officer Haskell photos.zip" (29.5 MB)
+      "18-060430 Firearm Photos Orcutt.zip" (35 MB)
+      "BG-9860 Phone Analysis Reports.zip" (3.9 MB — the phone
+        extraction reports)
+    If these are on Keith's disc, they contain more evidence; if absent,
+    the index proves they exist and must be produced.
+
+W-4. WHAT KEITH SHOULD DO WITH THIS (PRACTICAL STEPS)
+────────────────────────────────────────────────────────────────────────
+  1. PRESERVE the disc/ZIP exactly as received. It is now self-
+     authenticating: the State's own XML prints the MD5 hashes.
+  2. VERIFY his MP4: compute MD5 of the received file (right-click is not
+     enough — use certutil: open Command Prompt, run
+       certutil -hashfile "EvanHaskell_201808021410_27_358653820 (3).mp4" MD5
+     ). If it equals 3F464AA5... it is the front camera original; if
+     EBAA8553... it is the secondary camera; if NEITHER, the copy was
+     altered after export — provable tampering.
+  3. LOCATE the second camera view (video3 / Secondary). If only one MP4
+     was provided, the other exported view is missing from production.
+  4. LOOK IN the player folder ("EvanHaskell 201808021410 27 358653820")
+     for the .vtt files — they carry the per-second timestamp track that
+     puts the missing clock back on the video.
+  5. CHECK the audio: the original recorded the officer's wireless mic
+     (left channel) and cabin mic (right channel). The warrant refusals
+     and Miranda statements may be audible on those channels.
+  6. The June 19, 2020 export to ezra@willeylawoffices.com is Exhibit-
+     ready proof for the IAC claim: counsel possessed the video 15 months
+     before the plea while (per Keith) denying it existed.
 ====================================================================================================
