@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXHIBIT ORGANIZER — CR-2018-03023 — Keith A. King</title>
+<style>
+  @page { size: letter; margin: 1in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 12pt; color: #000; background: #fff; }
+
+  /* ── SCREEN CONTROLS ── */
+  .screen-only { display: block; }
+  @media print { .screen-only { display: none !important; } }
+
+  .controls {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: #1a3a5c; color: #fff;
+    padding: 10px 20px;
+    display: flex; align-items: center; gap: 16px;
+    z-index: 999; font-family: Arial, sans-serif; font-size: 13px;
+  }
+  .controls h1 { font-size: 14px; font-weight: bold; color: #ffe; margin: 0; }
+  .controls button {
+    background: #fff; color: #1a3a5c;
+    border: none; padding: 6px 14px; border-radius: 4px;
+    cursor: pointer; font-weight: bold; font-size: 12px;
+  }
+  .controls button:hover { background: #dde; }
+  .spacer { flex: 1; }
+  .print-tip { font-size: 11px; color: #bcd; }
+
+  /* ── MAIN CONTENT ── */
+  .content { padding-top: 60px; max-width: 8.5in; margin: 0 auto; }
+  @media print { .content { padding-top: 0; max-width: 100%; } }
+
+  /* ── COVER PAGE ── */
+  .cover-page {
+    page-break-after: always;
+    text-align: center;
+    padding: 1.5in 1in 1in;
+    border: 3px solid #000;
+    margin-bottom: 40px;
+  }
+  @media print {
+    .cover-page { border: 3px solid #000; }
+  }
+  .cover-page .court { font-size: 13pt; margin-bottom: 6px; }
+  .cover-page .docket { font-size: 12pt; margin-bottom: 30px; }
+  .cover-page .main-title {
+    font-size: 22pt; font-weight: bold; text-transform: uppercase;
+    letter-spacing: 2px; margin-bottom: 20px;
+    border-top: 3px double #000; border-bottom: 3px double #000;
+    padding: 16px 0;
+  }
+  .cover-page .subtitle { font-size: 13pt; margin-bottom: 30px; }
+  .cover-page .count-badge {
+    display: inline-block; font-size: 14pt; font-weight: bold;
+    border: 2px solid #000; padding: 8px 24px; margin-bottom: 30px;
+  }
+  .cover-page .caption-block {
+    text-align: left; display: inline-block;
+    border: 1px solid #000; padding: 16px 24px; margin-bottom: 30px;
+    min-width: 60%;
+  }
+  .cover-page .caption-block p { margin-bottom: 4px; }
+  .cover-page .filing-note { font-size: 11pt; font-style: italic; margin-top: 30px; color: #333; }
+
+  /* ── EXHIBIT DIVIDER PAGE ── */
+  .exhibit-divider {
+    page-break-before: always;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 8in;
+    border: 4px solid #000;
+    margin: 0;
+    padding: 1in;
+    text-align: center;
+    position: relative;
+  }
+  .exh-badge {
+    font-size: 72pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    border: 6px solid #000;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  .exh-title { font-size: 16pt; font-weight: bold; text-transform: uppercase; margin-bottom: 16px; }
+  .exh-description { font-size: 12pt; margin-bottom: 24px; max-width: 5in; }
+  .exh-proves {
+    font-size: 11pt; text-align: left;
+    border-left: 4px solid #000; padding-left: 16px;
+    max-width: 5in; margin: 0 auto 24px;
+  }
+  .exh-proves strong { display: block; margin-bottom: 8px; font-size: 12pt; }
+  .exh-grounds {
+    font-size: 10pt;
+    border: 1px solid #555; padding: 8px 16px;
+    background: #f5f5f5; margin-bottom: 24px;
+    max-width: 5in;
+  }
+  .exh-status {
+    font-size: 11pt; font-weight: bold;
+    border: 2px solid #000; padding: 6px 20px;
+    margin-top: 10px;
+  }
+  .exh-source { font-size: 10pt; font-style: italic; margin-top: 8px; color: #444; }
+
+  /* ── CHECKLIST PAGE ── */
+  .checklist-page {
+    page-break-before: always;
+    padding: 0.5in;
+  }
+  .checklist-page h2 {
+    font-size: 14pt; text-transform: uppercase; font-weight: bold;
+    border-bottom: 2px solid #000; padding-bottom: 8px; margin-bottom: 20px;
+    text-align: center;
+  }
+  .checklist-page h3 { font-size: 12pt; margin: 20px 0 10px; text-transform: uppercase; }
+  table.checklist {
+    width: 100%; border-collapse: collapse; margin-bottom: 20px;
+  }
+  table.checklist th {
+    background: #000; color: #fff; padding: 7px 10px;
+    font-size: 10pt; text-align: left;
+  }
+  table.checklist td {
+    border: 1px solid #888; padding: 7px 10px; font-size: 10pt; vertical-align: top;
+  }
+  table.checklist td:first-child { width: 28px; text-align: center; font-size: 14pt; }
+  table.checklist td:nth-child(2) { width: 70px; font-weight: bold; }
+  table.checklist td.doc-name { width: 180px; }
+  table.checklist td.proves { }
+  table.checklist td.status { width: 100px; font-size: 9pt; }
+  .check-circle { font-size: 16pt; color: #666; }
+  .in-hand { color: #006600; font-weight: bold; }
+  .needed { color: #cc0000; font-weight: bold; }
+
+  /* ── NOTES BOX ── */
+  .notes-section { margin-top: 30px; }
+  .notes-section h3 { font-size: 12pt; font-weight: bold; margin-bottom: 10px; }
+  .notes-line {
+    border-bottom: 1px solid #999; height: 26px; margin-bottom: 0;
+  }
+
+  /* ── FOOTER ── */
+  .page-footer {
+    font-size: 9pt; text-align: center; color: #555;
+    margin-top: 20px; border-top: 1px solid #ccc; padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- SCREEN CONTROLS -->
+<div class="controls screen-only">
+  <h1>EXHIBIT ORGANIZER — CR-2018-03023</h1>
+  <span class="spacer"></span>
+  <span class="print-tip">Print → Save as PDF to assemble your exhibit binder</span>
+  <button onclick="window.print()">🖨️ Print / Save PDF</button>
+</div>
+
+<div class="content">
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  COVER PAGE                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="cover-page">
+  <p class="court">STATE OF MAINE — PENOBSCOT COUNTY UNIFIED CRIMINAL DOCKET</p>
+  <p class="docket">DOCKET NO. CR-2018-03023</p>
+
+  <div class="main-title">EXHIBIT ORGANIZER</div>
+
+  <p class="subtitle">
+    PETITION FOR POST-CONVICTION REVIEW<br>
+    15 M.R.S. §§ 2121–2130-A; § 2128-B<br>
+    <em>Keith A. King, Petitioner</em>
+  </p>
+
+  <div class="count-badge">EXHIBITS A THROUGH K — 11 TOTAL</div>
+
+  <div class="caption-block">
+    <p><strong>Petitioner:</strong> Keith A. King, Pro Se</p>
+    <p><strong>Address:</strong> P.O. Box 458, Kenduskeag, ME 04450</p>
+    <p><strong>Phone:</strong> (207) 299-6448</p>
+    <p><strong>Email:</strong> kking2055@pm.me</p>
+    <br>
+    <p><strong>Respondent:</strong> State of Maine</p>
+    <p><strong>Court:</strong> Penobscot County Unified Criminal Docket</p>
+  </div>
+
+  <hr style="border: 1px solid #000; margin: 20px auto; width: 60%;">
+
+  <p style="font-size: 11pt; margin-bottom: 10px;">
+    <strong>HOW TO USE THIS ORGANIZER:</strong>
+  </p>
+  <p style="font-size: 11pt; text-align: left; display: inline-block; max-width: 5in;">
+    Print this document double-sided. Each divider page becomes a tab/cover sheet for the exhibit that follows it.
+    Assemble in order A through K. Place the actual document behind its divider page.
+    File the complete exhibit packet with your PCR.
+  </p>
+
+  <p class="filing-note">
+    ⚠ BEFORE FILING: Confirm plea date (Sept. 20 vs. Sept. 21, 2021) from actual court docket.<br>
+    Verify exhibit letters match the PCR petition body text throughout.
+  </p>
+</div>
+<!-- END COVER PAGE -->
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT A                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-A</div>
+  <div class="exh-title">BPD CAD Log — Incident 18-060430</div>
+  <div class="exh-description">
+    Bangor Police Department Computer-Aided Dispatch Log<br>
+    for Incident 18-060430, with chain of custody information
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    (1) Officer Farrar did not arrive at 33 Bald Mountain Drive until 12:56 PM —
+    56 minutes <em>after</em> she signed the warrant at 12:00 PM. She could not
+    have personally observed what she swore to in the affidavit.<br><br>
+    (2) The initial traffic stop on Davis Road was never dispatched or logged —
+    an off-book stop conducted by personal cell phone, not police radio.<br><br>
+    (3) Chain of custody information for evidence handling.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground I (Brady/Napue) · Ground II (Franks Violation) · Ground III (Fourth Amendment)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Second FOAA to Bangor Police Department → Received January 2026</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT B                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-B</div>
+  <div class="exh-title">2018 Initial Discovery Checklist</div>
+  <div class="exh-description">
+    State's original discovery checklist from 2018 prosecution,<br>
+    showing witness statements marked "DOES NOT EXIST"
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    The warrant affidavit cited "witness statements" as probable cause.
+    The State's own discovery checklist — produced in the original case —
+    marks those same witness statements as "DOES NOT EXIST."
+    Witness statements that do not exist cannot support probable cause.
+    This is the core of the Franks violation: the affidavit contained
+    a material false statement (or reckless disregard for truth).
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground I (Brady/Napue) · Ground II (Franks Violation)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Original case discovery</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT C                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-C</div>
+  <div class="exh-title">Board of Overseers Response — GCF #25-222</div>
+  <div class="exh-description">
+    Maine Board of Overseers of the Bar response to Complaint GCF #25-222,<br>
+    dated April 2026, containing AAG Jason D. Anton's written admission
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    Current AAG Jason D. Anton acknowledged in writing that the merged gun-drug
+    narrative — the factual basis for ALL THREE Class A Aggravated Trafficking
+    charges — was an "inadvertent error." The State itself has admitted that the
+    charges used to drive $100,000 bail, threaten a 4-year mandatory minimum,
+    coerce the proffer, and force the guilty plea were legally impossible
+    as a matter of elemental fact.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground I (Brady/Napue) · Ground V (Involuntary Plea) · Ground VI (IAC)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Maine Board of Overseers of the Bar — April 2026<br>
+  § 2128-B clock: November 6, 2025 (date of Anton letter) / April 2026 (Board response)</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT D                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-D</div>
+  <div class="exh-title">Police Reports — Incident 18-060430</div>
+  <div class="exh-description">
+    Bangor Police Department incident reports including:<br>
+    Officer Haskell report (no drugs found in vehicle) and<br>
+    Officer Perry report (holster only found in bedroom)
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    <strong>Haskell report:</strong> No drugs were found in the vehicle on Davis Road.
+    Drugs were found ONLY at the apartment.<br><br>
+    <strong>Perry report:</strong> Perry found only a holster in the bedroom — no drugs
+    in the bedroom either. Drugs found elsewhere in apartment.<br><br>
+    Combined: Firearms at Davis Road + drugs at apartment = no "in furtherance of"
+    nexus under 17-A M.R.S. § 1105-A(1)(C-1). All three Class A Aggravated
+    Trafficking charges were legally impossible. This directly corroborates
+    AAG Anton's admission (EXH-C).
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground I (Brady/Napue) · Ground III (Fourth Amendment) · Ground V (Involuntary Plea)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: BPD Incident 18-060430 official reports</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT E                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-E</div>
+  <div class="exh-title">Cruiser / Body Camera Video Footage</div>
+  <div class="exh-description">
+    BPD dashcam and/or body camera video from August 2, 2018 —<br>
+    withheld for 5.5 years, released February 21, 2024 via FOAA
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES (on video):</strong>
+    (1) No traffic infraction was articulated at the Davis Road stop.<br>
+    (2) Petitioner handcuffed and transported off-site — Bailey violation.<br>
+    (3) Petitioner asked to see the warrant TWICE at apartment door; officers refused both times.<br>
+    (4) Officer used a key from his pocket to enter the apartment — no knock-and-announce.<br>
+    (5) Amanda Ross subjected to strip search on a public road by male officers only —
+        shirt lifted, stomach exposed, bra shaken out — no female officer, no probable cause.<br>
+    (6) Dashcam metadata (date, time, GPS, officer ID) was stripped from produced footage —
+        evidence of tampering.<br>
+    (7) Three-hour detention in 90-degree heat; Petitioner complained of injured wrist;
+        medical attention denied.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground II (Franks) · Ground III (Fourth Amendment) · Ground VI (IAC — concealment)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: FOAA to Bangor Police Department → Released February 21, 2024<br>
+  § 2128-B clock starts: February 21, 2024</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT F                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-F</div>
+  <div class="exh-title">BHA Master Key Log</div>
+  <div class="exh-description">
+    Bangor Housing Authority Master Key Log for 33 Bald Mountain Drive,<br>
+    showing no key authorized to BPD on August 2, 2018
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    Under federal public housing law (24 C.F.R. § 966.4(d)(3)), BHA may only
+    release a master key to law enforcement upon presentation of a valid search
+    warrant and verification. The BHA Master Key Log shows NO key was authorized
+    to Bangor Police Department on or around August 2, 2018.<br><br>
+    Yet an officer used a key from his pocket to enter the apartment — ON VIDEO
+    (EXH-E). The key was given without legal authority. Entry to the apartment
+    was warrantless and illegal under the Fourth Amendment.<br><br>
+    BHA's own tenant file for Petitioner was subsequently destroyed (spoliation).
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground III (Fourth Amendment — unlawful entry) · Ground VI (IAC — failure to challenge)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: BHA — produced October 2025 during MHRC complaint discovery<br>
+  § 2128-B clock starts: October 2025</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT G                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-G</div>
+  <div class="exh-title">State Public Defense Services Billing Vouchers</div>
+  <div class="exh-description">
+    Attorney billing vouchers for all four court-appointed defense attorneys<br>
+    in CR-2018-03023, obtained from State Public Defense Services
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    All four court-appointed attorneys billed the State for reviewing video evidence —
+    and then told Petitioner the video did not exist:<br><br>
+    • <strong>Martha Harris</strong> (Paine, Lynch &amp; Harris) — 2+ hours "electronic evidence" (cruiser video)<br>
+    • <strong>William Johnson</strong> (Paine, Lynch &amp; Harris) — billed for video review<br>
+    • <strong>Ezra A.R. Willey</strong> (Willey Law Offices) — billed for video review<br>
+    • <strong>William Bart</strong> (Law Office of William G. Bart, P.A.) — billed for video review<br><br>
+    Zero suppression motions filed. Zero Brady enforcement motions. Zero Franks challenges.
+    The video showed: illegal stop, Bailey transport, warrantless entry, refusal to show warrant,
+    strip search of Amanda Ross, 3-hour detention, and medical care denial.
+    Counsel knew and said nothing.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground IV (IAC — Concealment of Exculpatory Video) · Ground VI (Systemic IAC)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Brochu, Audit Director, State Public Defense Services — August 2024<br>
+  § 2128-B clock starts: August 2024</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT H                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-H</div>
+  <div class="exh-title">TruNarc Field Test Results — INCONCLUSIVE</div>
+  <div class="exh-description">
+    BPD TruNarc field test results for the substance recovered<br>
+    at 33 Bald Mountain Drive on August 2, 2018
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    The TruNarc field test for the alleged heroin returned "INCONCLUSIVE."
+    No confirmatory laboratory analysis was ever completed.<br><br>
+    Charges of "in fact heroin" were filed — and the plea to those charges was taken —
+    without any scientific basis. The factual predicate of the plea was false.
+    Counsel never moved for independent drug testing and never challenged
+    the inconclusive TruNarc results. Evidence was held by Officer Gastia
+    in an unrecorded location for 18 hours overnight before being logged —
+    a chain of custody break that further undermines any lab test.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground I (Brady/Napue) · Ground V (Involuntary Plea — false factual basis) · Ground VI (IAC)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: BPD evidence records / original case file</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT I                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-I</div>
+  <div class="exh-title">CAD / Radio Logs — Davis Road Stop</div>
+  <div class="exh-description">
+    BPD CAD and radio transmission logs showing the August 2, 2018<br>
+    traffic stop on Davis Road was never dispatched through official channels
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    The traffic stop on Davis Road — the entire predicate for the arrest —
+    does not appear in BPD dispatch records or radio logs. All communication
+    between officers was conducted by personal cell phone, not police radio.<br><br>
+    An unrecorded stop that cannot be corroborated by dispatch is a hallmark
+    of a pretextual stop. Officers cannot later claim a specific traffic
+    infraction when they never reported one through official channels at the time.
+    This also confirms Officer Farrar was not present at the initial Davis Road stop —
+    her warrant affidavit is based on events she did not witness.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground II (Franks Violation) · Ground III (Fourth Amendment — pretextual stop)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Second FOAA to Bangor Police Department → Received January 2026<br>
+  § 2128-B clock starts: January 2026</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT J                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-J</div>
+  <div class="exh-title">2018 Maine Drug Schedule</div>
+  <div class="exh-description">
+    Maine's controlled substance schedule as it existed on August 2, 2018,<br>
+    showing gabapentin was NOT a scheduled substance
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    Petitioner was charged with trafficking in gabapentin for conduct occurring
+    on August 2, 2018. Gabapentin was not added to Maine's controlled substance
+    schedule (Schedule Z) until October 15, 2019, by Me. PL 2019, ch. 487.<br><br>
+    A person cannot be convicted for conduct that was not criminal at the time it occurred.
+    The gabapentin charge was void ab initio — a pure ex post facto violation under
+    U.S. Const. art. I, § 10 and Me. Const. art. I, § 11.<br><br>
+    This count must be dismissed regardless of the outcome of all other grounds.
+    No hearing is required — it is a pure legal defect on the face of the record.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground VII (Gabapentin — Ex Post Facto / Legally Void Charge) — AUTOMATIC DISMISSAL
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Maine Legislature — official drug schedule, pre-October 2019 version</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  EXHIBIT K                                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="exhibit-divider">
+  <div class="exh-badge">EXH-K</div>
+  <div class="exh-title">Mental Health Evaluation Records</div>
+  <div class="exh-description">
+    Court-ordered mental health evaluation records documenting<br>
+    Petitioner's 9 diagnoses and the July 29, 2021 court order<br>
+    requiring medical stabilization before any plea
+  </div>
+  <div class="exh-proves">
+    <strong>WHAT THIS PROVES:</strong>
+    (1) Court ORDER entered July 29, 2021 requiring Petitioner to be medically
+    stabilized before any plea could be entered.<br><br>
+    (2) Nine documented mental health diagnoses — including Bipolar Disorder
+    and Panic Attack Disorder — making Petitioner a qualified individual with
+    a disability under 42 U.S.C. § 12132 (ADA) and 5 M.R.S. § 4592 (MHRA).<br><br>
+    (3) The September 2021 hearing was calendared as a mental health status conference,
+    not a plea hearing. Petitioner was unmedicated in violation of the court order
+    when the surprise 30-minute plea ultimatum was presented.<br><br>
+    (4) No disability accommodation was requested by counsel. No continuance was sought.
+    The court order was not invoked. This constitutes both IAC and a constitutional
+    violation of the right to enter a knowing, intelligent, voluntary plea.
+  </div>
+  <div class="exh-grounds">
+    Supports: Ground V (Involuntary Plea) · Ground VI (IAC — failure to invoke court order / seek accommodation)
+  </div>
+  <div class="exh-status">✔ IN HAND</div>
+  <div class="exh-source">Source: Court-ordered mental health evaluation; court docket (July 29, 2021 order)</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!--  MASTER CHECKLIST PAGE                                   -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<div class="checklist-page">
+  <h2>MASTER EXHIBIT CHECKLIST — CR-2018-03023</h2>
+  <p style="font-size: 10pt; margin-bottom: 16px; text-align: center;">
+    Use this page to verify your complete exhibit packet before filing.
+    Check each box as you confirm the physical document is behind its divider tab.
+  </p>
+
+  <table class="checklist">
+    <tr>
+      <th>✓</th>
+      <th>EXHIBIT</th>
+      <th>DOCUMENT</th>
+      <th>PROVES / GROUND</th>
+      <th>STATUS</th>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-A</td>
+      <td class="doc-name">BPD CAD Log, Incident 18-060430 (with chain of custody)</td>
+      <td class="proves">Farrar 56-min warrant timeline impossibility; unrecorded Davis Road stop — Grounds I, II, III</td>
+      <td class="status in-hand">IN HAND (Jan 2026)</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-B</td>
+      <td class="doc-name">2018 Initial Discovery Checklist</td>
+      <td class="proves">Witness statements marked "DOES NOT EXIST" — Grounds I, II</td>
+      <td class="status in-hand">IN HAND</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-C</td>
+      <td class="doc-name">Board of Overseers Response, GCF #25-222 (April 2026)</td>
+      <td class="proves">AAG Anton written admission — aggravated charges were "inadvertent error" — Grounds I, V, VI</td>
+      <td class="status in-hand">IN HAND (Apr 2026)</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-D</td>
+      <td class="doc-name">Police Reports, Incident 18-060430 (Haskell + Perry)</td>
+      <td class="proves">No drugs in vehicle; holster only in bedroom — no "in furtherance" nexus — Grounds I, III, V</td>
+      <td class="status in-hand">IN HAND</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-E</td>
+      <td class="doc-name">Cruiser / Body Camera Video Footage</td>
+      <td class="proves">Illegal stop, Bailey transport, no warrant shown, key entry, Ross strip search — Grounds II, III, IV (IAC)</td>
+      <td class="status in-hand">IN HAND (Feb 2024)</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-F</td>
+      <td class="doc-name">BHA Master Key Log</td>
+      <td class="proves">No key authorized to BPD on Aug 2, 2018 — warrantless entry — Grounds III, VI</td>
+      <td class="status in-hand">IN HAND (Oct 2025)</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-G</td>
+      <td class="doc-name">State Public Defense Billing Vouchers (all 4 attorneys)</td>
+      <td class="proves">All 4 counsel billed for video review, told Keith no video existed — Grounds IV, VI</td>
+      <td class="status in-hand">IN HAND (Aug 2024)</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-H</td>
+      <td class="doc-name">TruNarc Field Test Results — INCONCLUSIVE</td>
+      <td class="proves">No scientific basis for "in fact heroin" charge — Grounds I, V, VI</td>
+      <td class="status in-hand">IN HAND</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-I</td>
+      <td class="doc-name">CAD / Radio Logs — Davis Road Stop Never Dispatched</td>
+      <td class="proves">Off-book stop; Farrar not at Davis Road — Grounds II, III</td>
+      <td class="status in-hand">IN HAND (Jan 2026)</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-J</td>
+      <td class="doc-name">2018 Maine Drug Schedule (pre-gabapentin scheduling)</td>
+      <td class="proves">Gabapentin not scheduled until Oct 15, 2019 — ex post facto void — Ground VII</td>
+      <td class="status in-hand">IN HAND</td>
+    </tr>
+    <tr>
+      <td><span class="check-circle">○</span></td>
+      <td>EXH-K</td>
+      <td class="doc-name">Mental Health Evaluation Records (9 diagnoses + court order)</td>
+      <td class="proves">July 29, 2021 court order for medical stabilization; unmedicated at plea — Grounds V, VI</td>
+      <td class="status in-hand">IN HAND</td>
+    </tr>
+  </table>
+
+  <div style="border: 2px solid #000; padding: 12px; margin-top: 20px; background: #f9f9f9;">
+    <p style="font-size: 10pt; font-weight: bold; margin-bottom: 6px;">⚠ CRITICAL REMINDERS BEFORE FILING:</p>
+    <p style="font-size: 10pt; margin-bottom: 4px;">1. Confirm plea date from actual court docket — September 20 vs. September 21, 2021 — and correct throughout PCR body.</p>
+    <p style="font-size: 10pt; margin-bottom: 4px;">2. Verify exhibit letters A–K match throughout every ground of the PCR petition text.</p>
+    <p style="font-size: 10pt; margin-bottom: 4px;">3. Include IFP (In Forma Pauperis) application with filing.</p>
+    <p style="font-size: 10pt; margin-bottom: 0;">4. File at: Penobscot County Unified Criminal Docket, 97 Hammond Street, Bangor, ME 04401.</p>
+  </div>
+
+  <div class="notes-section">
+    <h3>ASSEMBLY NOTES:</h3>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <div class="page-footer">
+    Keith A. King — Pro Se | CR-2018-03023 | Penobscot County Unified Criminal Docket<br>
+    Generated July 12, 2026 | FOR COURT FILING — PCR Exhibit Packet
+  </div>
+</div>
+
+</div><!-- end .content -->
+</body>
+</html>
