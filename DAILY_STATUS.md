@@ -15,10 +15,11 @@
 
 5. **Updated cowork handoff** — `COWORK_HANDOFF_CR-2018-03023.md` now has all Google Drive file IDs for every exhibit found.
 
-6. **Court forms filled out** — `reports/COURT_FORMS_FILLED_CR-2018-03023.html` has BOTH official Maine forms filled out with your case info:
-   - **CR-140** (Petition for Post-Conviction Review) — all 8 pages, 4 grounds for relief, § 2128-B dates
-   - **CR-032** (Motion and Affidavit for Assignment of Counsel) — income info filled, expense fields left for hand-completion
-   - Open in browser, File → Print. Blue-highlighted = pre-filled. Italic = hand-write. Plea date confirmed Sept 20, 2021. Still need judge's name — ask clerk.
+6. **Court forms filled out (OFFICIAL PDF FORMAT)** — BOTH official Maine Judicial Branch PDF forms are now filled:
+   - **`reports/CR140_FILLED_King.pdf`** — Official CR-140 PDF, 8 pages, filled with your case info, charges, 4 grounds for relief, timeliness dates, and conclusion. PRINT AND FILE THIS.
+   - **`reports/CR032_FILLED_King.pdf`** — Official CR-032 PDF, 3 pages, filled with your personal and financial info. PRINT AND FILE THIS.
+   - These are the real official MJB forms. The form itself appears exactly as issued by the court, with your information typed in. Open in any PDF viewer, File → Print.
+   - STILL NEEDED before signing: judge's name on CR-140 question 4 (call clerk (207) 561-2300); hand-fill CR-032 page 2 expense amounts; sign/date both forms before clerk or notary.
 
 ---
 
@@ -66,7 +67,8 @@ Other open items:
 ## KEY FILES IN THIS PROJECT
 
 - `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` — the corrected petition (PRINT THIS)
-- `reports/COURT_FORMS_FILLED_CR-2018-03023.html` — official CR-140 + CR-032 forms filled out (PRINT THIS)
+- `reports/CR140_FILLED_King.pdf` — ✅ OFFICIAL CR-140 PDF filled out (PRINT AND FILE THIS)
+- `reports/CR032_FILLED_King.pdf` — ✅ OFFICIAL CR-032 PDF filled out (PRINT AND FILE THIS)
 - `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` — divider pages for exhibits (PRINT THIS)
 - `reports/exhibit_assembler.py` — run on your computer to package final exhibit ZIP
 - `COWORK_HANDOFF_CR-2018-03023.md` — full case background for any new Claude session
