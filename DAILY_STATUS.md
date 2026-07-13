@@ -18,7 +18,7 @@
 6. **Court forms filled out** — `reports/COURT_FORMS_FILLED_CR-2018-03023.html` has BOTH official Maine forms filled out with your case info:
    - **CR-140** (Petition for Post-Conviction Review) — all 8 pages, 4 grounds for relief, § 2128-B dates
    - **CR-032** (Motion and Affidavit for Assignment of Counsel) — income info filled, expense fields left for hand-completion
-   - Open in browser, File → Print. Blue-highlighted = pre-filled. Italic = hand-write. Verify plea date (Sept 20 vs 21) before signing.
+   - Open in browser, File → Print. Blue-highlighted = pre-filled. Italic = hand-write. Plea date confirmed Sept 20, 2021. Still need judge's name — ask clerk.
 
 ---
 
@@ -58,7 +58,7 @@ Once you have EXH-H, J, K:
 - File with: Penobscot County Unified Criminal Docket, 78 Exchange St, Bangor ME 04401
 
 Other open items:
-- Verify plea date: Sept 20 vs Sept 21, 2021 — check actual docket before filing
+- Plea date: ✅ CONFIRMED September 20, 2021
 - PR #1 on GitHub has a merge conflict — not urgent, ask Claude about it when ready
 
 ---
