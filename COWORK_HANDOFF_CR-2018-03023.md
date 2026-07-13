@@ -1,5 +1,5 @@
 # COWORK PROJECT HANDOFF — Keith A. King
-## CR-2018-03023 | PCR + MHRC | Active as of July 12, 2026
+## CR-2018-03023 | PCR + MHRC | Active as of July 13, 2026
 
 ---
 
@@ -26,8 +26,11 @@ P.O. Box 458, Kenduskeag, ME 04450
 
 ## THE PCR — CURRENT STATUS
 
-**File uploaded:** `FINAL_PCR_FOR_AMANDA_TO_CHECH_7.10.2026.pdf`
-**Status:** Ready to file — needs 5 corrections first (listed below)
+**Corrected PCR:** `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` — ALL 5 CORRECTIONS APPLIED ✓
+**Status:** Ready to print and file. Also uploaded to Keith's Google Drive as `PCR_CORRECTED_King_CR-2018-03023_7_10_2026.pdf` (ID: `10lW1F-2XOZrmdihgRv_8Zhdwovp_dULP`)
+**Exhibit Organizer:** `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` — printable divider pages for EXH-A through EXH-K
+**Exhibit Assembler:** `reports/exhibit_assembler.py` — Python/tkinter GUI for local file packaging
+**Exhibit Zip:** `EXHIBITS_CR-2018-03023.zip` — assembled from Google Drive (sent to user July 13, 2026)
 **Filed under:** 15 M.R.S. §§ 2121–2130-A; § 2128-B (Newly Discovered Evidence)
 
 ### PCR Grounds As Filed
@@ -233,19 +236,23 @@ These charges were used to:
 
 | Exhibit | Document | Status |
 |---------|----------|--------|
-| EXH-A | BPD CAD Log, Incident 18-060430 (with chain of custody) | In hand (Jan 2026) |
-| EXH-B | 2018 Initial Discovery Checklist — witness statements marked "Does Not Exist" | In hand |
-| EXH-C | Board of Overseers Response, GCF #25-222 (April 2026) — Anton admission | In hand |
-| EXH-D | Police Reports, Incident 18-060430 (Haskell: no drugs in vehicle; Perry: holster only) | In hand |
-| EXH-E | Cruiser/Body Video footage | In hand (Feb 2024) |
-| EXH-F | BHA Master Key Log — no authorized entry Aug 2, 2018 | In hand (Oct 2025) |
-| EXH-G | State Public Defense Billing Vouchers — all 4 attorneys billed for video review | In hand (Aug 2024) |
-| EXH-H | TruNarc Field Test Results — inconclusive | In hand |
-| EXH-I | CAD/Radio Logs — stop never dispatched; Farrar never at initial stop | In hand (Jan 2026) |
-| EXH-J | 2018 Maine Drug Schedule — gabapentin absent | In hand |
-| EXH-K | Mental Health Evaluation Records — 9 diagnoses | In hand |
+| Exhibit | Document | Drive File ID | Status |
+|---------|----------|---------------|--------|
+| EXH-A | BPD CAD Log, Incident 18-060430 | `1bTeL1mb5pU-dpA62in_ujq74hKvyJlmW` | **DOWNLOADED** — KKingCad.pdf |
+| EXH-B | 2018 Initial Discovery Packet — contains complaint, charges, police reports | `1JFjc3wJMTcIOV-cr3HlFBUtb43LfRw34` | **DOWNLOADED** — 3.2MB |
+| EXH-C | AAG Anton Nov 6, 2025 letter (admits "inadvertent error") | `1y5uFWfzs-pI1jxjbYAk8MQIsOmoHwO6y` | **DOWNLOADED** — 220KB |
+| EXH-D | Perry & Haskell Police Reports, Incident 18-060430 | Inside EXH-B | **IN EXH-B** — extract pages 3-12 |
+| EXH-E | Dashcam Video (Haskell) — 5.5MB clip | `13uMsxlUA1fZHhKnZ0VdqdWSdPj5_sSTU` | **DOWNLOADED** — 5.3MB MP4 |
+| EXH-F | BHA Master Key Log — no authorized entry Aug 2, 2018 | `1NTNUhWLYnU5WsRsKIRgPr-kaocf8ho9O` | **DOWNLOADED** — 2.8MB HEIC |
+| EXH-G | Billing Vouchers: Brochu + Bart (all 4 attorneys billed for video) | `1NkOpXdPblpzdrEhtEZTWvVC3JGl_sUcZ` + `1-UzpOm2beOsvgOrsFtPHaGqR31WVRpGE` | **DOWNLOADED** — 2 files |
+| EXH-H | TruNarc Field Test Results — INCONCLUSIVE | Likely inside EXH-B | **TO FIND** — search EXH-B or separate Drive scan |
+| EXH-I | CAD/Radio Logs (same as EXH-A, second context) | Same as EXH-A | **DOWNLOADED** — copy of EXH-A |
+| EXH-J | 2018 Maine Drug Schedule — gabapentin absent pre-Oct 2019 | Not in Drive | **TO PRINT** — from legislature.maine.gov (Me. PL 2019, ch. 487) |
+| EXH-K | Mental Health Evaluation Records + July 29, 2021 Court Order | Not found in Drive | **TO REQUEST** — court file + medical provider |
 
-**NOTE:** Verify exhibit letters match throughout PCR body text — current version has EXH-C, D, E scrambled.
+**Full dashcam video (3.9GB):** Drive ID `1dr2oV_hbNt5hiq6PzYjUZuxNeMs2T8Lw` — too large to download here; access directly from Drive
+**Haskell photos zip (29MB):** Drive ID `1eeRwq5t0SUeBppmQgri3XAxWvlWesO-M`
+**NOTE:** Verify exhibit letters match throughout PCR body text — corrected version uses consistent A–K labeling.
 
 ---
 
@@ -275,13 +282,21 @@ Key files:
 
 ## IMMEDIATE NEXT STEPS
 
-1. Fix the 5 PCR errors listed above
-2. Add CAD log FOAA timeline sentence to Section C
-3. Upload FOAA emails — extract exact dates for § 2128-B timeline
-4. Confirm plea date from actual court docket
-5. Add Gabapentin as standalone Ground VII
-6. File PCR with Penobscot County Unified Criminal Docket
+1. **DONE** — All 5 PCR corrections applied (see `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html`)
+2. **DONE** — Exhibit organizer created (printable divider pages A–K)
+3. **DONE** — Exhibit zip assembled from Google Drive — 7 of 11 exhibits downloaded
+4. **TO DO** — Confirm plea date: September 20 vs September 21, 2021 (check actual Penobscot County docket)
+5. **TO DO** — Complete EXH-H: find TruNarc results (likely within EXH-B initial discovery packet)
+6. **TO DO** — Complete EXH-J: print 2018 Maine drug schedule from legislature.maine.gov
+7. **TO DO** — Complete EXH-K: request mental health eval records + July 29, 2021 court order from Penobscot County Unified Criminal Docket clerk's office
+8. **TO DO** — FILE the corrected PCR with Penobscot County Unified Criminal Docket, 78 Exchange St, Bangor ME 04401
+
+### PR #1 STATUS (GitHub)
+- Branch: `claude/review-overseers-complaint-fUcBe`
+- State: OPEN — merge conflict (dirty) with base `claude/analyze-police-video-compliance-3kIfH`
+- No CI failures, no review comments — merge conflict requires Keith's decision to rebase
 
 ---
 
-*Handoff created: July 12, 2026 | Continue from this point — no need to re-explain case background*
+*Handoff updated: July 13, 2026 | Continue from this point — no need to re-explain case background*
+*Session ID: c79fa054-0cff-5550-82fc-59f25eea3c5d*
