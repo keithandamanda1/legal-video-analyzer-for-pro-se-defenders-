@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CR-140 and CR-032 — State v. King, CR-2018-03023</title>
+<style>
+  :root {
+    --ink: #111111;
+    --paper: #ffffff;
+    --field-bg: #eef4ff;
+    --field-border: #99b8e8;
+    --rule: #888888;
+    --label: #333333;
+    --section-bg: #f0f0f0;
+    --warn: #7a3800;
+    --warn-bg: #fff3e0;
+    --font-body: Georgia, 'Times New Roman', serif;
+    --font-field: 'Courier New', Courier, monospace;
+    --font-ui: Arial, Helvetica, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #111111;
+      --paper: #ffffff;
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #d0d0d0;
+    font-family: var(--font-body);
+    font-size: 11pt;
+    color: var(--ink);
+    padding: 20px;
+  }
+
+  .form-doc {
+    background: var(--paper);
+    width: 8.5in;
+    margin: 0 auto 40px;
+    padding: 0.75in 0.85in;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    color: var(--ink);
+  }
+
+  .page {
+    min-height: 10in;
+    padding-bottom: 0.5in;
+    position: relative;
+  }
+
+  .page + .page {
+    border-top: 2px dashed #ccc;
+    padding-top: 0.5in;
+    margin-top: 0.3in;
+  }
+
+  .form-header {
+    text-align: center;
+    font-family: var(--font-ui);
+    margin-bottom: 18px;
+  }
+
+  .form-header .agency {
+    font-size: 13pt;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+
+  .form-header .form-title {
+    font-size: 11.5pt;
+    font-weight: bold;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .caption-block {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+
+  .vs-col {
+    flex: 1;
+    font-size: 10.5pt;
+  }
+
+  .court-col {
+    width: 3in;
+    font-size: 10pt;
+    font-family: var(--font-ui);
+  }
+
+  .court-col .court-line {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .cb { font-size: 12pt; line-height: 1; }
+  .cb.checked { color: #1a3a8a; }
+
+  .field-inline {
+    display: inline-block;
+    background: var(--field-bg);
+    border-bottom: 1.5px solid var(--field-border);
+    padding: 1px 6px;
+    font-family: var(--font-field);
+    font-size: 10.5pt;
+    min-width: 80px;
+    color: #1a3a8a;
+    font-weight: bold;
+  }
+
+  .field-line {
+    display: block;
+    background: var(--field-bg);
+    border-bottom: 1.5px solid var(--field-border);
+    padding: 3px 8px;
+    font-family: var(--font-field);
+    font-size: 10.5pt;
+    color: #1a3a8a;
+    font-weight: bold;
+    margin: 3px 0;
+    width: 100%;
+  }
+
+  .field-blank {
+    display: block;
+    border-bottom: 1px solid var(--rule);
+    padding: 3px 4px;
+    min-height: 20px;
+    margin: 3px 0;
+    width: 100%;
+    font-style: italic;
+    color: #888;
+    font-family: var(--font-field);
+    font-size: 9.5pt;
+  }
+
+  .field-note {
+    font-size: 8.5pt;
+    color: var(--warn);
+    font-family: var(--font-ui);
+    font-style: italic;
+    margin-top: 1px;
+  }
+
+  section-head {
+    display: block;
+    font-family: var(--font-ui);
+    font-weight: bold;
+    font-size: 10.5pt;
+    margin: 16px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--section-bg);
+    padding: 4px 8px;
+    border-left: 3px solid #444;
+  }
+
+  .q-block {
+    margin: 10px 0 12px;
+    font-size: 10.5pt;
+    line-height: 1.55;
+  }
+
+  .q-block .q-num {
+    font-family: var(--font-ui);
+    font-weight: bold;
+  }
+
+  .indent { margin-left: 18px; }
+  .indent2 { margin-left: 36px; }
+
+  .ground-box {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    margin: 8px 0;
+    background: #fafcff;
+  }
+
+  .ground-title {
+    font-family: var(--font-field);
+    font-size: 10pt;
+    color: #1a3a8a;
+    font-weight: bold;
+    margin-bottom: 6px;
+    background: var(--field-bg);
+    border-bottom: 1.5px solid var(--field-border);
+    padding: 2px 6px;
+    display: block;
+  }
+
+  .ground-facts {
+    font-family: var(--font-field);
+    font-size: 9.5pt;
+    color: #1a3a8a;
+    background: var(--field-bg);
+    border-bottom: 1.5px solid var(--field-border);
+    padding: 4px 6px;
+    display: block;
+    line-height: 1.6;
+    margin-top: 4px;
+  }
+
+  .conclusion-item {
+    font-family: var(--font-field);
+    font-size: 10pt;
+    color: #1a3a8a;
+    background: var(--field-bg);
+    border-bottom: 1.5px solid var(--field-border);
+    padding: 3px 6px;
+    display: block;
+    margin: 4px 0;
+  }
+
+  .warn-box {
+    background: var(--warn-bg);
+    border: 1.5px solid #e0a060;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: var(--font-ui);
+    font-size: 9pt;
+    color: var(--warn);
+    margin: 10px 0;
+  }
+
+  .page-footer {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+    font-family: var(--font-ui);
+    font-size: 8.5pt;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sig-block {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: flex-end;
+  }
+
+  .sig-line {
+    flex: 1;
+  }
+
+  .sig-rule {
+    border-bottom: 1px solid var(--ink);
+    height: 30px;
+    margin-bottom: 4px;
+  }
+
+  .sig-label {
+    font-family: var(--font-ui);
+    font-size: 8.5pt;
+    color: var(--label);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+
+  .four-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .charges-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 10pt;
+  }
+
+  .charges-table th {
+    font-family: var(--font-ui);
+    font-weight: bold;
+    font-size: 9.5pt;
+    text-align: left;
+    padding: 4px 8px;
+    border-bottom: 1.5px solid var(--ink);
+    background: var(--section-bg);
+  }
+
+  .charges-table td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+
+  .charges-table td.filled {
+    font-family: var(--font-field);
+    font-size: 9.5pt;
+    color: #1a3a8a;
+    font-weight: bold;
+    background: var(--field-bg);
+  }
+
+  .form-divider {
+    text-align: center;
+    font-family: var(--font-ui);
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #444;
+    margin: 40px 0 32px;
+    padding: 12px;
+    border: 2px solid #444;
+    text-transform: uppercase;
+  }
+
+  hr.thin { border: none; border-top: 1px solid #ccc; margin: 12px 0; }
+  hr.rule { border: none; border-top: 1.5px solid var(--rule); margin: 16px 0; }
+
+  .label-text {
+    font-family: var(--font-ui);
+    font-size: 10pt;
+  }
+
+  .nonpublic {
+    font-family: var(--font-ui);
+    font-size: 7.5pt;
+    color: #888;
+    margin-bottom: 4px;
+  }
+
+  .inline-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 4px 0;
+    font-size: 10.5pt;
+  }
+
+  .time-entry {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 4px 0 4px 20px;
+  }
+
+  .date-field {
+    background: var(--field-bg);
+    border-bottom: 1.5px solid var(--field-border);
+    padding: 1px 8px;
+    font-family: var(--font-field);
+    font-size: 10pt;
+    color: #1a3a8a;
+    font-weight: bold;
+    min-width: 140px;
+    display: inline-block;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .form-doc { box-shadow: none; margin: 0; padding: 0.5in 0.75in; width: 100%; }
+    .page { page-break-after: always; min-height: 9.5in; }
+    .page:last-child { page-break-after: avoid; }
+    .form-divider { page-break-before: always; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print" style="background:#1a3a8a;color:white;padding:12px 20px;font-family:Arial,sans-serif;font-size:11pt;max-width:8.5in;margin:0 auto 20px;border-radius:4px;">
+  <strong>PRINT INSTRUCTIONS:</strong> Use Ctrl+P (or Cmd+P on Mac). Set paper to Letter, margins to Default. Print all pages. Sign where indicated. File with your PCR at Penobscot County Unified Criminal Docket, 78 Exchange St, Bangor ME 04401. <em>Fields highlighted in blue are filled in — leave them as-is. Fields in italic/gray need your handwritten completion.</em>
+</div>
+
+<!-- ============================================================ -->
+<!-- FORM CR-140: PETITION FOR POST-CONVICTION REVIEW             -->
+<!-- ============================================================ -->
+
+<div class="form-doc" id="cr140">
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <div class="nonpublic">CR-140, Rev. 03/24 &nbsp;|&nbsp; Petition for Post-Conviction Review</div>
+
+    <div class="caption-block">
+      <div class="vs-col">
+        <div style="font-family:var(--font-ui);font-size:13pt;font-weight:bold;text-align:center;margin-bottom:10px;">STATE OF MAINE</div>
+        <div style="margin:6px 0;font-size:10.5pt;">
+          <span class="field-inline">KEITH A. KING</span>
+          <div style="font-family:var(--font-ui);font-size:9pt;margin-top:2px;">Petitioner <em>(Print full name as it appears on Criminal Judgment)</em></div>
+        </div>
+        <div class="inline-row" style="margin-top:8px;">
+          <span class="label-text">Date of Birth:</span>
+          <span class="field-inline">07/18/1983</span>
+        </div>
+        <div style="margin-top:12px;font-size:10.5pt;">v.</div>
+        <div style="margin-top:8px;font-family:var(--font-ui);font-weight:bold;">STATE OF MAINE</div>
+      </div>
+      <div class="court-col">
+        <div style="font-family:var(--font-ui);font-weight:bold;font-size:11.5pt;text-align:center;margin-bottom:10px;">PETITION FOR<br>POST-CONVICTION REVIEW</div>
+        <div class="court-line">
+          <span class="cb checked">☑</span>
+          <span class="label-text">UNIFIED CRIMINAL DOCKET</span>
+        </div>
+        <div class="court-line">
+          <span class="cb">☐</span>
+          <span class="label-text">SUPERIOR COURT</span>
+        </div>
+        <div class="court-line">
+          <span class="cb">☐</span>
+          <span class="label-text">DISTRICT COURT</span>
+        </div>
+        <div class="court-line">
+          <span class="label-text">County:</span>
+          <span class="field-inline">Penobscot</span>
+        </div>
+        <div class="court-line">
+          <span class="label-text">Location:</span>
+          <span class="field-inline">Bangor</span>
+        </div>
+        <div class="court-line">
+          <span class="label-text">Docket No:</span>
+          <span class="field-inline">PENCD-CR-2018-03023</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule">
+
+    <div style="font-size:10pt;line-height:1.5;margin-bottom:12px;">
+      I seek a review of the following Criminal Judgment [15 M.R.S. § 2121(1)] or post-sentencing proceeding [15 M.R.S. § 2121(2)].
+    </div>
+
+    <section-head>A. Trial Court Information</section-head>
+
+    <div class="q-block">
+      <span class="q-num">1. My case was filed in the following court:</span><br>
+      <div class="indent" style="margin-top:6px;">
+        <div class="court-line">
+          <span class="cb checked">☑</span>
+          <span>Superior Court/Unified Criminal Docket in</span>
+          <span class="field-inline">Penobscot</span>
+          <span style="font-size:9.5pt;">(County)</span>
+        </div>
+        <div class="court-line">
+          <span class="cb">☐</span>
+          <span>District Court in</span>
+          <span class="field-blank" style="display:inline-block;width:2in;"></span>
+          <span style="font-size:9.5pt;">(Town or City)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">2. The Docket Number of my case is:</span>
+      <span class="field-inline" style="min-width:2.5in;">PENCD-CR-2018-03023</span>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">3. The date of the Criminal Judgment in my case is:</span>
+      <span class="field-inline">September 20, 2021</span>
+      <div class="field-note">⚠ Verify exact date (Sept 20 or 21) against court docket before filing — correct by hand if needed</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">4. The presiding Judge or Justice in my case was:</span>
+      <span class="field-blank" style="display:inline-block;width:2.5in;"><em>[verify with Penobscot County clerk]</em></span>
+      <div class="field-note">⚠ Fill in by hand after confirming with court clerk (207) 561-2300</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">5. Charges and pleas:</span>
+      <div style="font-size:8.5pt;font-style:italic;margin:3px 0 6px;font-family:var(--font-ui);">Original charges — three Class A Aggravated Trafficking counts were <strong>dismissed</strong> at plea; Petitioner was convicted on two Class C counts below.</div>
+      <table class="charges-table">
+        <thead>
+          <tr><th>Charge(s)</th><th>Plea(s)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="filled">Unlawful Possession of Scheduled Drugs (heroin, 200mg+, Class C), 17-A M.R.S. § 1107-A(1)(B)(1)</td>
+            <td class="filled">Nolo Contendere</td>
+          </tr>
+          <tr>
+            <td class="filled">Unlawful Possession of Scheduled Drugs (cocaine base, 2g+, Class C), 17-A M.R.S. § 1107-A(1)(B)(3)</td>
+            <td class="filled">Nolo Contendere</td>
+          </tr>
+          <tr>
+            <td class="filled">Three counts Aggravated Trafficking in Scheduled Drugs with Firearm (Class A), 17-A M.R.S. § 1105-A(1)(C-1)(1)</td>
+            <td class="filled">DISMISSED at plea</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">6. Convictions and sentences:</span>
+      <table class="charges-table">
+        <thead>
+          <tr><th>Charge(s)</th><th>Sentence(s)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="filled">Unlawful Possession of Scheduled Drugs (heroin, Class C), 17-A M.R.S. § 1107-A(1)(B)(1)</td>
+            <td class="filled">All-suspended sentence; 2 years probation</td>
+          </tr>
+          <tr>
+            <td class="filled">Unlawful Possession of Scheduled Drugs (cocaine base, Class C), 17-A M.R.S. § 1107-A(1)(B)(3)</td>
+            <td class="filled">All-suspended sentence; concurrent</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">7. I was convicted of these charge(s) following:</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb checked">☑</span> Court acceptance of my plea(s) of guilty or nolo contendere</div>
+        <div class="court-line"><span class="cb">☐</span> A Jury Trial</div>
+        <div class="court-line"><span class="cb">☐</span> A Non-Jury (Bench) Trial</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">8.</span> Not applicable — not found not criminally responsible.
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">9.</span> Not applicable — no jury or bench trial.
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">10. At the time of the plea(s) in my case:</span>
+      <div class="indent">
+        <div class="court-line">
+          <span class="cb checked">☑</span>
+          I was represented by Attorney
+          <span class="field-inline" style="min-width:2.5in;">William G. Bart (Lori Bart), Esq., Bar #6299</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">11. Are you asking the court to assign an attorney to represent you in this Post-Conviction Review?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb checked">☑</span> Yes</div>
+        <div class="court-line"><span class="cb">☐</span> No</div>
+      </div>
+      <div class="warn-box">Form CR-032 (Motion for Assignment of Counsel) is attached to this Petition as required.</div>
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 1 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="nonpublic">CR-140 — Page 2 of 8 — State v. Keith A. King — PENCD-CR-2018-03023</div>
+
+    <section-head>B. Restraint or Impediment (15 M.R.S. § 2124)</section-head>
+
+    <div style="font-size:10pt;font-style:italic;margin-bottom:10px;">Check only the box(es) that apply to you.</div>
+
+    <div class="q-block">
+      <div class="court-line" style="align-items:flex-start;gap:10px;">
+        <span class="cb checked" style="margin-top:2px;">☑</span>
+        <span><strong>1. The Criminal Judgment I am challenging is causing me a PRESENT DIRECT RESTRAINT OR OTHER IMPEDIMENT</strong> because:</span>
+      </div>
+      <div class="indent2" style="margin-top:8px;">
+        <div class="court-line"><span class="cb">☐</span> I am incarcerated at</div>
+        <div class="court-line"><span class="cb checked">☑</span> I am on probation, parole, or other conditional release</div>
+        <div style="margin-left:24px;">
+          <span class="field-inline" style="min-width:3.5in;">Probation — all-suspended sentence, Penobscot County</span>
+        </div>
+        <div class="court-line"><span class="cb">☐</span> I was sentenced to an unconditional discharge</div>
+        <div class="court-line"><span class="cb">☐</span> I was ordered to pay a fine or restitution, but have not fully paid</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <div class="court-line"><span class="cb">☐</span> <strong>2. Future Restraint</strong> — not applicable.</div>
+    </div>
+    <div class="q-block">
+      <div class="court-line"><span class="cb">☐</span> <strong>3. Present Indirect Restraint</strong> — not applicable.</div>
+    </div>
+    <div class="q-block">
+      <div class="court-line"><span class="cb">☐</span> <strong>4. Post-sentencing proceeding</strong> — not applicable.</div>
+    </div>
+
+    <hr class="rule">
+
+    <section-head>C. Grounds for Relief (15 M.R.S. § 2125)</section-head>
+
+    <div style="font-size:9.5pt;font-style:italic;margin-bottom:10px;font-family:var(--font-ui);">
+      <strong>CAUTION:</strong> If you fail to set forth any grounds for relief in your Petition, you may be prevented from presenting them at a later date. Petitioner sets forth four primary grounds below. Additional grounds (Ex Post Facto — Gabapentin; Fourth Amendment Bailey Violation; ADA Accommodation Denial) are stated in full in the verified Petition and Memorandum attached hereto and incorporated by reference.
+    </div>
+
+    <!-- Ground 1 -->
+    <div class="ground-box">
+      <div class="q-num" style="font-family:var(--font-ui);margin-bottom:4px;">1. Ground One:</div>
+      <span class="ground-title">Brady v. Maryland / Napue v. Illinois — State's Written Admission of Fabricated Charges (Involuntary Plea — False Factual Basis)</span>
+      <div class="q-num" style="font-family:var(--font-ui);font-size:9.5pt;margin:6px 0 3px;">Supporting FACTS:</div>
+      <span class="ground-facts">On November 6, 2025, current AAG Jason D. Anton admitted in writing to the Maine Board of Bar Overseers (GCF #25-222) that the factual basis for all three Class A Aggravated Trafficking charges — asserting that firearms from the Davis Road vehicle stop were co-located with drugs from the Bald Mountain apartment — constituted an "inadvertent error." Those false Class A charges, threatening a mandatory 4-year minimum, were the coercive lever for Petitioner's plea. The State's own discovery checklist marks cited "witness statements" as "DOES NOT EXIST." Petitioner's plea was induced by charges the State now admits had no factual basis — a Brady violation and a Napue false-evidence violation. See Exhibit C (Anton letter, Nov. 6, 2025); Exhibit B (2018 initial discovery); full argument in attached Petition.</span>
+    </div>
+
+    <!-- Ground 2 -->
+    <div class="ground-box">
+      <div class="q-num" style="font-family:var(--font-ui);margin-bottom:4px;">2. Ground Two:</div>
+      <span class="ground-title">Fourth Amendment / Franks v. Delaware — Materially False Warrant Affidavit; Unauthorized Master Key Entry</span>
+      <div class="q-num" style="font-family:var(--font-ui);font-size:9.5pt;margin:6px 0 3px;">Supporting FACTS:</div>
+      <span class="ground-facts">The residential search warrant affidavit was signed by Officer Shannon Ferrah at 12:00 PM on August 2, 2018. BPD CAD/Radio logs (obtained January 2026) confirm Ferrah did not arrive at 33 Bald Mountain Drive until 12:56:10 PM — 56 minutes after swearing to personal observations impossible at that time. Additionally, entry was made using a Bangor Housing Authority master key: the BHA Master Key Log contains no authorized entry for August 2, 2018 (Exhibit F). No warrant was shown despite two demands on video (Exhibit E). The warrant was facially invalid; all evidence seized under it is suppressible fruit. See Exhibits A, B, E, F, I, and attached Petition.</span>
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 2 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <div class="nonpublic">CR-140 — Page 3 of 8 — State v. Keith A. King — PENCD-CR-2018-03023</div>
+
+    <!-- Ground 3 -->
+    <div class="ground-box">
+      <div class="q-num" style="font-family:var(--font-ui);margin-bottom:4px;">3. Ground Three:</div>
+      <span class="ground-title">Ineffective Assistance of Counsel (Strickland v. Washington) — All Four Attorneys Concealed Exculpatory Video; Billed State for Review; Filed No Motions</span>
+      <div class="q-num" style="font-family:var(--font-ui);font-size:9.5pt;margin:6px 0 3px;">Supporting FACTS:</div>
+      <span class="ground-facts">Four successive court-appointed attorneys — Martha Harris (Bar #156), William Johnson (Bar #6302), Ezra A. R. Willey, and William G. Bart — each reviewed police cruiser video for CR-2018-03023 and billed the Maine Commission on Indigent Legal Services for that review (Exhibit G: billing vouchers, obtained August 2024 from Audit Director Stephen Brochu). Each attorney affirmatively represented to Petitioner that the video did not exist. Petitioner obtained the video February 21, 2024 — 5.5 years post-arrest. Within the first 30 minutes, the video documents: an undisputed illegal traffic stop (no articulable infraction); handcuffing and off-site transport in violation of Bailey v. United States, 568 U.S. 186 (2013); master-key entry without knock-and-announce; officer's refusal to produce warrant on two demands; and an unconsented public strip search of Petitioner's wife. Zero suppression motions were ever filed. Under Strickland v. Washington, 466 U.S. 668 (1984), both prongs are satisfied. See Exhibits E and G; full argument in attached Petition.</span>
+    </div>
+
+    <!-- Ground 4 -->
+    <div class="ground-box">
+      <div class="q-num" style="font-family:var(--font-ui);margin-bottom:4px;">4. Ground Four:</div>
+      <span class="ground-title">Involuntary Plea (Boykin v. Alabama / M.R.U. Crim. P. 11) — Plea Obtained While Unmedicated, in Violation of Court Order, Under 30-Minute Ultimatum, Without Factual Basis</span>
+      <div class="q-num" style="font-family:var(--font-ui);font-size:9.5pt;margin:6px 0 3px;">Supporting FACTS:</div>
+      <span class="ground-facts">The September 20/21, 2021 hearing was calendared as a mental health and medication compliance status conference — not a plea hearing. A prior court order (July 29, 2021) required medical stabilization before any plea could be accepted. Petitioner was unmedicated for 42+ days in direct violation of that order, suffering from nine documented mental health disabilities (Bipolar Type 2, ADHD, Panic Attack Disorder, Anxiety Disorder, Major Depression, Narcolepsy, Epilepsy, and others; Exhibit K). AAG Jason Horn presented a surprise plea offer with a 30-minute ultimatum and threatened a mandatory 4-year sentence if refused. Counsel (Bart) did not seek a continuance, did not invoke the court's prior order, did not request an ADA accommodation. The TruNarc field test for the charged substance returned "INCONCLUSIVE" (Exhibit H) — the plea to "in fact heroin" (Class C) lacked the factual basis required by M.R.U. Crim. P. 11(b)(2). The plea was constitutionally void ab initio. See Exhibit K; full argument in attached Petition. [Additional grounds — Ex Post Facto Clause/Gabapentin (Ground V) and ADA/MHRA denial (Ground VI) — stated in attached Petition.]</span>
+    </div>
+
+    <div class="warn-box" style="margin-top:16px;">
+      <strong>NOTE TO COURT:</strong> Due to the complexity of this pro se filing and the number of grounds, a full verified Petition for Post-Conviction Review (15 M.R.S. §§ 2121–2130-A) with supporting legal memorandum and exhibit index is attached to this form and incorporated in full. This form's ground summaries are condensed versions only.
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 3 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="page">
+    <div class="nonpublic">CR-140 — Page 4 of 8 — State v. Keith A. King — PENCD-CR-2018-03023</div>
+
+    <section-head>D. Waiver of Grounds for Relief (15 M.R.S. § 2128)</section-head>
+
+    <div class="q-block">
+      <span class="q-num">1. Did you appeal the Criminal Judgment to the Maine Supreme Judicial Court or any other court?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">2. If "Yes" to question 1, did you raise the same grounds in your appeal?</span><br>
+      <div class="indent" style="color:#888;font-style:italic;">N/A — no appeal was filed.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">3. If "No" to question 2, explain why not:</span><br>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">4. Have you previously filed a petition for post-conviction review regarding this Criminal Judgment?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+      <div class="indent field-line" style="margin-top:4px;">This is Petitioner's first petition for post-conviction review. No prior PCR has been filed.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">5. If "Yes" to question 4, did you raise any of the same grounds?</span><br>
+      <div class="indent" style="color:#888;font-style:italic;">N/A — no prior PCR filed.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">6. If "No" to question 5, explain why you could not have raised those grounds earlier:</span><br>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <hr class="rule">
+
+    <section-head>E. Exhaustion of Remedies (15 M.R.S. § 2126)</section-head>
+
+    <div class="q-block">
+      <span class="q-num">1. Did you file any motions in the trial court challenging the Criminal Judgment?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">2. If "Yes" to question 1, list motions, results, dates:</span><br>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">3. Did you appeal the Criminal Judgment to the Maine Supreme Judicial Court?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">4. If "Yes" to question 3, what was the Law Court's decision and date?</span>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">5. Did you apply to the Maine Supreme Judicial Court for permission to appeal your sentence?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">6. If "Yes" to question 5, what was the decision and date?</span>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 4 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 5 -->
+  <div class="page">
+    <div class="nonpublic">CR-140 — Page 5 of 8 — State v. Keith A. King — PENCD-CR-2018-03023</div>
+
+    <div class="q-block">
+      <span class="q-num">7. Did you file a petition for clemency (pardon) to the Governor?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">8. If "Yes" to question 7, decision and date:</span>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">9. Did you file a petition for Writ of Habeas Corpus in U.S. District Court?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">10. If "Yes" to question 9:</span>
+      <div class="indent" style="color:#888;font-style:italic;">N/A.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">11. What other remedies did you seek related to this Criminal Judgment?</span>
+      <span class="field-line">Board of Bar Overseers complaint (GCF #25-222) regarding AAG Janice Stuver — filed 2025; dismissed April 9, 2026 on technical grounds. Maine Human Rights Commission housing complaints (separate civil matter). These proceedings do not constitute challenges to the criminal judgment itself.</span>
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 5 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 6 -->
+  <div class="page">
+    <div class="nonpublic">CR-140 — Page 6 of 8 — State v. Keith A. King — PENCD-CR-2018-03023</div>
+
+    <div class="q-block">
+      <span class="q-num">12–17.</span> Questions 12–17 (post-sentencing proceeding) are not applicable. Petitioner challenges the criminal judgment itself, not a post-sentencing proceeding.
+    </div>
+
+    <hr class="rule">
+
+    <section-head>F. Time for Filing (15 M.R.S. § 2128-B)</section-head>
+
+    <div class="q-block">
+      <span class="q-num">1. Please check and complete all the following that apply:</span>
+    </div>
+
+    <div class="q-block indent">
+      <div class="time-entry">
+        <span class="cb checked">☑</span>
+        <span>Date of the Criminal Judgment:</span>
+        <span class="date-field">September 20, 2021</span>
+        <span class="field-note">(verify exact date)</span>
+      </div>
+
+      <div class="time-entry">
+        <span class="cb">☐</span>
+        <span>Date appeal decided:</span>
+        <span style="font-style:italic;color:#888;">N/A — no appeal filed</span>
+      </div>
+
+      <div class="time-entry">
+        <span class="cb">☐</span>
+        <span>Date new law went into effect:</span>
+        <span style="font-style:italic;color:#888;">See Ground IV note in attached Petition (gabapentin scheduled Oct. 15, 2019)</span>
+      </div>
+
+      <div class="time-entry" style="align-items:flex-start;">
+        <span class="cb checked">☑</span>
+        <div>
+          <div style="margin-bottom:6px;">Dates Petitioner learned about new facts supporting grounds for relief:</div>
+          <div style="margin-left:16px;line-height:1.8;font-family:var(--font-field);font-size:9.5pt;color:#1a3a8a;background:var(--field-bg);padding:6px 10px;border-left:3px solid var(--field-border);">
+            Feb. 21, 2024 — Police cruiser video received (FOAA, BPD)<br>
+            Aug. 2024 — Attorney billing vouchers received (Brochu, MCILS Audit Director)<br>
+            Oct. 7, 2025 — BHA Master Key Log obtained (Bethomy, BHA)<br>
+            Nov. 6, 2025 — AAG Anton admission letter received (Board of Overseers, GCF #25-222)<br>
+            Jan. 2026 — BPD CAD/Radio logs obtained (second FOAA)<br>
+            Apr. 9, 2026 — Board of Overseers final response received
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">2. Is this petition being brought more than one year after the most recent date listed?</span>
+      <div class="indent">
+        <div class="court-line"><span class="cb">☐</span> Yes</div>
+        <div class="court-line"><span class="cb checked">☑</span> No</div>
+      </div>
+      <div class="field-line" style="margin-top:6px;">The most recent predicate fact (Board of Overseers response) was received April 9, 2026. This Petition is filed July 2026 — within one year. Additionally, under 15 M.R.S. § 2128-B, each predicate carries its own one-year limitations period from the date of its individual discovery. All predicates are timely on a per-predicate basis.</div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">3. If "Yes" to question 2, explain why petition was not brought within one year:</span><br>
+      <div class="indent">
+        <span class="field-line">Not applicable — petition is timely. However, to the extent any predicate might be argued untimely: Petitioner was legally disabled under 14 M.R.S. § 853 from 2018 through approximately October 2025 due to nine documented mental health disabilities directly caused by the arrest, 42-day medication denial, and coerced plea. State-created FOAA obstruction by BPD and BHA further prevented timely discovery. See full equitable tolling argument in attached Petition.</span>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="q-num">4. Deportation proceeding:</span> Not applicable — Petitioner is a United States citizen.
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 6 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 7 -->
+  <div class="page">
+    <div class="nonpublic">CR-140 — Page 7 of 8 — State v. Keith A. King — PENCD-CR-2018-03023</div>
+
+    <section-head>G. Conclusion</section-head>
+
+    <div style="margin-bottom:10px;font-size:10.5pt;">Wherefore, I pray that the court grant me the following relief:</div>
+
+    <span class="conclusion-item">1. Vacate and set aside the September 2021 criminal judgment and all convictions and sentences entered thereon in Docket No. PENCD-CR-2018-03023.</span>
+    <span class="conclusion-item">2. Order suppression of all evidence obtained through the unconstitutional search and seizure of August 2, 2018, including all physical evidence, statements, and derivative evidence.</span>
+    <span class="conclusion-item">3. Dismiss with prejudice the count of Unlawful Possession of Gabapentin (17-A M.R.S. § 1107-A) as a per se ex post facto violation — gabapentin was not a scheduled drug in Maine on August 2, 2018 (Me. PL 2019, ch. 487, eff. Oct. 15, 2019).</span>
+    <span class="conclusion-item">4. Appoint counsel to represent Petitioner in this post-conviction proceeding pursuant to 15 M.R.S. § 2129 and M.R. Crim. P. 61(g), given documented mental health disabilities and inability to afford counsel.</span>
+    <span class="conclusion-item">5. Grant Petitioner leave to conduct discovery and schedule an evidentiary hearing pursuant to 15 M.R.S. § 2130.</span>
+    <span class="conclusion-item">6. Grant such other and further relief as the interests of justice require, including dismissal of all charges with prejudice or, in the alternative, a new trial with suppressed evidence excluded.</span>
+
+    <div style="margin-top:30px;font-size:10.5pt;">Date:
+      <span class="field-blank" style="display:inline-block;width:1.5in;"><em>fill in when signing</em></span>
+    </div>
+
+    <div class="sig-block" style="margin-top:20px;">
+      <div class="sig-line" style="flex:2;">
+        <div class="sig-rule"></div>
+        <div class="sig-label">Signature of Petitioner</div>
+        <div style="font-family:var(--font-field);font-size:10pt;color:#1a3a8a;margin-top:4px;">Keith A. King (Pro Se)</div>
+        <div style="font-family:var(--font-field);font-size:10pt;color:#1a3a8a;">P.O. Box 458, Kenduskeag, ME 04450</div>
+        <div style="font-family:var(--font-field);font-size:10pt;color:#1a3a8a;">(207) 299-6448 | keithandamanda123@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="warn-box" style="margin-top:24px;">
+      <strong>ATTACHMENTS FILED WITH THIS PETITION:</strong><br>
+      1. Verified Petition for Post-Conviction Review and Motion for Equitable Tolling (with Memorandum of Law)<br>
+      2. Form CR-032: Motion and Affidavit for Assignment of Counsel<br>
+      3. Exhibits A–K (as available — see Exhibit Index in attached Petition)<br>
+      4. Motion to Proceed In Forma Pauperis (if not covered by CR-032)
+    </div>
+
+    <div class="page-footer">
+      <span>CR-140, Rev. 03/24 — Page 7 of 8</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+</div><!-- end cr140 -->
+
+<!-- ============================================================ -->
+<!-- FORM DIVIDER -->
+<!-- ============================================================ -->
+<div class="form-divider">— Form CR-032: Motion and Affidavit for Assignment of Counsel — Begin Next Page —</div>
+
+<!-- ============================================================ -->
+<!-- FORM CR-032: MOTION FOR ASSIGNMENT OF COUNSEL                -->
+<!-- ============================================================ -->
+
+<div class="form-doc" id="cr032">
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <div class="nonpublic">CONTAINS NONPUBLIC DIGITAL INFORMATION — CR-032, Rev. 01/25 — Motion and Affidavit for Assignment of Counsel</div>
+    <div class="form-header">
+      <div class="agency">MAINE JUDICIAL BRANCH</div>
+      <div class="form-title">Motion and Affidavit for Assignment of Counsel</div>
+    </div>
+
+    <div class="caption-block">
+      <div class="vs-col">
+        <div style="font-family:var(--font-ui);font-weight:bold;">STATE OF MAINE</div>
+        <div style="margin:8px 0;">v.</div>
+        <div>
+          <span class="field-inline">KEITH A. KING</span>
+          <span style="font-family:var(--font-ui);font-size:9.5pt;"> &nbsp;Defendant</span>
+        </div>
+      </div>
+      <div class="court-col">
+        <div style="font-family:var(--font-ui);font-style:italic;font-size:9.5pt;margin-bottom:6px;">"X" the court for filing:</div>
+        <div class="court-line"><span class="cb checked">☑</span> <span>Unified Criminal Docket</span></div>
+        <div class="court-line"><span class="cb">☐</span> <span>Superior Court</span></div>
+        <div class="court-line"><span class="cb">☐</span> <span>District Court</span></div>
+        <div class="court-line"><span>County:</span> <span class="field-inline">Penobscot</span></div>
+        <div class="court-line"><span>Location:</span> <span class="field-inline">Bangor</span></div>
+        <div class="court-line"><span>Docket No.:</span> <span class="field-inline">PENCD-CR-2018-03023</span></div>
+      </div>
+    </div>
+
+    <hr class="rule">
+
+    <div style="font-size:10.5pt;margin-bottom:14px;">
+      I am requesting the Court to assign an attorney at public expense, based on the following accurate information.
+    </div>
+
+    <div class="q-block">
+      <span class="label-text"><strong>Name</strong> of person whose financial information appears on this affidavit:</span>
+      <span class="field-inline" style="min-width:3in;">Keith A. King</span>
+    </div>
+
+    <div class="q-block">
+      <span>I am </span>
+      <span class="cb">☐</span> single &nbsp;
+      <span class="cb checked">☑</span> married &nbsp;
+      <span class="cb">☐</span> divorced &nbsp;
+      <span class="cb">☐</span> widowed.
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Mailing address:</span>
+      <span class="field-line">P.O. Box 458, Kenduskeag, ME 04450</span>
+    </div>
+
+    <div class="q-block">
+      <span>Residential address: </span>
+      <span class="cb checked">☑</span>
+      <span> same as mailing address</span>
+    </div>
+
+    <div class="two-col" style="margin:10px 0;">
+      <div>
+        <span class="label-text">Date of birth (mm/dd/yyyy):</span>
+        <span class="field-inline">07/18/1983</span>
+      </div>
+      <div>
+        <span class="label-text">Email:</span>
+        <span class="field-inline">keithandamanda123@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Telephone number (working with voicemail):</span>
+      <span class="field-inline">(207) 299-6448</span>
+    </div>
+
+    <div class="two-col" style="margin:6px 0;">
+      <div>
+        <span class="label-text">Message number:</span>
+        <span class="field-blank" style="display:inline-block;width:1.5in;"><em>[same]</em></span>
+      </div>
+      <div>
+        <span class="label-text">Alternate phone:</span>
+        <span class="field-blank" style="display:inline-block;width:1.5in;"><em>[fill in]</em></span>
+      </div>
+    </div>
+
+    <div class="q-block">
+      I live &nbsp;
+      <span class="cb">☐</span> alone &nbsp;
+      <span class="cb checked">☑</span> with spouse/significant other &nbsp;
+      <span class="cb">☐</span> with parents &nbsp;
+      <span class="cb">☐</span> with friends &nbsp;
+      <span class="cb">☐</span> other
+    </div>
+
+    <div class="q-block">
+      <span>I have </span>
+      <span class="field-inline" style="min-width:30px;"><em>__</em></span>
+      <span> children; age(s)</span>
+      <span class="field-blank" style="display:inline-block;width:2in;"><em>[fill in if applicable]</em></span>
+      <div class="field-note">⚠ Fill in by hand if you have children</div>
+    </div>
+
+    <section-head>Income</section-head>
+
+    <div class="q-block">
+      <span class="label-text">Salary/Gross income: $</span>
+      <span class="field-inline">0</span>
+      <span> per </span>
+      <span class="cb">☐</span> year &nbsp;
+      <span class="cb">☐</span> month &nbsp;
+      <span class="cb">☐</span> week &nbsp;
+      <strong>OR</strong> &nbsp;
+      <span class="cb">☐</span> hourly wage $<span class="field-blank" style="display:inline-block;width:60px;"></span>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">I receive (<em>select all that apply</em>):</span>
+    </div>
+
+    <div class="two-col" style="margin:6px 0 6px 16px;gap:8px;">
+      <div>
+        <span class="cb checked">☑</span>
+        <span class="label-text"> Social Security $</span>
+        <span class="field-inline">993.00/month</span>
+      </div>
+      <div>
+        <span class="cb">☐</span>
+        <span class="label-text"> Unemployment $</span>
+        <span class="field-blank" style="display:inline-block;width:80px;"></span>
+      </div>
+      <div>
+        <span class="cb">☐</span>
+        <span class="label-text"> TANF $</span>
+        <span class="field-blank" style="display:inline-block;width:80px;"></span>
+      </div>
+      <div>
+        <span class="cb">☐</span>
+        <span class="label-text"> Alimony/Child support $</span>
+        <span class="field-blank" style="display:inline-block;width:80px;"></span>
+      </div>
+      <div>
+        <span class="cb">☐</span>
+        <span class="label-text"> Food stamps $</span>
+        <span class="field-blank" style="display:inline-block;width:80px;"></span>
+      </div>
+      <div>
+        <span class="cb">☐</span>
+        <span class="label-text"> Maine Care/Housing/WIC $</span>
+        <span class="field-blank" style="display:inline-block;width:80px;"></span>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Total monthly income: $</span>
+      <span class="field-inline">993.00</span>
+      <span style="font-family:var(--font-ui);font-size:9pt;color:#555;margin-left:8px;">(Social Security disability — sole source of income)</span>
+    </div>
+
+    <div class="two-col" style="margin:8px 0;">
+      <div>
+        <span class="label-text">Employer:</span>
+        <span class="field-inline">None — Unemployed</span>
+      </div>
+      <div>
+        <span class="label-text">Length of employment:</span>
+        <span class="field-blank" style="display:inline-block;width:1.2in;"></span>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin:8px 0;">
+      <div>
+        <span class="label-text">Last date employed (mm/yyyy):</span>
+        <span class="field-blank" style="display:inline-block;width:1in;"><em>[fill in]</em></span>
+      </div>
+      <div>
+        <span class="label-text">Place of employment:</span>
+        <span class="field-blank" style="display:inline-block;width:1.5in;"><em>[fill in]</em></span>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin:8px 0;">
+      <div>
+        <span class="label-text">Taxes: Last filed (mm/yyyy):</span>
+        <span class="field-blank" style="display:inline-block;width:1in;"><em>[fill in]</em></span>
+      </div>
+      <div>
+        <span class="cb">☐</span>
+        <span class="label-text"> Refund paid to me: $</span>
+        <span class="field-blank" style="display:inline-block;width:60px;"></span>
+        &nbsp;
+        <span class="cb">☐</span>
+        <span class="label-text"> Refund taken by State: $</span>
+        <span class="field-blank" style="display:inline-block;width:60px;"></span>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>CR-032, Rev. 01/25 — Page 1 of 3</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="nonpublic">CONTAINS NONPUBLIC DIGITAL INFORMATION — CR-032, Rev. 01/25 — Page 2 of 3</div>
+
+    <section-head>Assets</section-head>
+
+    <div class="q-block">
+      <span class="label-text">Cash bail posted (1st party) in this case or any other case: $</span>
+      <span class="field-inline">0</span>
+    </div>
+
+    <div class="three-col" style="margin:6px 0;">
+      <div>
+        <span class="label-text">Cash on hand or at home: $</span>
+        <span class="field-blank" style="display:inline-block;width:70px;"><em>[fill]</em></span>
+      </div>
+      <div>
+        <span class="label-text">Cash in bank: $</span>
+        <span class="field-blank" style="display:inline-block;width:70px;"><em>[fill]</em></span>
+      </div>
+      <div>
+        <span class="label-text">Money owed to you: $</span>
+        <span class="field-blank" style="display:inline-block;width:70px;"><em>[fill]</em></span>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Name of bank/FCU:</span>
+      <span class="field-blank" style="display:inline-block;width:3in;"><em>[fill in bank name]</em></span>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Stocks/Bonds/401K/403B/Pensions:</span>
+      <span class="field-inline" style="min-width:2in;">None</span>
+    </div>
+
+    <div style="font-family:var(--font-ui);font-size:10pt;font-weight:bold;margin:10px 0 4px;">Property worth more than $250:</div>
+
+    <div class="two-col" style="margin:4px 0;">
+      <div>
+        <span class="label-text">Home and land: $</span>
+        <span class="field-inline">None</span>
+      </div>
+      <div>
+        <span class="label-text">Amount owed: $</span>
+        <span class="field-blank" style="display:inline-block;width:80px;"></span>
+      </div>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Vehicle(s) year/make/model:</span>
+      <span class="field-blank" style="display:inline-block;width:3.5in;"><em>[fill in — note: 2013 Dodge Avenger was seized Aug. 2, 2018 as criminal forfeiture]</em></span>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Amount financed: $</span>
+      <span class="field-blank" style="display:inline-block;width:80px;"></span>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Recreational vehicles/ATV/boat/snowmobile:</span>
+      <span class="field-inline">None</span>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Other personal property (TV/computer/electronics):</span>
+      <span class="field-blank" style="display:inline-block;width:3in;"><em>[fill in approximate value]</em></span>
+    </div>
+
+    <hr class="thin" style="margin:16px 0;">
+
+    <section-head>Expenses (Monthly)</section-head>
+
+    <div class="warn-box" style="margin-bottom:10px;">
+      ⚠ Fill in the expense fields below by hand with your actual monthly amounts.
+    </div>
+
+    <div class="four-col" style="margin:6px 0;gap:8px;">
+      <div><span class="label-text">Mortgage/Rent: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Cable/Internet: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Loan (student): $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Atty. fees: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Food: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Heat: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Loan (personal): $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Rx: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Cell phone: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Car insurance: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Prop. taxes: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Other: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Utilities: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Credit card: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Court fees/fines: $</span><span class="field-blank" style="display:block;"></span></div>
+      <div><span class="label-text">Other: $</span><span class="field-blank" style="display:block;"></span></div>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text">Renter/Homeowners insurance: $</span>
+      <span class="field-blank" style="display:inline-block;width:80px;"></span>
+    </div>
+
+    <div class="q-block">
+      <span class="label-text"><strong>Total expenses: $</strong></span>
+      <span class="field-blank" style="display:inline-block;width:100px;"></span>
+    </div>
+
+    <hr class="thin" style="margin:16px 0;">
+
+    <div style="font-size:9.5pt;line-height:1.6;margin:10px 0;padding:10px;border:1px solid #ccc;background:#fafafa;">
+      I acknowledge that disclosure of my Social Security account number is mandatory under 36 M.R.S. § 185-A. My Social Security account number may be used to facilitate the collection of money that I may owe the State of Maine as a result of having had an attorney assigned to represent me if it is later determined that I am to be responsible for all or part of the attorney fees and costs.
+      <div style="background:#e8e8e8;border:1px solid #999;padding:4px 10px;margin:8px 0;text-align:center;font-weight:bold;font-family:var(--font-ui);">SS Number Disclosure Required on separate form</div>
+    </div>
+
+    <div style="font-size:9.5pt;line-height:1.6;margin:10px 0;">
+      The undersigned furnishes the above information to support the request for assignment of counsel. <strong>I have read the above form, I understand it, and the answers to the questions are true. I understand that any false answers on this form may subject me to criminal prosecution.</strong> I also understand that I have a continuing obligation, personally and through counsel, to report to the court any changes in my employment or other financial circumstances.
+    </div>
+
+    <div class="page-footer">
+      <span>CR-032, Rev. 01/25 — Page 2 of 3</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <div class="nonpublic">CONTAINS NONPUBLIC DIGITAL INFORMATION — CR-032, Rev. 01/25 — Page 3 of 3</div>
+
+    <div style="font-size:10pt;line-height:1.6;margin:20px 0 24px;padding:12px;border:1px solid #888;background:#fafafa;">
+      <div style="margin-bottom:6px;">
+        <span class="cb">☐</span>
+        <em>I swear under penalty of perjury that the above statements are true and correct. I understand that these statements are made for use as evidence in court and that I am subject to prosecution for perjury punishable by up to 5 years in prison and a fine of up to $5,000 if I give false information to the court.</em>
+      </div>
+      <div class="warn-box" style="margin:8px 0;">⚠ Check this box and initial or sign ONLY at the time of filing, in front of a notary, clerk, or court officer. Do not check or sign in advance.</div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-line" style="flex:1;">
+        <span class="label-text">Date (mm/dd/yyyy):</span>
+        <div class="sig-rule" style="width:1.5in;margin-top:4px;"></div>
+      </div>
+      <div class="sig-line" style="flex:2;">
+        <div style="font-size:18pt;color:#888;">▶</div>
+        <div class="sig-rule"></div>
+        <div class="sig-label">Signature of Applicant — Keith A. King</div>
+      </div>
+    </div>
+
+    <div style="margin:24px 0 8px;font-family:var(--font-ui);font-size:10pt;">Subscribed and sworn to before me,</div>
+    <div style="display:flex;align-items:flex-end;gap:16px;">
+      <div style="font-size:18pt;color:#888;">▶</div>
+      <div style="flex:1;border-bottom:1px solid var(--ink);height:30px;"></div>
+    </div>
+    <div style="margin-top:4px;font-family:var(--font-ui);font-size:9.5pt;">
+      <span class="cb">☐</span> Notary &nbsp;
+      <span class="cb">☐</span> Clerk &nbsp;
+      <span class="cb">☐</span> Attorney &nbsp;
+      <span class="cb">☐</span> Judge/Justice
+    </div>
+
+    <div style="margin-top:24px;">
+      <span class="label-text">Financial Screener's Recommendation:</span>
+      <div class="sig-rule" style="width:100%;margin-top:8px;"></div>
+      <div class="sig-rule" style="width:100%;margin-top:8px;"></div>
+    </div>
+
+    <div class="warn-box" style="margin-top:30px;">
+      <strong>FILING CHECKLIST:</strong><br>
+      ☐ CR-140 (this form — Petition for Post-Conviction Review) — signed and dated<br>
+      ☐ CR-032 (this form — Motion for Counsel) — sworn before notary/clerk, SS disclosure form attached<br>
+      ☐ Full verified PCR Petition and Memorandum (printed from PCR_CORRECTED_FINAL_CR-2018-03023.html)<br>
+      ☐ Exhibit Organizer cover + divider pages (printed from EXHIBIT_ORGANIZER_CR-2018-03023.html)<br>
+      ☐ Exhibits A–K (as assembled)<br>
+      ☐ File at: Penobscot County Unified Criminal Docket, 78 Exchange St., Bangor ME 04401<br>
+      ☐ Keep one complete copy for yourself before filing<br>
+      ☐ Request date-stamp on your copy when you file
+    </div>
+
+    <div class="page-footer">
+      <span>CR-032, Rev. 01/25 — Page 3 of 3</span>
+      <span>State v. Keith A. King — PENCD-CR-2018-03023</span>
+    </div>
+  </div>
+
+</div><!-- end cr032 -->
+
+</body>
+</html>

@@ -15,6 +15,11 @@
 
 5. **Updated cowork handoff** — `COWORK_HANDOFF_CR-2018-03023.md` now has all Google Drive file IDs for every exhibit found.
 
+6. **Court forms filled out** — `reports/COURT_FORMS_FILLED_CR-2018-03023.html` has BOTH official Maine forms filled out with your case info:
+   - **CR-140** (Petition for Post-Conviction Review) — all 8 pages, 4 grounds for relief, § 2128-B dates
+   - **CR-032** (Motion and Affidavit for Assignment of Counsel) — income info filled, expense fields left for hand-completion
+   - Open in browser, File → Print. Blue-highlighted = pre-filled. Italic = hand-write. Verify plea date (Sept 20 vs 21) before signing.
+
 ---
 
 ## EXHIBIT STATUS (Where We Stand)
@@ -61,6 +66,7 @@ Other open items:
 ## KEY FILES IN THIS PROJECT
 
 - `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` — the corrected petition (PRINT THIS)
+- `reports/COURT_FORMS_FILLED_CR-2018-03023.html` — official CR-140 + CR-032 forms filled out (PRINT THIS)
 - `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` — divider pages for exhibits (PRINT THIS)
 - `reports/exhibit_assembler.py` — run on your computer to package final exhibit ZIP
 - `COWORK_HANDOFF_CR-2018-03023.md` — full case background for any new Claude session
