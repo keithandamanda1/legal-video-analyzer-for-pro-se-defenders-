@@ -1,25 +1,33 @@
 # DAILY STATUS — Keith A. King, CR-2018-03023
-## Last Updated: July 13, 2026
+## Last Updated: July 15, 2026
 
 ---
 
-## WHAT WE DID TODAY
+## WHAT WE DID TODAY (July 15, 2026)
 
-1. **Assembled the exhibit packet** — Downloaded 7 of 11 exhibits directly from your Google Drive and packaged them into `EXHIBITS_CR-2018-03023.zip` (15MB). The zip was sent to you.
+1. **FIXED FORM ALIGNMENT** — Both CR-140 and CR-032 PDFs were completely redone with coordinates verified against actual PyMuPDF text extraction of the blank forms. Every field now lands on its printed line. This replaced the previous versions that had text all over the wrong places.
+   - **`reports/CR140_FILLED_King.pdf`** — REPRINTED AND FIXED. All 8 pages. PRINT AND FILE THIS.
+   - **`reports/CR032_FILLED_King.pdf`** — REPRINTED AND FIXED. All 3 pages. Income section (salary, SS, total, employer) all correctly placed. PRINT AND FILE THIS.
 
-2. **Corrected PCR is done** — `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` has all 5 corrections applied. Ready to print and file.
+2. **VERIFIED LEGAL CITATIONS** — Reviewed the PCR petition for accuracy against 2018 Maine and federal law. All major citations are correct. Minor notes:
+   - **5 M.R.S. § 4592** — MHRA housing discrimination section; correct for the ADA/housing ground.
+   - **Pace v. DiGuglielmo** — federal AEDPA case; solid principle, weak in state PCR. Not worth changing.
+   - **M.R. Crim. P. 11** — the petition already uses M.R.U. Crim. P. (Unified Criminal Docket rules) which is correct.
+   - Everything else checks out. Petition is legally solid.
 
-3. **Exhibit organizer is done** — `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` has printable divider pages for all 11 exhibits (EXH-A through EXH-K).
+---
 
-4. **Exhibit assembler script** — `reports/exhibit_assembler.py` is a Python program you can run on your own computer to browse for files and package them into a ZIP.
+## FROM PRIOR SESSIONS
 
-5. **Updated cowork handoff** — `COWORK_HANDOFF_CR-2018-03023.md` now has all Google Drive file IDs for every exhibit found.
+3. **Assembled the exhibit packet** — Downloaded 7 of 11 exhibits directly from your Google Drive into `EXHIBITS_CR-2018-03023.zip` (15MB).
 
-6. **Court forms filled out (OFFICIAL PDF FORMAT)** — BOTH official Maine Judicial Branch PDF forms are now filled:
-   - **`reports/CR140_FILLED_King.pdf`** — Official CR-140 PDF, 8 pages, filled with your case info, charges, 4 grounds for relief, timeliness dates, and conclusion. PRINT AND FILE THIS.
-   - **`reports/CR032_FILLED_King.pdf`** — Official CR-032 PDF, 3 pages, filled with your personal and financial info. PRINT AND FILE THIS.
-   - These are the real official MJB forms. The form itself appears exactly as issued by the court, with your information typed in. Open in any PDF viewer, File → Print.
-   - STILL NEEDED before signing: judge's name on CR-140 question 4 (call clerk (207) 561-2300); hand-fill CR-032 page 2 expense amounts; sign/date both forms before clerk or notary.
+4. **Corrected PCR is done** — `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` has all corrections applied.
+
+5. **Exhibit organizer is done** — `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` has printable divider pages (EXH-A through EXH-K).
+
+6. **Exhibit assembler script** — `reports/exhibit_assembler.py` — run on your own computer to package final ZIP.
+
+   STILL NEEDED before signing forms: judge's name on CR-140 question 4 (call clerk (207) 561-2300); hand-fill CR-032 page 2 expense amounts; sign/date both forms before clerk or notary.
 
 ---
 
