@@ -1,15 +1,25 @@
 # DAILY STATUS — Keith A. King, CR-2018-03023
-## Last Updated: July 15, 2026
+## Last Updated: July 17, 2026
 
 ---
 
-## WHAT WE DID TODAY (July 15, 2026)
+## WHAT WE DID TODAY (July 17, 2026)
 
-1. **FIXED FORM ALIGNMENT** — Both CR-140 and CR-032 PDFs were completely redone with coordinates verified against actual PyMuPDF text extraction of the blank forms. Every field now lands on its printed line. This replaced the previous versions that had text all over the wrong places.
+1. **THUMB DRIVE ORGANIZER BUILT** — Two new files are ready:
+   - **`reports/exhibit_thumbdrive_builder.py`** — Run this on your Windows/Mac computer. It will ask you to locate each exhibit file, copy everything into labeled folders (EXH-A through EXH-K), copy your core documents (petition, CR-140, CR-032, exhibit organizer), and generate a clickable INDEX.html that works without internet.
+   - **`reports/THUMBDRIVE_INDEX_PREVIEW.html`** — Preview of what the thumb drive INDEX.html will look like. Open it in a browser to see all 11 exhibits with status badges, the video player for EXH-E, and the filing checklist. This is also the template the builder generates on the thumb drive.
+
+2. **DAILY REMINDER SET** — A trigger fires into this session every day at 14:00 UTC (10:00 AM Eastern) reminding you to print and sign the documents. You will see a reminder message each time you open Claude.
+
+---
+
+## FROM PRIOR SESSIONS (July 15, 2026)
+
+3. **FIXED FORM ALIGNMENT** — Both CR-140 and CR-032 PDFs were completely redone with coordinates verified against actual PyMuPDF text extraction of the blank forms. Every field now lands on its printed line.
    - **`reports/CR140_FILLED_King.pdf`** — REPRINTED AND FIXED. All 8 pages. PRINT AND FILE THIS.
-   - **`reports/CR032_FILLED_King.pdf`** — REPRINTED AND FIXED. All 3 pages. Income section (salary, SS, total, employer) all correctly placed. PRINT AND FILE THIS.
+   - **`reports/CR032_FILLED_King.pdf`** — REPRINTED AND FIXED. All 3 pages. RV listed as primary residence ($19,000 owed, $226/mo), cash $25, bank -$405, food $245, cell $25, insurance $65, utilities $175. PRINT AND FILE THIS.
 
-2. **VERIFIED LEGAL CITATIONS** — Reviewed the PCR petition for accuracy against 2018 Maine and federal law. All major citations are correct. Minor notes:
+4. **VERIFIED LEGAL CITATIONS** — Reviewed the PCR petition for accuracy against 2018 Maine and federal law. All major citations are correct. Minor notes:
    - **5 M.R.S. § 4592** — MHRA housing discrimination section; correct for the ADA/housing ground.
    - **Pace v. DiGuglielmo** — federal AEDPA case; solid principle, weak in state PCR. Not worth changing.
    - **M.R. Crim. P. 11** — the petition already uses M.R.U. Crim. P. (Unified Criminal Docket rules) which is correct.
@@ -17,15 +27,15 @@
 
 ---
 
-## FROM PRIOR SESSIONS
+## FROM EARLIER SESSIONS
 
-3. **Assembled the exhibit packet** — Downloaded 7 of 11 exhibits directly from your Google Drive into `EXHIBITS_CR-2018-03023.zip` (15MB).
+5. **Assembled the exhibit packet** — Downloaded 7 of 11 exhibits directly from your Google Drive into `EXHIBITS_CR-2018-03023.zip` (15MB).
 
-4. **Corrected PCR is done** — `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` has all corrections applied.
+6. **Corrected PCR is done** — `reports/PCR_CORRECTED_FINAL_CR-2018-03023.html` has all corrections applied.
 
-5. **Exhibit organizer is done** — `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` has printable divider pages (EXH-A through EXH-K).
+7. **Exhibit organizer is done** — `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` has printable divider pages (EXH-A through EXH-K).
 
-6. **Exhibit assembler script** — `reports/exhibit_assembler.py` — run on your own computer to package final ZIP.
+8. **Exhibit assembler script** — `reports/exhibit_assembler.py` — run on your own computer to package final ZIP.
 
    STILL NEEDED before signing forms: judge's name on CR-140 question 4 (call clerk (207) 561-2300); hand-fill CR-032 page 2 expense amounts; sign/date both forms before clerk or notary.
 
@@ -78,7 +88,9 @@ Other open items:
 - `reports/CR140_FILLED_King.pdf` — ✅ OFFICIAL CR-140 PDF filled out (PRINT AND FILE THIS)
 - `reports/CR032_FILLED_King.pdf` — ✅ OFFICIAL CR-032 PDF filled out (PRINT AND FILE THIS)
 - `reports/EXHIBIT_ORGANIZER_CR-2018-03023.html` — divider pages for exhibits (PRINT THIS)
-- `reports/exhibit_assembler.py` — run on your computer to package final exhibit ZIP
+- `reports/exhibit_thumbdrive_builder.py` — ✅ NEW: run on your computer to set up thumb drive
+- `reports/THUMBDRIVE_INDEX_PREVIEW.html` — ✅ NEW: preview of the thumb drive index page
+- `reports/exhibit_assembler.py` — alternate script to package final ZIP
 - `COWORK_HANDOFF_CR-2018-03023.md` — full case background for any new Claude session
 
 ---

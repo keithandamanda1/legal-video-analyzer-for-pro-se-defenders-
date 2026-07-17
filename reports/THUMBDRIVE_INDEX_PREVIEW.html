@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXHIBIT INDEX — CR-2018-03023 — Keith A. King</title>
+<style>
+  :root {
+    --navy: #0f2744;
+    --navy-mid: #1a3a5c;
+    --gold: #c9a84c;
+    --cream: #f4f0e6;
+    --text: #1a1a1a;
+    --card-bg: #ffffff;
+    --border: #d5cfc0;
+    --ready: #1a6b3c;
+    --ready-bg: #d4edda;
+    --partial: #856404;
+    --partial-bg: #fff3cd;
+    --pending: #842029;
+    --pending-bg: #f8d7da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #111a26;
+      --text: #e0e8f0;
+      --card-bg: #18253a;
+      --border: #2a3d55;
+    }
+  }
+  :root[data-theme="light"] {
+    --cream: #f4f0e6;
+    --text: #1a1a1a;
+    --card-bg: #ffffff;
+    --border: #d5cfc0;
+  }
+  :root[data-theme="dark"] {
+    --cream: #111a26;
+    --text: #e0e8f0;
+    --card-bg: #18253a;
+    --border: #2a3d55;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    background: var(--navy);
+    color: #fff;
+    border-bottom: 4px solid var(--gold);
+  }
+  .print-warning {
+    background: #7a1c1c;
+    border-left: 5px solid #ff6b6b;
+    color: #fff;
+    padding: 10px 32px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 22px 32px;
+  }
+  .case-label {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 28px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .meta-item {
+    font-size: 12px;
+    color: #a8c0d4;
+    font-family: 'Courier New', monospace;
+  }
+  .meta-item strong { color: #e0e8f0; }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 24px;
+  }
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--navy-mid);
+    font-family: 'Courier New', monospace;
+    border-bottom: 2px solid var(--navy-mid);
+    padding-bottom: 6px;
+    margin: 28px 0 16px;
+  }
+  :root[data-theme="dark"] .section-title { color: var(--gold); border-bottom-color: var(--gold); }
+  @media (prefers-color-scheme: dark) { .section-title { color: var(--gold); border-bottom-color: var(--gold); } }
+
+  /* Core docs grid */
+  .docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .doc-link {
+    display: block;
+    background: var(--navy-mid);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .doc-link:hover { background: #0f2744; border-color: var(--gold); }
+  .doc-link .doc-icon { font-size: 20px; display: block; margin-bottom: 6px; }
+  .doc-link .doc-label {
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+  .doc-link .doc-title { font-size: 12px; color: #c8d8e8; margin-top: 4px; }
+
+  /* Exhibits status banner */
+  .status-banner {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .stat { font-family: 'Courier New', monospace; font-size: 12px; }
+  .stat-num { font-size: 22px; font-weight: bold; display: block; line-height: 1.1; }
+  .stat-num.green { color: var(--ready); }
+  .stat-num.orange { color: var(--partial); }
+  .stat-num.red { color: var(--pending); }
+  .stat-label { color: #888; font-size: 11px; }
+
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .card-pending { border-left: 5px solid #c0392b; }
+  .card-partial { border-left: 5px solid #c9a84c; }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .exh-id {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--navy);
+    background: #e8eef5;
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+  :root[data-theme="dark"] .exh-id,
+  @media (prefers-color-scheme: dark) { .exh-id { background: #1a3a5c; color: #a8c0d4; } }
+  .badge {
+    font-size: 10px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .badge.ready { background: var(--ready-bg); color: var(--ready); }
+  .badge.partial { background: var(--partial-bg); color: var(--partial); }
+  .badge.pending { background: var(--pending-bg); color: var(--pending); }
+  .grounds {
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    color: #888;
+    margin-left: auto;
+  }
+  .card h3 {
+    font-size: 15px;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  :root[data-theme="dark"] .card h3 { color: #c8d8e8; }
+  @media (prefers-color-scheme: dark) { .card h3 { color: #c8d8e8; } }
+  .proves {
+    font-size: 12.5px;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  .open-btn {
+    display: inline-block;
+    background: var(--navy);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    transition: background 0.15s;
+  }
+  .open-btn:hover { background: var(--navy-mid); }
+  .file-note {
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    background: #f0f4f8;
+    border-left: 3px solid #aaa;
+    padding: 8px 12px;
+    margin-top: 8px;
+    line-height: 1.5;
+    color: #444;
+    border-radius: 0 3px 3px 0;
+  }
+  :root[data-theme="dark"] .file-note,
+  @media (prefers-color-scheme: dark) { .file-note { background: #1a2d42; color: #a0b8cc; } }
+  .pending-note { background: #fff3f3; border-left-color: #c0392b; color: #7a1c1c; }
+  .partial-note { background: #fffaf0; border-left-color: #c9a84c; color: #6b4f00; }
+  .how-to {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    background: #fff8e8;
+    border: 1px solid #e8d48a;
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: #5a3e00;
+    line-height: 1.6;
+  }
+  .video-wrap { margin-top: 8px; }
+  .video-wrap video {
+    width: 100%;
+    border-radius: 4px;
+    background: #000;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .video-note {
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    color: #888;
+    margin-top: 4px;
+  }
+  /* Filing checklist */
+  .checklist {
+    background: var(--card-bg);
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-top: 28px;
+  }
+  .checklist h2 {
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .checklist li {
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .ck { font-size: 16px; flex-shrink: 0; }
+  footer {
+    background: var(--navy);
+    color: #8fa8be;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    margin-top: 40px;
+    border-top: 4px solid var(--gold);
+  }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; }
+    .header-inner { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="print-warning">
+    ⚠️ CONFIDENTIAL — FOR COURT USE ONLY — Keith A. King v. State of Maine — PENCD-CR-2018-03023
+  </div>
+  <div class="header-inner">
+    <div class="case-label">Penobscot County Unified Criminal Docket — State of Maine</div>
+    <h1>EXHIBIT INDEX — STATE v. KEITH A. KING</h1>
+    <div class="header-meta">
+      <div class="meta-item"><strong>Docket:</strong> PENCD-CR-2018-03023</div>
+      <div class="meta-item"><strong>Court:</strong> Penobscot County — 78 Exchange St, Bangor ME 04401</div>
+      <div class="meta-item"><strong>Petitioner:</strong> Keith A. King (Pro Se)</div>
+      <div class="meta-item"><strong>Proceeding:</strong> Post-Conviction Review — 15 M.R.S. §§ 2121–2130-A</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="section-title">Core Documents — Print and File These</div>
+  <div class="docs-grid">
+    <a class="doc-link" href="DOCUMENTS/PCR_CORRECTED_FINAL_CR-2018-03023.html" target="_blank">
+      <span class="doc-icon">📋</span>
+      <span class="doc-label">PCR Petition</span>
+      <span class="doc-title">Post-Conviction Review Petition (corrected final — print this)</span>
+    </a>
+    <a class="doc-link" href="DOCUMENTS/CR140_FILLED_King.pdf" target="_blank">
+      <span class="doc-icon">📄</span>
+      <span class="doc-label">CR-140 Form</span>
+      <span class="doc-title">Post-Conviction Review Form (filled out — print &amp; file)</span>
+    </a>
+    <a class="doc-link" href="DOCUMENTS/CR032_FILLED_King.pdf" target="_blank">
+      <span class="doc-icon">📄</span>
+      <span class="doc-label">CR-032 Form</span>
+      <span class="doc-title">Financial Disclosure Form (filled out — print &amp; file)</span>
+    </a>
+    <a class="doc-link" href="DOCUMENTS/EXHIBIT_ORGANIZER_CR-2018-03023.html" target="_blank">
+      <span class="doc-icon">🗂</span>
+      <span class="doc-label">Exhibit Dividers</span>
+      <span class="doc-title">Print divider pages for physical exhibit binder</span>
+    </a>
+  </div>
+
+  <div class="section-title">Exhibit Status Summary</div>
+  <div class="status-banner">
+    <div class="stat">
+      <span class="stat-num green">7</span>
+      <span class="stat-label">EXHIBITS READY</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num orange">2</span>
+      <span class="stat-label">INSIDE EXH-B</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num red">2</span>
+      <span class="stat-label">STILL PENDING</span>
+    </div>
+    <div class="stat" style="margin-left:auto; font-size:11px; color:#888; max-width:320px;">
+      Open <strong>EXH-B</strong> to find EXH-D (pp. 3–12) and EXH-H (TruNarc result).
+      EXH-J and EXH-K must be obtained — see instructions on each card below.
+    </div>
+  </div>
+
+  <div class="section-title">Exhibit Packet — EXH-A through EXH-K</div>
+  <div class="cards">
+
+    <!-- EXH-A -->
+    <div class="card">
+      <div class="card-header">
+        <span class="exh-id">EXH-A</span>
+        <span class="badge ready">READY</span>
+        <span class="grounds">Grounds I, II, III</span>
+      </div>
+      <h3>BPD CAD Log — Incident 18-060430</h3>
+      <p class="proves"><strong>PROVES:</strong> Farrar didn't arrive until 12:56 PM — 56 min AFTER signing the warrant at 12:00 PM. Davis Road stop was <em>never dispatched</em>.</p>
+      <a class="open-btn" href="EXH-A_CAD_Dispatch_Log/EXH-A_CAD_Dispatch_Log.pdf" target="_blank">📄 Open EXH-A</a>
+    </div>
+
+    <!-- EXH-B -->
+    <div class="card card-partial">
+      <div class="card-header">
+        <span class="exh-id">EXH-B</span>
+        <span class="badge ready">READY</span>
+        <span class="grounds">Grounds I, II</span>
+      </div>
+      <h3>2018 Initial Discovery Packet</h3>
+      <p class="proves"><strong>PROVES:</strong> Witness statements cited in the warrant affidavit are marked <em>"DOES NOT EXIST"</em> on the State's own checklist. Also contains EXH-D and EXH-H.</p>
+      <a class="open-btn" href="EXH-B_Discovery_Packet/EXH-B_2018_Initial_Discovery_Packet.pdf" target="_blank">📄 Open EXH-B</a>
+      <p class="file-note partial-note">📌 EXH-D (police reports) on pages 3–12. EXH-H (TruNarc test) also inside this file.</p>
+    </div>
+
+    <!-- EXH-C -->
+    <div class="card">
+      <div class="card-header">
+        <span class="exh-id">EXH-C</span>
+        <span class="badge ready">READY</span>
+        <span class="grounds">Grounds I, V, VI</span>
+      </div>
+      <h3>AAG Anton Admission — "Inadvertent Error"</h3>
+      <p class="proves"><strong>PROVES:</strong> State admitted all 3 Class A Aggravated charges were an <em>"inadvertent error"</em> — legally impossible under 17-A M.R.S. § 1105-A(1)(C-1).</p>
+      <a class="open-btn" href="EXH-C_AAG_Anton_Letter/EXH-C_AAG_Anton_Nov2025_Letter.pdf" target="_blank">📄 Open EXH-C</a>
+    </div>
+
+    <!-- EXH-D -->
+    <div class="card card-partial">
+      <div class="card-header">
+        <span class="exh-id">EXH-D</span>
+        <span class="badge partial">INSIDE EXH-B</span>
+        <span class="grounds">Grounds I, III, V</span>
+      </div>
+      <h3>Police Reports — Haskell + Perry</h3>
+      <p class="proves"><strong>PROVES:</strong> Haskell report: <em>no drugs found in vehicle</em>. Perry report: <em>holster only</em> in bedroom — no firearm nexus. Destroys "in furtherance of" element under § 1105-A(1)(C-1).</p>
+      <p class="file-note partial-note">📌 Located inside <strong>EXH-B</strong>, pages 3–12. Open EXH-B and refer the court to those pages.</p>
+    </div>
+
+    <!-- EXH-E (video) -->
+    <div class="card" style="grid-column: span 1;">
+      <div class="card-header">
+        <span class="exh-id">EXH-E</span>
+        <span class="badge ready">READY — VIDEO</span>
+        <span class="grounds">Grounds II, III, IV</span>
+      </div>
+      <h3>BPD Dashcam Video — Aug 2, 2018</h3>
+      <p class="proves"><strong>PROVES:</strong> Withheld 5.5 years — released Feb 21, 2024 via FOAA. ON VIDEO: No infraction stated. Handcuffed transport (Bailey). Warrant refused twice. Key entry visible. Amanda Ross strip search.</p>
+      <div class="video-wrap">
+        <video controls preload="metadata">
+          <source src="EXH-E_Dashcam_Video/EXH-E_Haskell_Dashcam_Aug2_2018.mp4" type="video/mp4">
+          <p>Your browser does not support HTML5 video.
+             <a href="EXH-E_Dashcam_Video/EXH-E_Haskell_Dashcam_Aug2_2018.mp4">Click here to open the video file.</a></p>
+        </video>
+        <p class="video-note">Video plays directly in browser. Right-click → "Save video as" to download if needed.</p>
+      </div>
+    </div>
+
+    <!-- EXH-F -->
+    <div class="card">
+      <div class="card-header">
+        <span class="exh-id">EXH-F</span>
+        <span class="badge ready">READY</span>
+        <span class="grounds">Grounds III, VI</span>
+      </div>
+      <h3>BHA Master Key Log — No Aug 2 Entry</h3>
+      <p class="proves"><strong>PROVES:</strong> <em>No key authorized</em> to BPD on/around Aug 2, 2018. Officer had key in pocket — visible on video (EXH-E). Entry was warrantless under the 4th Amendment.</p>
+      <a class="open-btn" href="EXH-F_BHA_Key_Log/EXH-F_BHA_Master_Key_Log.pdf" target="_blank">📄 Open EXH-F</a>
+    </div>
+
+    <!-- EXH-G -->
+    <div class="card">
+      <div class="card-header">
+        <span class="exh-id">EXH-G</span>
+        <span class="badge ready">READY</span>
+        <span class="grounds">Grounds IV, VI</span>
+      </div>
+      <h3>Public Defense Billing Vouchers</h3>
+      <p class="proves"><strong>PROVES:</strong> All 4 attorneys billed for video review — then told Keith the video <em>didn't exist</em>. Zero suppression motions filed. Establishes IAC (Ground IV).</p>
+      <a class="open-btn" href="EXH-G_Billing_Vouchers/EXH-G_Billing_Vouchers_All_Attorneys.pdf" target="_blank">📄 Open EXH-G</a>
+    </div>
+
+    <!-- EXH-H -->
+    <div class="card card-partial">
+      <div class="card-header">
+        <span class="exh-id">EXH-H</span>
+        <span class="badge partial">INSIDE EXH-B</span>
+        <span class="grounds">Grounds I, V, VI</span>
+      </div>
+      <h3>TruNarc Field Test — INCONCLUSIVE</h3>
+      <p class="proves"><strong>PROVES:</strong> TruNarc field test result was <em>INCONCLUSIVE</em>. No confirmatory lab analysis ever done. "In fact heroin" charge had no scientific basis.</p>
+      <p class="file-note partial-note">📌 Located inside <strong>EXH-B</strong>. Open EXH-B and search for "TruNarc" — the test page showing INCONCLUSIVE is in that packet.</p>
+    </div>
+
+    <!-- EXH-I -->
+    <div class="card">
+      <div class="card-header">
+        <span class="exh-id">EXH-I</span>
+        <span class="badge ready">READY</span>
+        <span class="grounds">Grounds II, III</span>
+      </div>
+      <h3>CAD/Radio Logs — Davis Road Never Dispatched</h3>
+      <p class="proves"><strong>PROVES:</strong> Davis Road traffic stop <em>never appeared</em> in dispatch or radio logs. Officers used personal cell phones. Off-book pretextual stop. Farrar not present at Davis Road stop.</p>
+      <a class="open-btn" href="EXH-I_CAD_Log_Radio/EXH-I_CAD_Radio_Log.pdf" target="_blank">📄 Open EXH-I</a>
+    </div>
+
+    <!-- EXH-J PENDING -->
+    <div class="card card-pending">
+      <div class="card-header">
+        <span class="exh-id">EXH-J</span>
+        <span class="badge pending">PENDING</span>
+        <span class="grounds">Ground VII — AUTO DISMISSAL</span>
+      </div>
+      <h3>2018 Maine Drug Schedule — Gabapentin NOT Listed</h3>
+      <p class="proves"><strong>PROVES:</strong> Gabapentin was <em>NOT</em> on Maine's controlled substance schedule in 2018. Added October 15, 2019 (Me. PL 2019, ch. 487). Charging gabapentin under the 2018 schedule = Ex Post Facto violation. <strong>Automatic dismissal of that count.</strong></p>
+      <div class="how-to">
+        <strong>HOW TO OBTAIN EXH-J:</strong><br>
+        1. Go to <strong>legislature.maine.gov</strong><br>
+        2. Find Title 17-A, Section 1102 (Schedule Z)<br>
+        3. Print the version as it existed in 2018 (before October 2019)<br>
+        4. Save or scan as PDF — it will NOT have gabapentin listed
+      </div>
+    </div>
+
+    <!-- EXH-K PENDING -->
+    <div class="card card-pending">
+      <div class="card-header">
+        <span class="exh-id">EXH-K</span>
+        <span class="badge pending">PENDING</span>
+        <span class="grounds">Grounds V, VI</span>
+      </div>
+      <h3>Mental Health Eval + July 29, 2021 Court Order</h3>
+      <p class="proves"><strong>PROVES:</strong> July 29, 2021 court ORDER required medical stabilization <em>before any plea</em>. 9 diagnoses including Bipolar Disorder and Panic Disorder. Keith was unmedicated at the surprise September 2021 plea — violating the court's own order. <strong>Plea void ab initio.</strong></p>
+      <div class="how-to">
+        <strong>HOW TO OBTAIN EXH-K:</strong><br>
+        Call <strong>(207) 561-2300</strong> — Penobscot County Superior Court clerk<br>
+        Ask for: all court orders in docket CR-2018-03023 dated July 29, 2021<br>
+        Also request: mental health evaluation records from the court-ordered psychiatric evaluation (2018–2021)
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Filing Checklist -->
+  <div class="checklist">
+    <h2>⚖️ Before You File — Checklist</h2>
+    <ul>
+      <li><span class="ck">☐</span> Print CR-140 (all 8 pages) — sign and date before clerk or notary</li>
+      <li><span class="ck">☐</span> Print CR-032 (all 3 pages) — hand-fill page 2 expense totals; sign before clerk or notary</li>
+      <li><span class="ck">☐</span> Fill in judge's name on CR-140 Question 4 — call clerk (207) 561-2300 to get it</li>
+      <li><span class="ck">☐</span> Print PCR Petition (HTML file — File → Print from browser)</li>
+      <li><span class="ck">☐</span> Print Exhibit Organizer divider pages (one page per exhibit)</li>
+      <li><span class="ck">☐</span> Obtain EXH-J (drug schedule) and EXH-K (mental health eval + court order)</li>
+      <li><span class="ck">☐</span> Copy entire thumb drive to a second drive as backup</li>
+      <li><span class="ck">☐</span> File at: Penobscot County Unified Criminal Docket — 78 Exchange St, Bangor ME 04401</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  Keith A. King — Pro Se Petitioner — PENCD-CR-2018-03023<br>
+  Penobscot County Unified Criminal Docket — 78 Exchange St, Bangor ME 04401<br>
+  Clerk: (207) 561-2300 · Filing: Post-Conviction Review — 15 M.R.S. §§ 2121–2130-A
+</footer>
+
+</body>
+</html>
