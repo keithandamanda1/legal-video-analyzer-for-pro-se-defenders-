@@ -20,14 +20,24 @@ from datetime import datetime
 # Gmail API scope
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
-# Search keywords for credit case
-CREDIT_KEYWORDS = [
+# Search keywords for Keith King FCRA/Credit case
+KEITH_CREDIT_KEYWORDS = [
     'FTC', 'identity theft', 'equifax', 'experian', 'transunion',
     'smartpay', 'smart pay', 'jefferson capital', 'trueaccord',
     'dispute', 'collection', 're-aged', 'FCRA', 'FDCPA',
     'credit report', 'credit denial', 'loan denial', 'fraud',
     'verizon', 'AT&T', 'capital one', 'credit union',
-    'demand letter', 'cease and desist', 'collections agency'
+    'demand letter', 'cease and desist', 'collections agency',
+    'equifax breach', 'data breach', 'sham investigation'
+]
+
+# Search keywords for Amanda Ross (housing/FHA case)
+AMANDA_KEYWORDS = [
+    'housing', 'HUD', 'MHRC', 'fair housing', 'discrimination',
+    'brewer housing', 'bangor housing', 'bangor ha', 'charlotte perkins',
+    'joseph bethony', 'joseph knox', 'housing authority',
+    'denial letter', 'background check', 'credit pull',
+    'federal court', 'right to sue', 'housing complaint'
 ]
 
 class GmailDownloader:
@@ -66,15 +76,36 @@ class GmailDownloader:
         """Build Gmail API service"""
         return build('gmail', 'v1', credentials=creds)
 
-    def search_emails(self, service, query, max_results=100):
-        """Search for emails matching criteria"""
+    def search_emails(self, service, query, max_results=None):
+        """Search for emails matching criteria (with pagination)"""
+        all_messages = []
+        page_token = None
+        page_count = 0
+
         try:
-            results = service.users().messages().list(
-                userId='me',
-                q=query,
-                maxResults=max_results
-            ).execute()
-            return results.get('messages', [])
+            while True:
+                page_count += 1
+                results = service.users().messages().list(
+                    userId='me',
+                    q=query,
+                    maxResults=100,
+                    pageToken=page_token
+                ).execute()
+
+                messages = results.get('messages', [])
+                all_messages.extend(messages)
+
+                print(f"  📄 Page {page_count}: Found {len(messages)} messages (Total: {len(all_messages)})")
+
+                # If no max_results specified, get ALL pages
+                if max_results and len(all_messages) >= max_results:
+                    return all_messages[:max_results]
+
+                page_token = results.get('nextPageToken')
+                if not page_token:
+                    break
+
+            return all_messages
         except HttpError as error:
             print(f"❌ Search error: {error}")
             return []
@@ -166,10 +197,11 @@ class GmailDownloader:
             print(f"⚠ Error saving email: {e}")
             return None
 
-    def download_account_emails(self, account_email):
-        """Download all credit-related emails from account"""
+    def download_account_emails(self, account_email, person_folder, keywords):
+        """Download all emails from account for specified person"""
         print(f"\n{'='*80}")
         print(f"📧 Processing: {account_email}")
+        print(f"   Saving to: {person_folder}/")
         print(f"{'='*80}")
 
         # Authenticate
@@ -177,18 +209,19 @@ class GmailDownloader:
         service = self.get_gmail_service(creds)
 
         # Build search query
-        search_query = ' OR '.join([f'"{keyword}"' for keyword in CREDIT_KEYWORDS])
+        search_query = ' OR '.join([f'"{keyword}"' for keyword in keywords])
 
-        print(f"\n🔍 Searching for credit-related emails...")
-        messages = self.search_emails(service, search_query, max_results=500)
+        print(f"\n🔍 Searching for ALL matching emails (paginating through all results)...")
+        messages = self.search_emails(service, search_query)  # No max_results = get ALL
 
         if not messages:
             print("⚠ No emails found")
-            return
+            return 0
 
-        print(f"✓ Found {len(messages)} matching emails\n")
+        print(f"✓ Found {len(messages)} total matching emails\n")
 
         # Download each email
+        download_count = 0
         for idx, message in enumerate(messages, 1):
             message_id = message['id']
             email_data = self.get_email_content(service, message_id)
@@ -201,34 +234,54 @@ class GmailDownloader:
             email_subject = next((h['value'] for h in headers if h['name'] == 'Subject'), 'No Subject')
             email_date = next((h['value'] for h in headers if h['name'] == 'Date'), 'Unknown Date')
 
-            print(f"\n[{idx}/{len(messages)}] {email_subject}")
+            print(f"[{idx}/{len(messages)}] {email_subject[:60]}")
             print(f"    From: {email_from}")
-            print(f"    Date: {email_date}")
 
-            # Save email text
-            self.save_email_text(email_data, account_email, email_from, email_subject, email_date)
+            # Save email text to person-specific folder
+            self.save_email_text(email_data, f"{person_folder}/{account_email}", email_from, email_subject, email_date)
 
-            # Extract attachments
-            self.extract_attachments(service, email_data, account_email, email_subject)
+            # Extract attachments to person-specific folder
+            self.extract_attachments(service, email_data, f"{person_folder}/{account_email}", email_subject)
 
-        print(f"\n✓ Completed {account_email}")
+            download_count += 1
 
-    def download_all_accounts(self, account_emails):
-        """Download from multiple accounts"""
+        print(f"\n✓ Downloaded {download_count} emails from {account_email}")
+        return download_count
+
+    def download_all_accounts(self, keith_accounts, amanda_accounts):
+        """Download from multiple accounts, separated by person"""
         print("\n" + "="*80)
-        print("📥 GMAIL MULTI-ACCOUNT CREDIT CASE DOWNLOADER")
+        print("📥 GMAIL DOWNLOADER - KEITH KING & AMANDA ROSS (SEPARATED)")
         print("="*80)
-        print(f"\nAccounts to process: {', '.join(account_emails)}")
-        print(f"Output directory: {self.output_dir.absolute()}")
-        print(f"Search keywords: {len(CREDIT_KEYWORDS)} terms")
+        print(f"\n👨 KEITH KING Accounts: {', '.join(keith_accounts)}")
+        print(f"👩 AMANDA ROSS Accounts: {', '.join(amanda_accounts)}")
+        print(f"\n📂 Output directory: {self.output_dir.absolute()}")
+        print(f"🔑 Keith keywords: {len(KEITH_CREDIT_KEYWORDS)} terms")
+        print(f"🔑 Amanda keywords: {len(AMANDA_KEYWORDS)} terms")
 
-        for account in account_emails:
-            self.download_account_emails(account)
+        keith_count = 0
+        amanda_count = 0
+
+        # Download Keith's credit case materials
+        print("\n" + "="*80)
+        print("👨 KEITH KING - FCRA/CREDIT CASE MATERIALS")
+        print("="*80)
+        for account in keith_accounts:
+            keith_count += self.download_account_emails(account, "01_KEITH_KING_CREDIT_CASE", KEITH_CREDIT_KEYWORDS)
+
+        # Download Amanda's housing/FHA case materials
+        print("\n" + "="*80)
+        print("👩 AMANDA ROSS - HOUSING/FHA CASE MATERIALS")
+        print("="*80)
+        for account in amanda_accounts:
+            amanda_count += self.download_account_emails(account, "02_AMANDA_ROSS_HOUSING_CASE", AMANDA_KEYWORDS)
 
         print("\n" + "="*80)
         print("✅ DOWNLOAD COMPLETE")
         print("="*80)
         print(f"\n📂 Files saved to: {self.output_dir.absolute()}")
+        print(f"👨 Keith King emails downloaded: {keith_count}")
+        print(f"👩 Amanda Ross emails downloaded: {amanda_count}")
         self.print_summary()
 
     def print_summary(self):
@@ -261,15 +314,20 @@ def main():
         print("6. Run this script again")
         return
 
-    # Gmail accounts to search
-    accounts = [
-        'keithandamanda123@gmail.com',
-        'keithandamanda2233@gmail.com',
-        'keithaking2055@gmail.com'
+    # Gmail accounts - SEPARATED BY PERSON
+    keith_accounts = [
+        'keithandamanda123@gmail.com',      # Primary
+        'keithandamanda2233@gmail.com',     # Secondary
+        'keithaking2055@gmail.com'          # Tertiary
     ]
 
-    downloader = GmailDownloader(output_dir='credit_case_emails')
-    downloader.download_all_accounts(accounts)
+    amanda_accounts = [
+        'keithfhacase2233@gmail.com'        # Amanda's FHA case account
+        # Add more Amanda accounts if needed
+    ]
+
+    downloader = GmailDownloader(output_dir='gmail_downloads_separated')
+    downloader.download_all_accounts(keith_accounts, amanda_accounts)
 
 if __name__ == '__main__':
     main()
