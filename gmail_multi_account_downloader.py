@@ -20,8 +20,8 @@ from datetime import datetime
 # Gmail API scope
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
-# Search keywords for Keith King FCRA/Credit case
-KEITH_CREDIT_KEYWORDS = [
+# Search keywords for FCRA/Credit case (both Keith and Amanda)
+FCRA_KEYWORDS = [
     'FTC', 'identity theft', 'equifax', 'experian', 'transunion',
     'smartpay', 'smart pay', 'jefferson capital', 'trueaccord',
     'dispute', 'collection', 're-aged', 'FCRA', 'FDCPA',
@@ -29,15 +29,6 @@ KEITH_CREDIT_KEYWORDS = [
     'verizon', 'AT&T', 'capital one', 'credit union',
     'demand letter', 'cease and desist', 'collections agency',
     'equifax breach', 'data breach', 'sham investigation'
-]
-
-# Search keywords for Amanda Ross (housing/FHA case)
-AMANDA_KEYWORDS = [
-    'housing', 'HUD', 'MHRC', 'fair housing', 'discrimination',
-    'brewer housing', 'bangor housing', 'bangor ha', 'charlotte perkins',
-    'joseph bethony', 'joseph knox', 'housing authority',
-    'denial letter', 'background check', 'credit pull',
-    'federal court', 'right to sue', 'housing complaint'
 ]
 
 class GmailDownloader:
@@ -251,30 +242,29 @@ class GmailDownloader:
     def download_all_accounts(self, keith_accounts, amanda_accounts):
         """Download from multiple accounts, separated by person"""
         print("\n" + "="*80)
-        print("📥 GMAIL DOWNLOADER - KEITH KING & AMANDA ROSS (SEPARATED)")
+        print("📥 GMAIL DOWNLOADER - FCRA CASE (KEITH & AMANDA - SEPARATED)")
         print("="*80)
         print(f"\n👨 KEITH KING Accounts: {', '.join(keith_accounts)}")
         print(f"👩 AMANDA ROSS Accounts: {', '.join(amanda_accounts)}")
         print(f"\n📂 Output directory: {self.output_dir.absolute()}")
-        print(f"🔑 Keith keywords: {len(KEITH_CREDIT_KEYWORDS)} terms")
-        print(f"🔑 Amanda keywords: {len(AMANDA_KEYWORDS)} terms")
+        print(f"🔑 FCRA keywords: {len(FCRA_KEYWORDS)} terms")
 
         keith_count = 0
         amanda_count = 0
 
-        # Download Keith's credit case materials
+        # Download Keith's FCRA case materials
         print("\n" + "="*80)
-        print("👨 KEITH KING - FCRA/CREDIT CASE MATERIALS")
+        print("👨 KEITH KING - FCRA CASE MATERIALS")
         print("="*80)
         for account in keith_accounts:
-            keith_count += self.download_account_emails(account, "01_KEITH_KING_CREDIT_CASE", KEITH_CREDIT_KEYWORDS)
+            keith_count += self.download_account_emails(account, "01_KEITH_KING_FCRA_CASE", FCRA_KEYWORDS)
 
-        # Download Amanda's housing/FHA case materials
+        # Download Amanda's FCRA case materials
         print("\n" + "="*80)
-        print("👩 AMANDA ROSS - HOUSING/FHA CASE MATERIALS")
+        print("👩 AMANDA ROSS - FCRA CASE MATERIALS")
         print("="*80)
         for account in amanda_accounts:
-            amanda_count += self.download_account_emails(account, "02_AMANDA_ROSS_HOUSING_CASE", AMANDA_KEYWORDS)
+            amanda_count += self.download_account_emails(account, "02_AMANDA_ROSS_FCRA_CASE", FCRA_KEYWORDS)
 
         print("\n" + "="*80)
         print("✅ DOWNLOAD COMPLETE")
@@ -326,7 +316,7 @@ def main():
         # Add more Amanda accounts if needed
     ]
 
-    downloader = GmailDownloader(output_dir='gmail_downloads_separated')
+    downloader = GmailDownloader(output_dir='fcra_case_downloads')
     downloader.download_all_accounts(keith_accounts, amanda_accounts)
 
 if __name__ == '__main__':
