@@ -1,6 +1,8 @@
 # Environment and secrets
 .env
 *.env
+credentials.json
+token_*.pickle
 
 # Python
 __pycache__/
@@ -23,6 +25,8 @@ data/videos/
 data/cases.db
 data/cases.db-wal
 data/cases.db-shm
+fcra_case_downloads/
+gmail_downloads_separated/
 
 # OS
 .DS_Store
