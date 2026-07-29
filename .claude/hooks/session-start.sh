@@ -1,13 +1,28 @@
 #!/bin/bash
-# Daily briefing hook — reads DAILY_STATUS.md and injects it as session context
-# Claude will see this and brief the user on where they left off
+# Session-start hook — injects daily schedule + master checklist as context
+# Claude reads this and delivers a prioritized daily briefing
 
-STATUS_FILE="$CLAUDE_PROJECT_DIR/DAILY_STATUS.md"
+SCHEDULE="$CLAUDE_PROJECT_DIR/DAILY_SCHEDULE.md"
+CHECKLIST="$CLAUDE_PROJECT_DIR/DAILY_MASTER_CHECKLIST.md"
 
-if [ -f "$STATUS_FILE" ]; then
-  echo "=== DAILY BRIEFING — Keith's Case Status ==="
-  cat "$STATUS_FILE"
-  echo "============================================="
+echo "=== KEITH'S DAILY LEGAL SCHEDULE — $(date '+%B %d, %Y') ==="
+echo ""
+
+if [ -f "$SCHEDULE" ]; then
+  cat "$SCHEDULE"
 else
-  echo "=== No DAILY_STATUS.md found yet — Claude will create one at end of session ==="
+  echo "No DAILY_SCHEDULE.md found — Claude will create one this session."
 fi
+
+echo ""
+echo "--- FULL CASE REFERENCE ---"
+
+if [ -f "$CHECKLIST" ]; then
+  cat "$CHECKLIST"
+else
+  echo "No DAILY_MASTER_CHECKLIST.md found."
+fi
+
+echo ""
+echo "=== END BRIEFING — Claude: read the above and deliver today's schedule to Keith ==="
+echo "=== Check Gmail drafts for any unsent emails. Then give Keith his prioritized task list. ==="
