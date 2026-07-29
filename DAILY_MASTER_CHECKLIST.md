@@ -4,17 +4,14 @@
 
 ---
 
-## 🚨 EMAIL VERIFICATION — CHECK FIRST EVERY SESSION
+## EMAIL VERIFICATION — CHECK FIRST EVERY SESSION
 
 Before anything else, Claude will check Gmail drafts to confirm no emails are sitting unsent.
 
-### CURRENTLY UNSENT (as of July 29, 2026):
-| Email | To | Date Drafted | Status |
-|-------|----|-------------|--------|
-| FORMAL LEGAL DEMAND — MRS Unlawful Levy #1194093-S | Levy.MRS@maine.gov | July 27, 2026 | ⚠️ UNSENT — IN DRAFTS |
-| FORMAL LEGAL DEMAND — MRS Unlawful Levy #1194093-S | Levy.MRS@maine.gov | July 24, 2026 | ⚠️ UNSENT — IN DRAFTS |
+### STATUS (as of July 29, 2026):
+✅ No pending unsent emails — all clear.
 
-**ACTION NEEDED:** Open Gmail → Drafts → send the July 27 version to Levy.MRS@maine.gov with CC to: taxpayerassist@maine.gov, attorney.general@maine.gov, Joe.Baldacci@legislature.maine.gov, Jim.Thorne@legislature.maine.gov. Delete the July 24 duplicate after sending.
+**NOTE:** Two MRS levy demand drafts remain in Gmail (July 24 + July 27) — these are COPIES ONLY. The real demand was sent July 29, 2026 via **Proton Mail** (kking2055@pm.me) to Levy.MRS@maine.gov. Delete the Gmail drafts to avoid confusion.
 
 ---
 
@@ -129,13 +126,12 @@ Before anything else, Claude will check Gmail drafts to confirm no emails are si
 
 ### PRIORITY TO-DO LIST (in order)
 
-**#1 — 🚨 SEND THE DEMAND LETTER NOW**
-- Two draft versions sitting unsent in Gmail
-- Use the **July 27, 2026** version (most recent)
+**#1 — DEMAND LETTER — SENT ✅**
+- Sent July 29, 2026 via Proton Mail (kking2055@pm.me)
 - To: Levy.MRS@maine.gov
 - CC: taxpayerassist@maine.gov, attorney.general@maine.gov, Aaron.Frey@maine.gov, Joe.Baldacci@legislature.maine.gov, Jim.Thorne@legislature.maine.gov
-- Delete the July 24 duplicate after sending
-- Subject: FORMAL LEGAL DEMAND — UNLAWFUL LEVY — CASE #1194093-S
+- Gmail draft copies can be deleted — Proton version is the real one
+- **10-business-day deadline → MRS must respond by approx. August 13, 2026**
 
 **#2 — DOCUMENT ALL ADA ACCOMMODATION VIOLATIONS**
 - Written-only communication accommodation requested March 9, 2026
@@ -172,7 +168,7 @@ MRS now claims $6,073.74+ — mathematically impossible based on their own recor
 | Item | Status |
 |------|--------|
 | Demand letter drafted | ✅ Done (July 27, 2026 version) |
-| Demand letter SENT | 🚨 NO — STILL IN DRAFTS |
+| Demand letter SENT | ✅ Sent July 29, 2026 via Proton Mail |
 | ADA accommodation violations logged | ⚠️ Not yet documented |
 | MRS document production demanded | ⚠️ In letter — not sent yet |
 | Statue of limitations research | ⚠️ Confirmed in letter — needs follow-up |
@@ -185,8 +181,7 @@ MRS now claims $6,073.74+ — mathematically impossible based on their own recor
 
 | Date | Email Subject | To | Status | Verified |
 |------|-------------|-----|--------|---------|
-| July 27, 2026 | MRS Demand Letter — Unlawful Levy #1194093-S | Levy.MRS@maine.gov + CC | ⚠️ DRAFT — NOT SENT | Check Gmail |
-| July 24, 2026 | MRS Demand Letter — Unlawful Levy #1194093-S (duplicate) | Levy.MRS@maine.gov + CC | ⚠️ DRAFT — DUPLICATE | Delete after sending July 27 version |
+| July 29, 2026 | MRS Demand Letter — Unlawful Levy #1194093-S | Levy.MRS@maine.gov + CC | ✅ SENT via Proton Mail | Confirmed by Keith |
 | April 21, 2026 | Court transcript + file request | Court clerk (mail) | Unknown — confirm mailed | |
 | April 21, 2026 | Client file demand to attorneys | 4 former attorneys (mail) | Unknown — confirm mailed | |
 | April 21, 2026 | FOAA/Brady demand | AG + DA offices (mail) | Unknown — confirm mailed | |
