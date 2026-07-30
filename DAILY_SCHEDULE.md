@@ -1,97 +1,87 @@
-# DAILY LEGAL SCHEDULE — Keith A. King
-## Last Updated: July 29, 2026
-## Three Active Cases: PCR Criminal | MHRC Housing | MRS Levy
+# DAILY LEGAL SCHEDULE — PCR CRIMINAL CASE ONLY
+## Last Updated: July 30, 2026
+## THIS PROJECT: State v. Keith A. King — PENCD-CR-2018-03023
+
+> ⚠️ THIS PROJECT IS FOR THE PCR CRIMINAL CASE ONLY.
+> MHRC Housing → separate project
+> MRS Tax Levy → separate project
+> If Keith starts talking about either of those, Claude must stop and redirect.
 
 ---
 
-## UPCOMING DEADLINES — SORTED BY DATE
+## UPCOMING DEADLINES — PCR CASE
 
-| Deadline | Case | What Happens If Missed |
+| Deadline | What | What Happens If Missed |
 |----------|------|----------------------|
-| **~Aug 13, 2026** | MRS Levy | MRS has not responded to demand → file AG complaint + prepare injunction motion |
-| **OVERDUE** | MHRC Housing | BHA + BrHA FOAA responses never received → send follow-up or file AG complaint |
-| **ASAP** | PCR Criminal | Every day without filing = more time before relief; file before any statute question arises |
-| **Apr 2027** | PCR Criminal | Hard PCR filing deadline (1 year from April 2026 BBO letter — the most recent predicate) |
+| **ASAP** | Print + sign CR-140 and CR-032 | Filing delayed |
+| **ASAP** | Call clerk (207) 561-2300 | Missing judge's name + EXH-K |
+| **ASAP** | Get EXH-J (drug schedule) | Gabapentin ground incomplete |
+| **Apr 2027** | Hard PCR filing deadline | 1 year from April 2026 BBO letter — cannot miss |
 
 ---
 
-## TODAY'S TASK LIST — IN ORDER OF PRIORITY
+## TODAY'S PCR TASK LIST — IN ORDER OF PRIORITY
 
-### 🔴 #1 — MRS LEVY (Deadline: ~Aug 13)
-**Delete Gmail draft copies** of the levy demand letter — the real one was sent July 29 via Proton Mail. Nothing more needed until MRS responds. Watch for their response.
-- If MRS responds: bring the response here immediately so we can draft a reply
-- If no response by Aug 13: file AG complaint and prepare injunction motion
+### 🔴 #1 — Call the clerk RIGHT NOW
+**Phone: (207) 561-2300** — Penobscot County UCD
+- Get judge's name assigned to CR-2018-03023 → needed for CR-140 Question 4
+- Request EXH-K: July 29, 2021 court order + mental health evaluation records
+- Follow up on April 2026 transcript request for September 20, 2021 plea hearing
 
-### 🔴 #2 — MHRC HOUSING (Overdue — BHA + BrHA FOAA)
-**Send written FOAA follow-up to both BHA and BrHA.** No response received on either FOAA request. Under Maine law (1 M.R.S. § 408-A) they must respond within 5 business days. They are in violation.
-- Draft follow-up demand letters to BHA and BrHA
-- CC: Maine AG FOAA Unit (foaa.attorney.general@maine.gov)
-- If still ignored → file AG FOAA complaint
+### 🟠 #2 — Print and sign forms at courthouse
+**78 Exchange St, Bangor ME — Mon–Fri 8am–4pm**
+- Print: CR-140 (8 pages) + CR-032 (3 pages) from GitHub reports/ folder
+- Also print: PCR petition HTML + exhibit organizer divider pages
+- Hand-fill CR-032 page 2 BEFORE signing: heat, cable, other expenses, total monthly expenses, bank name
+- Sign both forms in front of the clerk
+- No printer → Bangor Public Library, 145 Harlow St (free)
 
-### 🟠 #3 — PCR CRIMINAL (ASAP — No hard date yet)
-**Call (207) 561-2300 today** — Penobscot County UCD clerk
-- Get judge's name for CR-140 Question 4
-- Request EXH-K (July 29, 2021 court order + mental health eval records)
-- Follow up on April 2026 transcript request (Sept 20, 2021 plea hearing)
+### 🟡 #3 — Get EXH-J (drug schedule — proves gabapentin charge is void)
+- Go to legislature.maine.gov → Title 17-A → Section 1102 (Schedule Z)
+- Print the version as it existed before October 2019
+- Gabapentin will NOT be listed — that is your ex post facto proof
 
-### 🟠 #4 — PCR CRIMINAL
-**Print and sign forms at the courthouse** (78 Exchange St, Bangor — Mon–Fri 8am–4pm)
-- CR-140 (8 pages) + CR-032 (3 pages)
-- Hand-fill CR-032 page 2 first: heat, cable, other expenses, total, bank name
-- No printer → Bangor Public Library, 145 Harlow St
-
-### 🟡 #5 — PCR CRIMINAL
-**Get EXH-J** — legislature.maine.gov → Title 17-A → Section 1102 (Schedule Z)
-- Print the pre-2019 version showing gabapentin is NOT listed
-- This proves the gabapentin count = ex post facto violation (automatic dismissal)
-
-### 🟡 #6 — MRS LEVY
-**Log all ADA accommodation violations** since March 9, 2026
-- Written-only accommodation request was filed and ignored
-- Every phone contact attempt by MRS after that date is a violation
-- Write down: each date, what happened, who contacted you
-
-### 🟡 #7 — MHRC HOUSING
-**Start ADA damages log for BrHA eviction**
-- Housing revoked Oct 26, 2024 after FOAA request
-- Family lived in vehicles through two Maine winters; service dog died
-- Document every expense: lodging, food, transportation, medical, vet bills — from Oct 26, 2024 to present
-
-### ⚪ #8 — PCR CRIMINAL
-**Mail records request letters** (if not already mailed by certified mail)
+### 🟡 #4 — Mail records request letters (if not mailed yet)
 - 3 letters saved in Google Drive: RECORDS_REQUESTS_KING_CR-2018-03023
-- Court transcript + file request → Penobscot County UCD clerk
-- Client file demand → all 4 former attorneys (Harris, Johnson, Willey, Bart)
-- FOAA/Brady demand → AG (6 State House Station, Augusta) + DA (97 Hammond St, Bangor)
-- Send ALL certified mail, return receipt requested
+- Letter 1 → Court clerk (certified mail)
+- Letter 2 → All 4 former attorneys (certified mail)
+- Letter 3 → AG + DA offices (certified mail)
+
+### ⚪ #5 — Build and verify thumb drive
+- Run reports/exhibit_thumbdrive_builder.py on your computer
+- Confirm EXH-E video plays in browser
+- Confirm all PDFs open
 
 ---
 
-## EMAIL / LETTER STATUS — VERIFY EACH SESSION
+## PCR EXHIBIT STATUS
 
-| Sent Date | To | Method | Status |
-|-----------|-----|--------|--------|
-| July 29, 2026 | Levy.MRS@maine.gov (MRS demand) | Proton Mail | ✅ SENT — awaiting response by ~Aug 13 |
-| April 21, 2026 | Court clerk / attorneys / AG+DA (records requests) | Mail (certified?) | ⚠️ Confirm if actually mailed |
-| Unknown | BHA (FOAA request) | Unknown | ⚠️ No response received — follow-up needed |
-| Unknown | BrHA (FOAA request) | Unknown | ⚠️ No response received — follow-up needed |
-| Unknown | HUD Boston (FOIA) | Unknown | ⚠️ No response received — follow-up needed |
-
----
-
-## QUICK REFERENCE — KEY CONTACTS
-
-| Who | Phone / Email | For |
-|-----|-------------|-----|
-| Penobscot County UCD clerk | (207) 561-2300 | Judge's name, EXH-K, transcript |
-| Maine Revenue Services | Levy.MRS@maine.gov | Levy demand response |
-| Taxpayer Advocate (Rae Lynne) | taxpayerassist@maine.gov | MRS escalation |
-| MHRC | (207) 624-6290 | Housing complaint status |
-| Maine AG FOAA Unit | foaa.attorney.general@maine.gov | FOAA violations |
-| Bangor Public Library | 145 Harlow St, Bangor | Free printing |
+| Exhibit | Status |
+|---------|--------|
+| EXH-A — CAD Dispatch Log | ✅ In hand |
+| EXH-B — 2018 Discovery Packet | ✅ In hand |
+| EXH-C — AAG Anton "inadvertent error" letter | ✅ In hand |
+| EXH-D — Police reports (Haskell + Perry) | ✅ Inside EXH-B pages 3–12 |
+| EXH-E — Dashcam video (MP4) | ✅ In hand |
+| EXH-F — BHA Master Key Log | ✅ In hand |
+| EXH-G — Billing vouchers | ✅ In hand |
+| EXH-H — TruNarc INCONCLUSIVE | ✅ Inside EXH-B (search "TruNarc") |
+| EXH-I — CAD/radio log | ✅ In hand |
+| EXH-J — 2018 Maine drug schedule | ⚠️ Still needed |
+| EXH-K — Court order + mental health eval | ⚠️ Still needed — call (207) 561-2300 |
 
 ---
 
-*Claude updates this file at the end of every session.*
-*Tasks are always ordered by deadline date — shortest deadline = highest priority.*
-*Completed items are removed; new items are added as cases develop.*
+## PCR FORM STATUS
+
+| Form | Status |
+|------|--------|
+| CR-140 (8 pages) | ✅ Filled and aligned — ready to print |
+| CR-032 (3 pages) | ✅ Filled — hand-fill expenses then sign |
+| PCR Petition | ✅ Corrected and finalized |
+| Judge's name for CR-140 Q4 | ⚠️ Call (207) 561-2300 |
+
+---
+
+*Claude updates this file at end of every PCR session.*
+*If the conversation drifts to MHRC housing or MRS levy, Claude will stop and redirect Keith to the correct project.*
