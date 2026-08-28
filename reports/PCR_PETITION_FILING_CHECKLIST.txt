@@ -1,0 +1,328 @@
+================================================================================
+               PCR PETITION FILING CHECKLIST
+               DOCKET NO. CR-2018-03023
+               Keith A. King v. State of Maine
+================================================================================
+
+OVERVIEW:
+The Petition for Post-Conviction Review (PCR) is formatted and ready to print,
+sign, and file with the Penobscot Unified District Court. This checklist guides
+you through the filing process from signature to court submission.
+
+================================================================================
+                          PRINT & SIGN PHASE
+================================================================================
+
+[ ] 1. PRINT THE PETITION
+
+    a. Use PCR_PETITION_CR-2018-03023_PDF.html for best results
+
+       METHOD 1: Browser Print
+       - Open PCR_PETITION_CR-2018-03023_PDF.html in Google Chrome or Firefox
+       - Press Ctrl+P (Windows) or Cmd+P (Mac)
+       - Select "Print to PDF" or your default printer
+       - Verify: margins are 1 inch all sides, font is 12pt, double-spaced
+       - If printing to PDF: Save as "PCR_PETITION_CR-2018-03023_ORIGINAL.pdf"
+       - If printing to paper: Use standard 8.5" x 11" white paper (20lb weight)
+
+       METHOD 2: Text Version for Manual Formatting
+       - Use PCR_PETITION_CR-2018-03023_FORMATTED.txt
+       - Open in Microsoft Word or Google Docs
+       - Import, ensuring margins are 1" all sides
+       - Font: 12-point Times New Roman, double-spaced
+       - Print to standard paper
+
+[ ] 2. SIGN THE PETITION (CRITICAL — MUST BE ORIGINAL)
+
+    a. Use BLACK OR BLUE INK ONLY (no pencil, no photocopied signature)
+
+    b. Sign on Page 3 (or final page) where it says:
+       "____________________________
+        Keith A. King, Pro Se"
+
+    c. Print your name underneath the signature line
+
+    d. Sign again on the Certificate of Service page where indicated
+
+    e. DATE each signature: April 13, 2026 (or current filing date if different)
+
+    NOTE: Maine courts require ORIGINAL signatures on legal pleadings.
+          Photocopies, faxes, and electronic signatures may not be accepted
+          for pro se filings. Do not sign in pencil.
+
+[ ] 3. MAKE COPIES
+
+    a. After signing the original:
+       - Make 2 COMPLETE photocopies of the signed original
+       - Total: 1 original + 2 copies = 3 sets
+       - Verify each copy is legible, especially the signature
+
+    b. Organize each set:
+       - Original: Keep in secure location (you will file this)
+       - Copy #1: For District Attorney (you will serve this)
+       - Copy #2: Keep for your records
+
+    c. Staple each set in upper left corner
+
+
+================================================================================
+                        FILING WITH THE COURT
+================================================================================
+
+[ ] 4. PREPARE FOR COURT FILING
+
+    Court: Penobscot Unified District Court
+    Address: 97 State Street
+             Bangor, ME 04401
+    Phone: (207) 942-8500
+    Hours: Monday–Friday, 8:00 AM – 4:30 PM
+
+    What to Bring:
+    - Original signed petition (3+ pages, stapled)
+    - 1 certified copy (for court)
+    - 1 certified copy (for District Attorney's file)
+    - Filing fee (if applicable — see below)
+
+[ ] 5. FILE THE PETITION WITH THE COURT
+
+    a. Call ahead (207) 942-8500 to confirm:
+       - Filing window (typically 8 AM – 4 PM)
+       - Whether filing fees apply (pro se may have waiver available)
+       - Current filing procedures (electronic vs. in-person)
+
+    b. In-Person Filing (Preferred for Pro Se):
+
+       Step 1: Arrive at Penobscot Unified District Court
+               97 State Street, Bangor, ME 04401
+
+       Step 2: Proceed to Criminal Division clerk's office
+
+       Step 3: Tell clerk: "I'm filing a Petition for Post-Conviction Review
+               under 15 M.R.S. §§ 2121–2130-A for docket CR-2018-03023"
+
+       Step 4: Provide:
+               - Original petition (signed)
+               - 1 copy for the court file
+               - Filing fee (or IFP motion if unable to pay)
+
+       Step 5: The clerk will:
+               - Stamp receipt or file-stamp copies
+               - Record docket entry
+               - Provide you with filing receipt and date
+
+       Step 6: Request written proof of filing with date/time
+
+[ ] 6. CERTIFIED MAILING TO DISTRICT ATTORNEY
+
+    After filing with court:
+
+    a. Prepare certified copies for DA:
+       - 1 copy of the signed petition
+       - 1 cover letter (see template below)
+
+    b. Send via USPS Certified Mail to:
+
+       District Attorney
+       Penobscot County District Attorney's Office
+       97 State Street
+       Bangor, ME 04401
+
+    c. Use Certified Mail with Return Receipt Requested
+       - Cost: ~$8 + postage
+       - Keep the green return receipt (proof of service)
+       - Note the tracking number and date mailed
+
+    d. Alternative: Hand-deliver copy to DA's office
+       - Ask clerk to stamp "Served" with date and time
+       - Keep stamped copy for your records
+
+[ ] 7. COMPLETE THE CERTIFICATE OF SERVICE
+
+    After serving the District Attorney, complete the final section:
+
+    On the last page of your original filed petition, you should have:
+
+    "I certify that I have served a true copy of this Petition for
+    Post-Conviction Review on the District Attorney for Penobscot County by
+    [SELECT ONE]: ☒ Hand delivery  ☐ Certified mail  ☐ Electronic filing
+
+    Date: _________ (the date you served the DA)
+
+    _______________________
+    Keith A. King, Pro Se"
+
+    File this completed certificate with the court within 10 days.
+
+
+================================================================================
+                      OPTIONAL: IFP MOTION (IF NEEDED)
+================================================================================
+
+[ ] 8. FILE IFP MOTION IF YOU CANNOT AFFORD FILING FEES
+
+    If unable to pay filing fees:
+
+    a. Use the IFP Motion form:
+       - File: PRINT_THIS_FIRST_IFP_MOTION_CR-2018-03023.txt
+       - Sign and file this BEFORE the petition
+
+    b. Request in-forma pauperis status:
+       - Waives or defers filing fees
+       - Common for pro se litigants
+       - Court will decide within 10 days
+
+    c. Once IFP is approved, filing fees are waived
+
+
+================================================================================
+                    SUPPORTING DOCUMENTATION CHECKLIST
+================================================================================
+
+[ ] Dashcam video (February 2024 release)
+[ ] BHA Master Key Log (October 2025 — shows ZERO entry for August 2)
+[ ] AAG Janice Stuver admission (December 17, 2025)
+[ ] HUD FOIA records (emails from Kara E. Norman, Richa Karki)
+[ ] MHRC complaint (Exhibits A–L)
+[ ] TruNarc field test results (marked "INCONCLUSIVE")
+[ ] Crime lab reports (if obtained)
+[ ] Gabapentin statute effective date (October 15, 2019 — Me. PL 2019, ch. 487)
+[ ] Phone extraction records (proof of illegal seizure)
+[ ] Mental health records (documenting bipolar disorder, panic attacks)
+[ ] Court orders (bail, medication, mental health hold)
+[ ] Bail order with "selling drugs" comment
+[ ] Plea hearing transcript (if available)
+[ ] Correspondence with counsel
+[ ] Any other exhibits mentioned in petition
+
+NOTE: You do not need to attach all exhibits to the filed petition, but keep
+them organized and available. The court may request specific exhibits during
+the review process.
+
+
+================================================================================
+                         POST-FILING TIMELINE
+================================================================================
+
+Day 1: File petition with court
+       Serve copy on District Attorney
+
+Days 2–14: Court processes filing
+           District Attorney has 14 days to respond (if required)
+
+Week 3: Watch for DA's response or court order
+
+Week 4–6: Court may request additional submissions
+          Be prepared to file supplemental briefs if needed
+
+Month 2–3: Court may hold oral arguments or evidentiary hearing
+           (Attend all scheduled hearings)
+
+Month 4+: Court issues decision on petition
+          - May grant (vacation of conviction, new trial)
+          - May dismiss (some or all grounds)
+          - May schedule further proceedings
+
+
+================================================================================
+                       CRITICAL REMINDERS
+================================================================================
+
+⚠ ORIGINAL SIGNATURES REQUIRED
+  Do not file copies or faxes of signatures. Use original ink signatures.
+
+⚠ SERVE THE DISTRICT ATTORNEY
+  Failure to serve the DA may result in petition being rejected.
+  Keep proof of service (certified mail receipt or hand-delivery stamp).
+
+⚠ FILE PROOF OF SERVICE
+  Complete the Certificate of Service and file it with the court
+  within 10 days of service.
+
+⚠ KEEP COPIES FOR YOURSELF
+  Retain copies of everything you file. The court works with originals;
+  you need your own records.
+
+⚠ FOLLOW UP IF NO RESPONSE
+  If you don't receive an acknowledgment within 2 weeks, call the clerk
+  to confirm the petition was received.
+
+⚠ ATTEND ALL HEARINGS
+  Even if you have counsel, attend all scheduled hearings and oral arguments.
+  Your presence demonstrates commitment to your case.
+
+
+================================================================================
+                      PENOBSCOT COURT CONTACT INFO
+================================================================================
+
+Penobscot Unified District Court
+Criminal Division
+97 State Street
+Bangor, ME 04401
+
+Phone: (207) 942-8500
+Hours: Monday–Friday, 8:00 AM – 4:30 PM
+Fax: (207) 942-8540
+
+Ask for:
+- Criminal clerk (for case filing)
+- Judge's administrative assistant (for hearing scheduling)
+- Law library (if you need legal research access)
+
+
+================================================================================
+                        DISTRICT ATTORNEY CONTACT
+================================================================================
+
+Penobscot County District Attorney's Office
+97 State Street
+Bangor, ME 04401
+Phone: (207) 942-8600
+
+Service Instructions:
+- Send certified copy of petition and cover letter via USPS Certified Mail
+- Hand-deliver if you prefer (ask clerk for stamp)
+- Electronic filing (if permitted — call to confirm)
+
+
+================================================================================
+                           NEXT STEPS
+================================================================================
+
+1. Print and sign the petition (this week)
+2. Make 2 photocopies (this week)
+3. File with court by [TARGET DATE] (allow time for printing/copying)
+4. Serve District Attorney within 3 days of filing court
+5. Track response deadline (~14 days from service)
+6. Prepare for evidentiary hearing or oral arguments (likely 4–8 weeks out)
+7. Monitor for orders from the court
+8. Respond to any requests for additional briefs or exhibits
+
+
+================================================================================
+                         FINAL CHECKLIST
+================================================================================
+
+Before leaving the courthouse:
+
+[ ] Received file-stamped copy of petition
+[ ] Received receipt showing filing date and docket number
+[ ] Obtained case number and judge assignment (if available)
+[ ] Confirmed that 2 copies were filed (original + court copy)
+[ ] Clarified next filing deadline (e.g., if DA must respond)
+[ ] Asked about hearing procedures and oral argument scheduling
+[ ] Confirmed District Attorney's mailing address for service
+[ ] Obtained phone number for case inquiry follow-up
+
+
+================================================================================
+
+The petition is now ready to print, sign, and file with the court. Proceed
+with confidence. The evidence in this case is compelling, and all legal
+grounds for post-conviction relief are well-supported by Maine case law and
+the newly discovered evidence documented in this petition.
+
+Questions? Call the Penobscot Unified District Court clerk at
+(207) 942-8500.
+
+================================================================================
